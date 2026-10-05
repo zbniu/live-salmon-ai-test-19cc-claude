@@ -1,0 +1,63 @@
+cutoff c = 56.9946
+
+=== rdrobust fuzzy RD, MSE-optimal bw, triangular, p=1 ===
+Call: rdrobust
+
+Fuzzy RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  1
+Polynomial Order Bias (q):                  2
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           793       1207
+Number of Unique Obs.            793       1207
+Number of Effective Obs.         255        274
+Bandwidth Estimation           3.801      3.801
+Bandwidth Bias                 5.516      5.516
+rho (h/b)                      0.689      0.689
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional      -0.531    1.781   -0.298   7.654e-01    [-4.022, 2.959]
+Robust                 -        -   -0.236   8.132e-01    [-4.711, 3.697]
+
+First-Stage Estimates.
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional       0.404    0.062    6.476   9.408e-11     [0.282, 0.526]
+Robust                 -        -    5.314   1.074e-07     [0.255, 0.552]
+coef: [-0.53146946 -0.50689382 -0.50689382] 
+se: [1.78112173 1.78112173 2.14479131] 
+ci: [[-4.02240391  2.95946499]
+ [-3.99782827  2.98404064]
+ [-4.71060754  3.69681991]]
+first stage / reduced form via sharp RD:
+first stage jump: [0.40379827 0.40336408 0.40336408] se [0.06235137 0.06235137 0.07590882]
+reduced form jump: [-0.21460645 -0.20445209 -0.20445209] se [0.70581508 0.70581508 0.8488683 ]
+
+=== manual local-linear Wald, uniform kernel ===
+  h    n  first_stage  reduced_form   wald  boot_se
+ 3  424        0.393        -0.078 -0.199    1.872
+ 4  555        0.417        -0.176 -0.422    1.590
+ 5  680        0.402         0.054  0.136    1.445
+ 6  812        0.377        -0.594 -1.577    1.547
+ 8 1084        0.416        -0.012 -0.029    1.124
+10 1348        0.440         0.090  0.203    0.921
+12 1602        0.467         0.499  1.068    0.790
+
+=== rdrobust with p=2 and with uniform kernel ===
+2 triangular conv coef -0.219 se 2.019 | robust CI [-4.483, 4.588] | h=5.77
+1 uniform conv coef -0.260 se 1.790 | robust CI [-4.027, 4.264] | h=3.17
+1 epanechnikov conv coef -0.557 se 1.822 | robust CI [-4.925, 3.629] | h=3.48
+
+=== placebo cutoffs (reduced-form jump in z) ===
+placebo 50: jump 0.616, robust p 0.473
+placebo 53: jump -0.245, robust p 0.682
+placebo 62: jump 2.006, robust p 0.222
+placebo 66: jump -1.965, robust p 0.012
+placebo 70: jump 1.104, robust p 0.238

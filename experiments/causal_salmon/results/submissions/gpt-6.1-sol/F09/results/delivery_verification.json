@@ -1,0 +1,20 @@
+{
+  "report_readback_nonempty": true,
+  "report_readback_matches_intended_content": true,
+  "initial_archive_crc_pass": true,
+  "initial_archive_members": [
+    "submission/code/analyze.py",
+    "submission/code/finalize.py",
+    "submission/code/run_analysis.py",
+    "submission/final_report.md",
+    "submission/results/analysis_stderr.txt",
+    "submission/results/analysis_stdout.txt",
+    "submission/results/analysis_summary.json",
+    "submission/results/baseline_bins.csv",
+    "submission/results/descriptive_regressions.csv",
+    "submission/results/group_summary.csv",
+    "submission/results/hypothetical_counterfactual_examples.csv",
+    "submission/run_log.txt"
+  ],
+  "note": "The final archive is rebuilt once to include this actual verification record and updated run log, then inspected again. No analysis is repeated."
+}

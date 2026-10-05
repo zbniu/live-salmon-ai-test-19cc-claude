@@ -66,3 +66,8 @@ python src/create_visualizations.py
 ```
 
 See [REPORT.md](REPORT.md) for full details.
+
+## Community experiments
+
+- [Causal Salmon: Knowing When to Claim Causality](experiments/causal_salmon/README.md) contributes to [roadmap #1](https://github.com/Hypogenic-AI/live-salmon-ai-test-19cc-claude/issues/1) with a controlled tutoring simulation covering randomized assignment, observed selection and unrecorded selection factors. The experiment reports 72 manually collected App answers from six user-labelled models, paired named/anonymous inputs, and artifact-based evaluation. Its report, prompts, data, submitted evidence and offline checks are contained in `experiments/causal_salmon/`; it does not modify the original Live Salmon pipeline. Run its dependency-free package check with `python experiments/causal_salmon/scripts/validate_submission.py`. Its numerical checks use a separate Python 3.12 environment; original App conversations cannot be replayed automatically.
+

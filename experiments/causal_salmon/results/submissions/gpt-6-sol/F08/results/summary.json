@@ -1,0 +1,30 @@
+{
+  "n": 2000,
+  "treated": 600,
+  "controls": 1400,
+  "treated_y_range": [
+    57.35599040912017,
+    74.97566682818609
+  ],
+  "control_y_range": [
+    45.00531537876745,
+    74.99632876522726
+  ],
+  "mean_z_treated": 12.825710771365303,
+  "mean_z_controls": 9.37683443940425,
+  "unadjusted_difference": 3.4488763319610527,
+  "mean_y_treated": 66.8381657116298,
+  "mean_y_controls": 57.22504431669848,
+  "nearest_control_y_distance": {
+    "median": 0.010035839630880616,
+    "p95": 0.04688013029589972,
+    "max": 0.11637819441103403
+  },
+  "primary_ATT": 1.2097802675279525,
+  "bootstrap_percentile_95_CI": [
+    0.8085802574633243,
+    1.6281534251116758
+  ],
+  "bootstrap_SE": 0.2140507877623016,
+  "bootstrap_draws": 2000
+}

@@ -1,0 +1,4 @@
+baseline_polynomial_degree,n,x_coefficient,design_rank,residual_rmse,interpretation
+0,2000,5.463528728981297,2,3.8014309913154434,"descriptive association, not a causal effect"
+1,2000,3.787362334075386,3,3.510027670348855,"descriptive association, not a causal effect"
+3,2000,3.820808318740778,5,3.50895767767781,"descriptive association, not a causal effect"

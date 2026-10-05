@@ -1,0 +1,11 @@
+{
+  "report_nonempty": true,
+  "report_characters": 6082,
+  "adopted_att": 1.2369606478619932,
+  "adopted_ci": [
+    0.8133704232443593,
+    1.6605508724796272
+  ],
+  "inputs_copied": true,
+  "corrected_fitted_mean_check": 3.552713678800501e-15
+}

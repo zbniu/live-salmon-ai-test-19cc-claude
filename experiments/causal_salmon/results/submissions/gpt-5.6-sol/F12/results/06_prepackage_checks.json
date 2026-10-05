@@ -1,0 +1,7 @@
+{
+  "report_readback_success": true,
+  "report_utf8_bytes": 6082,
+  "code_file_count": 7,
+  "results_file_count": 36,
+  "verification_scope": "Report and source inventory checked before packaging. Final ZIP inspection printed to execution tool, not stored inside ZIP."
+}

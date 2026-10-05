@@ -1,0 +1,34 @@
+{
+  "data_inputs": [
+    "<TEMP_DIR>/causal-salmon-public-2aenmh6r/data.csv",
+    "<TEMP_DIR>/causal-salmon-public-2aenmh6r/STUDY_DESCRIPTION.md"
+  ],
+  "input_hashes": {
+    "data.csv": "08864d914ccefd5df395e603ac462a3062d8dc16f03bb11211d278611691ba1a",
+    "STUDY_DESCRIPTION.md": "1c7a7cf5c54687ef5e5029f013a84efb5bc294a83591e930d609f333d6fec6de"
+  },
+  "canonical_retained_inputs": [
+    "<PROJECT_ROOT>/results/quality_checks/final-data-preflight-v1/formal/inputs/data.csv",
+    "<PROJECT_ROOT>/results/quality_checks/final-data-preflight-v1/formal/inputs/STUDY_DESCRIPTION.md"
+  ],
+  "runtime_executable": "<TEMP_DIR>/causal-salmon-reference-main/bf2b2dcbb78d52773d12c03e467c7eefef6be2bebd18ad6650a99644c64d0ba0/reference.py",
+  "runtime_sha256": "bf2b2dcbb78d52773d12c03e467c7eefef6be2bebd18ad6650a99644c64d0ba0",
+  "sandbox_policy": "(version 1)\n(deny default)\n(allow process*)\n(allow sysctl-read)\n(allow mach-lookup)\n(allow file-read-metadata)\n(allow file-read* (literal \"/\") (literal \"/dev/null\") (literal \"/dev/urandom\") (literal \"<PYTHON_ENV>/bin/python3.12\") (literal \"<PROJECT_ROOT>/.venv/pyvenv.cfg\") (literal \"<TEMP_DIR>/causal-salmon-reference-main/bf2b2dcbb78d52773d12c03e467c7eefef6be2bebd18ad6650a99644c64d0ba0/reference.py\") (literal \"<TEMP_DIR>/causal-salmon-public-2aenmh6r/data.csv\") (literal \"<TEMP_DIR>/causal-salmon-public-2aenmh6r/STUDY_DESCRIPTION.md\") (subpath \"/System\") (subpath \"/usr/lib\") (subpath \"/usr/share/zoneinfo\") (subpath \"<PYTHON_ENV>/lib\") (subpath \"<PROJECT_ROOT>/.venv/lib\"))\n(deny network*)\n",
+  "sandbox_policy_sha256": "26bce0af40e064a62fc7fe05c03023746dc1d7ee8a7e7cca612c7b15913ce5b7",
+  "probe": {
+    "project_file": true,
+    "parent_listing": true,
+    "network": true
+  },
+  "network": "denied",
+  "environment_keys": [
+    "PATH",
+    "LANG",
+    "OPENBLAS_NUM_THREADS",
+    "OMP_NUM_THREADS",
+    "VECLIB_MAXIMUM_THREADS",
+    "PYTHONDONTWRITEBYTECODE"
+  ],
+  "staged_inputs_removed_after_analysis": true,
+  "public_copy_note": "Machine-specific paths were removed from this historical display copy. Placeholders are not runnable paths; numerical results and historical identity hashes are preserved. See manifests/path_redaction.json."
+}

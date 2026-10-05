@@ -1,0 +1,18 @@
+{
+  "raw_mean_change_difference": 5.405097790854601,
+  "raw_mean_baseline_difference": 8.819962497652995,
+  "treated_mean_followup": 79.83165134880578,
+  "ATT_logical_lower_bound_0_100": -20.168348651194222,
+  "ATT_logical_upper_bound_0_100": 79.83165134880578,
+  "bounds_are_confidence_interval": false,
+  "positive_causal_effect_identified": false,
+  "overlap": {
+    "treated_min_y": 55.59294297736875,
+    "treated_max_y": 74.95540694433481,
+    "control_min_y": 45.013647911746,
+    "control_max_y": 74.98826079709465,
+    "control_count_below_treated_min_y": 758,
+    "control_count_in_treated_y_range": 639
+  },
+  "baseline_adjusted_descriptive_x_coefficient": 3.7131755674932965
+}

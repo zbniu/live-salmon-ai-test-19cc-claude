@@ -1,0 +1,7 @@
+Execution record (UTC session; source files: the two attached files in upload/)
+
+1. Read STUDY_DESCRIPTION(20261004-071310).md, counted 2001 CSV lines including header, and inspected CSV header and first records. No error.
+2. Checked Python package availability with an import of scipy, statsmodels, pandas. Failed with ModuleNotFoundError: No module named 'statsmodels'. No analytical output was produced.
+3. Checked scipy, pandas, numpy versions successfully: 1.17.0, 2.2.3, 2.3.5.
+4. Created code/analyze.py, then executed `python submission/code/analyze.py | tee submission/results/stdout.txt`. The Python analysis completed and created results/analysis.json from all 2,000 CSV records; its JSON was printed to the terminal. `tee` failed with `No such file or directory` because results/ did not exist when the shell opened its output. The pipeline exited 1. results/stdout.txt was not created. No analysis was rerun to replace this missing console record. The actual analysis output is results/analysis.json.
+5. Wrote final_report.md from that output, then packaged and verified the requested archive. Packaging and read-back checks are reported by the final verification command; no additional statistical analysis was run.

@@ -1,0 +1,32 @@
+{
+  "report_read_back": true,
+  "report_nonempty": true,
+  "report_utf8_bytes": 4659,
+  "intended_primary_result_present": true,
+  "archive_crc_check": "passed",
+  "archive_required_categories_present": true,
+  "archive_report_matches_readback": true,
+  "all_archived_files_match_local_bytes": true,
+  "first_inspection_members": [
+    "submission/code/01_inspect.py",
+    "submission/code/02_analyze.py",
+    "submission/code/03_report.py",
+    "submission/code/04_package.py",
+    "submission/code/run_step.py",
+    "submission/final_report.md",
+    "submission/inputs/STUDY_DESCRIPTION.md",
+    "submission/inputs/data.csv",
+    "submission/results/01_inspect_console.txt",
+    "submission/results/02_analyze_console.txt",
+    "submission/results/03_report_console.txt",
+    "submission/results/analysis.json",
+    "submission/results/baseline_decile_summary.csv",
+    "submission/results/data_checks.json",
+    "submission/results/effect_estimates.csv",
+    "submission/results/group_summary.csv",
+    "submission/results/input_hashes.json",
+    "submission/results/stratum_effects.csv",
+    "submission/run_log.txt"
+  ],
+  "note": "Final packaging-only rebuild adds these actual inspection outputs and the completed log. Final verification is printed in the session tool output."
+}

@@ -1,0 +1,6 @@
+Run log (execution order)
+1. python code/01_explore.py -> results/01_explore.txt  (OK)
+2. python code/02_att.py -> FAILED: ModuleNotFoundError: statsmodels (output captured in results/02_att.txt, later overwritten; error text recorded here).
+3. pip install statsmodels; python code/02_att.py -> FAILED: AttributeError in bootstrap (groupby.apply dropped column 'x'); output saved as results/02_att_failed_run2.txt.
+4. Fixed bootstrap resampling line in code/02_att.py (pd.concat of per-group samples); python code/02_att.py -> results/02_att.txt, results/02_att_estimates.csv (OK). Code file reflects the fixed version.
+5. Wrote final_report.md from step 4 outputs.

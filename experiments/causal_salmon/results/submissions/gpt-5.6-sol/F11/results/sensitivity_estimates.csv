@@ -1,0 +1,17 @@
+method,att,untreated_counterfactual_mean
+"Control polynomial degree 1, standardized to attendees",1.2005672446801459,11.818342508987234
+"Control polynomial degree 2, standardized to attendees",1.2375122958789966,11.781397457788383
+"Control polynomial degree 3, standardized to attendees",1.2440304318435391,11.77487932182384
+"Control restricted cubic spline, 3 nonconstant df",1.2377914424658254,11.781118311201555
+"Control restricted cubic spline, 4 nonconstant df",1.2493618147291023,11.769547938938278
+"Control restricted cubic spline, 5 nonconstant df",1.2517549655565219,11.767154788110858
+"Control restricted cubic spline, 6 nonconstant df",1.2431213335611488,11.775788420106231
+"Control restricted cubic spline, 7 nonconstant df",1.2362261075850647,11.782683646082315
+"Control restricted cubic spline, 9 nonconstant df",1.2492544930131295,11.76965526065425
+"Control local linear, Gaussian bandwidth 0.75 points",1.238346591227069,11.78056316244031
+"Control local linear, Gaussian bandwidth 1.5 points",1.2386567030755469,11.780253050591833
+"Control local linear, Gaussian bandwidth 3.0 points",1.2283959913974023,11.790513762269978
+Starting-score strata of width 1 points,1.2195105517597935,11.799399201907587
+Starting-score strata of width 2 points,1.2420109881731827,11.776898765494197
+Starting-score strata of width 4 points,1.2462279620688308,11.772681791598549
+"One nearest starting-score control per attendee, with replacement",1.1364235430624827,11.882486210604895

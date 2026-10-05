@@ -1,0 +1,32 @@
+# Effect of arrangement Q on its recipients
+
+**Answer.** The supplied randomized study provides statistical evidence that Q increased the **average change `z` among the 600 units that received it**. The result adopted to answer the research question is **+0.848 points**, with an **approximate 95% randomization confidence interval of +0.454 to +1.241 points**. This is an estimated average causal effect, not the recipients' total observed improvement. The exact effect is unobserved, and the study does not establish that every recipient benefited.
+
+## Data and comparison
+
+I used every row of `data.csv` and only the supplied study description as study information. The file has the stated three columns, 2,000 rows, 600 recipients and 1,400 controls, with no missing or nonfinite values. Baseline and reconstructed follow-up measurements are within the stated 0–100 scale. No observations were excluded, and no external sources were used.
+
+| Group | Units | Mean baseline `y` | Mean change `z` |
+|---|---:|---:|---:|
+| Received Q | 600 | 59.158 | 10.759 |
+| Did not receive Q | 1,400 | 59.910 | 9.911 |
+
+The main estimate is the difference in mean changes: 10.758905 − 9.911158 = 0.847747 points. The mean change of 10.759 points in recipients is **not** the estimated effect of Q; controls also improved.
+
+## Why this comparison answers a causal question
+
+Exactly 600 units were selected by an equal-probability random draw using no unit information. Assignment was followed perfectly, all units were measured, and the description rules out effects of one unit's assignment on another unit's change. These facts justify using controls to estimate what recipients would have experienced without Q. Baseline differences are chance imbalances, not evidence of assignment based on baseline.
+
+The target is the average of `z(1) − z(0)` for the **actual 600 recipients**, where `z(1)` and `z(0)` denote their changes with and without Q. It is not a claim about an external population, nor an assumption that effects are identical across units.
+
+For this particular target, the difference-in-means estimation error is the difference between recipients' and controls' means of the untreated potential change `z(0)`. Complete random assignment therefore gives error variance `(1/600 + 1/1400) × S₀²`, where `S₀²` is the finite-population variance of untreated potential changes. I estimated that variance using the control sample variance. The resulting standard error is 0.200744 points; the reported interval is the estimate plus or minus 1.96 standard errors. This is a large-sample randomization approximation for the recipients' average effect, rather than a conventional two-group interval targeting the overall study-population average effect. It does not require constant treatment effects or a model for how changes were generated.
+
+## Baseline adjustment and limitations
+
+Recipients had a baseline mean 0.752 points lower than controls, and higher baseline values predict larger changes in controls. As a sensitivity check, I fitted a linear regression of change on baseline using controls, predicted each recipient's untreated change, and averaged the observed-minus-predicted changes. This gives **+1.014 points** (first-order approximate 95% interval 0.666 to 1.362). Quadratic and cubic control regressions and comparisons within baseline deciles weighted to the recipients' baseline distribution give estimates between +1.005 and +1.015 points. These checks use all rows and support the same positive-average-effect conclusion. Their residual-based intervals are approximate and do not include higher-order uncertainty from estimating the adjustment functions.
+
+I retain the unadjusted randomized estimate as the main numerical answer because it follows directly from the supplied assignment design without selecting a response model after inspecting outcomes. Sampling uncertainty remains, and no recipient's untreated outcome is observed. Consequently the supplied material supports an estimated positive **average** effect, not a definite reconstruction of its exact size, individual effects, or the undisclosed process generating changes.
+
+## Execution materials
+
+The accompanying package contains the two unchanged input files, the Python code actually executed, saved numerical outputs and console records, and a chronological run log. `results/analysis.json` and `results/effect_estimates.csv` contain the primary and sensitivity results. The log distinguishes initial file-inspection output available only in the session transcript from saved analysis records. No statistical analysis was rerun to replace an execution record.

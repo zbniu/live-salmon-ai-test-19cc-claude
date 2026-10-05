@@ -1,0 +1,12 @@
+{
+  "target": "average causal effect on change among the 600 actual recipients",
+  "estimator": "treated mean change minus control mean change",
+  "estimate_points": 1.1102228476588483,
+  "untreated_potential_outcome_variance_estimated_from_controls": 17.972903032137665,
+  "se_randomization_ATT": 0.20686378674624142,
+  "ci95_lower": 0.7047772759306409,
+  "ci95_upper": 1.5156684193870555,
+  "interval_method": "large-sample normal randomization interval for the selected-recipient average effect",
+  "variance_identity": "(1/n_treated + 1/n_control) * S0_squared",
+  "interpretation": "Approximate repeated-randomization coverage of the effect for whichever units receive Q; not an exact counterfactual reconstruction."
+}

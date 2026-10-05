@@ -1,0 +1,30 @@
+{
+  "report_nonempty": true,
+  "report_utf8_readback_matches_intended_report": true,
+  "report_sha256": "984b7c2d0c8fa39b890a3799e2110b1808feb916f322f7e03f938c76a47e0f43",
+  "first_archive_crc_check": "passed",
+  "first_archive_required_contents": "passed",
+  "first_archive_entries": [
+    "submission/code/README.md",
+    "submission/code/explore.py",
+    "submission/code/explore_v1_missing_dependency.py",
+    "submission/code/final_analysis.py",
+    "submission/code/package_delivery.py",
+    "submission/code/run_capture.py",
+    "submission/code/write_report.py",
+    "submission/final_report.md",
+    "submission/inputs/STUDY_DESCRIPTION(4).md",
+    "submission/inputs/data(4).csv",
+    "submission/results/01_explore_execution.txt",
+    "submission/results/02_explore_execution.txt",
+    "submission/results/03_final_analysis_execution.txt",
+    "submission/results/04_write_report_execution.txt",
+    "submission/results/baseline_bins.csv",
+    "submission/results/exploratory_adjustments.csv",
+    "submission/results/final_results.json",
+    "submission/results/group_summaries.csv",
+    "submission/results/initial_results.json",
+    "submission/run_log.txt"
+  ],
+  "notes": "Archive rebuilt below to include this actual verification record and completed packaging log; final inspection printed to session."
+}

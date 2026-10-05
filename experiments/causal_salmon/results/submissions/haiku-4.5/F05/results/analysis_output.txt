@@ -1,0 +1,122 @@
+======================================================================
+STUDY DATA ANALYSIS
+======================================================================
+
+1. DATA STRUCTURE
+----------------------------------------------------------------------
+Number of rows: 2000
+Number of columns: 3
+Column names: ['x', 'y', 'z']
+Data types:
+x      int64
+y    float64
+z    float64
+dtype: object
+Missing values:
+x    0
+y    0
+z    0
+dtype: int64
+
+2. SUMMARY STATISTICS
+----------------------------------------------------------------------
+                 x            y            z
+count  2000.000000  2000.000000  2000.000000
+mean      0.300000    59.684332    10.165482
+std       0.458372     8.756805     4.250737
+min       0.000000    45.022076    -1.017535
+25%       0.000000    52.162940     7.140590
+50%       0.000000    59.518837    10.017829
+75%       1.000000    67.531587    13.234174
+max       1.000000    74.977146    23.342384
+
+3. TREATMENT ALLOCATION
+----------------------------------------------------------------------
+Total units: 2000
+Units receiving arrangement Q (x=1): 600
+Units not receiving arrangement Q (x=0): 1400
+Expected treated units: 600
+
+4. COVARIATE BALANCE CHECK (baseline y)
+----------------------------------------------------------------------
+Control group (x=0):
+  n = 1400
+  mean y = 59.910020
+  std y = 8.730545
+
+Treated group (x=1):
+  n = 600
+  mean y = 59.157726
+  std y = 8.802577
+
+t-test for baseline balance:
+  t-statistic: -1.761549
+  p-value: 0.078298
+  Difference in means: -0.752294
+
+5. PRIMARY ANALYSIS: TREATMENT EFFECT ON CHANGE z
+----------------------------------------------------------------------
+Control group (x=0):
+  n = 1400
+  mean z = 9.911158
+  std z = 4.114024
+  median z = 9.797864
+  min z = -1.017535
+  max z = 20.635242
+
+Treated group (x=1):
+  n = 600
+  mean z = 10.758905
+  std z = 4.501767
+  median z = 10.651487
+  min z = -0.122172
+  max z = 23.342384
+
+AVERAGE TREATMENT EFFECT (ATE):
+  ATE = 0.847747
+
+6. STATISTICAL SIGNIFICANCE
+----------------------------------------------------------------------
+Two-sample t-test (assuming unequal variances):
+  t-statistic: 4.103364
+  p-value: 0.000042
+
+Welch's t-test (unequal variance):
+  t-statistic: 3.958411
+  p-value: 0.000081
+
+7. CONFIDENCE INTERVALS FOR ATE (95%)
+----------------------------------------------------------------------
+Standard error of ATE: 0.214163
+Degrees of freedom (Welch): 1047.10
+t-critical value (95%, two-tailed): 1.962232
+95% CI for ATE: [0.427508, 1.267985]
+
+8. EFFECT SIZE METRICS
+----------------------------------------------------------------------
+Cohen's d: 0.200224
+
+9. REGRESSION ANALYSIS
+----------------------------------------------------------------------
+Simple regression: z = β₀ + β₁*x
+  β₀ (intercept/control mean): 9.911158
+  β₁ (treatment effect): 0.847747
+
+Regression with baseline covariate: z = β₀ + β₁*x + β₂*y
+  β₀ (intercept): -4.065281
+  β₁ (treatment effect): 1.023250
+  β₂ (baseline coefficient): 0.233291
+  MSE: 13.764659
+
+======================================================================
+SUMMARY AND CONCLUSION
+======================================================================
+
+Average Treatment Effect: 0.847747
+95% Confidence Interval: [0.427508, 1.267985]
+p-value (Welch's t-test): 0.0000805421
+
+CONCLUSION: Arrangement Q had a statistically significant positive effect on change z.
+The effect is approximately 0.85 points on the 0-100 scale.
+
+Results saved to ate_results.json

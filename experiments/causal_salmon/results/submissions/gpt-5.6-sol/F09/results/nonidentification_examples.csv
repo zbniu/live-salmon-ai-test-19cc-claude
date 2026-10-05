@@ -1,0 +1,4 @@
+hypothetical_ATT,hypothetical_mean_z0_among_treated,counterfactual_followup_min,counterfactual_followup_max,all_counterfactual_followups_within_0_100,status
+-1.0,15.104328625911903,62.01858713013108,99.14955718192041,True,"hypothetical completion, not an estimate"
+0.0,14.104328625911903,61.01858713013108,98.14955718192041,True,"hypothetical completion, not an estimate"
+1.0,13.104328625911903,60.01858713013108,97.14955718192041,True,"hypothetical completion, not an estimate"

@@ -1,0 +1,10 @@
+import pandas as pd, numpy as np
+df = pd.read_csv("/mnt/user-data/uploads/data.csv")
+print(df.shape); print(df.dtypes); print(df.head()); print(df.isna().sum())
+print(df.describe())
+print(df.x.value_counts())
+print(df.groupby("x")[["y","z"]].agg(["mean","std","min","max","median"]))
+print("corr y,z overall:", df[["y","z"]].corr().iloc[0,1])
+for g,d in df.groupby("x"): print("corr y,z x=",g, d[["y","z"]].corr().iloc[0,1])
+print(df.z.quantile([0,.01,.05,.25,.5,.75,.95,.99,1]))
+print(df.y.quantile([0,.01,.05,.25,.5,.75,.95,.99,1]))

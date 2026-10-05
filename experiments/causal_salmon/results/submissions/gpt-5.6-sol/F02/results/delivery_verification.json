@@ -1,0 +1,26 @@
+{
+  "report_nonempty": true,
+  "report_utf8_bytes": 5779,
+  "persistent_upload": "failed: unavailable Codex authentication",
+  "archive_members_verified": [
+    "submission/code/README.md",
+    "submission/code/analyze.py",
+    "submission/code/create_report_and_archive.py",
+    "submission/code/finalize_delivery_record.py",
+    "submission/code/initial_inspection.py",
+    "submission/code/run_analysis.py",
+    "submission/code/run_analysis_initial.py",
+    "submission/final_report.md",
+    "submission/inputs/STUDY_DESCRIPTION.md",
+    "submission/inputs/data.csv",
+    "submission/results/analysis.json",
+    "submission/results/analysis_stderr.txt",
+    "submission/results/analysis_stdout.txt",
+    "submission/results/baseline_bins.csv",
+    "submission/results/delivery_verification.json",
+    "submission/results/group_summary.csv",
+    "submission/run_log.txt"
+  ],
+  "archive_crc_check": "passed",
+  "report_in_archive_matches_readback": true
+}

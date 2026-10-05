@@ -1,0 +1,17 @@
+RUN LOG (execution order)
+=========================
+[0] Attempt 1: `mkdir -p .../submission/{code,results}` under /bin/sh, then write code/01_inspect.py and run it.
+    ERROR: /bin/sh does not do brace expansion; a literal directory "{code,results}" was created,
+    code/ and results/ did not exist, so 01_inspect.py was NOT written and NOT run (no output produced).
+    Fix: created code/ and results/ explicitly, removed the stray "{code,results}" directory.
+[1] code/01_inspect.py -> results/01_inspect.txt   (exit 0)
+[2] code/02_analysis.py (attempt 1) -> results/02_analysis_FAILED_attempt1.txt  (exit 1)
+    ERROR: ModuleNotFoundError: No module named 'statsmodels'. No analysis output produced.
+    Fix: pip install statsmodels --break-system-packages, then re-run the unchanged script.
+[3] pip install statsmodels --break-system-packages  (succeeded; statsmodels 0.15.0)
+[4] code/02_analysis.py (attempt 2, script unchanged) -> results/02_analysis.txt  (exit 0)
+    Note: results/02_analysis.txt from attempt 1 (traceback only) was preserved as
+    results/02_analysis_FAILED_attempt1.txt before re-running.
+[5] final_report.md written by hand from results/01_inspect.txt and results/02_analysis.txt
+    (no additional computation). submission.zip then created from submission/.
+Seeds: numpy default_rng(20261004) for permutation and bootstrap in 02_analysis.py.

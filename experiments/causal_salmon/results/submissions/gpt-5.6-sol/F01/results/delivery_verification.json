@@ -1,0 +1,22 @@
+{
+  "archive": "submission.zip",
+  "required_members_present": true,
+  "zip_integrity_check": "passed",
+  "archived_report_matches_readback": true,
+  "members": [
+    "submission/README.md",
+    "submission/code/analyze.py",
+    "submission/code/finalize.py",
+    "submission/code/run_analysis.py",
+    "submission/final_report.md",
+    "submission/inputs/STUDY_DESCRIPTION.md",
+    "submission/inputs/data.csv",
+    "submission/results/analysis.json",
+    "submission/results/analysis_stderr.txt",
+    "submission/results/analysis_stdout.txt",
+    "submission/results/descriptive_regressions.csv",
+    "submission/results/group_summary.csv",
+    "submission/results/score_bands.csv",
+    "submission/run_log.txt"
+  ]
+}

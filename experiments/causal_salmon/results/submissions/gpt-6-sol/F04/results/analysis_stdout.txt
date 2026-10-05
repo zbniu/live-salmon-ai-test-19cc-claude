@@ -1,0 +1,61 @@
+{
+  "data": {
+    "rows": 2000,
+    "columns": [
+      "x",
+      "y",
+      "z"
+    ],
+    "missing_cells": 0,
+    "n_treated": 600,
+    "n_control": 1400,
+    "baseline_mean_treated": 59.853372944047294,
+    "baseline_mean_control": 60.275083251017264,
+    "baseline_difference": -0.42171030696997036,
+    "baseline_sd_treated": 8.543402170849676,
+    "baseline_sd_control": 8.655305940936309,
+    "baseline_range": [
+      45.01126059310072,
+      74.98362132863984
+    ],
+    "change_range": [
+      -0.3978348033512029,
+      22.873419286748927
+    ],
+    "followup_outside_0_100": 0
+  },
+  "primary_unadjusted": {
+    "mean_change_treated": 11.104341164664351,
+    "mean_change_control": 9.994118317005503,
+    "sd_change_treated": 4.524212941115868,
+    "sd_change_control": 4.239446076097403,
+    "difference_points": 1.1102228476588483,
+    "standard_error": 0.21668400750331995,
+    "welch_df": 1069.7907948104562,
+    "ci95": [
+      0.6850489632372747,
+      1.5353967320804218
+    ],
+    "two_sided_p": 3.5526908581569267e-07
+  },
+  "ancova_y": {
+    "x_coefficient": 1.2191398276808236,
+    "hc2_se": 0.18417877273814048,
+    "ci95": [
+      0.8581560663972807,
+      1.5801235889643666
+    ],
+    "p": 3.6083382051408145e-11,
+    "y_coefficient": 0.2582744083362559
+  },
+  "linear_interaction": {
+    "x_at_overall_mean_y": 1.2257157656113267,
+    "hc2_se": 0.18414169062713867,
+    "ci95": [
+      0.864804683929818,
+      1.5866268472928353
+    ],
+    "x_y_interaction": 0.03844218108962914,
+    "interaction_p": 0.0753133169962044
+  }
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/20a6663c35eb/submission/code/01_explore.py", line 7, in <module>
+    import statsmodels.api as sm
+ModuleNotFoundError: No module named 'statsmodels'

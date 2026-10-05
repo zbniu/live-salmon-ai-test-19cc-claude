@@ -1,0 +1,30 @@
+======================================================================
+BASIC COMPARISON OF SCORE GAINS BY TREATMENT GROUP
+======================================================================
+
+Tutoring attended (n=600):
+  Mean score gain (z): 14.1043
+  Std dev: 3.9063
+  Min: 2.3821, Max: 23.6654
+
+No tutoring (n=1400):
+  Mean score gain (z): 8.6408
+  Std dev: 3.7584
+  Min: -0.9979, Max: 18.8787
+
+Naive difference in means (treated - control): 5.4635
+T-test: t = 29.4397, p-value = 0.000000
+
+======================================================================
+CONFOUNDING DUE TO SELECTION ON START-OF-TERM SCORES
+======================================================================
+
+Start-of-term scores (y):
+  Tutoring: mean = 66.0682, std = 5.2206
+  No tutoring: mean = 57.3495, std = 8.4107
+  Difference: 8.7187
+  T-test: t = 23.5221, p-value = 3.349913e-108
+
+Correlation between y and z (overall): 0.5399
+Correlation between y and z (tutoring): 0.3497
+Correlation between y and z (no tutoring): 0.4046

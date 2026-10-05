@@ -1,0 +1,48 @@
+{
+  "identity": {
+    "protocol_sha256": "f85fedf447c734d9d5e7a2cb630284fe18c7091c5cf653610adbc43ec8e7144c",
+    "code": {
+      "__init__.py": "b0d365f17035c06216fe923a1b8b286d48fee4aba7cf5f1ea8d5667ca71c6a53",
+      "calibration/__init__.py": "fd577afc1674b04980ab8d658ea0217950ee172e63a5c2848e7018fd152a0766",
+      "calibration/isolation.py": "c114de8fda24d18a2d5ebdd8ca4180c2d950df40a08e3ddfd938ee3714cedf5d",
+      "calibration/public_reference.py": "bf2b2dcbb78d52773d12c03e467c7eefef6be2bebd18ad6650a99644c64d0ba0",
+      "calibration/quality.py": "0848bf828359c48e31fbd2d39ee99e8032700344f42c6602e95e0211ccbb4c39",
+      "calibration/run.py": "88509bbe80f8c690505790b6e254e212b4648bd82142944a453f36394376348e",
+      "calibration/statistics.py": "8b92512dad136eff9295221c920fd40221657ed502a9066f34cb631cd690a51b",
+      "calibration/storage.py": "3d7954e43c129de24bb0a9f77fae5ebd05491f74329d259cd345aea14456d736",
+      "calibration/summary.py": "0f64a99e5fa4766c1e5e0332110ebb1941e575b135927173edd0a67740b8a56e",
+      "data/__init__.py": "4e2f8a745ff6c110b010a1eab735e23b6ccb5c75b372f876648ff93430eeadc0",
+      "data/generator.py": "3af06caa42942b747feac97ba4e9ded9d3357a43609086a80fc308152231380c",
+      "data/materials.py": "f0b452306e49716194bef2462cbf0039b89b09a0f4a3b00bf8309b7a8547789d",
+      "evaluation/__init__.py": "b8c82fc39fda9996539883046350799966b46a25bd51a758cc142b2ee04cf10c",
+      "evaluation/extract.py": "37c85fbd58005e96ed2c5c422209219236475b38d366328276a580c8285cd5d8",
+      "reporting/__init__.py": "ed9ef9e039d38a954c4ad4d13ebf9ccbfff776ed11cced211d5f41a66ec19178",
+      "reporting/calibration.py": "aa3a5500e78a20c6c34bc4cf8f5fef9d5c0e392ea5e8ce198ce1ac3f843b2953",
+      "reporting/compare.py": "e09dda17bef9b3cd7ab6b396ac13960ab8364000c765169d74b1f273246a1598"
+    },
+    "inputs": {
+      "configs/calibration_candidates.json": "e6ffc2686a808b42c992626f896f7ea868f5fefad6b8c33deee5686132011373",
+      "configs/seeds.json": "e364cfa3b3e4cc115af8a6ada16f3d4fc52489a5cd16634933834f3367fe37ca",
+      "docs/VERIFICATION_CONTRACT.md": "7e211a093ed02d6a849a3ceb14145ca9979b99badb93df620f5d4dd5feab4e14",
+      "pyproject.toml": "48a85705b4704ca7d18695e89d3aaf7703db505cc7b2108c3577ae4be02081b4",
+      "uv.lock": "01e13f7ff7e532a4eb267c6827fee0fb431b794560856ec755e5ee6963bae21f"
+    },
+    "environment": {
+      "python": "3.12.13",
+      "numpy": "2.5.3",
+      "platform": "macOS-26.6.2-arm64-arm-64bit"
+    },
+    "numerical_threads": 1
+  },
+  "selftests_passed": true,
+  "selftest_count": 94,
+  "test_output_sha256": "c6374fdba2c4cb1990cef08aebbfcf5464c8aff68dc0e988877658d86c80e66e",
+  "tests": {
+    "test_data_generation.py": "5350f5c300e10771197eac87ed21b06f3636008ac0d802ad0e508b21c955ad89",
+    "test_failure_and_comparison.py": "2a6b7fb11fbc43601e0aba8a05fb8d9fba3c51ac18bbe8db67bfc38790b7a02c",
+    "test_final_data_audit.py": "5ed590269191900170a976dc18ca4061fad80c66d623d075073d5b5a8d6066cc",
+    "test_final_data_batch.py": "810ab99e0000a46e30f9ffb53205f9a9564c52710755f9f45f3cdc992a0dd58f",
+    "test_pipeline.py": "f5539b3980a4dc7dd7045a708fdeae9df1a1c0524d0e0dbee123a4e1a348d0bf",
+    "test_protocol.py": "09700ddf6454521ead0dc7301964c846f2d99193392e7c44b61dc85a4f6ad449"
+  }
+}

@@ -1,0 +1,152 @@
+======================================================================
+DATA OVERVIEW
+======================================================================
+
+Total number of students: 2000
+Number who attended tutoring (x=1): 600
+Number who did NOT attend (x=0): 1400
+
+First few rows of data:
+   x          y          z
+0  1  59.128121   8.462545
+1  0  50.979489   7.849339
+2  0  55.594731  12.857334
+3  0  57.248510  13.636845
+4  1  64.517249  19.292408
+5  0  52.745873  10.640826
+6  0  57.284790  15.175602
+7  1  66.877732  15.648838
+8  0  62.361102   9.739875
+9  0  74.191376  16.162829
+
+Data summary statistics:
+                 x            y            z
+count  2000.000000  2000.000000  2000.000000
+mean      0.300000    59.926375    10.480892
+std       0.458372     8.675509     4.310411
+min       0.000000    45.007034    -1.792249
+25%       0.000000    52.465353     7.364445
+50%       0.000000    59.806094    10.575535
+75%       1.000000    67.457450    13.465846
+max       1.000000    74.991459    23.193163
+
+======================================================================
+DESCRIPTIVE STATISTICS BY GROUP
+======================================================================
+
+STUDENTS WHO ATTENDED TUTORING (x=1): n=600
+  Start-of-term score (y):
+    Mean: 67.0726
+    SD:   4.9199
+    Min:  58.2128
+    Max:  74.9716
+
+  Score gain (z):
+    Mean: 13.0189
+    SD:   3.7848
+    Min:  2.8386
+    Max:  23.1932
+
+
+STUDENTS WHO DID NOT ATTEND (x=0): n=1400
+  Start-of-term score (y):
+    Mean: 56.8637
+    SD:   8.1173
+    Min:  45.0070
+    Max:  74.9915
+
+  Score gain (z):
+    Mean: 9.3932
+    SD:   4.0581
+    Min:  -1.7922
+    Max:  21.7340
+
+
+======================================================================
+SIMPLE DIFFERENCE IN SCORE GAINS (UNADJUSTED)
+======================================================================
+
+Mean score gain (attended): 13.0189
+Mean score gain (not attended): 9.3932
+Difference (attended - not attended): 3.6257
+
+Independent samples t-test:
+  t-statistic: 18.6785
+  p-value: 0.000000
+
+
+======================================================================
+CONFOUNDING: START-OF-TERM SCORE DIFFERS BETWEEN GROUPS
+======================================================================
+
+Mean start-of-term score (attended): 67.0726
+Mean start-of-term score (not attended): 56.8637
+Difference: 10.2090
+
+Overall correlation between start-of-term score (y) and gain (z): 0.5528
+Note: Since students with higher start-of-term scores were more likely
+to attend tutoring, and there is a correlation between y and z,
+there may be confounding. We need to adjust for y.
+
+
+======================================================================
+REGRESSION ANALYSIS: ADJUSTED FOR START-OF-TERM SCORE
+======================================================================
+
+Model 1: Score gain ~ Attendance only
+z = 9.3932 + 3.6257 * x
+
+Interpretation:
+  Intercept (baseline gain for x=0): 9.3932
+  Attendance effect (x=1): 3.6257
+  Standard error of attendance effect: 0.1941
+  t-statistic: 18.6785
+  p-value: 0.000000
+
+
+Model 2: Score gain ~ Attendance + Start-of-term score
+z = -4.3480 + 1.1587 * x + 0.2417 * y
+
+Interpretation:
+  Intercept: -4.3480
+  Attendance effect (adjusted for y): 1.1587
+  Standard error of attendance effect: 0.2066
+  t-statistic: 5.6080
+  p-value: 0.000000
+
+  Start-of-term score effect: 0.2417
+  Standard error: 0.0109
+
+
+Model Comparison:
+Model 1 (x only): RSS = 31619.40, R² = 0.148659
+Model 2 (x + y): RSS = 25389.78, R² = 0.316390
+
+
+======================================================================
+SUMMARY AND ANSWER TO RESEARCH QUESTION
+======================================================================
+
+Research question: Did attending the tutoring class increase score gain?
+If so, by how much?
+
+Key findings:
+1. Unadjusted difference in mean gains: 3.6257 points
+   (Students who attended gained 3.6257 points more on average)
+   p-value: 0.000000
+
+2. Adjusted difference (accounting for start-of-term score):
+   1.1587 points
+   p-value: 0.000000
+
+3. The groups differ in start-of-term scores by 10.2090 points,
+   suggesting potential confounding in the selection process.
+
+4. The relationship between start-of-term score and gain is:
+   0.2417 points of gain per point of start-of-term score
+
+======================================================================
+CONCLUSION
+======================================================================
+
+YES: Attending the tutoring class increased score gains by approximately 1.1587 points (statistically significant).

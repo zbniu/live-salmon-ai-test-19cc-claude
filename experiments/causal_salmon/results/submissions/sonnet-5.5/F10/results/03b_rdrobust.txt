@@ -1,0 +1,30 @@
+Call: rdrobust
+
+Fuzzy RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  1
+Polynomial Order Bias (q):                  2
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           793       1207
+Number of Unique Obs.            793       1207
+Number of Effective Obs.         255        274
+Bandwidth Estimation           3.801      3.801
+Bandwidth Bias                 5.516      5.516
+rho (h/b)                      0.689      0.689
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional      -0.531    1.781   -0.298   7.654e-01    [-4.022, 2.959]
+Robust                 -        -   -0.236   8.132e-01    [-4.711, 3.697]
+
+First-Stage Estimates.
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional       0.404    0.062    6.476   9.408e-11     [0.282, 0.526]
+Robust                 -        -    5.314   1.074e-07     [0.255, 0.552]

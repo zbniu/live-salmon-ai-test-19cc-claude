@@ -1,0 +1,17 @@
+{
+  "naive_difference": 3.4488763319610527,
+  "naive_t_stat": 17.655518244390546,
+  "naive_p_value": 6.091460328527982e-65,
+  "simple_linear_x_coeff": 3.448876331961055,
+  "adjusted_linear_x_coeff": 1.1113363137889127,
+  "adjusted_linear_y_coeff": 0.2431613959857672,
+  "stratified_simple_avg": NaN,
+  "stratified_weighted_avg": NaN,
+  "control_mean_z": 9.37683443940425,
+  "treatment_mean_z": 12.825710771365303,
+  "control_mean_y": 57.22504431669848,
+  "treatment_mean_y": 66.8381657116298,
+  "correlation_y_z": 0.547356190964074,
+  "n_control": 1400,
+  "n_treatment": 600
+}

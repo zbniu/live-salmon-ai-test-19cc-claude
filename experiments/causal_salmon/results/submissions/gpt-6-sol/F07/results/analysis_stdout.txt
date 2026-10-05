@@ -1,0 +1,38 @@
+{
+  "question_estimand": "Average change caused by Q among the 600 units that received Q (ATT), in points",
+  "primary_estimate": 1.1800934507882868,
+  "primary_method": "Mean treated z minus predicted untreated z at each treated y; cubic B-spline regression of z on y using 1,400 controls, df=5",
+  "predicted_untreated_change_for_treated": 11.645617320577017,
+  "observed_treated_change": 12.825710771365303,
+  "bootstrap_standard_error": 0.21248616070318707,
+  "bootstrap_percentile_95_interval": [
+    0.7597916140597722,
+    1.6013481363023485
+  ],
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261004,
+  "unadjusted_treated_minus_control": 3.4488763319610527,
+  "alternative_estimates": {
+    "control_spline_df_4": 1.1920387238057468,
+    "control_spline_df_6": 1.2190795087701958,
+    "control_spline_df_8": 1.2112640515051842,
+    "control_polynomial_degree_1": 1.1686533997494677,
+    "control_polynomial_degree_2": 1.205400668974335,
+    "control_polynomial_degree_3": 1.192038723805745,
+    "five_nearest_controls": 1.0860857649239768
+  },
+  "overlap": {
+    "control_count_within_treated_y_range": 575,
+    "treated_y_range": [
+      57.35599040912017,
+      74.9756668281861
+    ],
+    "control_y_range": [
+      45.00531537876745,
+      74.99632876522726
+    ],
+    "nearest_control_distance_median": 0.010035839630880616,
+    "nearest_control_distance_95th_percentile": 0.04688013029591357,
+    "nearest_control_distance_max": 0.11637819441104114
+  }
+}

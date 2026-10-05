@@ -1,0 +1,6 @@
+Execution record (in order). Data: /mnt/user-data/uploads/data.csv (2000 rows)
+1. First inspection (inline python, pandas describe/groupby; not saved as a script, output only seen in tool result): 600 treated (x=1), 1400 untreated; treated y in [56.99,75], untreated y in [45,75].
+2. code/explore.py -> results/explore_output.txt : cutoff = min treated y = 56.9946; 0 treated below cutoff; 607 untreated above cutoff; binned treated shares / z means.
+3. code/rd_failed_statsmodels.py (originally rd.py) -> FAILED: ModuleNotFoundError: statsmodels. No output produced. (File kept for transparency.)
+4. code/rd2.py (numpy-only reimplementation) -> results/rd_output.txt, results/fuzzy_rd.csv : fuzzy RD table, naive/OLS comparisons, density counts, treated shares above cutoff.
+Note: the console output of step 2 and step 4 was piped through tee into the results files. Step 1 has no saved record.

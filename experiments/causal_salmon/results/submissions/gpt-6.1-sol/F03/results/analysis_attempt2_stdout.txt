@@ -1,0 +1,82 @@
+ALL 2000 ROWS ANALYZED; validation passed
+      n     y_mean      y_sd     z_mean      z_sd     z_min      z_max
+x                                                                     
+0  1400  60.275083  8.655306   9.994118  4.239446 -0.397835  21.927346
+1   600  59.853373  8.543402  11.104341  4.524213 -0.187897  22.873419
+
+PRIMARY RESULT
+{
+  "estimate": 1.1102228476588483,
+  "se": 0.21668400750331995,
+  "df": 1069.7907948104562,
+  "ci95": [
+    0.6850489632372747,
+    1.5353967320804218
+  ],
+  "p_two_sided": 3.5526908581569267e-07,
+  "method": "Unadjusted difference in mean gains, Welch t interval/test; design-based Neyman SE"
+}
+
+ADJUSTMENT SENSITIVITY
+[
+  {
+    "degree": 1,
+    "contrasts": {
+      "all_students": {
+        "estimate": 1.225715765611327,
+        "se_hc2": 0.18414169062713867,
+        "ci95_normal": [
+          0.8648046839298182,
+          1.5866268472928355
+        ]
+      },
+      "attendees": {
+        "estimate": 1.2143677408197946,
+        "se_hc2": 0.18392998571073443,
+        "ci95_normal": [
+          0.8538715931497883,
+          1.574863888489801
+        ]
+      }
+    },
+    "r_squared": 0.27611127719650475,
+    "note": "Attendee-standardized contrast uses observed attendee y distribution; conditional regression interval."
+  },
+  {
+    "degree": 2,
+    "contrasts": {
+      "all_students": {
+        "estimate": 1.2294365048283031,
+        "se_hc2": 0.18423297830807098,
+        "ci95_normal": [
+          0.8683465025799351,
+          1.5905265070766712
+        ]
+      },
+      "attendees": {
+        "estimate": 1.2141505667959205,
+        "se_hc2": 0.1839636154752849,
+        "ci95_normal": [
+          0.8535885059985868,
+          1.5747126275932541
+        ]
+      }
+    },
+    "r_squared": 0.27656850434335023,
+    "note": "Attendee-standardized contrast uses observed attendee y distribution; conditional regression interval."
+  }
+]
+
+DESCRIPTIVE BASELINE QUINTILES
+                       n     y_mean     z_mean      z_sd
+baseline_quintile x                                     
+1                 0  279  48.179729   7.037958  3.542370
+                  1  121  48.106650   7.681613  3.781370
+2                 0  262  54.093629   8.348168  3.782171
+                  1  138  54.543838   9.865592  3.851000
+3                 0  296  60.214217   9.798692  3.615090
+                  1  104  59.981135  10.993388  3.653346
+4                 0  275  66.105231  11.921513  3.664097
+                  1  125  66.197985  12.491295  3.766901
+5                 0  288  72.111439  12.715717  3.767672
+                  1  112  71.886458  14.883515  4.146186

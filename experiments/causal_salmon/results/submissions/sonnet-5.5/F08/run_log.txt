@@ -1,0 +1,6 @@
+Execution record (in order). Data read from /mnt/user-data/uploads/data.csv.
+1. head/describe/crosstab (inline shell python, code not saved as a file): 2000 rows, 600 treated, min y among treated=57.356, 577 untreated with y>=cutoff. Output only shown in session, not saved to results/.
+2. code/explore.py -> results/explore_output.txt (binned shares and means; naive diff 3.449).
+3. code/analysis.py first run: FAILED, ModuleNotFoundError (statsmodels). No output produced.
+4. pip install statsmodels scikit-learn; code/analysis.py rerun (same code) -> results/analysis_output.txt, results/estimates.csv.
+Note: the first inline exploration in step 1 has no saved code file; its numbers are reproduced by explore.py/analysis.py.

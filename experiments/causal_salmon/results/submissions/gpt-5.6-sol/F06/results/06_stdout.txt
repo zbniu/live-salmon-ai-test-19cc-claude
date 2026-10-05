@@ -1,0 +1,1 @@
+Created submission.zip; read back final_report.md (4931 bytes); archive includes report, executed code, actual results, inputs, and run_log.txt. CRC check passed. Added this validation record and completed run log, then rebuilt the final archive.

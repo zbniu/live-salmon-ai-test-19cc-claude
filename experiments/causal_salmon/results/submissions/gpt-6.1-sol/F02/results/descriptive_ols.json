@@ -1,0 +1,9 @@
+{
+  "formula": "z ~ 1 + x + (y - mean(y))",
+  "n": 2000,
+  "intercept": 9.22653816896958,
+  "x_coefficient": 3.7131755674932965,
+  "y_coefficient": 0.19182873213027074,
+  "x_HC3_se": 0.19368649006378597,
+  "interpretation": "Descriptive conditional association, not an identified causal effect."
+}

@@ -1,0 +1,43 @@
+Execution record
+Initial inspection (before this log existed): exec_command read the complete supplied study description, listed the two supplied filenames, and displayed the CSV header and first five rows. Exit status 0; displayed in the session, not captured to a separate file. No statistical analysis was run in that inspection.
+Tool guidance and runtime-path inspection were read before analysis. Some long guidance output was truncated in the session display; no analysis output was missing at that point.
+Subsequent executable analysis commands are recorded below with actual captured output and exit status. Input files are not modified. No internet research is used.
+
+START 2026-10-04T01:37:15.275522+00:00 01_explore
+Command: ['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', 'submission/code/explore.py']
+Capture: results/01_explore_execution.txt
+SHA256 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3: fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7
+SHA256 submission/code/explore.py: f9090ab1022df8859d5a35fa4aaad1ae8760a627254b8994734a421726c0077d
+END 2026-10-04T01:37:16.956238+00:00 exit=1
+
+START 2026-10-04T01:37:49.208978+00:00 02_explore
+Command: ['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', 'submission/code/explore.py']
+Capture: results/02_explore_execution.txt
+SHA256 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3: fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7
+SHA256 submission/code/explore.py: bb421e9e4e912b471c2defced20a44015baf7887e67adf81b86bbbe962d0162a
+END 2026-10-04T01:37:50.734253+00:00 exit=0
+
+START 2026-10-04T01:39:10.844439+00:00 03_final_analysis
+Command: ['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', 'submission/code/final_analysis.py']
+Capture: results/03_final_analysis_execution.txt
+SHA256 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3: fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7
+SHA256 submission/code/final_analysis.py: 65b90360a46d45505181df05631345f7a3409fe2f6a3c2d08f453350e278eda0
+END 2026-10-04T01:39:12.294355+00:00 exit=0
+
+START 2026-10-04T01:40:25.629341+00:00 04_write_report
+Command: ['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', 'submission/code/write_report.py']
+Capture: results/04_write_report_execution.txt
+SHA256 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3: fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7
+SHA256 submission/code/write_report.py: c11504771f41b195ba655af6da944dca84a4610d9feb022cf0a6028d4a5910ca
+END 2026-10-04T01:40:25.915586+00:00 exit=0
+
+START 2026-10-04T01:41:21.570510+00:00 05_package_delivery
+Command: Python submission/code/package_delivery.py
+Outputs: submission/inputs/, submission/results/delivery_verification.json, submission.zip
+Report read back: nonempty UTF-8, intended answer and adopted numbers confirmed.
+Initial archive inspection: CRC check passed; report, code, results, execution log all present.
+Final archive rebuild includes completed log and actual delivery_verification.json. Final inspection follows in session output.
+END 2026-10-04T01:41:21.580479+00:00 05_package_delivery exit=0 (pre-final archive inspection)
+
+Post-packaging persistent-save attempt: the Library upload helper was executed for final_report.md and submission.zip. It exited 1 before upload because it could not read Codex authentication. The actual error was displayed in the session; it was not captured to a separate output file. No statistical analysis was run or changed. Local downloadable files remain present.
+06_finalize_archive: executed submission/code/finalize_archive.py to include this failure record and finalize_archive.py in the archive, then read back the report and inspect the final archive. No analyses repeated. Final verification output is displayed in session, not separately captured.

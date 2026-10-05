@@ -1,0 +1,3276 @@
+{
+  "scope": "complete_screened_candidate_pool",
+  "case_pairs_checked": 60,
+  "reference_pairs_checked": 120,
+  "bootstrap_pairs_checked": 4000,
+  "independent_comparison_passed": true,
+  "records": [
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730001,
+      "csv_sha256": "cc1a14c752e5ddaba04418c7be3597c0964e7a254c6e19cb485d2d0268b670fc",
+      "T": 0.9996353931805724,
+      "N": 0.8936714303764202,
+      "E": 0.8936714303764202,
+      "se": 0.21185901998311354,
+      "ci": [
+        0.47842775120951764,
+        1.3089151095433227
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730002,
+      "csv_sha256": "e175bc76424a8845f61a1a5b0eadfe1563cdeef3b8b374fb131f598bcbc89255",
+      "T": 1.005336332959139,
+      "N": 1.2532738908308971,
+      "E": 1.2532738908308971,
+      "se": 0.2131261889733195,
+      "ci": [
+        0.8355465604431909,
+        1.6710012212186034
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730003,
+      "csv_sha256": "e580d10c6f4fd669e2a21599d6f1bba63343fcc0403284e2455bb6e1fca1f56f",
+      "T": 0.9900343212314813,
+      "N": 1.1025652851028074,
+      "E": 1.1025652851028074,
+      "se": 0.21580396905159582,
+      "ci": [
+        0.6795895057616796,
+        1.5255410644439351
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730004,
+      "csv_sha256": "1a4c6988f48c6168052fa0a26061d24cce6177e4b122ec08212fb8fa57c02aad",
+      "T": 0.998138143018876,
+      "N": 0.9369979498408032,
+      "E": 0.9369979498408032,
+      "se": 0.20826093605589513,
+      "ci": [
+        0.5288065151712488,
+        1.3451893845103577
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730005,
+      "csv_sha256": "c5b1ef4257395a19444e3b6f155bedd2aa7bf04e892bf2710683664609a3d286",
+      "T": 1.0186065410762801,
+      "N": 1.3453592987142322,
+      "E": 1.3453592987142322,
+      "se": 0.2056328649526177,
+      "ci": [
+        0.9423188834071015,
+        1.748399714021363
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730006,
+      "csv_sha256": "92934b2b60fc9c4fc75ec8ff7c789cec6e8f4549e7e47d7223628ff52dd9b615",
+      "T": 1.0112941411819987,
+      "N": 1.1792163295653673,
+      "E": 1.1792163295653673,
+      "se": 0.22019567466183018,
+      "ci": [
+        0.7476328072281802,
+        1.6107998519025544
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730007,
+      "csv_sha256": "7740e8825e4a6c58afbe12e36a94dbd6a90d8be60d23144c7ddc12c4065f1ca4",
+      "T": 0.985302620483261,
+      "N": 1.1934255228941577,
+      "E": 1.1934255228941577,
+      "se": 0.21713346134188993,
+      "ci": [
+        0.7678439386640534,
+        1.619007107124262
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730008,
+      "csv_sha256": "200fe4b6cfcb22e199b096a9b5886e466c35c96449c98578478deb6de626491c",
+      "T": 1.0177704319453509,
+      "N": 1.2012206232998537,
+      "E": 1.2012206232998537,
+      "se": 0.2133619475835773,
+      "ci": [
+        0.7830312060360423,
+        1.619410040563665
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730009,
+      "csv_sha256": "43ae616efdd86eccf70de3fd5216f0aeeb996eee04ed25db11b4b57cf947a06b",
+      "T": 1.0211730836384818,
+      "N": 1.4520959409740453,
+      "E": 1.4520959409740453,
+      "se": 0.21900640213103512,
+      "ci": [
+        1.0228433927972165,
+        1.881348489150874
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": false,
+          "reasons": [
+            "interval_misses_truth"
+          ]
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": false,
+      "failure_reasons": {
+        "GEN-4": [
+          "interval_misses_truth"
+        ]
+      },
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730010,
+      "csv_sha256": "7b58a01ec6e5ea43d6efe1d7a68a70f103bd84a36331a2de29b91efd25e088e5",
+      "T": 1.0200182412120284,
+      "N": 1.6892811198396256,
+      "E": 1.6892811198396256,
+      "se": 0.21258495514949785,
+      "ci": [
+        1.2726146077466098,
+        2.1059476319326413
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": false,
+          "reasons": [
+            "interval_misses_truth"
+          ]
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": false,
+      "failure_reasons": {
+        "GEN-4": [
+          "interval_misses_truth"
+        ]
+      },
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730001,
+      "csv_sha256": "7b5f44fa94b9b6bee39adf054fa0b488aeb67065269da2b1d6cda3d920e5cd70",
+      "T": 1.1763321672852758,
+      "N": 3.532769998785426,
+      "E": 1.2440040107530832,
+      "se": 0.2139077666094748,
+      "ci": [
+        0.8247447881985126,
+        1.6632632333076538
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730002,
+      "csv_sha256": "ac2357287538fddd0171aa4edc402cadfd39c66bc13b82dcc7ff48b77ae9d867",
+      "T": 1.178399972450207,
+      "N": 3.74058691246257,
+      "E": 1.476869778959132,
+      "se": 0.21351896609702725,
+      "ci": [
+        1.0583726054089586,
+        1.8953669525093055
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730003,
+      "csv_sha256": "d3f87a5042f189bf0d9b73b278ab56f6ab5bec45bdc07f9c828b4da3642b3ac0",
+      "T": 1.157181916135939,
+      "N": 3.519524753851412,
+      "E": 1.058224130767812,
+      "se": 0.21259042950945795,
+      "ci": [
+        0.6415468889292744,
+        1.4749013726063496
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730004,
+      "csv_sha256": "c8d25e5aa272565300a0fa17ac5038027f95e848d03e2a8adc29a26b03d264fa",
+      "T": 1.188317768484064,
+      "N": 3.908501865643757,
+      "E": 1.2497489138344788,
+      "se": 0.21447807268004507,
+      "ci": [
+        0.8293718913815905,
+        1.6701259362873673
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730005,
+      "csv_sha256": "4774c5afc0869e576a00a13cf1b8a0de0c075db0c2953dec7a18068b8f453995",
+      "T": 1.1795152111590983,
+      "N": 3.7562041922956055,
+      "E": 1.3523922575547096,
+      "se": 0.2141634058827912,
+      "ci": [
+        0.9326319820244389,
+        1.7721525330849803
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730006,
+      "csv_sha256": "bbeb3c24a17d2b933867dfa3f3939d455eda3e72dabdc821a14791e2ee2e645f",
+      "T": 1.1688428027072126,
+      "N": 3.7518101861932784,
+      "E": 1.1106881765804304,
+      "se": 0.22684093902400376,
+      "ci": [
+        0.666079936093383,
+        1.5552964170674777
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730007,
+      "csv_sha256": "079e357c93ee794cfd93b493be957b1a4658dfb1e3a70ee98070b914d0754af1",
+      "T": 1.170928279190307,
+      "N": 3.815039893993159,
+      "E": 1.3702145187027515,
+      "se": 0.2134476796777321,
+      "ci": [
+        0.9518570665343966,
+        1.7885719708711063
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730008,
+      "csv_sha256": "7cea70fedb94d8ad1615cbb41d8a2afda2b00677970cd075923a7371249c45ab",
+      "T": 1.1681766486241962,
+      "N": 3.6554457714159927,
+      "E": 1.1591397420530856,
+      "se": 0.21628318538726218,
+      "ci": [
+        0.7352246986940517,
+        1.5830547854121195
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730009,
+      "csv_sha256": "8ef77cf0f07da26a57eaf6215e74df199ac77ba5ad4e00d3988b0a0f67d6052e",
+      "T": 1.176815589017695,
+      "N": 3.8088576505018263,
+      "E": 1.1550163742625983,
+      "se": 0.21838440413623741,
+      "ci": [
+        0.7269829421555729,
+        1.5830498063696237
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730010,
+      "csv_sha256": "c27be72d454d0b0e85c9d59e112fa13a261ba355763f6b7582ddc799355d7fe5",
+      "T": 1.2027475902621276,
+      "N": 4.361580673386474,
+      "E": 1.7193217117315651,
+      "se": 0.22235151282922194,
+      "ci": [
+        1.28351274658629,
+        2.15513067687684
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": false,
+          "reasons": [
+            "interval_misses_truth"
+          ]
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": false,
+      "failure_reasons": {
+        "GEN-4": [
+          "interval_misses_truth"
+        ]
+      },
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730001,
+      "csv_sha256": "07e61574e465f575e723f3284270f4e6f3c0a1af8c706e7d977efdccf9b3711d",
+      "T": 1.2910135967652068,
+      "N": 5.505513003344987,
+      "E": 3.7390341804883906,
+      "se": 0.19282926629748492,
+      "ci": [
+        3.36108881854532,
+        4.116979542431461
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730002,
+      "csv_sha256": "1360cb11c41b3f67803aa01fc2846e049b565381c6e75377396cadf810ec6d53",
+      "T": 1.2780627179885953,
+      "N": 5.077111318859712,
+      "E": 3.399849015680309,
+      "se": 0.19591193940995374,
+      "ci": [
+        3.0158616144368,
+        3.7838364169238186
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730003,
+      "csv_sha256": "1fbe9dcea1105b5ba8524c5c9282591e272d3eeae6859c1ce8641ddeeaf637df",
+      "T": 1.2735805993722717,
+      "N": 5.12912633797424,
+      "E": 3.539238958860928,
+      "se": 0.19302205412267368,
+      "ci": [
+        3.1609157327804875,
+        3.9175621849413687
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730004,
+      "csv_sha256": "76012847445a331677f69fc391fd4efa7a42eed81953b8451f97cf0c2fc86c40",
+      "T": 1.2874294875464467,
+      "N": 5.55905437415295,
+      "E": 3.842545568935587,
+      "se": 0.1943636995827099,
+      "ci": [
+        3.4615927177534758,
+        4.223498420117698
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730005,
+      "csv_sha256": "888961b7262e9322079f88dfe0884389175c31c269cf94a204f63f70b530c847",
+      "T": 1.2903524830470232,
+      "N": 5.372648785952361,
+      "E": 3.7636002020043455,
+      "se": 0.19280934113153736,
+      "ci": [
+        3.385693893386532,
+        4.1415065106221585
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730006,
+      "csv_sha256": "d71e4d98f4081bcf7b8ff5ece91b0b68173322646123294fe1fde441291637f5",
+      "T": 1.2785584974487154,
+      "N": 5.424709243356144,
+      "E": 3.7951667525757684,
+      "se": 0.19680082541220076,
+      "ci": [
+        3.409437134767855,
+        4.180896370383682
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730007,
+      "csv_sha256": "bec6d264bd929a874f107fb7fb508bf6be2a96478ae2e6bcb043c2cc98520bec",
+      "T": 1.2852107752734991,
+      "N": 5.629561106673965,
+      "E": 3.9841410881392,
+      "se": 0.18801062994662293,
+      "ci": [
+        3.6156402534438192,
+        4.352641922834581
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730008,
+      "csv_sha256": "430b4b248f32cc72dcbe436b66519c68dafee8be9c2b233b65329a0921472385",
+      "T": 1.277599699134579,
+      "N": 5.246155937968728,
+      "E": 3.7295684699376723,
+      "se": 0.19428271158914928,
+      "ci": [
+        3.3487743552229396,
+        4.110362584652405
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730009,
+      "csv_sha256": "4879e138263293cb0adbd9df3eedc8938a37a05beb658d3848cef092a5d02147",
+      "T": 1.2728758653371557,
+      "N": 5.239081729814849,
+      "E": 3.704052873860117,
+      "se": 0.18807870766841225,
+      "ci": [
+        3.335418606830029,
+        4.0726871408902054
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730010,
+      "csv_sha256": "5ebff5b1348d6ec49475962f7d1809a185e01d936c021d55d6e541cba412b070",
+      "T": 1.2918894311945215,
+      "N": 5.138287564475281,
+      "E": 3.564236366933237,
+      "se": 0.19809370427775475,
+      "ci": [
+        3.1759727065488375,
+        3.9525000273176363
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740001,
+      "csv_sha256": "d45479ba2c2d5eab15d418d1f5c0497a997fb1c84555e6d1ca26002bf3783179",
+      "T": 0.9752998647845864,
+      "N": 0.8477466423197875,
+      "E": 0.8477466423197875,
+      "se": 0.21416334949040722,
+      "ci": [
+        0.42798647731858935,
+        1.2675068073209856
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740002,
+      "csv_sha256": "a1b85358862fb41234877854f88710080f5c5d941ef69c38b6c9f88113bd79ae",
+      "T": 1.0010756538048584,
+      "N": 1.010918440215823,
+      "E": 1.010918440215823,
+      "se": 0.20837580572859257,
+      "ci": [
+        0.6025018609877817,
+        1.4193350194438645
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740003,
+      "csv_sha256": "f02545673c6a22068fa957bb2ceb59e111136e6988b77517d69e098c4963bb11",
+      "T": 0.989694673284806,
+      "N": 0.5536909946067166,
+      "E": 0.5536909946067166,
+      "se": 0.21583032065743105,
+      "ci": [
+        0.13066356611815172,
+        0.9767184230952815
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": false,
+          "reasons": [
+            "interval_misses_truth"
+          ]
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": false,
+      "failure_reasons": {
+        "GEN-4": [
+          "interval_misses_truth"
+        ]
+      },
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740004,
+      "csv_sha256": "33a7f0e7329c87840bd42c709d5a4346bacdc210e2f077daae6030d1f78edb37",
+      "T": 0.9977093897277558,
+      "N": 1.1102228476588465,
+      "E": 1.1102228476588465,
+      "se": 0.21668400750331995,
+      "ci": [
+        0.6855221929523394,
+        1.5349235023653536
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740005,
+      "csv_sha256": "b4e26d35afa292f15d6f167eea9dc21fe14709aedac0bc51b01cd823fb3b8390",
+      "T": 0.98473005173489,
+      "N": 1.0307403740667151,
+      "E": 1.0307403740667151,
+      "se": 0.20808832569302632,
+      "ci": [
+        0.6228872557083835,
+        1.4385934924250467
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740006,
+      "csv_sha256": "8bb5188192d26958d6d488ca745507178774e420db1a4acfdb18c4376b7ef1e6",
+      "T": 1.0132421336658968,
+      "N": 1.394549940564838,
+      "E": 1.394549940564838,
+      "se": 0.21868223552008192,
+      "ci": [
+        0.9659327589454775,
+        1.8231671221841985
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740007,
+      "csv_sha256": "9064afc03608dff7fc1262e30ff49ff446be2b1594f6f786174b89184fe01860",
+      "T": 0.9950064954100531,
+      "N": 0.8076029878847582,
+      "E": 0.8076029878847582,
+      "se": 0.21049998502507972,
+      "ci": [
+        0.3950230172356019,
+        1.2201829585339143
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740008,
+      "csv_sha256": "752a8c15f6728b0f12ec735d9acd67946c49be4a98336cc3aee33ac738fbfc0c",
+      "T": 0.9922036070281743,
+      "N": 0.7183926972020558,
+      "E": 0.7183926972020558,
+      "se": 0.21044361982260926,
+      "ci": [
+        0.30592320234974163,
+        1.13086219205437
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740009,
+      "csv_sha256": "5f0cda105e1646a915ae1f309afdf9c956e9ca3a98640a3fded3b7b50d89a012",
+      "T": 0.9827430166716665,
+      "N": 0.7994371602625989,
+      "E": 0.7994371602625989,
+      "se": 0.21537426137757212,
+      "ci": [
+        0.3773036079625576,
+        1.2215707125626403
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740010,
+      "csv_sha256": "133d0c7a9da33592b9adbc27d068a3fe7a070ac314648aa8c84588023e175fd3",
+      "T": 0.9840724051186842,
+      "N": 0.5690766473268862,
+      "E": 0.5690766473268862,
+      "se": 0.21370920452764566,
+      "ci": [
+        0.15020660645270073,
+        0.9879466882010717
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740001,
+      "csv_sha256": "f1219a585528bafde4983f58c0d4dd6c40d9816e37b579354890f48438788863",
+      "T": 1.176441980899886,
+      "N": 3.6257396604900087,
+      "E": 1.2005672446801154,
+      "se": 0.2107963668190473,
+      "ci": [
+        0.7874063657147827,
+        1.6137281236454482
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740002,
+      "csv_sha256": "d570a12afde75ae0eca57751d9dafc0d990e8b0bd6478461f8356e12e38b6fa8",
+      "T": 1.1706382621590012,
+      "N": 3.4488763319610527,
+      "E": 1.1686533997494342,
+      "se": 0.20651398258811088,
+      "ci": [
+        0.7638859938767368,
+        1.5734208056221315
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740003,
+      "csv_sha256": "186ca4a045e498c2d4b405f7bfddc4667c44e90e6a2d8399a9b74298ec964581",
+      "T": 1.1793401782854371,
+      "N": 3.7681960730621373,
+      "E": 1.3146434975857921,
+      "se": 0.2146959571397601,
+      "ci": [
+        0.8938394215918624,
+        1.735447573579722
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740004,
+      "csv_sha256": "31b97c199d79ea78ff1dc6a7601ed540e3e629807bded967df239e72e6148df3",
+      "T": 1.1690101710811092,
+      "N": 3.509322467611561,
+      "E": 1.0905681783791552,
+      "se": 0.20916972304010437,
+      "ci": [
+        0.6805955212205507,
+        1.5005408355377599
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740005,
+      "csv_sha256": "8ca13b44fff73264801a73c6f3f329b3c4e977b149427dfc252912ca8be5292c",
+      "T": 1.1965656051512956,
+      "N": 3.9006008533930263,
+      "E": 1.2803401249606163,
+      "se": 0.21639260732189458,
+      "ci": [
+        0.8562106146097029,
+        1.7044696353115296
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740006,
+      "csv_sha256": "f4a58dbfc657bd464ddd82b422b27464b0430c525dee8a4d9284dace89cb6264",
+      "T": 1.1819563645354592,
+      "N": 3.7393245941592728,
+      "E": 1.3746855449957616,
+      "se": 0.21132160529155197,
+      "ci": [
+        0.9604951986243198,
+        1.7888758913672034
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740007,
+      "csv_sha256": "7b16210bcc4341b6bf02be1e7ec3ff8f81fb0930f365d28e9f8f39a272b8ad7e",
+      "T": 1.1766095615237855,
+      "N": 3.7058590150470607,
+      "E": 1.1247132770534845,
+      "se": 0.21533251178636179,
+      "ci": [
+        0.7026615539522154,
+        1.5467650001547535
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740008,
+      "csv_sha256": "c3d9f5e22749d1ea0cba2b89a824f1a92ff8a327d5f09693825ef21895c095f2",
+      "T": 1.1536177168638975,
+      "N": 3.1966169620491485,
+      "E": 0.8025154217585297,
+      "se": 0.21320697450791687,
+      "ci": [
+        0.38462975172301267,
+        1.2204010917940469
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740009,
+      "csv_sha256": "ff185002f291093a13c7f99c25ae2109291daeec0bef18c84f0f7d89f947ffe6",
+      "T": 1.1744175825063585,
+      "N": 3.451423435953428,
+      "E": 0.93948210310617,
+      "se": 0.21399958290332957,
+      "ci": [
+        0.520042920615644,
+        1.358921285596696
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740010,
+      "csv_sha256": "4243ffca1eb68de904ff5c790d3e4004590f3f3768e8db2eab9cecec0f867581",
+      "T": 1.1723672518648347,
+      "N": 3.773785722241092,
+      "E": 1.0633910502635524,
+      "se": 0.22051109959736948,
+      "ci": [
+        0.6311892950527083,
+        1.4955928054743965
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740001,
+      "csv_sha256": "f0f8b9dbd2b7b80890467cf755a72278b3cfa12fb6149ab007a5af5666a911fd",
+      "T": 1.2767578000414241,
+      "N": 5.4635287289813,
+      "E": 3.88723868296894,
+      "se": 0.1960183608223092,
+      "ci": [
+        3.503042695757214,
+        4.271434670180666
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740002,
+      "csv_sha256": "657bcaa4717267578599fa8f56ec316c2a9738c1d7d7f952ca840ed4e8b98713",
+      "T": 1.2725384944049534,
+      "N": 5.074789187474263,
+      "E": 3.3984956944347213,
+      "se": 0.1960007904267003,
+      "ci": [
+        3.0143341451983887,
+        3.782657243671054
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740003,
+      "csv_sha256": "13215497ec4ae090399b28c80794abe593b564b5f36b54511ba5202533b3dbe1",
+      "T": 1.2692017228045818,
+      "N": 5.405097790854603,
+      "E": 3.708950271408884,
+      "se": 0.19667032950217894,
+      "ci": [
+        3.323476425584613,
+        4.094424117233155
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740004,
+      "csv_sha256": "5a10c1f9b6b1de3be62aa11f150eeddbb2c265e58f37d8760e02b4db01bbfa96",
+      "T": 1.294310586878668,
+      "N": 5.4121115246926585,
+      "E": 3.7974974172268947,
+      "se": 0.19013124650969415,
+      "ci": [
+        3.424840174067894,
+        4.170154660385895
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740005,
+      "csv_sha256": "0b88c008513efc1264bcc2862497c3547c5d4933ecb8bc946aed4fec5ce6f3cf",
+      "T": 1.294422361516896,
+      "N": 5.444476281193001,
+      "E": 3.7411785092091736,
+      "se": 0.19350293111911512,
+      "ci": [
+        3.361912764215708,
+        4.120444254202639
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740006,
+      "csv_sha256": "c7c1bf27447e9b2d1127f87f41812775366ceefa3e34d076990aaca70e5dec8c",
+      "T": 1.2771500159166627,
+      "N": 5.168094745644398,
+      "E": 3.7012056891917964,
+      "se": 0.19136041130501052,
+      "ci": [
+        3.3261392830339758,
+        4.076272095349617
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740007,
+      "csv_sha256": "d9c9932313734233e7ce3f7a9a6d4c38c82d92bf011dd3e050e5d707b9383c4e",
+      "T": 1.287531861945455,
+      "N": 5.321619932957189,
+      "E": 3.472570192152032,
+      "se": 0.18926472067938332,
+      "ci": [
+        3.1016113396204408,
+        3.8435290446836237
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740008,
+      "csv_sha256": "fd8d00e88efbd4a64e07ddb5f52456ea8017ac956103056d9bca12516dcd38ba",
+      "T": 1.3006789427293401,
+      "N": 5.670609389719761,
+      "E": 4.012206457244388,
+      "se": 0.19555592651202114,
+      "ci": [
+        3.6289168412808266,
+        4.3954960732079496
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740009,
+      "csv_sha256": "099ee1f8f5931ff497b4204a665eec44ef7280f65782d625bed4e5462b06f7b2",
+      "T": 1.2965313993565613,
+      "N": 5.422751133410669,
+      "E": 3.771751048142391,
+      "se": 0.19055370012382306,
+      "ci": [
+        3.398265795899698,
+        4.1452363003850845
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740010,
+      "csv_sha256": "3a9357634824ebcc2cb0705f7f15dde689fbff3e8c2d0b0bd499cc4df87a70ec",
+      "T": 1.277526166320793,
+      "N": 5.28716390763395,
+      "E": 3.610899424899412,
+      "se": 0.1905317664594858,
+      "ci": [
+        3.2374571626388198,
+        3.984341687160004
+      ],
+      "GEN": {
+        "GEN-1": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-2": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-3": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-4": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-5": {
+          "applicable": false,
+          "passed": null,
+          "reasons": []
+        },
+        "GEN-6": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        },
+        "GEN-7": {
+          "applicable": true,
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "quality_passed": true,
+      "failure_reasons": {},
+      "independent_comparison_passed": true
+    }
+  ],
+  "config_sha256": "f22e156981099489e260e0d178996c48b56f010085592ebb06b897b193f2657f",
+  "audit_program_sha256": "6df012e12ccd118298c47e75d5ac88855dbb39ef89934ab4b06bfca89c2d9df5",
+  "tested_model_calls": 0
+}

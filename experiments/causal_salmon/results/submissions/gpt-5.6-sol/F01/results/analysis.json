@@ -1,0 +1,109 @@
+{
+  "validation": {
+    "rows": 2000,
+    "columns": [
+      "x",
+      "y",
+      "z"
+    ],
+    "missing_or_nonfinite_values": 0,
+    "attendees": 600,
+    "nonattendees": 1400,
+    "all_observed_end_scores_in_0_100": true,
+    "global_end_score_min": 44.90691758809895,
+    "global_end_score_max": 96.97077194766119,
+    "distinct_y": 2000
+  },
+  "group_summary": [
+    {
+      "x": 0,
+      "n": 1400,
+      "y_mean": 56.88762955833698,
+      "y_sd": 8.423962667330363,
+      "y_min": 45.013647911746,
+      "y_max": 74.98826079709467,
+      "z_mean": 8.718961501961186,
+      "z_sd": 3.90263706099832,
+      "z_min": -1.2414122435142119,
+      "z_max": 20.012874614796388,
+      "end_score_mean": 65.60659106029817,
+      "end_score_sd": 10.653039724922849,
+      "end_score_min": 44.90691758809895,
+      "end_score_max": 93.68805403284429
+    },
+    {
+      "x": 1,
+      "n": 600,
+      "y_mean": 65.70759205598998,
+      "y_sd": 5.837891582304417,
+      "y_min": 55.59294297736875,
+      "y_max": 74.95540694433481,
+      "z_mean": 14.124059292815788,
+      "z_sd": 3.729429039250466,
+      "z_min": 1.641455044878322,
+      "z_max": 22.492897896501024,
+      "end_score_mean": 79.83165134880578,
+      "end_score_sd": 7.804245194086157,
+      "end_score_min": 58.69312317912097,
+      "end_score_max": 96.97077194766119
+    }
+  ],
+  "crude_gain_difference_points": 5.405097790854603,
+  "crude_baseline_difference_points": 8.819962497652995,
+  "descriptive_regressions": [
+    {
+      "model": "z ~ x + polynomial(y), degree 1",
+      "n": 2000,
+      "x_coefficient": 3.71317556749329,
+      "x_HC3_standard_error": 0.19368649006378608,
+      "x_normal_95_CI_low": 3.333550046968269,
+      "x_normal_95_CI_high": 4.0928010880183106,
+      "interpretation": "association only; not identified causal effect"
+    },
+    {
+      "model": "z ~ x + polynomial(y), degree 3",
+      "n": 2000,
+      "x_coefficient": 3.7248034814007167,
+      "x_HC3_standard_error": 0.19494210828605846,
+      "x_normal_95_CI_low": 3.3427169491600424,
+      "x_normal_95_CI_high": 4.106890013641391,
+      "interpretation": "association only; not identified causal effect"
+    }
+  ],
+  "score_support": {
+    "min_treated_y": 55.59294297736875,
+    "max_treated_y": 74.95540694433481,
+    "min_control_y": 45.013647911746,
+    "max_control_y": 74.98826079709467,
+    "controls_below_min_treated_y": 758,
+    "controls_at_or_above_min_treated_y": 642
+  },
+  "causal_ATT_point_identified": false,
+  "range_bounds_if_both_potential_end_scores_are_in_0_100": {
+    "lower_points": -20.168348651194222,
+    "upper_points": 79.83165134880578,
+    "note": "Identification bounds, not a confidence interval or point estimate."
+  },
+  "hypothetical_counterfactual_examples": {
+    "note": "Unobserved end scores for attendees only. Factual data and selection are unchanged.",
+    "zero_effect": {
+      "end0": "observed end1",
+      "ATT_points": 0
+    },
+    "positive_effect": {
+      "end0": "0.99 * observed end1",
+      "ATT_points": 0.7983165134880578
+    },
+    "negative_effect": {
+      "end0": "0.99 * observed end1 + 1",
+      "ATT_points": -0.20168348651194223
+    }
+  },
+  "provenance": {
+    "data_sha256": "13215497ec4ae090399b28c80794abe593b564b5f36b54511ba5202533b3dbe1",
+    "study_description_sha256": "195c2777e2e1193ab5890bcf9f8c261caaa07fbd383a2562e0cf90f79c50fa77",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

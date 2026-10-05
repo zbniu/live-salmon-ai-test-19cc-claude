@@ -1,0 +1,21 @@
+{
+  "estimand": "Mean Z(1)-Z(0) for the 600 actual attendees",
+  "estimator": "Unadjusted attendee minus nonattendee mean observed gain",
+  "effect": 0.8477466423197857,
+  "control_sample_variance": 16.925194281198042,
+  "randomization_error_se": 0.20074382088099274,
+  "approximate_randomization_ci95": [
+    0.4542959832740803,
+    1.2411973013654911
+  ],
+  "interpretation": "Approximate coverage over the random draw, targeting the attendees selected in each draw; not an exact interval and not an individual-effect interval.",
+  "sharp_null_test": {
+    "null": "Z_i(1)=Z_i(0) for every student",
+    "statistic": "absolute difference in means",
+    "seed": 20261004,
+    "repetitions": 99999,
+    "extreme_draws": 4,
+    "p_two_sided_plus_one": 5e-05,
+    "monte_carlo_se_approx": 2.2360120751015635e-05
+  }
+}

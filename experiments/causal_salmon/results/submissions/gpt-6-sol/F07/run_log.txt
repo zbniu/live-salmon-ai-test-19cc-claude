@@ -1,0 +1,8 @@
+Execution order (inputs: the two attached files only):
+1. python submission/code/explore.py > submission/results/exploration_stdout.txt
+   Exit 0. Wrote submission/results/exploration.json. Complete CSV: 2,000 records; no missing records or values.
+2. python submission/code/analyze.py > submission/results/analysis_stdout.txt
+   Failed: ModuleNotFoundError: No module named 'patsy' (stderr); analysis_stdout.txt was empty. No analysis.json was produced. The script was then edited to use scipy.interpolate.BSpline.
+3. python submission/code/analyze.py > submission/results/analysis_stdout.txt 2> submission/results/analysis_stderr.txt
+   Exit 0. Wrote submission/results/analysis.json; stdout saved; stderr empty. Used all 2,000 records, including all 600 recipients and 1,400 controls. 2,000 bootstrap replicates with seed 20261004.
+4. The report submission/final_report.md was written from the executed results. No records were omitted; no later analysis run replaced the earlier failed-run record.

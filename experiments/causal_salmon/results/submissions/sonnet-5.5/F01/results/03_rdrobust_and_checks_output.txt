@@ -1,0 +1,145 @@
+
+=== rdrobust fuzzy, p=1 ===
+Call: rdrobust
+
+Fuzzy RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  1
+Polynomial Order Bias (q):                  2
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           758       1242
+Number of Unique Obs.            758       1242
+Number of Effective Obs.         206        204
+Bandwidth Estimation           2.846      2.846
+Bandwidth Bias                 4.624      4.624
+rho (h/b)                      0.616      0.616
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional      -0.834    1.836   -0.454   6.497e-01    [-4.432, 2.764]
+Robust                 -        -   -0.611   5.410e-01    [-5.646, 2.961]
+
+First-Stage Estimates.
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional       0.457    0.077    5.917   3.284e-09     [0.305, 0.608]
+Robust                 -        -    4.802   1.574e-06     [0.264, 0.629]
+
+=== rdrobust fuzzy, p=2 ===
+Call: rdrobust
+
+Fuzzy RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  2
+Polynomial Order Bias (q):                  3
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           758       1242
+Number of Unique Obs.            758       1242
+Number of Effective Obs.         303        272
+Bandwidth Estimation           4.009      4.009
+Bandwidth Bias                 5.506      5.506
+rho (h/b)                      0.728      0.728
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional      -1.569    2.481   -0.632   5.271e-01    [-6.432, 3.294]
+Robust                 -        -   -0.677   4.986e-01    [-7.465, 3.633]
+
+First-Stage Estimates.
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional       0.446      0.1    4.467   7.934e-06      [0.25, 0.641]
+Robust                 -        -    3.889   1.007e-04      [0.22, 0.667]
+
+=== first stage (jump in P(x=1)) ===
+Call: rdrobust
+
+Sharp RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  1
+Polynomial Order Bias (q):                  2
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           758       1242
+Number of Unique Obs.            758       1242
+Number of Effective Obs.         506        468
+Bandwidth Estimation           6.979      6.979
+Bandwidth Bias                10.869     10.869
+rho (h/b)                      0.642      0.642
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional       0.469    0.048     9.69   3.327e-22     [0.374, 0.564]
+Robust                 -        -    8.275   1.285e-16     [0.362, 0.587]
+
+=== reduced form (jump in E[z]) ===
+Call: rdrobust
+
+Sharp RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  1
+Polynomial Order Bias (q):                  2
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           758       1242
+Number of Unique Obs.            758       1242
+Number of Effective Obs.         206        204
+Bandwidth Estimation           2.846      2.846
+Bandwidth Bias                 4.624      4.624
+rho (h/b)                      0.616      0.616
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional      -0.381    0.809    -0.47   6.380e-01    [-1.967, 1.205]
+Robust                 -        -   -0.625   5.317e-01     [-2.499, 1.29]
+
+Global polynomial fuzzy RD (all data):
+ order 1: effect=1.630 se=0.792  95%CI=(0.08,3.18)
+ order 2: effect=0.567 se=1.072  95%CI=(-1.53,2.67)
+ order 3: effect=0.384 se=1.317  95%CI=(-2.20,2.97)
+ order 4: effect=-1.087 se=1.649  95%CI=(-4.32,2.14)
+
+Jump at c in E[z|x=0] (applicants vs non-applicants selection check), local linear unif:
+ h=5: jump=-1.739 se=0.608
+ h=8: jump=-1.389 se=0.491
+ h=10: jump=-1.080 se=0.442
+ h=15: jump=-0.861 se=0.384
+ h=20: jump=-0.987 se=0.359
+
+Treated minus untreated gap among y>=c, by bandwidth above c (local linear in r):
+ h=4: gap=3.826 se=0.434  | with interaction, gap at r=0: 4.046 se=0.788
+ h=6: gap=3.958 se=0.353  | with interaction, gap at r=0: 3.720 se=0.671
+ h=8: gap=3.962 se=0.306  | with interaction, gap at r=0: 3.772 se=0.589
+ h=10: gap=3.944 se=0.278  | with interaction, gap at r=0: 3.855 se=0.537
+ h=15: gap=3.949 se=0.229  | with interaction, gap at r=0: 3.877 se=0.441
+ h=20: gap=3.829 se=0.199  | with interaction, gap at r=0: 4.022 se=0.391
+
+Placebo jumps in E[z] at cutoffs left of c (untreated region only), local linear h=4:
+ cutoff 47: jump=-0.011 se=0.810
+ cutoff 49: jump=0.893 se=0.610
+ cutoff 51: jump=-1.434 se=0.639
+ cutoff 53: jump=-0.846 se=0.631
+
+Counts within 3 points of c: below 212 above 212

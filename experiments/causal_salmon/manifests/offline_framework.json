@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "scope": "offline_final_data_reference",
+  "protocol_sha256": "f85fedf447c734d9d5e7a2cb630284fe18c7091c5cf653610adbc43ec8e7144c",
+  "freeze_sha256": "e8b3dc6ef333942239705606cf8fc861265ef5ad788cbf99a28e80ec83272e4a",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numerical_threads": 1
+  },
+  "checks": {
+    "ACC-5-reference": true,
+    "ACC-7-reference": true
+  },
+  "files": {
+    "results/quality_checks/framework/development/sandbox_profile.sb": "e406fdc5859bac18b4ca2a268a31d5593f4114aae7a2b56a9e46bc7010ef4363",
+    "results/quality_checks/framework/development/input_identity.json": "95f08b8e1b94dfefb1bc723805c062f1be0c020336e35602ab478373e2db1c79",
+    "results/quality_checks/framework/development/COMPLETE": "4fb5982334efa7e22ba82ef111f0df97601400d2e21d7bb73d91e75d0da912e9",
+    "results/quality_checks/framework/development/evidence.sha256.json": "ab75c465b54de8b2da67a4cdfc9de365b809060d8b064f833b5e9e98fda3ae90",
+    "results/quality_checks/framework/development/probes.json": "74dda825cfa0b43e6acbdfde60fa4e12930ce61780cc18d0dc1640fd3b8112a2",
+    "results/quality_checks/framework/development/reference.json": "d3db01851c528bbf4332bbd611b220f478e984f6562598586ae0d1b54fcd87f1",
+    "results/quality_checks/framework/development/reference_access_audit.json": "7ce26f1179d068657f8be906fe0be4e71846b8021aeb8ef74a6705f42807a535",
+    "results/quality_checks/framework/development/inputs/STUDY_DESCRIPTION.md": "1c7a7cf5c54687ef5e5029f013a84efb5bc294a83591e930d609f333d6fec6de",
+    "results/quality_checks/framework/development/inputs/data.csv": "08864d914ccefd5df395e603ac462a3062d8dc16f03bb11211d278611691ba1a",
+    "results/quality_checks/framework/formal/sandbox_profile.sb": "bb88d2c0c867291ef407bde03160ba72321b652f676222c2e9d4607d1100c3b4",
+    "results/quality_checks/framework/formal/input_identity.json": "95f08b8e1b94dfefb1bc723805c062f1be0c020336e35602ab478373e2db1c79",
+    "results/quality_checks/framework/formal/COMPLETE": "440c00add84f9927f9bacf49f8df896bc59541663c45b577276ab51c02537ca9",
+    "results/quality_checks/framework/formal/evidence.sha256.json": "96588bb5d13860f4c06ee94568406ac2c684dd7a3b1273ad0d8a6ccf0d6ea139",
+    "results/quality_checks/framework/formal/probes.json": "74dda825cfa0b43e6acbdfde60fa4e12930ce61780cc18d0dc1640fd3b8112a2",
+    "results/quality_checks/framework/formal/reference.json": "c8e2b2e6f4ada0b47a0467e3855b43182e3dfb039cbddd636a2806586b763ce0",
+    "results/quality_checks/framework/formal/reference_access_audit.json": "3071c20f3077d8487bf220a44a0199a89e43706b13d8dbd48605d1b96a626953",
+    "results/quality_checks/framework/formal/inputs/STUDY_DESCRIPTION.md": "1c7a7cf5c54687ef5e5029f013a84efb5bc294a83591e930d609f333d6fec6de",
+    "results/quality_checks/framework/formal/inputs/data.csv": "08864d914ccefd5df395e603ac462a3062d8dc16f03bb11211d278611691ba1a"
+  },
+  "runtime": {
+    "executable": "<PYTHON_ENV>/bin/python3.12",
+    "public_analysis": "deterministic_reference_only",
+    "read_whitelist": [
+      "two_explicit_public_files",
+      "/System",
+      "/usr/lib",
+      "/usr/share/zoneinfo",
+      "<PYTHON_ENV>/lib",
+      "<PROJECT_ROOT>/.venv/lib",
+      "staged_reference_executable"
+    ],
+    "child_environment": {
+      "PATH": "/usr/bin:/bin",
+      "LANG": "en_US.UTF-8",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "private_probe_sha256": "1efa179d223a0f3b0f6915a26c43801c8d2a1d9ea65c61396772d9df4d34df80"
+  },
+  "framework_program_sha256": "01ef0fe0d94e4c65248da751b35ed730411533455bbe52a215c4a8c239c80ecc",
+  "tested_model_environment_accepted": false,
+  "tested_model_calls": 0,
+  "public_copy_note": "Machine-specific paths were removed from this historical display copy. Placeholders are not runnable paths; numerical results and historical identity hashes are preserved. See manifests/path_redaction.json."
+}

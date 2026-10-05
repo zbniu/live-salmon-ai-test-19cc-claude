@@ -1,0 +1,14 @@
+method,att_points,n_treated,parameters
+linear,1.2005672446801463,600,2.0
+quadratic,1.2375122958789968,600,3.0
+cubic_polynomial,1.2440304318435376,600,4.0
+restricted_cubic_spline_4_knots,1.246266968013729,600,4.0
+restricted_cubic_spline_5_knots,1.241663846738997,600,5.0
+restricted_cubic_spline_7_knots,1.255672162171266,600,7.0
+score_strata_width_0.5,1.2437832599441545,600,
+score_strata_width_1,1.2546826231573383,600,
+score_strata_width_2,1.2411963894887041,600,
+1_nearest_controls_with_replacement,1.1364235430624827,600,
+5_nearest_controls_with_replacement,1.1075704836290605,600,
+10_nearest_controls_with_replacement,1.263593119609607,600,
+20_nearest_controls_with_replacement,1.2183824879613503,600,

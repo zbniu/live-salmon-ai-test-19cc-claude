@@ -1,0 +1,23 @@
+{
+  "rows": 2000,
+  "columns": [
+    "x",
+    "y",
+    "z"
+  ],
+  "missing": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "treated_count": 600,
+  "input_sha256": "d45479ba2c2d5eab15d418d1f5c0497a997fb1c84555e6d1ca26002bf3783179",
+  "baseline_in_range": true,
+  "followup_in_range": true,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  }
+}

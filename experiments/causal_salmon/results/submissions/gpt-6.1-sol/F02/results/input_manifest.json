@@ -1,0 +1,10 @@
+{
+  "data.csv": {
+    "sha256": "13215497ec4ae090399b28c80794abe593b564b5f36b54511ba5202533b3dbe1",
+    "bytes": 79594
+  },
+  "STUDY_DESCRIPTION.md": {
+    "sha256": "76837424e3599eab4db82b7250656cfdefdd3e69061b906e41a7caf2b345cefe",
+    "bytes": 2765
+  }
+}

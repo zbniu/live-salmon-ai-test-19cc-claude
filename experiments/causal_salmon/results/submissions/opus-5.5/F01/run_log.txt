@@ -1,0 +1,9 @@
+Run log (execution order; all scripts run with python3 from /home/claude/submission; stdout tee'd to results/)
+1. code/01_explore.py -> results/01_explore.txt   OK. Data shape, cutoff c=55.593, binned summaries.
+2. code/02_rd.py      -> results/02_rd.txt        FAILED: ModuleNotFoundError statsmodels (output file overwritten by later run).
+   pip install statsmodels; rerun -> FAILED: AttributeError (numpy array has no .values) in IV weight line.
+   Fixed that line with sed (np.asarray); rerun -> OK. results/02_rd.txt, results/02_rd_estimates.csv
+   (The two failed runs' tracebacks were written to results/02_rd.txt and replaced by the successful run; their text is recorded here only.)
+3. code/03_selection.py -> results/03_selection.txt, results/03_selection_decomposition.csv  OK (bootstrap, 1000 reps, seed 20261004)
+4. code/04_checks.py  -> results/04_checks.txt, results/04_placebo.csv  OK (reads results/03_selection_decomposition.csv; bootstrap seed 7)
+5. final_report.md written by hand from the above outputs.

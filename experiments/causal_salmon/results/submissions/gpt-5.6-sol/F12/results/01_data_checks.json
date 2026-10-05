@@ -1,0 +1,27 @@
+{
+  "rows": 2000,
+  "columns": [
+    "x",
+    "y",
+    "z"
+  ],
+  "missing": 0,
+  "sha256": "f1219a585528bafde4983f58c0d4dd6c40d9816e37b579354890f48438788863",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pandas": "2.2.3",
+  "numpy": "2.3.5",
+  "duplicates": 0,
+  "baseline_min": 45.007034485333925,
+  "baseline_max": 74.9914589085115,
+  "followup_min": 44.69975725853025,
+  "followup_max": 97.11178088687882,
+  "treated_above_control_max": 0,
+  "treated_below_control_min": 0,
+  "nearest_control_baseline_distance_quantiles": [
+    1.3401042892269288e-05,
+    0.010554095370373773,
+    0.034111107238555864,
+    0.04247329016629812,
+    0.08989457482800134
+  ]
+}

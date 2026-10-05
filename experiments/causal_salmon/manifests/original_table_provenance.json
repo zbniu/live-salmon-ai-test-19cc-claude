@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-04",
+  "scope": "six models, F01-F12",
+  "source_summary_id": "six-models-summary-001",
+  "source_summary_files": {
+    "SUMMARY.json": "9f927286b576a11a15d290181a240fd8c5ce71c8db09b38a7929314a086861a9",
+    "SIX_MODEL_RESULTS_SUMMARY.md": "33b419606bb238ef17dfdc9435cb5f9d7ce57b59e33dd3d6c75147e4fe8e559e",
+    "NUMERIC_ERROR_SUMMARY.csv": "4f50084d2c22272e9860387b55626263ce04969d323fc38db2c95b67a35713b5",
+    "SOURCE_MANIFEST.json": "8860a53bf900448ad335e0b836a6eaacd45a9bbce466e84ef401e1b72a3efbd8",
+    "SEMANTIC_PAIR_SUMMARY.csv": "045cb44495cc8a0fc9bdb035f8de30ba983e8a6c1719749ecb0945327a6b069a",
+    "CASE_BY_MODEL_MATRIX.csv": "d8ef3547457c622e2b146b467960da7c32213b62691bdcf70003c8331389ed37",
+    "INTERPRETATION_CHECKS.json": "44cf63b331a93c59d1ccb0b0e25ad1d86f9cec49512c47e527ad7aa51fa7bddf",
+    "ALL_CASE_RESULTS.csv": "0d3c6e61d5378040fc2fdd07061a054ab35a03bc02745aa685c0d4ee585ced98",
+    "VALIDATION.json": "49a0e2aff571b3078fdb1da174b61e7d698ab5b4e1621fbd3b82254c61c2b0f5",
+    "MODEL_SUMMARY.csv": "ae9d817b5a1778a5dc1e98bd58bc98ab8af3e8a9f27732998c074fb6f5e8ea02",
+    "MANIFEST.json": "2510343387820fc0067bf5135f4c0897e01d34d9e5988e694c268ae6f69b9104"
+  },
+  "scoring_sources": {
+    "GPT-5.6 Sol": {
+      "record_id": "gpt-5.6-sol-regrade-001",
+      "primary_record_sha256": "86621f05d1262b1a8d7d56f548dd4af506c60455502e13dbeee090eca4eef1a6",
+      "scoring_report_sha256": "916263d90deb8151d50352ed3976b48725640550bd9bee82eb9f05443e629a32"
+    },
+    "GPT-6 Sol": {
+      "record_id": "gpt-6-sol-review-001",
+      "primary_record_sha256": "f0cd3695b3c62a06d373e9e4ff23fe32a1f07aee926d8f772448b905a7a4aa37",
+      "scoring_report_sha256": "090b2fbd06382e9fc1edd35a9c636a20004b9492be81605cf29a97bbea4506c5"
+    },
+    "GPT-6.1 Sol": {
+      "record_id": "gpt-6.1-sol-review-001",
+      "primary_record_sha256": "781cee1e0a219187ea4cc6b7c9aed5f4a9e33352f04bcbd8019ad5bebe9d9008",
+      "scoring_report_sha256": "f2325ede58559c57a52bee86e961c570b6551ac5ee42c705b27f35271693973c"
+    },
+    "Opus 5.5": {
+      "record_id": "opus-5.5-review-001",
+      "primary_record_sha256": "a1c31ee015b1b6d38aa3ffbf206ede0ca73baddd0b688719a63d3121844daed9",
+      "scoring_report_sha256": "1e3e0b8bb82b1258ab29d7ff07607a11a62405307100a8fbeb9e0d1ad89fe7d0"
+    },
+    "Sonnet 5.5": {
+      "record_id": "sonnet-5.5-review-001",
+      "primary_record_sha256": "8c77157c404d873c2007856ce36fa77ae954eb02e8bd2b8d8bb6f11323da7066",
+      "scoring_report_sha256": "f612b9572dbd95c685f6d48bc33ae1fd36eeffc12c8b276ce6db41de4da0cf7b"
+    },
+    "Haiku 4.5": {
+      "record_id": "haiku-4.5-review-001",
+      "primary_record_sha256": "09e2b4801a42efbbaddc7366026534e94f88347b29c4c553ee1f67a0231ec59a",
+      "scoring_report_sha256": "379ec2724bba71ece4cb514cdf8b74a12c0068f22dfdfaf0de740e61f512c50d"
+    }
+  },
+  "rules_version": "1.3",
+  "new_model_calls": 0,
+  "submitted_code_reruns": 0,
+  "original_App_execution_independently_verified": false,
+  "locally_prepared_not_published": true
+}

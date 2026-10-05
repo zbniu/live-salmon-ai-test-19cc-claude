@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/claude/submission/code/analysis.py", line 1, in <module>
+    import pandas as pd, numpy as np, statsmodels.formula.api as smf
+ModuleNotFoundError: No module named 'statsmodels'

@@ -1,0 +1,23 @@
+{
+  "report_read_back_nonempty_utf8": true,
+  "intended_answer_verified": true,
+  "analysis_was_not_rerun": true,
+  "archive_members": [
+    "submission/code/analyze.py",
+    "submission/code/finalize_delivery.py",
+    "submission/code/run_pipeline.py",
+    "submission/final_report.md",
+    "submission/inputs/STUDY_DESCRIPTION.md",
+    "submission/inputs/data.csv",
+    "submission/results/analysis_stderr.txt",
+    "submission/results/analysis_stdout.txt",
+    "submission/results/analysis_summary.json",
+    "submission/results/associations.csv",
+    "submission/results/counterfactual_completions.csv",
+    "submission/results/delivery_checks.json",
+    "submission/results/group_summary.csv",
+    "submission/results/score_bin_summary.csv",
+    "submission/run_log.txt",
+    "submission/results/final_archive_check.json"
+  ]
+}

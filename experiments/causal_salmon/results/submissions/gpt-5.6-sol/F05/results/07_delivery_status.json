@@ -1,0 +1,9 @@
+{
+  "local_report_created_and_read_back": true,
+  "persistent_saving_succeeded": false,
+  "session_download_paths": [
+    "submission/final_report.md",
+    "submission.zip"
+  ],
+  "previous_execution_records_retained": true
+}

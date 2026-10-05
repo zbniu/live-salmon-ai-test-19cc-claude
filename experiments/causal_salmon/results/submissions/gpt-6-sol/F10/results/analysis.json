@@ -1,0 +1,121 @@
+{
+  "source": "upload/data(20261004-071403).csv",
+  "rows": 2000,
+  "validation": "2000 complete rows; x binary with 600 treated; score ranges valid",
+  "cutoff_min_treated_y": 56.99464278926244,
+  "y_range": [
+    45.02414771243346,
+    74.9876323154432
+  ],
+  "groups": {
+    "attended": {
+      "n": 600,
+      "mean_y": 66.06819062527764,
+      "mean_z": 14.104328625911903,
+      "sd_z": 3.9062759929936717,
+      "mean_end_score": 80.17251925118954
+    },
+    "did_not_attend": {
+      "n": 1400,
+      "mean_y": 57.34952100168895,
+      "mean_z": 8.640799896930602,
+      "sd_z": 3.7583948328334382,
+      "mean_end_score": 65.99032089861954
+    }
+  },
+  "raw_mean_gain_difference_treated_minus_control": 5.4635287289813,
+  "raw_difference_se": 0.18847100325948724,
+  "adjusted_associations": {
+    "linear_y": {
+      "x_coefficient": 3.787362334075458,
+      "robust_se": 0.19481214409135683
+    },
+    "quadratic_y": {
+      "x_coefficient": 3.807624362941965,
+      "robust_se": 0.1955340492526949
+    },
+    "quadratic_y_interactions": {
+      "x_coefficient": -32.38573632144835,
+      "robust_se": 26.92028245487909
+    }
+  },
+  "local_linear_triangular_kernel": [
+    {
+      "bandwidth_points": 3,
+      "n_below": 208,
+      "n_at_or_above": 216,
+      "treated_at_or_above": 97,
+      "outcome_jump": -0.2106127064731389,
+      "outcome_jump_se": 0.8014778029936477,
+      "treatment_jump": 0.3965014952442836,
+      "treatment_jump_se": 0.07333547803019175,
+      "wald_ratio": -0.5311775844461342,
+      "wald_se": 2.0578361522410225
+    },
+    {
+      "bandwidth_points": 5,
+      "n_below": 337,
+      "n_at_or_above": 343,
+      "treated_at_or_above": 157,
+      "outcome_jump": -0.10233386658845456,
+      "outcome_jump_se": 0.6294553005422326,
+      "treatment_jump": 0.416492098392788,
+      "treatment_jump_se": 0.05708458680160547,
+      "wald_ratio": -0.24570422100047834,
+      "wald_se": 1.5224997462534975
+    },
+    {
+      "bandwidth_points": 8,
+      "n_below": 535,
+      "n_at_or_above": 549,
+      "treated_at_or_above": 269,
+      "outcome_jump": -0.20922893205493942,
+      "outcome_jump_se": 0.4898256600996723,
+      "treatment_jump": 0.4054019794643523,
+      "treatment_jump_se": 0.04491285350026114,
+      "wald_ratio": -0.516102393805251,
+      "wald_se": 1.2273026819150363
+    },
+    {
+      "bandwidth_points": 10,
+      "n_below": 670,
+      "n_at_or_above": 678,
+      "treated_at_or_above": 334,
+      "outcome_jump": -0.08881697050875736,
+      "outcome_jump_se": 0.4410077971375595,
+      "treatment_jump": 0.41646339029143,
+      "treatment_jump_se": 0.040733525325878976,
+      "wald_ratio": -0.21326477327720358,
+      "wald_se": 1.065728687280025
+    },
+    {
+      "bandwidth_points": 15,
+      "n_below": 793,
+      "n_at_or_above": 1023,
+      "treated_at_or_above": 497,
+      "outcome_jump": 0.3167536775001931,
+      "outcome_jump_se": 0.37425863502542733,
+      "treatment_jump": 0.4502852139621354,
+      "treatment_jump_se": 0.03341156262847755,
+      "wald_ratio": 0.7034512075424911,
+      "wald_se": 0.8163326702372182
+    },
+    {
+      "bandwidth_points": 20,
+      "n_below": 793,
+      "n_at_or_above": 1207,
+      "treated_at_or_above": 600,
+      "outcome_jump": 0.49315362019025244,
+      "outcome_jump_se": 0.35114616525904724,
+      "treatment_jump": 0.45925849187932566,
+      "treatment_jump_se": 0.0297542643975449,
+      "wald_ratio": 1.0738040317386945,
+      "wald_se": 0.7462937227019881
+    }
+  ],
+  "att_bounds_from_score_range_only": [
+    -19.82748074881046,
+    80.17251925118954
+  ],
+  "interpretation": "Observed comparisons and cutoff estimates do not identify the ATT without extra assumptions."
+}

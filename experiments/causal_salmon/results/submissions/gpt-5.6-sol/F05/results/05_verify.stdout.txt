@@ -1,0 +1,59 @@
+FULL REPORT READ-BACK:
+# Effect of arrangement Q on change
+
+## Answer to the research question
+
+The randomized study provides strong statistical evidence that arrangement Q **increased change `z` on average among its recipients**. The primary estimate adopted in this report is **0.848 points**, with an **approximate 95% randomization-based interval of 0.454 to 1.241 points**. This is the estimated additional change attributable to Q, rather than the recipients' total observed change.
+
+This is an estimate, not a definite determination of the exact effect in these particular 600 recipients. The data do not reveal what each recipient's change would have been without Q, and they cannot establish that Q increased change for every recipient. If the question requires an exact causal amount or a benefit for every recipient, the supplied material does not support that conclusion.
+
+## Data and causal interpretation
+
+Only the supplied study description and complete CSV were used. All 2,000 rows and all three variables were read; 600 units received Q and 1,400 did not. There were no missing or nonfinite values, and no rows were excluded.
+
+The description states that exactly 600 units were chosen by an equal-chance random draw using no unit information, with complete adherence, no effects between units, uniform measurement, blinded follow-up recording, and complete observation. These facts support a causal comparison using the untreated units to estimate what would have happened without Q. Baseline `y` was measured before assignment. Since `z` is follow-up minus baseline, an effect on `z` equals an effect on follow-up when baseline is held fixed.
+
+The target is the **average causal effect for the 600 actual recipients**: the average of each recipient's change with Q minus that same recipient's change without Q. It is not the average effect for an external population, an individual effect, or simply whether recipients improved from baseline.
+
+## Primary analysis
+
+| Group | Units | Mean observed change, points |
+|---|---:|---:|
+| Received Q | 600 | 10.758905 |
+| Did not receive Q | 1,400 | 9.911158 |
+| Difference, Q minus control | | **0.847747** |
+
+The unadjusted difference in means is the primary estimate. It uses random assignment without requiring a linear outcome model, equal variances, or identical treatment effects across units. The recipients' observed improvement of 10.759 points is not all attributable to Q: controls also improved by 9.911 points.
+
+For uncertainty about the recipient-specific average effect, let `z_i(0)` denote unit i's change without Q and let `tau_T` denote the actual recipients' average causal effect. The estimation error is exactly:
+
+`difference - tau_T = mean_T[z(0)] - mean_C[z(0)]`.
+
+Under the described complete randomization, its repeated-assignment variance is `(1/600 + 1/1400) * S0^2`, where `S0^2` is the finite-population variance of untreated potential changes over all 2,000 units. The control sample variance unbiasedly estimates that variance. This gives a standard error of **0.200744 points**. The reported interval uses the estimate plus or minus 1.96 standard errors; it is a large-sample approximation, not an exact finite-sample guarantee. Its interpretation is repeated-randomization coverage of the average effect in whichever units are assigned Q, with that target varying across assignments.
+
+As a conventional comparison, Welch's two-sample analysis gives a 95% interval of **0.428 to 1.268 points** and a two-sided p-value of **8.05421e-05**. That is a separate group-comparison calculation, not the interval adopted for the recipient-specific target. Both intervals exclude zero.
+
+## Baseline sensitivity
+
+Mean baseline was 59.158 in recipients and 59.910 in controls, a chance difference of -0.752 points. Untreated change increased with baseline in the observed control data. A control-only linear regression of change on baseline, used to predict untreated change at every recipient's baseline, gives an adjusted average effect estimate of **1.014 points**. Quadratic, cubic, and cubic spline control regressions give estimates between **1.015 and 1.019 points**. These secondary, model-assisted checks support the primary conclusion; they do not replace the primary estimate or establish the unobserved counterfactual relationship exactly. No outcomes or subsets were selected to maximize an effect.
+
+## Limits and conclusion
+
+Randomization makes the comparison credible, but does not observe the recipients' untreated outcomes. Therefore the exact realized average effect remains unknown, and heterogeneous individual effects are possible. The intervals describe assignment uncertainty within this experiment; no claim about other populations or an undisclosed outcome-generating mechanism is made.
+
+The supported answer is: **Q likely increased recipients' average change by about 0.85 points; the primary approximate 95% interval is 0.45 to 1.24 points.** The evidence supports a positive average causal effect, not a guaranteed benefit for each recipient.
+
+## Execution and reproducibility
+
+The archive includes the two input files, the code actually executed, the produced tables and JSON results, directly captured stdout/stderr, and an ordered execution log. The first inspection script failed at an import because `statsmodels` was unavailable; that script and its actual error are retained. A separate inspection script and the analysis then completed using NumPy, pandas, and SciPy. The report was written from the recorded results without repeating the analyses. Initial shell inspection output was available in the session tool transcript but was not separately captured to a file; this limitation is recorded in the log.
+
+VERIFICATION:
+{
+  "report_nonempty": true,
+  "report_utf8_bytes": 5706,
+  "report_sha256": "222f57617606f598f1e785c5e137f9f219bf9b93d5157aa63e5a125438bb0d5a",
+  "intended_answer_and_numbers_present": true,
+  "input_copies_exact": true,
+  "failure_record_preserved": true,
+  "later_analysis_errors": false
+}

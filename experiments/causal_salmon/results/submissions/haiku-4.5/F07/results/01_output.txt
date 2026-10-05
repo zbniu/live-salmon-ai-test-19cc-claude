@@ -1,0 +1,38 @@
+======================================================================
+EXPLORATORY ANALYSIS
+======================================================================
+
+1. TREATMENT ASSIGNMENT ANALYSIS
+----------------------------------------------------------------------
+
+Treatment by baseline (y) range:
+        y                             z
+      min     max    mean count    mean
+x                                      
+0  45.005  74.996  57.225  1400   9.377
+1  57.356  74.976  66.838   600  12.826
+
+Minimum baseline for treated units: 57.356
+Maximum baseline for control units: 74.996
+Overlap in baseline? True
+
+✓ Saved: 01_assignment_and_outcome.png
+
+2. NAIVE COMPARISON (BIASED - confounded by baseline)
+----------------------------------------------------------------------
+Control group mean z: 9.3768
+Treatment group mean z: 12.8257
+Naive difference: 3.4489
+T-test p-value: 0.000000
+
+Note: This comparison is BIASED because treatment was assigned based on baseline (y),
+and baseline is strongly related to the outcome.
+
+3. RELATIONSHIP BETWEEN BASELINE AND OUTCOME
+----------------------------------------------------------------------
+Correlation between baseline (y) and change (z): 0.5474
+
+Regression: z = -6.0226 + 0.2734 * y
+R-squared: 0.2996
+
+✓ Saved: 02_baseline_outcome_relationship.png

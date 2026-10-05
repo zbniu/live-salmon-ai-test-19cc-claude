@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "confirmed",
+  "candidate": "K1",
+  "parameters": {
+    "n": 2000,
+    "a": 45,
+    "b_multiplier": 3,
+    "gamma": 0.25,
+    "beta": 0.5,
+    "kappa": 1.2,
+    "M": 900,
+    "K": 600,
+    "m_intercept": 10,
+    "effect_fraction": 0.1
+  },
+  "protocol_sha256": "f85fedf447c734d9d5e7a2cb630284fe18c7091c5cf653610adbc43ec8e7144c",
+  "calibration_report": "results/calibration/CALIBRATION_REPORT.md",
+  "calibration_report_sha256": "5ee62134994b59cf9032dea4a63c7a5451a5d920b751b3599eebc836a6427391",
+  "seed_registration": "configs/seeds.json",
+  "confirmation_record": "manifests/parameter_confirmation.json"
+}

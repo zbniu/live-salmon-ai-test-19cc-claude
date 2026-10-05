@@ -1,0 +1,6 @@
+Execution record (in order)
+1. Inline exploratory command (pandas describe/groupby on data.csv): ran OK. Code was an inline python -c command, NOT saved as a file; its output was only shown in the session (not saved in results/). It showed 2000 rows, x=1 n=600, no missing values.
+2. code/analysis.py first run: FAILED, ModuleNotFoundError: statsmodels. The traceback (captured via tee) was copied to results/run1_error.txt.
+3. pip install statsmodels --break-system-packages (succeeded; no log saved).
+4. code/analysis.py second run: succeeded. Output in results/analysis_output.txt. Basis for all numbers in final_report.md.
+Missing records: inline step 1 code/output not saved; pip install log not saved.

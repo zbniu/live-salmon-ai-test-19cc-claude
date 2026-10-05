@@ -1,0 +1,38 @@
+cutoff 55.59294297736875
+h=3: E[z|c-]=9.96 (n=212); E[z|treated,c+]=11.77 (n=100); E[z|untreated,c+]=7.82 (n=112); P(cand|c)=0.456; naive gap at c=3.94; implied E[z0|cand,c]=12.50; implied effect at c=-0.73; implied selection bias at c=4.68
+h=5: E[z|c-]=9.76 (n=357); E[z|treated,c+]=11.96 (n=150); E[z|untreated,c+]=7.97 (n=191); P(cand|c)=0.471; naive gap at c=3.98; implied E[z0|cand,c]=11.77; implied effect at c=0.19; implied selection bias at c=3.79
+h=7.5: E[z|c-]=9.50 (n=540); E[z|treated,c+]=11.96 (n=224); E[z|untreated,c+]=8.07 (n=286); P(cand|c)=0.468; naive gap at c=3.89; implied E[z0|cand,c]=11.12; implied effect at c=0.83; implied selection bias at c=3.06
+h=10: E[z|c-]=9.45 (n=704); E[z|treated,c+]=11.92 (n=284); E[z|untreated,c+]=8.09 (n=367); P(cand|c)=0.461; naive gap at c=3.83; implied E[z0|cand,c]=11.03; implied effect at c=0.89; implied selection bias at c=2.95
+=== Jump at c among UNTREATED only (composition: above c untreated = non-candidates) ===
+       Conventional  Bias-Corrected    Robust
+Coeff     -2.085732       -2.245692 -2.245692                 CI Lower  CI Upper
+Conventional   -3.876508 -0.294957
+Bias-Corrected -4.036467 -0.454916
+Robust         -4.407262 -0.084122
+=== Placebo cutoffs (sharp RD on z, using only one side of the true cutoff) ===
+        side  placebo_c   jump  rob_ci_lo  rob_ci_hi
+0      below         49  0.051     -2.771      3.033
+1      below         51 -1.950     -5.176      1.139
+2      below         53 -1.611     -4.476      1.585
+3   above(z)         60  0.276     -2.518      3.548
+4   above(x)         60 -0.192     -0.628      0.149
+5   above(z)         63  0.243     -1.609      2.492
+6   above(x)         63  0.020     -0.185      0.275
+7   above(z)         66 -0.813     -3.574      1.310
+8   above(x)         66  0.028     -0.257      0.270
+9   above(z)         69  0.143     -2.140      2.662
+10  above(x)         69 -0.178     -0.525      0.173
+=== Density test of y at c (rddensity) ===
+Call: rddensity
+Sample Size:                                        2000
+Cutoff:                                55.59294297736875
+Model:                                      unrestricted
+Kernel:                                       triangular
+VCE:                                           jackknife
+=== For comparison only (CONFOUNDED by unrecorded circumstances): OLS among y>=c ===
+z ~ x  coef x = 4.038  se = 0.208
+z ~ x + y  coef x = 3.829  se = 0.199
+z ~ x + y + I(y**2)  coef x = 3.829  se = 0.199
+z ~ x*y  coef x = 5.138  se = 2.272
+all units z ~ x + y: coef x = 3.713 0.193
+raw difference in means: 5.405

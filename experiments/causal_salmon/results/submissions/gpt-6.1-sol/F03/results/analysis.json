@@ -1,0 +1,79 @@
+{
+  "validation": {
+    "rows": 2000,
+    "treated": 600,
+    "control": 1400,
+    "missing_values": 0,
+    "end_score_min": 46.28646026469277,
+    "end_score_max": 97.27625340474893
+  },
+  "primary": {
+    "estimate": 1.1102228476588483,
+    "se": 0.21668400750331995,
+    "df": 1069.7907948104562,
+    "ci95": [
+      0.6850489632372747,
+      1.5353967320804218
+    ],
+    "p_two_sided": 3.5526908581569267e-07,
+    "method": "Unadjusted difference in mean gains, Welch t interval/test; design-based Neyman SE"
+  },
+  "sensitivity": [
+    {
+      "degree": 1,
+      "contrasts": {
+        "all_students": {
+          "estimate": 1.225715765611327,
+          "se_hc2": 0.18414169062713867,
+          "ci95_normal": [
+            0.8648046839298182,
+            1.5866268472928355
+          ]
+        },
+        "attendees": {
+          "estimate": 1.2143677408197946,
+          "se_hc2": 0.18392998571073443,
+          "ci95_normal": [
+            0.8538715931497883,
+            1.574863888489801
+          ]
+        }
+      },
+      "r_squared": 0.27611127719650475,
+      "note": "Attendee-standardized contrast uses observed attendee y distribution; conditional regression interval."
+    },
+    {
+      "degree": 2,
+      "contrasts": {
+        "all_students": {
+          "estimate": 1.2294365048283031,
+          "se_hc2": 0.18423297830807098,
+          "ci95_normal": [
+            0.8683465025799351,
+            1.5905265070766712
+          ]
+        },
+        "attendees": {
+          "estimate": 1.2141505667959205,
+          "se_hc2": 0.1839636154752849,
+          "ci95_normal": [
+            0.8535885059985868,
+            1.5747126275932541
+          ]
+        }
+      },
+      "r_squared": 0.27656850434335023,
+      "note": "Attendee-standardized contrast uses observed attendee y distribution; conditional regression interval."
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  },
+  "input_sha256": {
+    "data(20261004-180712).csv": "33a7f0e7329c87840bd42c709d5a4346bacdc210e2f077daae6030d1f78edb37",
+    "STUDY_DESCRIPTION(20261004-180712).md": "1c7a7cf5c54687ef5e5029f013a84efb5bc294a83591e930d609f333d6fec6de"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "estimand": "mean[z_i(1)-z_i(0)] over the 600 actual recipients (sample ATT)",
+  "n_total": 2000,
+  "n_treated": 600,
+  "n_control": 1400,
+  "mean_z_treated": 10.758904720531536,
+  "mean_z_control": 9.91115807821175,
+  "primary_difference_points": 0.8477466423197857,
+  "recipient_target_randomization_se": 0.20074382088099274,
+  "recipient_target_approx_95_interval": [
+    0.4542959832740803,
+    1.2411973013654911
+  ],
+  "conventional_welch_se": 0.21416334949040722,
+  "conventional_welch_df": 1047.09549705591,
+  "conventional_welch_95_interval": [
+    0.42750843601912053,
+    1.2679848486204508
+  ],
+  "conventional_welch_two_sided_p": 8.054211667057548e-05,
+  "mean_baseline_treated": 59.15772626306395,
+  "mean_baseline_control": 59.910019907270524,
+  "baseline_difference": -0.7522936442065742,
+  "baseline_welch_p": 0.07940053528187024,
+  "counterfactual_bounds_from_0_100_followup": [
+    -30.08336901640453,
+    69.91663098359548
+  ],
+  "notes": [
+    "Randomization interval is approximate repeated-assignment coverage for D minus the varying recipient-specific target.",
+    "No individual counterfactual is observed; a positive average does not establish benefit for every recipient.",
+    "Welch interval and p value are conventional group-comparison inference, distinct from the primary recipient-target interval.",
+    "Baseline adjustment is secondary and model-assisted; its standard errors are not used for the primary result."
+  ],
+  "control_linear_slope_z_per_baseline_point": 0.2208214456388718,
+  "secondary_linear_adjusted_recipient_effect": 1.0138692123784114
+}
+                                 model  adjusted_recipient_effect  control_residual_sd  control_r_squared
+           control_polynomial_degree_1                   1.013869             3.635640           0.219600
+           control_polynomial_degree_2                   1.015028             3.636688           0.219708
+           control_polynomial_degree_3                   1.015497             3.637919           0.219738
+control_cubic_bspline_3_internal_knots                   1.019248             3.640442           0.220335
+                    n  baseline_mean  change_mean  change_sd
+baseline_band  x                                            
+(44.999, 50.0] 0  253      47.539164     7.276088   3.560170
+               1  122      47.426348     7.301123   3.727600
+(50.0, 55.0]   0  207      52.517519     8.059001   3.636844
+               1  106      52.599015     9.377363   3.525434
+(55.0, 60.0]   0  247      57.381334     9.502592   3.609203
+               1  102      57.538099    10.704225   4.173560
+(60.0, 65.0]   0  237      62.534413    10.472640   3.605392
+               1   84      62.494469    11.743530   3.988122
+(65.0, 70.0]   0  221      67.613197    11.664329   3.773559
+               1   96      67.817914    12.862467   4.288014
+(70.0, 75.0]   0  235      72.506940    12.593981   3.812473
+               1   90      72.268716    13.972457   3.717337

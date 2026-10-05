@@ -1,0 +1,13 @@
+Run log (execution order). Python 3, pandas/numpy; statsmodels installed mid-session.
+Input: /mnt/user-data/uploads/data.csv (2000 rows, x,y,z; no missing values).
+
+1. python code/01_explore.py  -> results/01_explore.txt   (OK)
+   Descriptives; admission cutoff c = min y among treated = 56.9946; no treated below c.
+2. python code/02_rd.py       -> results/02_fuzzy_rd.txt, results/02_fuzzy_rd.csv   (OK)
+   Fuzzy RD at c, local linear, triangular/uniform kernels, h = 3..12, 1000 bootstrap reps (seed 1); polynomial checks.
+3a. python code/03_naive_placebo.py -> FAILED: ModuleNotFoundError: No module named 'statsmodels'.
+    Error output preserved in results/03a_naive_placebo_FAILED.txt.
+    Fix: pip install statsmodels --break-system-packages (no code change).
+3b. python code/03_naive_placebo.py -> results/03_naive_placebo.txt  (OK; overwrote the error output, which is kept in 03a file)
+   Naive comparisons, untreated-only discontinuity, placebo cutoffs.
+4. final_report.md written by hand from the outputs above.

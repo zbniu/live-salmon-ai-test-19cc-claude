@@ -1,0 +1,54 @@
+                                method  estimated_control_change_for_treated      att   se_HC3  ci95_low  ci95_high  p_two_sided  control_residual_sd  design_columns  design_rank
+                                Linear                             11.818343 1.200567 0.210796  0.787414   1.613721 1.230912e-08             3.571963               2            2
+                             Quadratic                             11.781397 1.237512 0.214251  0.817588   1.657436 7.649959e-09             3.571469               3            3
+          Natural cubic spline 4 knots                             11.772978 1.245932 0.215475  0.823608   1.668256 7.370830e-09             3.572452               4            4
+Natural cubic spline 6 knots (primary)                             11.781949 1.236961 0.216121  0.813370   1.660551 1.043811e-08             3.572686               6            6
+          Natural cubic spline 8 knots                             11.773793 1.245116 0.216550  0.820686   1.669547 8.936026e-09             3.574280               8            8
+
+MATCHING SENSITIVITY
+ k      att  mean_absolute_baseline_distance  maximum_absolute_baseline_distance  distinct_controls
+ 1 1.136424                         0.014701                            0.089895                313
+ 5 1.107570                         0.046565                            0.192027                538
+10 1.263593                         0.088005                            0.356453                541
+20 1.218382                         0.172594                            0.770176                546
+
+CHECKS
+{
+  "scipy": "1.17.0",
+  "raw_difference": 3.6257396604900087,
+  "treated_mean_change": 13.01890975366738,
+  "untreated_mean_change": 9.393170093177371,
+  "control_curvature_wald_stat": 1.4336432195633377,
+  "control_curvature_p": 0.4883018058016114,
+  "primary_prediction_average": 11.781949105805385,
+  "primary_standardization_check": 1.2369606478619937,
+  "primary_treated_fitted_mean_check": 3.552713678800501e-15,
+  "primary_model": "Natural cubic spline 6 knots (primary)",
+  "knots": {
+    "Natural cubic spline 4 knots": [
+      45.007034485333925,
+      55.00564956325831,
+      64.73459339793706,
+      74.9914589085115
+    ],
+    "Natural cubic spline 6 knots (primary)": [
+      45.007034485333925,
+      50.8845250724885,
+      57.35624209722212,
+      62.78304511048064,
+      69.07855015258431,
+      74.9914589085115
+    ],
+    "Natural cubic spline 8 knots": [
+      45.007034485333925,
+      49.13601758613057,
+      53.53196900684529,
+      58.13895011795279,
+      61.88576414325896,
+      66.33253254093876,
+      70.82578084784662,
+      74.9914589085115
+    ]
+  },
+  "inference_note": "Approximate HC3 normal intervals assuming independent conditional outcome errors; not exact selection-design inference."
+}

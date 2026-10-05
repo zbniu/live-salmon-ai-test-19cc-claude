@@ -1,0 +1,27 @@
+{
+  "rows_analyzed": 2000,
+  "raw_gain_difference_points": 5.4635287289813,
+  "adjusted_associations": [
+    {
+      "model": "OLS with common degree-1 polynomial in y",
+      "x_coefficient": 3.787362334075386,
+      "interpretation": "model-dependent adjusted association; not ATT"
+    },
+    {
+      "model": "OLS with common degree-3 polynomial in y",
+      "x_coefficient": 3.820808318740778,
+      "interpretation": "model-dependent adjusted association; not ATT"
+    }
+  ],
+  "scale_only_ATT_bounds_points": [
+    -19.82748074881046,
+    80.17251925118954
+  ],
+  "hypothetical_ATT_examples": [
+    0,
+    0.9252214090397928,
+    -0.9252214090397928
+  ],
+  "causal_effect_identified": false
+}
+Wrote final_report.md and six analysis output files in results/.

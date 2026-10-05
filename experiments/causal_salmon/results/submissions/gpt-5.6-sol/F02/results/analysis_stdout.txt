@@ -1,0 +1,128 @@
+{
+  "inputs": {
+    "/workspace/scratch/86488352b39e/upload/data(3).csv": {
+      "bytes": 79594,
+      "sha256": "13215497ec4ae090399b28c80794abe593b564b5f36b54511ba5202533b3dbe1"
+    },
+    "/workspace/scratch/86488352b39e/upload/STUDY_DESCRIPTION(3).md": {
+      "bytes": 2765,
+      "sha256": "76837424e3599eab4db82b7250656cfdefdd3e69061b906e41a7caf2b345cefe"
+    }
+  },
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "validation": {
+    "rows": 2000,
+    "columns": [
+      "x",
+      "y",
+      "z"
+    ],
+    "missing_or_nonfinite": 0,
+    "treated": 600,
+    "untreated": 1400,
+    "rows_excluded": 0
+  },
+  "group_summary": [
+    {
+      "group": "Q",
+      "n": 600,
+      "baseline_y_mean": 65.70759205598998,
+      "baseline_y_sd": 5.837891582304417,
+      "baseline_y_min": 55.59294297736875,
+      "baseline_y_max": 74.95540694433481,
+      "change_z_mean": 14.124059292815788,
+      "change_z_sd": 3.729429039250466,
+      "change_z_min": 1.641455044878322,
+      "change_z_max": 22.492897896501024,
+      "followup_mean": 79.83165134880578,
+      "followup_sd": 7.804245194086157,
+      "followup_min": 58.69312317912097,
+      "followup_max": 96.97077194766119
+    },
+    {
+      "group": "No Q",
+      "n": 1400,
+      "baseline_y_mean": 56.88762955833698,
+      "baseline_y_sd": 8.423962667330363,
+      "baseline_y_min": 45.013647911746,
+      "baseline_y_max": 74.98826079709467,
+      "change_z_mean": 8.718961501961186,
+      "change_z_sd": 3.90263706099832,
+      "change_z_min": -1.2414122435142119,
+      "change_z_max": 20.012874614796388,
+      "followup_mean": 65.60659106029817,
+      "followup_sd": 10.653039724922849,
+      "followup_min": 44.90691758809895,
+      "followup_max": 93.68805403284429
+    }
+  ],
+  "raw_change_difference_association_only": 5.405097790854603,
+  "baseline_mean_difference": 8.819962497652995,
+  "baseline_overlap": {
+    "treated_min": 55.59294297736875,
+    "treated_max": 74.95540694433481,
+    "untreated_min": 45.013647911746,
+    "untreated_max": 74.98826079709467,
+    "untreated_at_or_above_treated_min": 642,
+    "treated_outside_untreated_observed_range": 0
+  },
+  "descriptive_regressions": [
+    {
+      "baseline_polynomial_degree": 1,
+      "n": 2000,
+      "rank": 3,
+      "x_coefficient_association_only": 3.713175567493291,
+      "coefficients": [
+        7.397716256402433,
+        3.713175567493291,
+        1.9182873213027094
+      ],
+      "r_squared": 0.3978791216912171
+    },
+    {
+      "baseline_polynomial_degree": 3,
+      "n": 2000,
+      "rank": 5,
+      "x_coefficient_association_only": 3.7248034814007145,
+      "coefficients": [
+        7.462844325444188,
+        3.7248034814007145,
+        2.420860458457047,
+        -0.7549904224417792,
+        0.22985062868102338
+      ],
+      "r_squared": 0.39867133577007485
+    }
+  ],
+  "finite_study_ATT_logical_bounds_assuming_0_100_potential_followup": [
+    -20.168348651194222,
+    79.83165134880578
+  ],
+  "alternative_counterfactual_scenarios": [
+    {
+      "scenario": "zero_effect",
+      "mean_effect": 0.0,
+      "counterfactual_followup_min": 58.69312317912097,
+      "counterfactual_followup_max": 96.97077194766119,
+      "within_0_100": true
+    },
+    {
+      "scenario": "positive_effect_1_point",
+      "mean_effect": 1.0,
+      "counterfactual_followup_min": 57.69312317912097,
+      "counterfactual_followup_max": 95.97077194766119,
+      "within_0_100": true
+    },
+    {
+      "scenario": "negative_effect_1_point",
+      "mean_effect": -1.0,
+      "counterfactual_followup_min": 59.69312317912097,
+      "counterfactual_followup_max": 97.97077194766119,
+      "within_0_100": true
+    }
+  ],
+  "causal_effect_point_identified": false
+}

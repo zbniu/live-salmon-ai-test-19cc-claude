@@ -1,0 +1,240 @@
+{
+  "n_total": 2000,
+  "n_attended": 600,
+  "n_nonattended": 1400,
+  "estimand": "Mean effect of attendance on gain among attendees (ATT)",
+  "primary": {
+    "method": "Cubic spline, 5 control quantile knot locations",
+    "att": 1.2184397057452099,
+    "se": 0.20991030731544869,
+    "ci95": [
+      0.8070230634231959,
+      1.629856348067224
+    ],
+    "normal_approximation_p_value": 6.453023538527263e-09,
+    "estimated_untreated_gain_for_attendees": 11.607271065620095,
+    "control_model_rank": 7,
+    "max_control_leverage": 0.036917131838291845,
+    "variance_treated_component": 0.021558015062625946,
+    "variance_control_component": 0.02250432205464016
+  },
+  "bootstrap_check": {
+    "replicates": 2000,
+    "seed": 20261004,
+    "se": 0.213399876475832,
+    "percentile_ci95": [
+      0.8148528347779288,
+      1.635154505316337
+    ]
+  },
+  "sensitivity": [
+    {
+      "method": "Cubic spline, 5 control quantile knot locations",
+      "att": 1.2184397057452099,
+      "se": 0.20991030731544869,
+      "ci95": [
+        0.8070230634231959,
+        1.629856348067224
+      ],
+      "normal_approximation_p_value": 6.453023538527263e-09,
+      "estimated_untreated_gain_for_attendees": 11.607271065620095,
+      "control_model_rank": 7,
+      "max_control_leverage": 0.036917131838291845,
+      "variance_treated_component": 0.021558015062625946,
+      "variance_control_component": 0.02250432205464016
+    },
+    {
+      "method": "Control polynomial degree 1",
+      "att": 1.1686533997494697,
+      "se": 0.2064466741510017,
+      "ci95": [
+        0.7640253536854302,
+        1.5732814458135091
+      ],
+      "normal_approximation_p_value": 1.5066865888906668e-08,
+      "estimated_untreated_gain_for_attendees": 11.657057371615835,
+      "control_model_rank": 2,
+      "max_control_leverage": 0.0040640868101748774,
+      "variance_treated_component": 0.021393581143082173,
+      "variance_control_component": 0.021226648124927704
+    },
+    {
+      "method": "Control polynomial degree 2",
+      "att": 1.2054006689743306,
+      "se": 0.20804903590551363,
+      "ci95": [
+        0.7976320515812434,
+        1.6131692863674179
+      ],
+      "normal_approximation_p_value": 6.8799251884422565e-09,
+      "estimated_untreated_gain_for_attendees": 11.620310102390974,
+      "control_model_rank": 3,
+      "max_control_leverage": 0.009831759321011733,
+      "variance_treated_component": 0.021615004936520844,
+      "variance_control_component": 0.02166939640469286
+    },
+    {
+      "method": "Control polynomial degree 3",
+      "att": 1.1920387238057504,
+      "se": 0.20935251493180715,
+      "ci95": [
+        0.7817153344665244,
+        1.6023621131449763
+      ],
+      "normal_approximation_p_value": 1.241474491466894e-08,
+      "estimated_untreated_gain_for_attendees": 11.633672047559555,
+      "control_model_rank": 4,
+      "max_control_leverage": 0.018888480605040135,
+      "variance_treated_component": 0.02171260160761068,
+      "variance_control_component": 0.02211587390066186
+    },
+    {
+      "method": "Cubic spline, 4 control quantile knot locations",
+      "att": 1.2096874846712236,
+      "se": 0.21007922385166347,
+      "ci95": [
+        0.7979397720218353,
+        1.6214351973206118
+      ],
+      "normal_approximation_p_value": 8.499331059897698e-09,
+      "estimated_untreated_gain_for_attendees": 11.61602328669408,
+      "control_model_rank": 6,
+      "max_control_leverage": 0.030702873712558587,
+      "variance_treated_component": 0.021620459221726073,
+      "variance_control_component": 0.02251282107239125
+    },
+    {
+      "method": "Cubic spline, 6 control quantile knot locations",
+      "att": 1.2097802675279499,
+      "se": 0.2105235676197506,
+      "ci95": [
+        0.797161657096356,
+        1.6223988779595437
+      ],
+      "normal_approximation_p_value": 9.109278324028285e-09,
+      "estimated_untreated_gain_for_attendees": 11.615930503837353,
+      "control_model_rank": 8,
+      "max_control_leverage": 0.04279888614787819,
+      "variance_treated_component": 0.02162474310603366,
+      "variance_control_component": 0.022695429417314048
+    },
+    {
+      "method": "Cubic spline, 8 control quantile knot locations",
+      "att": 1.2104773878439796,
+      "se": 0.21063233897707706,
+      "ci95": [
+        0.7976455894694763,
+        1.623309186218483
+      ],
+      "normal_approximation_p_value": 9.090873777967114e-09,
+      "estimated_untreated_gain_for_attendees": 11.615233383521325,
+      "control_model_rank": 10,
+      "max_control_leverage": 0.05454077538083679,
+      "variance_treated_component": 0.021521074005932814,
+      "variance_control_component": 0.022844908217021485
+    },
+    {
+      "method": "Cubic spline, 10 control quantile knot locations",
+      "att": 1.20133327190697,
+      "se": 0.2107580639947905,
+      "ci95": [
+        0.7882550570257927,
+        1.6144114867881474
+      ],
+      "normal_approximation_p_value": 1.197663956372978e-08,
+      "estimated_untreated_gain_for_attendees": 11.624377499458333,
+      "control_model_rank": 12,
+      "max_control_leverage": 0.06397492503225666,
+      "variance_treated_component": 0.02170228179928207,
+      "variance_control_component": 0.02271667973955014
+    },
+    {
+      "method": "Cubic spline, 15 control quantile knot locations",
+      "att": 1.2158595545429414,
+      "se": 0.2163052946893204,
+      "ci95": [
+        0.7919089672865505,
+        1.6398101417993323
+      ],
+      "normal_approximation_p_value": 1.898172027551308e-08,
+      "estimated_untreated_gain_for_attendees": 11.609851216822362,
+      "control_model_rank": 17,
+      "max_control_leverage": 0.0862636856613817,
+      "variance_treated_component": 0.021749030720874783,
+      "variance_control_component": 0.025038949789758954
+    },
+    {
+      "method": "Attendee-weighted 1-point starting-score strata",
+      "att": 1.1599619945639925,
+      "se": 0.21638125935850452,
+      "ci95": [
+        0.7358547262213236,
+        1.5840692629066613
+      ]
+    },
+    {
+      "method": "Attendee-weighted 2-point starting-score strata",
+      "att": 1.2080047920732784,
+      "se": 0.21253941591083286,
+      "ci95": [
+        0.7914275368880459,
+        1.6245820472585109
+      ]
+    },
+    {
+      "method": "Attendee-weighted 5-point starting-score strata",
+      "att": 1.3135677633404792,
+      "se": 0.2097524763691349,
+      "ci95": [
+        0.9024529096569748,
+        1.7246826170239835
+      ]
+    }
+  ],
+  "common_slope_comparator": {
+    "method": "OLS z ~ 1 + x + centered_y (constant-effect model)",
+    "x_coefficient": 1.1113363137889074,
+    "se": 0.20134036055493962
+  },
+  "linear_effect_heterogeneity_check": {
+    "att_at_attendee_mean_y": 1.1686533997494706,
+    "effect_change_per_y_point": 0.04277071878327551,
+    "effect_change_se": 0.030925285597708928,
+    "interaction_p_value": 0.16665446730437705
+  },
+  "spline_knots_including_boundary_extensions": [
+    28.673653439233334,
+    34.11754075241137,
+    39.56142806558941,
+    45.00531537876745,
+    50.44920269194549,
+    55.63772329797898,
+    63.45315050747858,
+    74.99632876522726,
+    86.53950702297594,
+    98.08268528072462,
+    109.6258635384733
+  ],
+  "spline_coefficients": [
+    10.569259565112949,
+    6.3051494499519745,
+    6.889375616586743,
+    10.369729404081099,
+    10.221493318956867,
+    15.022230133463824,
+    7.366126745246242
+  ],
+  "observed_attendee_mean_gain": 12.825710771365303,
+  "raw_mean_difference": 3.4488763319610527,
+  "treated_y_range": [
+    57.35599040912017,
+    74.9756668281861
+  ],
+  "control_y_range": [
+    45.00531537876745,
+    74.99632876522726
+  ],
+  "control_count_at_or_above_lowest_attendee_y": 577,
+  "uncertainty_qualification": "Approximate independent-student inference with a fitted smooth outcome mean; not exact quota-design randomization inference."
+}
+Outputs: att_results.json, bootstrap_att.csv, attendee_counterfactual_predictions.csv, strata_details.csv, sensitivity_estimates.csv, adjusted_outcome_curves.png.

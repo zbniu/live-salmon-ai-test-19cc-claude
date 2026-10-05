@@ -1,0 +1,239 @@
+{
+  "n": 2000,
+  "missing": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "bin": 0
+  },
+  "treatment_counts": {
+    "0": 1400,
+    "1": 600
+  },
+  "overall": {
+    "0": {
+      "n": 1400,
+      "mean_y": 56.863686,
+      "mean_z": 9.39317,
+      "sd_z": 4.058093
+    },
+    "1": {
+      "n": 600,
+      "mean_y": 67.072649,
+      "mean_z": 13.01891,
+      "sd_z": 3.7848
+    }
+  },
+  "y_range": {
+    "0": [
+      45.007034485333925,
+      74.9914589085115
+    ],
+    "1": [
+      58.212770522843385,
+      74.9715557039445
+    ]
+  },
+  "score_bins": [
+    {
+      "bin": "[0, 5)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[5, 10)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[10, 15)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[15, 20)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[20, 25)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[25, 30)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[30, 35)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[35, 40)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[40, 45)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[45, 50)",
+      "n": 345,
+      "treated": 0,
+      "mean_y": 47.470153,
+      "mean_z": 6.966313,
+      "p_treated": 0.0,
+      "treated_z": null,
+      "control_z": 6.966313
+    },
+    {
+      "bin": "[50, 55)",
+      "n": 322,
+      "treated": 0,
+      "mean_y": 52.506377,
+      "mean_z": 8.486201,
+      "p_treated": 0.0,
+      "treated_z": null,
+      "control_z": 8.486201
+    },
+    {
+      "bin": "[55, 60)",
+      "n": 342,
+      "treated": 56,
+      "mean_y": 57.644912,
+      "mean_z": 9.879262,
+      "p_treated": 0.163743,
+      "treated_z": 11.04183,
+      "control_z": 9.651626
+    },
+    {
+      "bin": "[60, 65)",
+      "n": 340,
+      "treated": 163,
+      "mean_y": 62.43604,
+      "mean_z": 11.243451,
+      "p_treated": 0.479412,
+      "treated_z": 11.646172,
+      "control_z": 10.872583
+    },
+    {
+      "bin": "[65, 70)",
+      "n": 314,
+      "treated": 172,
+      "mean_y": 67.534147,
+      "mean_z": 12.517524,
+      "p_treated": 0.547771,
+      "treated_z": 13.212102,
+      "control_z": 11.676204
+    },
+    {
+      "bin": "[70, 75)",
+      "n": 337,
+      "treated": 209,
+      "mean_y": 72.462783,
+      "mean_z": 13.928386,
+      "p_treated": 0.620178,
+      "treated_z": 14.460267,
+      "control_z": 13.059924
+    },
+    {
+      "bin": "[75, 80)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[80, 85)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[85, 90)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[90, 95)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    },
+    {
+      "bin": "[95, 100)",
+      "n": 0,
+      "treated": 0,
+      "mean_y": null,
+      "mean_z": null,
+      "p_treated": null,
+      "treated_z": null,
+      "control_z": null
+    }
+  ]
+}

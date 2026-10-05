@@ -1,0 +1,100 @@
+{
+  "stage": "Actual first archive inspection before adding this verification record",
+  "crc_check": "passed",
+  "report_matches_readback": true,
+  "required_categories_present": true,
+  "members": [
+    {
+      "name": "submission/code/01_explore.py",
+      "bytes": 1809
+    },
+    {
+      "name": "submission/code/01b_explore.py",
+      "bytes": 1750
+    },
+    {
+      "name": "submission/code/02_analysis.py",
+      "bytes": 7074
+    },
+    {
+      "name": "submission/code/03_recipient_inference.py",
+      "bytes": 2168
+    },
+    {
+      "name": "submission/code/04_write_report.py",
+      "bytes": 6080
+    },
+    {
+      "name": "submission/code/05_package.py",
+      "bytes": 3075
+    },
+    {
+      "name": "submission/code/run_step.py",
+      "bytes": 1464
+    },
+    {
+      "name": "submission/final_report.md",
+      "bytes": 4883
+    },
+    {
+      "name": "submission/results/01_explore_execution.txt",
+      "bytes": 201
+    },
+    {
+      "name": "submission/results/01b_explore_execution.txt",
+      "bytes": 2505
+    },
+    {
+      "name": "submission/results/02_analysis_execution.txt",
+      "bytes": 3224
+    },
+    {
+      "name": "submission/results/03_recipient_inference_execution.txt",
+      "bytes": 1074
+    },
+    {
+      "name": "submission/results/04_write_report_execution.txt",
+      "bytes": 4990
+    },
+    {
+      "name": "submission/results/analysis_results.json",
+      "bytes": 7345
+    },
+    {
+      "name": "submission/results/baseline_strata.csv",
+      "bytes": 788
+    },
+    {
+      "name": "submission/results/effect_estimates.csv",
+      "bytes": 706
+    },
+    {
+      "name": "submission/results/exploratory_bands.csv",
+      "bytes": 613
+    },
+    {
+      "name": "submission/results/group_summary.csv",
+      "bytes": 488
+    },
+    {
+      "name": "submission/results/input_validation.json",
+      "bytes": 446
+    },
+    {
+      "name": "submission/results/recipient_inference.json",
+      "bytes": 861
+    },
+    {
+      "name": "submission/results/regression_diagnostics.csv",
+      "bytes": 301312
+    },
+    {
+      "name": "submission/results/report_readback.txt",
+      "bytes": 4967
+    },
+    {
+      "name": "submission/run_log.txt",
+      "bytes": 1842
+    }
+  ]
+}

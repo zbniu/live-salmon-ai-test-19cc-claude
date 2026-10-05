@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "public_materials_frozen",
+  "candidate": "K1",
+  "parameters": {
+    "n": 2000,
+    "a": 45,
+    "b_multiplier": 3,
+    "gamma": 0.25,
+    "beta": 0.5,
+    "kappa": 1.2,
+    "M": 900,
+    "K": 600,
+    "m_intercept": 10,
+    "effect_fraction": 0.1
+  },
+  "protocol_sha256": "f85fedf447c734d9d5e7a2cb630284fe18c7091c5cf653610adbc43ec8e7144c",
+  "selected_parameters_sha256": "b6e96c700cd97f65dcc80c3434b15561f017dc52c42bfeecf26e7e4b11a8fe09",
+  "parameter_confirmation_sha256": "2065f6c2ccc0ec36634ce4191ef33f19a90512cb58c6f4015a0dd47a322543b0",
+  "seed_registration_sha256": "e364cfa3b3e4cc115af8a6ada16f3d4fc52489a5cd16634933834f3367fe37ca",
+  "calibration_report_sha256": "5ee62134994b59cf9032dea4a63c7a5451a5d920b751b3599eebc836a6427391",
+  "materials": {
+    "materials/named/A.md": "1c7a7cf5c54687ef5e5029f013a84efb5bc294a83591e930d609f333d6fec6de",
+    "materials/anonymized/A.md": "b93156c723d7d73f51e0a8ccce04743dc9a997fea1dc6ee5e8f852a96798fbde",
+    "materials/named/B.md": "aab46f86dab63f012268e4d6f2e3045fd2591e7a0e2ae1a1b22d91958a4615a7",
+    "materials/anonymized/B.md": "2988f677ba0ac4f96443727ca7147948d695b829fa856966f399302406df16cc",
+    "materials/named/C.md": "195c2777e2e1193ab5890bcf9f8c261caaa07fbd383a2562e0cf90f79c50fa77",
+    "materials/anonymized/C.md": "76837424e3599eab4db82b7250656cfdefdd3e69061b906e41a7caf2b345cefe",
+    "materials/prompt.txt": "91da46e03dbe5379b3ba0990009120781686ef4365d93df454cb0c99e56170d4",
+    "materials/substitutions.json": "b2493881a66de12e21eaaa4166160969fef2290fffe89f8f3642b74ff0295423"
+  },
+  "tested_model_calls": 0
+}

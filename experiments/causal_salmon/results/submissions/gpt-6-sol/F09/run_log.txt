@@ -1,0 +1,8 @@
+01_explore.py exit=1
+01_explore.py exit=0 (after removing unavailable statsmodels dependency; original error retained in prior tool record, appended here)
+02_identification.py exit=0; output: results/02_identification.json, results/02_identification.stdout, results/02_identification.stderr
+Execution order and records:
+1. submission/code/01_explore.py initially exited 1 on `import statsmodels.api`: ModuleNotFoundError (`statsmodels` unavailable). Its stderr was shown by the tool but the local stderr file was overwritten in the corrected rerun, so the original traceback file is missing. The script was then amended to use NumPy for descriptive OLS.
+2. Corrected submission/code/01_explore.py exited 0. Outputs: submission/results/01_explore.txt and submission/results/01_explore.stderr (empty). The first failed version of the script was not retained; the version in code/ is the executed corrected version.
+3. submission/code/02_identification.py exited 0. Outputs: submission/results/02_identification.json, submission/results/02_identification.stdout, submission/results/02_identification.stderr (empty).
+Inputs for both scripts: the complete uploaded data.csv (2,000 records). Study design interpreted from the uploaded STUDY_DESCRIPTION.md. No records were missing in the CSV.

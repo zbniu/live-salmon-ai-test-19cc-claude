@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "data(9).csv": "d570a12afde75ae0eca57751d9dafc0d990e8b0bd6478461f8356e12e38b6fa8",
+    "STUDY_DESCRIPTION(9).md": "aab46f86dab63f012268e4d6f2e3045fd2591e7a0e2ae1a1b22d91958a4615a7"
+  },
+  "rows": 2000,
+  "missing_values": 0,
+  "duplicate_rows": 0,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "control_max_y": 74.99632876522726,
+  "treated_min_y": 57.35599040912017,
+  "treated_above_control_max": 0,
+  "controls_above_treated_min": 577,
+  "raw_gain_difference": 3.4488763319610527,
+  "end_score_min": 44.827531808012466,
+  "end_score_max": 96.53402362477388
+}

@@ -1,0 +1,29 @@
+{
+  "input_hashes": {
+    "data.csv": "08864d914ccefd5df395e603ac462a3062d8dc16f03bb11211d278611691ba1a",
+    "STUDY_DESCRIPTION.md": "1c7a7cf5c54687ef5e5029f013a84efb5bc294a83591e930d609f333d6fec6de"
+  },
+  "method": "random_difference",
+  "numeric": {
+    "N": 1.1753994723555934,
+    "E": 1.1753994723555934,
+    "se": 0.21517859064857964,
+    "ci": [
+      0.7536494346843773,
+      1.5971495100268096
+    ]
+  },
+  "analysis": {
+    "N": 1.1753994723555934,
+    "method": "difference in means; sample variance ddof=1"
+  },
+  "report": "## Final report\n\nAttending the tutoring class changed score gain by an estimated 1.1753994723555934 points for the students who attended the tutoring class. The equal-chance random draw used no information about the units, which supports this causal comparison.\n\nWe calculated the raw mean difference (1.1753994723555934 points). For the random comparison, the estimate/difference is 1.1753994723555934 points, SE 0.21517859064857964, with nominal 95% interval [0.75364943468437728, 1.5971495100268096].\n\nThe estimate concerns actual participants in this simulated study. Finite-sample uncertainty remains; it does not establish an effect for every individual or other populations.\n",
+  "correct": true,
+  "format_valid": true,
+  "input_boundary_passed": true,
+  "accessed_inputs": [
+    "<TEMP_DIR>/causal-salmon-public-eb1daid3/data.csv",
+    "<TEMP_DIR>/causal-salmon-public-eb1daid3/STUDY_DESCRIPTION.md"
+  ],
+  "public_copy_note": "Machine-specific paths were removed from this historical display copy. Placeholders are not runnable paths; numerical results and historical identity hashes are preserved. See manifests/path_redaction.json."
+}

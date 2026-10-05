@@ -1,0 +1,2 @@
+Wrote final_report.md from results/main_estimate.json; no statistical analysis rerun.
+Adopted estimate: 1.2517549655565219 95% bootstrap CI: [0.8314041011527575, 1.6660936033538487]

@@ -1,0 +1,15 @@
+{
+  "run_id": "calibration",
+  "repetitions_checked": 15000,
+  "expected_repetitions": 15000,
+  "bootstrap_estimates_checked": 1000000,
+  "expected_bootstrap_estimates": 1000000,
+  "numeric_tolerance": "abs(delta)<=1e-8*max(1,abs(main))",
+  "mismatches": [],
+  "failure_reproductions": [],
+  "passed": true,
+  "input_hashes": {
+    "main_summary": "00bbade04686ba005c69cd71854afbe722c67425d20fb996175fbc49e6faac39",
+    "independent_summary": "b536ba967e0a4420205bf2d3c9960694327127e0b0c02e5845cd443c6437b810"
+  }
+}

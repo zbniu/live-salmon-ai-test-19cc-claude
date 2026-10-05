@@ -1,0 +1,9 @@
+File-saving attempt after the analysis and first packaging verification:
+The platform-supplied library_upload.py helper was executed once with a two-file
+request for final_report.md and submission.zip. It exited with status 1.
+Actual console error (copied from the session tool result):
+library upload failed: could not read Codex auth from /root/.codex/auth.json
+No successful persistence result was returned. No retry was performed.
+The report and archive remain present in the session writable space and can be
+delivered using supported sandbox download links. The supplied platform helper
+is not vendored in submission/code/. It is not statistical analysis code.

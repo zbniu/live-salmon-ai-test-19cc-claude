@@ -1,0 +1,1 @@
+ATT regression-imputation estimate=1.2144, bootstrap 95% CI=[0.831  1.5704], boot SE=0.1856

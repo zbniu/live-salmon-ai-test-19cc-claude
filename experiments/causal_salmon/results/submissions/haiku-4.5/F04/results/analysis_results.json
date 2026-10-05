@@ -1,0 +1,12 @@
+{
+  "treatment_group_size": 600,
+  "control_group_size": 1400,
+  "mean_z_treatment": 11.104341164664351,
+  "mean_z_control": 9.994118317005503,
+  "ate": 1.1102228476588483,
+  "standard_error": 0.21668400750331995,
+  "ci_lower": 0.6855221929523412,
+  "ci_upper": 1.5349235023653554,
+  "t_statistic": 5.258590078195216,
+  "p_value": 1.6068516100623955e-07
+}

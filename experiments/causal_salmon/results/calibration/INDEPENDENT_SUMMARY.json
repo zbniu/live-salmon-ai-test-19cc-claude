@@ -1,0 +1,1389 @@
+{
+  "candidates": {
+    "K1": {
+      "CAL": {
+        "CAL-1": true,
+        "CAL-10": true,
+        "CAL-11": true,
+        "CAL-2": true,
+        "CAL-3": true,
+        "CAL-4": true,
+        "CAL-5": true,
+        "CAL-6": true,
+        "CAL-7": true,
+        "CAL-8": true,
+        "CAL-9": null
+      },
+      "CAL9_status": "deferred_final_material_freeze",
+      "GEN": {
+        "A": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 41,
+            "passed_count": 959,
+            "reasons": {
+              "interval_covers_truth": 41,
+              "lower_interval_positive": 4
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "B": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 56,
+            "passed_count": 944,
+            "reasons": {
+              "interval_covers_truth": 56
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "C": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        }
+      },
+      "diagnostic_conflicts": {
+        "D1": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        },
+        "D2": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        }
+      },
+      "state": "passed",
+      "worlds": {
+        "A": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.0064130006975942405,
+            "bias": 0.004342686691276205,
+            "count": 1000,
+            "coverage": 0.959,
+            "distinction_ratio": 0.0,
+            "precision_ratio": 4.933066843745301,
+            "relative_bias": 0.004340904289006627,
+            "status": "ok"
+          },
+          "support_passes": null
+        },
+        "B": {
+          "D1": {
+            "MCSE": 0.006977160408676608,
+            "bias": 0.013303153160301428,
+            "count": 1000,
+            "coverage": 0.954,
+            "distinction_ratio": 10.91405118133662,
+            "precision_ratio": 5.30875084286745,
+            "relative_bias": 0.011357520790097544,
+            "status": "ok"
+          },
+          "D2": {
+            "MCSE": 0.006944790252320946,
+            "bias": 0.004118708227017098,
+            "count": 1000,
+            "coverage": 0.95,
+            "distinction_ratio": 11.008280491753464,
+            "precision_ratio": 5.333495304340486,
+            "relative_bias": 0.0035163328387653146,
+            "status": "ok"
+          },
+          "primary": {
+            "MCSE": 0.006764040020938607,
+            "bias": 0.005172647003316879,
+            "count": 1000,
+            "coverage": 0.944,
+            "distinction_ratio": 11.289053206509765,
+            "precision_ratio": 5.4760181911584125,
+            "relative_bias": 0.004416129407223638,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        },
+        "C": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.006144363510523302,
+            "bias": 2.397200696607142,
+            "count": 1000,
+            "coverage": 0.0,
+            "distinction_ratio": 8.39577998507098,
+            "precision_ratio": 6.60356844361134,
+            "relative_bias": 1.8683094494857635,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        }
+      }
+    },
+    "K2": {
+      "CAL": {
+        "CAL-1": true,
+        "CAL-10": true,
+        "CAL-11": true,
+        "CAL-2": true,
+        "CAL-3": true,
+        "CAL-4": true,
+        "CAL-5": true,
+        "CAL-6": true,
+        "CAL-7": true,
+        "CAL-8": true,
+        "CAL-9": null
+      },
+      "CAL9_status": "deferred_final_material_freeze",
+      "GEN": {
+        "A": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 41,
+            "passed_count": 959,
+            "reasons": {
+              "interval_covers_truth": 41,
+              "lower_interval_positive": 4
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "B": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 52,
+            "passed_count": 948,
+            "reasons": {
+              "interval_covers_truth": 52
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "C": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        }
+      },
+      "diagnostic_conflicts": {
+        "D1": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        },
+        "D2": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        }
+      },
+      "state": "passed",
+      "worlds": {
+        "A": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.0064130006975942405,
+            "bias": 0.004342686691276205,
+            "count": 1000,
+            "coverage": 0.959,
+            "distinction_ratio": 0.0,
+            "precision_ratio": 4.933066843745301,
+            "relative_bias": 0.004340904289006627,
+            "status": "ok"
+          },
+          "support_passes": null
+        },
+        "B": {
+          "D1": {
+            "MCSE": 0.0066461136907088264,
+            "bias": 0.0069338481547387785,
+            "count": 1000,
+            "coverage": 0.952,
+            "distinction_ratio": 10.30742539241256,
+            "precision_ratio": 5.490229792313159,
+            "relative_bias": 0.006009191419247057,
+            "status": "ok"
+          },
+          "D2": {
+            "MCSE": 0.006613134163323787,
+            "bias": 0.002390773622507257,
+            "count": 1000,
+            "coverage": 0.948,
+            "distinction_ratio": 10.379891465459579,
+            "precision_ratio": 5.5176094249221475,
+            "relative_bias": 0.002071954276632706,
+            "status": "ok"
+          },
+          "primary": {
+            "MCSE": 0.006450866190410217,
+            "bias": 0.0041817615786388825,
+            "count": 1000,
+            "coverage": 0.948,
+            "distinction_ratio": 10.628810124786895,
+            "precision_ratio": 5.6564018398139515,
+            "relative_bias": 0.0036241067348035242,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        },
+        "C": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.005939473031110589,
+            "bias": 2.3754674036819075,
+            "count": 1000,
+            "coverage": 0.0,
+            "distinction_ratio": 8.198544803208875,
+            "precision_ratio": 6.7884349924354614,
+            "relative_bias": 1.863079971971875,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        }
+      }
+    },
+    "K3": {
+      "CAL": {
+        "CAL-1": true,
+        "CAL-10": true,
+        "CAL-11": true,
+        "CAL-2": true,
+        "CAL-3": true,
+        "CAL-4": true,
+        "CAL-5": true,
+        "CAL-6": true,
+        "CAL-7": true,
+        "CAL-8": true,
+        "CAL-9": null
+      },
+      "CAL9_status": "deferred_final_material_freeze",
+      "GEN": {
+        "A": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 41,
+            "passed_count": 959,
+            "reasons": {
+              "interval_covers_truth": 41,
+              "lower_interval_positive": 4
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "B": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 54,
+            "passed_count": 946,
+            "reasons": {
+              "interval_covers_truth": 54
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "C": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        }
+      },
+      "diagnostic_conflicts": {
+        "D1": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        },
+        "D2": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        }
+      },
+      "state": "passed",
+      "worlds": {
+        "A": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.0064130006975942405,
+            "bias": 0.004342686691276205,
+            "count": 1000,
+            "coverage": 0.959,
+            "distinction_ratio": 0.0,
+            "precision_ratio": 4.933066843745301,
+            "relative_bias": 0.004340904289006627,
+            "status": "ok"
+          },
+          "support_passes": null
+        },
+        "B": {
+          "D1": {
+            "MCSE": 0.006434999377293028,
+            "bias": 0.012698368957428962,
+            "count": 1000,
+            "coverage": 0.947,
+            "distinction_ratio": 9.943146487618156,
+            "precision_ratio": 5.623521642838157,
+            "relative_bias": 0.011096628876637663,
+            "status": "ok"
+          },
+          "D2": {
+            "MCSE": 0.0063960884941928805,
+            "bias": 0.0004062363642547426,
+            "count": 1000,
+            "coverage": 0.945,
+            "distinction_ratio": 10.064399138818139,
+            "precision_ratio": 5.657732581829119,
+            "relative_bias": 0.0003549947387291995,
+            "status": "ok"
+          },
+          "primary": {
+            "MCSE": 0.006295046236456369,
+            "bias": 0.003371890496841489,
+            "count": 1000,
+            "coverage": 0.946,
+            "distinction_ratio": 10.206709459251565,
+            "precision_ratio": 5.748545270451919,
+            "relative_bias": 0.0029465687744268474,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        },
+        "C": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.005802095128747566,
+            "bias": 2.381818485887243,
+            "count": 1000,
+            "coverage": 0.0,
+            "distinction_ratio": 7.790499197331986,
+            "precision_ratio": 6.909121580335176,
+            "relative_bias": 1.8788883842037103,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        }
+      }
+    },
+    "K4": {
+      "CAL": {
+        "CAL-1": true,
+        "CAL-10": true,
+        "CAL-11": true,
+        "CAL-2": true,
+        "CAL-3": true,
+        "CAL-4": true,
+        "CAL-5": true,
+        "CAL-6": true,
+        "CAL-7": true,
+        "CAL-8": true,
+        "CAL-9": null
+      },
+      "CAL9_status": "deferred_final_material_freeze",
+      "GEN": {
+        "A": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 36,
+            "passed_count": 964,
+            "reasons": {
+              "interval_covers_truth": 36,
+              "lower_interval_positive": 1
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "B": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 45,
+            "passed_count": 955,
+            "reasons": {
+              "interval_covers_truth": 45
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "C": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        }
+      },
+      "diagnostic_conflicts": {
+        "D1": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        },
+        "D2": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        }
+      },
+      "state": "passed",
+      "worlds": {
+        "A": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.005405707214266435,
+            "bias": 0.0052869534014348945,
+            "count": 1000,
+            "coverage": 0.964,
+            "distinction_ratio": 0.0,
+            "precision_ratio": 5.852289044942414,
+            "relative_bias": 0.005284783436523357,
+            "status": "ok"
+          },
+          "support_passes": null
+        },
+        "B": {
+          "D1": {
+            "MCSE": 0.005472636473806177,
+            "bias": 0.013109697078428104,
+            "count": 1000,
+            "coverage": 0.95,
+            "distinction_ratio": 13.789662017700108,
+            "precision_ratio": 6.768219737903093,
+            "relative_bias": 0.011192358332342505,
+            "status": "ok"
+          },
+          "D2": {
+            "MCSE": 0.0054374552780308005,
+            "bias": 0.0038985031808055196,
+            "count": 1000,
+            "coverage": 0.95,
+            "distinction_ratio": 13.93339406553192,
+            "precision_ratio": 6.812011190241468,
+            "relative_bias": 0.0033283335456431628,
+            "status": "ok"
+          },
+          "primary": {
+            "MCSE": 0.005309482748203579,
+            "bias": 0.004639902133359518,
+            "count": 1000,
+            "coverage": 0.955,
+            "distinction_ratio": 14.249285896327896,
+            "precision_ratio": 6.976198616129893,
+            "relative_bias": 0.003961300325467698,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        },
+        "C": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.0046291216121705754,
+            "bias": 2.395684354908979,
+            "count": 1000,
+            "coverage": 0.0,
+            "distinction_ratio": 11.035985504453734,
+            "precision_ratio": 8.765102406791891,
+            "relative_bias": 1.8671276562686427,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        }
+      }
+    },
+    "K5": {
+      "CAL": {
+        "CAL-1": true,
+        "CAL-10": true,
+        "CAL-11": true,
+        "CAL-2": true,
+        "CAL-3": true,
+        "CAL-4": true,
+        "CAL-5": true,
+        "CAL-6": true,
+        "CAL-7": true,
+        "CAL-8": true,
+        "CAL-9": null
+      },
+      "CAL9_status": "deferred_final_material_freeze",
+      "GEN": {
+        "A": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 41,
+            "passed_count": 959,
+            "reasons": {
+              "interval_covers_truth": 41,
+              "lower_interval_positive": 4
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "B": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 1000,
+            "failed_count": 56,
+            "passed_count": 944,
+            "reasons": {
+              "interval_covers_truth": 56
+            }
+          },
+          "GEN-5": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        },
+        "C": {
+          "GEN-1": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-2": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-3": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-4": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-5": {
+            "applicable_count": 0,
+            "failed_count": 0,
+            "passed_count": 0,
+            "reasons": {}
+          },
+          "GEN-6": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          },
+          "GEN-7": {
+            "applicable_count": 1000,
+            "failed_count": 0,
+            "passed_count": 1000,
+            "reasons": {}
+          }
+        }
+      },
+      "diagnostic_conflicts": {
+        "D1": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        },
+        "D2": {
+          "conflict": false,
+          "criteria": [
+            false,
+            false,
+            false
+          ],
+          "status": "ok"
+        }
+      },
+      "state": "passed",
+      "worlds": {
+        "A": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.0064130006975942405,
+            "bias": 0.004342686691276205,
+            "count": 1000,
+            "coverage": 0.959,
+            "distinction_ratio": 0.0,
+            "precision_ratio": 4.933066843745301,
+            "relative_bias": 0.004340904289006627,
+            "status": "ok"
+          },
+          "support_passes": null
+        },
+        "B": {
+          "D1": {
+            "MCSE": 0.006977160408676608,
+            "bias": 0.013303153160301428,
+            "count": 1000,
+            "coverage": 0.954,
+            "distinction_ratio": 10.91405118133662,
+            "precision_ratio": 5.30875084286745,
+            "relative_bias": 0.011357520790097544,
+            "status": "ok"
+          },
+          "D2": {
+            "MCSE": 0.006944790252320946,
+            "bias": 0.004118708227017098,
+            "count": 1000,
+            "coverage": 0.95,
+            "distinction_ratio": 11.008280491753464,
+            "precision_ratio": 5.333495304340486,
+            "relative_bias": 0.0035163328387653146,
+            "status": "ok"
+          },
+          "primary": {
+            "MCSE": 0.006764040020938607,
+            "bias": 0.005172647003316879,
+            "count": 1000,
+            "coverage": 0.944,
+            "distinction_ratio": 11.289053206509765,
+            "precision_ratio": 5.4760181911584125,
+            "relative_bias": 0.004416129407223638,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        },
+        "C": {
+          "D1": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "D2": {
+            "MCSE": null,
+            "bias": null,
+            "count": 0,
+            "coverage": null,
+            "distinction_ratio": null,
+            "precision_ratio": null,
+            "relative_bias": null,
+            "status": "not_applicable"
+          },
+          "primary": {
+            "MCSE": 0.005934542602056266,
+            "bias": 2.7052510163246066,
+            "count": 1000,
+            "coverage": 0.0,
+            "distinction_ratio": 8.094097393390303,
+            "precision_ratio": 6.9085167036443496,
+            "relative_bias": 2.0865822327700503,
+            "status": "ok"
+          },
+          "support_passes": 1000
+        }
+      }
+    }
+  }
+}

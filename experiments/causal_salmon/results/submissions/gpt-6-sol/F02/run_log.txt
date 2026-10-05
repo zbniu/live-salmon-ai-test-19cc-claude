@@ -1,0 +1,9 @@
+Execution record (input: upload/data(20261004-071210).csv; description read before analysis)
+
+1. Created code/analyze.py. First attempted `python submission/code/analyze.py > submission/results/analysis_stdout.txt`. Shell exited 1 before Python ran because submission/results/ did not yet exist; no result file was produced.
+2. Created submission/results/ and retried the same command. Python exited 1 at `import statsmodels.api as sm`: ModuleNotFoundError (statsmodels unavailable). The redirected stdout was empty.
+3. Replaced statsmodels with explicit NumPy local-linear OLS and HC1 calculations, then retried. Python exited 1 while writing analysis.json: ValueError, NaN from the mean of an empty baseline bin was not JSON compliant. A RuntimeWarning also appeared at the robust-standard-error square root. This left a partial analysis.json and empty redirected stdout; both were superseded by step 4.
+4. Handled empty bins and clipped negligible negative numerical variance diagonals to zero, then ran `python submission/code/analyze.py > submission/results/analysis_stdout.txt`. Exit 0; produced complete results/analysis.json and results/analysis_stdout.txt from the full 2,000 rows.
+5. Created code/bounds.py and ran `python submission/code/bounds.py > submission/results/bounds_stdout.txt`. Exit 0; produced results/bounds.json and results/bounds_stdout.txt from the full CSV.
+
+No input records were missing. The successful output files are the actual outputs of steps 4 and 5; earlier failed attempts and their overwritten partial/empty outputs are recorded above, not presented as successful results.

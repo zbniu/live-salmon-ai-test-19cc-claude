@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-04",
+  "scope": "roadmap contribution packaging and offline checks",
+  "python": "3.12.13",
+  "numpy": "2.5.3",
+  "pytest": "9.1.1",
+  "offline_unit_tests": {
+    "passed": 104,
+    "public_audit_regression_tests": 3
+  },
+  "independent_selftest": {
+    "passed": 14,
+    "bootstrap_attempts": 200,
+    "bootstrap_successes": 200
+  },
+  "public_package_audit": {
+    "passed": true,
+    "public_files": 1287,
+    "original_model_artifacts": 915,
+    "answers": 72,
+    "PASS": 68,
+    "FAIL": 4,
+    "UNKNOWN": 0
+  },
+  "tested_model_calls": 0,
+  "formal_dataset_regenerations": 0,
+  "submitted_model_programs_executed": false,
+  "upstream_core_pipeline_modified": false
+}

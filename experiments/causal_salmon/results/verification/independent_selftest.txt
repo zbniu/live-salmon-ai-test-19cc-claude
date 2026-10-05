@@ -1,0 +1,21 @@
+test_all_200_bootstraps_retained_when_original_fails (__main__.IndependentFixtures.test_all_200_bootstraps_retained_when_original_fails) ... ok
+test_all_record_aggregation_and_missing_diagnostics (__main__.IndependentFixtures.test_all_record_aggregation_and_missing_diagnostics) ... ok
+test_assignment_ties (__main__.IndependentFixtures.test_assignment_ties) ... ok
+test_bin_edges_ties_and_missing_diagnostic (__main__.IndependentFixtures.test_bin_edges_ties_and_missing_diagnostic) ... ok
+test_csv_precision_and_rejections (__main__.IndependentFixtures.test_csv_precision_and_rejections) ... ok
+test_gen_thresholds_and_absent_values (__main__.IndependentFixtures.test_gen_thresholds_and_absent_values) ... ok
+test_hand_difference_and_closed_interval (__main__.IndependentFixtures.test_hand_difference_and_closed_interval) ... ok
+test_hand_four_column_hc3 (__main__.IndependentFixtures.test_hand_four_column_hc3) ... ok
+test_hand_weighting_and_failure (__main__.IndependentFixtures.test_hand_weighting_and_failure) ... ok
+test_mechanical_materials_and_public_rules (__main__.IndependentFixtures.test_mechanical_materials_and_public_rules) ... ok
+test_public_runtime_isolation_each_world (__main__.IndependentFixtures.test_public_runtime_isolation_each_world) ... ok
+test_random_raw_transform_and_registered_entropy (__main__.IndependentFixtures.test_random_raw_transform_and_registered_entropy) ... ok
+test_registered_selftest_seeds_all_candidates (__main__.IndependentFixtures.test_registered_selftest_seeds_all_candidates) ... ok
+test_report_extraction_edges (__main__.IndependentFixtures.test_report_extraction_edges) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.768s
+
+OK
+
+{"passed": true, "tests": 14, "benchmark_seconds": 0.3017861670232378, "bootstrap_successes": 200, "selftest_result": "<SUBMISSION_ROOT>/verification/selftest_evidence/20261005T023846-039ddef6/result.json", "code_sha256": "ce276a74cdffa5e7cfbe2168227746d7594c1a311679b005a817cdd735bead56"}

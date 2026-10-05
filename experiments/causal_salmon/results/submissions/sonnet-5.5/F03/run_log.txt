@@ -1,0 +1,11 @@
+Execution record (in order)
+1. code/01_explore.py -> results/01_explore_output.txt : OK. Data 2000x3, no missing, x: 1400/600.
+2. code/02_analysis.py : FIRST ATTEMPT FAILED (ModuleNotFoundError: statsmodels). The error text was printed to the
+   terminal only; the output file was subsequently overwritten by the successful rerun, so the failed attempt has no saved record.
+   Ran `pip install statsmodels --break-system-packages`, then re-ran the same unchanged script -> results/02_analysis_output.txt : OK
+   (balance, difference in means, adjusted OLS, Lin, heterogeneity, permutation test, bootstrap).
+3. code/03_att.py -> results/03_att_output.txt : OK (ATT regression imputation + bootstrap).
+4. code/04_group_means.py -> results/04_group_means_output.txt : OK. (The same group-mean check had first been run as an inline
+   command whose output was not saved; this script is the saved version.)
+5. final_report.md written by hand from the outputs above; group-means line edited with sed after step 4.
+No other errors. Random seeds: 1 (permutation/bootstrap in 02), 7 (03).

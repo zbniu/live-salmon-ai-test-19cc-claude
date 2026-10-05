@@ -1,0 +1,24 @@
+{
+  "n_rows": 2000,
+  "n_missing": 0,
+  "duplicate_rows": 0,
+  "raw_mean_difference": 3.4488763319610527,
+  "treated_outside_control_range": 0,
+  "nearest_control_baseline_distance_quantiles": {
+    "min": 4.006325779926101e-05,
+    "median": 0.010035839630880616,
+    "p90": 0.03354582805675648,
+    "p95": 0.04688013029589972,
+    "max": 0.11637819441103403
+  },
+  "sha256": {
+    "STUDY_DESCRIPTION.md": "2988f677ba0ac4f96443727ca7147948d695b829fa856966f399302406df16cc",
+    "data.csv": "d570a12afde75ae0eca57751d9dafc0d990e8b0bd6478461f8356e12e38b6fa8"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  }
+}

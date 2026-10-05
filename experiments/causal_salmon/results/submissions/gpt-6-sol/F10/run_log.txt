@@ -1,0 +1,9 @@
+Execution record (in order; all paths relative to workspace unless absolute):
+
+1. Read upload/STUDY_DESCRIPTION(20261004-071403).md and inspected line count and first lines of upload/data(20261004-071403).csv. The CSV had 2001 lines including header; no errors.
+2. Checked Python analysis libraries. `python -c 'import numpy, scipy, statsmodels; ...'` failed with ModuleNotFoundError: No module named 'statsmodels'. A repeat using `$CODEX_PRIMARY_RUNTIME_PYTHON` also failed for the same missing module. These checks made no output files.
+3. Checked `$CODEX_PRIMARY_RUNTIME_PYTHON` imports for numpy, scipy and pandas successfully (versions 2.3.5, 1.17.0 and 2.2.3). No output file.
+4. Created submission/code/analyze.py, then executed it once with `$CODEX_PRIMARY_RUNTIME_PYTHON submission/code/analyze.py` (exit code 0). It validated all 2000 complete rows, used the full CSV, and wrote submission/results/analysis.json and submission/results/summary.txt. Its printed results matched summary.txt. No missing input records or values were found.
+5. Read submission/results/analysis.json to review full results. Created submission/final_report.md from those results.
+
+The unsuccessful dependency checks in step 2 are disclosed here; they did not generate analysis outputs. No analysis execution was repeated to replace an earlier output.

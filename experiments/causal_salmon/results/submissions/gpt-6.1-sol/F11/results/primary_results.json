@@ -1,0 +1,36 @@
+{
+  "estimand": "Average effect of attending on score gain among the 600 attendees (ATT)",
+  "primary_method": "Control-only restricted cubic spline (5 knots), standardized to attendees",
+  "att_points": 1.241663846738997,
+  "approximate_95_percent_bootstrap_CI": [
+    0.8087174868999641,
+    1.6502749658213975
+  ],
+  "bootstrap_standard_error": 0.21504944002592435,
+  "bootstrap_replicates": 3000,
+  "bootstrap_seed": 20261004,
+  "mean_observed_attendee_gain": 13.01890975366738,
+  "estimated_mean_attendee_gain_without_tutoring": 11.777245906928384,
+  "mean_control_gain": 9.393170093177371,
+  "unadjusted_difference_points": 3.6257396604900087,
+  "mean_starting_score_difference": 10.2089625039659,
+  "spline_knots_original_score": [
+    46.48512025587304,
+    53.1912104149129,
+    59.806094376656155,
+    66.6233640451709,
+    73.46248835662097
+  ],
+  "control_nonlinearity_HC3_Wald_p": 0.43454708085950655,
+  "treatment_linear_interaction_HC3_p": 0.16017503827497648,
+  "control_model_rmse": 3.5661698382973044,
+  "no_attendees_outside_observed_control_score_range": true,
+  "end_of_term_score_range": [
+    44.69975725853025,
+    97.11178088687882
+  ],
+  "CI_limitation": "Approximate model/sampling interval; assignment probabilities and the capacity-constrained lottery are not reconstructed. Not an exact finite-population randomization interval.",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3"
+}

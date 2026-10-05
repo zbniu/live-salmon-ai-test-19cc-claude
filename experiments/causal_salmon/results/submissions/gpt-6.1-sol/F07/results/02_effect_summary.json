@@ -1,0 +1,39 @@
+{
+  "estimand": "average effect on the treated (ATT), in change-score points",
+  "primary_model": "untreated-outcome cubic B-spline with five equally spaced interior knots; standardized to all 600 recipients",
+  "interior_knots": [
+    50.003817609844084,
+    55.00231984092072,
+    60.000822071997355,
+    64.99932430307399,
+    69.99782653415062
+  ],
+  "n_treated": 600,
+  "n_controls": 1400,
+  "observed_treated_mean": 12.825710771365303,
+  "estimated_untreated_mean_for_treated": 11.626994330525289,
+  "att": 1.1987164408400148,
+  "sandwich_se": 0.21040562260718487,
+  "approximate_normal_95_ci": [
+    0.7863214205299325,
+    1.6111114611500972
+  ],
+  "raw_difference": 3.4488763319610527,
+  "control_residual_sd": 3.562727993842141,
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261004,
+    "standard_error": 0.21375550975281038,
+    "percentile_95_ci": [
+      0.7858972912977362,
+      1.6172808885905754
+    ]
+  },
+  "baseline_overlap": {
+    "treated_min": 57.35599040912017,
+    "treated_max": 74.97566682818609,
+    "control_min": 45.00531537876745,
+    "control_max": 74.99632876522726,
+    "recipients_outside_control_range": 0
+  }
+}

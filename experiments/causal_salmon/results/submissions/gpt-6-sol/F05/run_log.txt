@@ -1,0 +1,6 @@
+Execution order (all runs used the complete attached CSV; no row was excluded):
+1. Executed submission/code/analyze.py. It stopped at import with ModuleNotFoundError: No module named 'statsmodels' (exit 1), before reading data or producing analysis outputs. Its stderr.txt was overwritten by run 2 and is unavailable as a separate file; the actual tool output reported this error.
+2. Replaced the regression implementation with NumPy OLS and HC3 covariance and executed the same script. It read the CSV and calculated statistics, then stopped during JSON serialization with TypeError: Object of type int64 is not JSON serializable (exit 1). Actual stderr is preserved in submission/results/attempt2_stderr.txt. No analysis.json or group_summary.txt was written by that run.
+3. Converted the count to a Python int and executed submission/code/analyze.py again (exit 0). Actual outputs: submission/results/analysis.json, group_summary.txt, stdout.txt, stderr.txt (the final stderr is empty). This is the successful analysis used in final_report.md.
+4. Wrote submission/final_report.md from the successful results and prepared this log.
+5. Initial ZIP packaging command flattened the directory names; archive verification failed its required-path assertion. Rebuilt the archive preserving the submission/ directory and verified it below.

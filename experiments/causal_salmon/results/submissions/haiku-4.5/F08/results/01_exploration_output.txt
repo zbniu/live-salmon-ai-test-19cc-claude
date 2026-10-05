@@ -1,0 +1,162 @@
+================================================================================
+DATA EXPLORATION
+================================================================================
+
+Data shape: (2000, 3)
+
+First few rows:
+   x          y          z
+0  0  46.915799   2.867753
+1  1  63.042412  15.253994
+2  1  67.980798  11.181131
+3  0  55.809440   9.695340
+4  0  62.235465  12.612228
+
+Data types:
+x      int64
+y    float64
+z    float64
+dtype: object
+
+Basic statistics:
+                 x            y            z
+count  2000.000000  2000.000000  2000.000000
+mean      0.300000    60.108981    10.411497
+std       0.458372     8.615073     4.303233
+min       0.000000    45.005315    -1.314801
+25%       0.000000    52.978800     7.305145
+50%       0.000000    60.117038    10.455232
+75%       1.000000    67.693724    13.347647
+max       1.000000    74.996329    22.448422
+
+Missing values: 0
+
+Treatment assignment:
+  Control (x=0): 1400
+  Treatment (x=1): 600
+
+================================================================================
+NAIVE COMPARISON (Biased)
+================================================================================
+
+Mean score gain for control (no tutoring): 9.3768
+Mean score gain for treatment (tutoring): 12.8257
+Naive difference: 3.4489
+
+T-test for difference in means:
+  t-statistic: 17.6555
+  p-value: 0.000000
+
+Start-of-term score (y) by group:
+  Control mean y: 57.2250
+  Treatment mean y: 66.8382
+  Difference in y: 9.6131
+
+Correlation between start score (y) and score gain (z): 0.5474
+
+================================================================================
+APPROACH 1: Stratification by start score
+================================================================================
+
+Q1:
+  Control n=400, mean z gain=7.0540
+  Treatment n=0, mean z gain=nan
+  Effect: nan
+
+Q2:
+  Control n=400, mean z gain=8.7991
+  Treatment n=0, mean z gain=nan
+  Effect: nan
+
+Q3:
+  Control n=238, mean z gain=10.2813
+  Treatment n=162, mean z gain=10.9000
+  Effect: 0.6186
+
+Q4:
+  Control n=187, mean z gain=11.4184
+  Treatment n=213, mean z gain=12.6549
+  Effect: 1.2365
+
+Q5:
+  Control n=175, mean z gain=12.5952
+  Treatment n=225, mean z gain=14.3740
+  Effect: 1.7788
+
+Simple average of stratum-specific effects: nan
+Weighted average (by stratum size): nan
+
+================================================================================
+APPROACH 2: Linear regression adjusting for y
+================================================================================
+
+Simple regression z ~ x:
+  Coefficient on x: 3.4489
+  Intercept: 9.3768
+
+Adjusted regression z ~ x + y:
+  Coefficient on x: 1.1113
+  Coefficient on y: 0.2432
+  Intercept: -4.5381
+
+R-squared:
+  Simple model: 0.1350
+  Adjusted model: 0.3099
+
+================================================================================
+APPROACH 3: Examining the treatment assignment mechanism
+================================================================================
+
+Start score (y) distribution:
+  Control: min=45.01, max=75.00, median=55.64
+  Treatment: min=57.36, max=74.98, median=67.48
+
+Checking for treatment threshold:
+  y >= 50.0: 1678 students, 35.8% treated
+  y >= 51.1: 1603 students, 37.4% treated
+  y >= 52.1: 1539 students, 39.0% treated
+  y >= 53.2: 1485 students, 40.4% treated
+  y >= 54.2: 1404 students, 42.7% treated
+  y >= 55.3: 1327 students, 45.2% treated
+  y >= 56.3: 1250 students, 48.0% treated
+  y >= 57.4: 1175 students, 50.9% treated
+  y >= 58.4: 1103 students, 51.0% treated
+  y >= 59.5: 1044 students, 52.3% treated
+  y >= 60.5: 972 students, 52.4% treated
+  y >= 61.6: 907 students, 52.7% treated
+  y >= 62.6: 830 students, 53.9% treated
+  y >= 63.7: 761 students, 54.9% treated
+  y >= 64.7: 693 students, 56.0% treated
+  y >= 65.8: 619 students, 56.9% treated
+  y >= 66.8: 564 students, 57.4% treated
+  y >= 67.9: 483 students, 57.1% treated
+  y >= 68.9: 405 students, 56.3% treated
+  y >= 70.0: 332 students, 57.2% treated
+
+================================================================================
+APPROACH 4: Regression discontinuity (if threshold exists)
+================================================================================
+
+Looking for discontinuity in score gains...
+Y values where treatment status changes: [np.float64(45.00531537876745), np.float64(57.35599040912017), np.float64(57.46689873676375), np.float64(57.48210885932723), np.float64(57.49169945951563), np.float64(57.49798714668095), np.float64(57.50757609632833), np.float64(57.607460558856616), np.float64(57.611132456573614), np.float64(57.645552653538864), np.float64(57.66961124279775), np.float64(57.67415991944279), np.float64(57.73878585651981), np.float64(57.7409531124786), np.float64(57.74997954723534), np.float64(57.79972529150616), np.float64(57.81019050030015), np.float64(57.817340988133), np.float64(57.82869853548381), np.float64(57.854909710098894)]...
+
+================================================================================
+SUMMARY STATISTICS FOR REPORT
+================================================================================
+
+Key Results:
+  naive_difference: 3.4488763319610527
+  naive_t_stat: 17.655518244390546
+  naive_p_value: 6.091460328527982e-65
+  simple_linear_x_coeff: 3.448876331961055
+  adjusted_linear_x_coeff: 1.1113363137889127
+  adjusted_linear_y_coeff: 0.2431613959857672
+  stratified_simple_avg: nan
+  stratified_weighted_avg: nan
+  control_mean_z: 9.37683443940425
+  treatment_mean_z: 12.825710771365303
+  control_mean_y: 57.22504431669848
+  treatment_mean_y: 66.8381657116298
+  correlation_y_z: 0.547356190964074
+  n_control: 1400
+  n_treatment: 600

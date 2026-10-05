@@ -1,0 +1,9 @@
+method,att_points,mean_predicted_untreated_change_for_treated
+"Natural cubic spline, 4 basis functions",1.246234316408821,11.772675437258558
+"Natural cubic spline, 5 basis functions",1.242037163228024,11.776872590439355
+"Natural cubic spline, 7 basis functions",1.2546920120745408,11.764217741592837
+"Natural cubic spline, 9 basis functions",1.2535186701159016,11.76539108355148
+"Control regression, polynomial degree 1",1.2005672446801448,11.818342508987234
+"Control regression, polynomial degree 2",1.2375122958789884,11.781397457788392
+"Control regression, polynomial degree 3",1.2440304318435413,11.774879321823839
+"One-point baseline bins, weighted by treated counts",1.2195105517597933,11.799399201907587

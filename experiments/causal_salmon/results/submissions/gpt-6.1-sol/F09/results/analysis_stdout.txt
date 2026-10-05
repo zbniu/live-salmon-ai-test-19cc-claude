@@ -1,0 +1,101 @@
+{
+  "input_file": "data(20261004-180759).csv",
+  "sha256": "f0f8b9dbd2b7b80890467cf755a72278b3cfa12fb6149ab007a5af5666a911fd",
+  "n_rows": 2000,
+  "n_columns": 3,
+  "missing_or_nonfinite_values": 0,
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "groups": [
+    {
+      "x": 0,
+      "n": 1400,
+      "baseline_mean": 57.34952100168895,
+      "baseline_sd": 8.410704883950542,
+      "baseline_min": 45.02414771243346,
+      "baseline_max": 74.91750843273265,
+      "change_mean": 8.640799896930602,
+      "change_sd": 3.7583948328334382,
+      "change_min": -0.9978999956741319,
+      "change_max": 18.87869157530684,
+      "followup_mean": 65.99032089861954,
+      "followup_min": 44.74944237462351,
+      "followup_max": 92.39903831821488
+    },
+    {
+      "x": 1,
+      "n": 600,
+      "baseline_mean": 66.06819062527764,
+      "baseline_sd": 5.2206112957082755,
+      "baseline_min": 56.99464278926244,
+      "baseline_max": 74.9876323154432,
+      "change_mean": 14.104328625911903,
+      "change_sd": 3.9062759929936717,
+      "change_min": 2.382149360341743,
+      "change_max": 23.665431020804434,
+      "followup_mean": 80.17251925118954,
+      "followup_min": 61.01858713013108,
+      "followup_max": 98.14955718192043
+    }
+  ],
+  "unadjusted_change_difference": 5.4635287289813,
+  "unadjusted_baseline_difference": 8.718669623588688,
+  "overlap": {
+    "minimum_recipient_baseline": 56.99464278926244,
+    "controls_below_minimum_recipient_baseline": 793,
+    "controls_at_or_above_minimum_recipient_baseline": 607,
+    "recipients_within_observed_control_baseline_range": 594
+  },
+  "observed_followups_within_0_100": true,
+  "descriptive_regressions": [
+    {
+      "baseline_polynomial_degree": 0,
+      "treatment_association": 5.463528728981297,
+      "hc3_standard_error": 0.1886027252605901,
+      "r_squared": 0.3025439053141039,
+      "n": 2000
+    },
+    {
+      "baseline_polynomial_degree": 1,
+      "treatment_association": 3.7873623340753864,
+      "hc3_standard_error": 0.19503549275648746,
+      "r_squared": 0.40537422298237,
+      "n": 2000
+    },
+    {
+      "baseline_polynomial_degree": 2,
+      "treatment_association": 3.807624362946888,
+      "hc3_standard_error": 0.19578467910079617,
+      "r_squared": 0.4056621788930601,
+      "n": 2000
+    },
+    {
+      "baseline_polynomial_degree": 3,
+      "treatment_association": 3.8208083187407746,
+      "hc3_standard_error": 0.1963794111178437,
+      "r_squared": 0.4057366977586675,
+      "n": 2000
+    }
+  ],
+  "hypothetical_counterfactual_examples": [
+    {
+      "assumed_constant_effect": -1.0,
+      "recipient_average_effect": -1.0,
+      "max_observed_reconstruction_error": 0.0,
+      "all_potential_followups_within_0_100": true
+    },
+    {
+      "assumed_constant_effect": 0.0,
+      "recipient_average_effect": 0.0,
+      "max_observed_reconstruction_error": 0.0,
+      "all_potential_followups_within_0_100": true
+    },
+    {
+      "assumed_constant_effect": 1.0,
+      "recipient_average_effect": 1.0,
+      "max_observed_reconstruction_error": 0.0,
+      "all_potential_followups_within_0_100": true
+    }
+  ],
+  "causal_conclusion": "Recipient average causal effect is not identified by supplied assumptions and data."
+}

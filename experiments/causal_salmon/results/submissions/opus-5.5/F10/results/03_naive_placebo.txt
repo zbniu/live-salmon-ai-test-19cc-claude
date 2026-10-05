@@ -1,0 +1,29 @@
+--- Naive comparisons (confounded by unrecorded applicant circumstances) ---
+raw diff in means: 5.4635287289813
+z~x+y all: 3.7873623340753904 0.1948121440913577
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      8.1043      0.267     30.306      0.000       7.580       8.628
+x              3.6255      0.402      9.024      0.000       2.838       4.413
+r              0.2187      0.026      8.356      0.000       0.167       0.270
+x:r            0.0430      0.039      1.115      0.265      -0.033       0.119
+==============================================================================
+within y>=c, treated-untreated gap at cutoff (x coef): 3.6255426034054725  slope of gap per y point: 0.0429860697173633
+--- Slope of untreated z on y, below vs above cutoff (untreated only) ---
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      9.1095      0.255     35.688      0.000       8.609       9.610
+r              0.2514      0.037      6.864      0.000       0.180       0.323
+above         -1.0052      0.370     -2.719      0.007      -1.730      -0.281
+r:above       -0.0327      0.045     -0.726      0.468      -0.121       0.056
+==============================================================================
+--- Placebo cutoffs for reduced-form jump in z (local linear, uniform, h=4, within one side of c) ---
+placebo below c at 50 : 0.017
+placebo below c at 52 : 0.849
+placebo below c at 54 : -0.609
+placebo above c at 62 : 1.385
+placebo above c at 65 : -0.029
+placebo above c at 68 : 0.081
+placebo above c at 71 : -0.753

@@ -1,0 +1,56 @@
+{
+  "estimand": "average effect on the treated (ATT), in change-score points",
+  "primary_model": "untreated-outcome cubic B-spline with five equally spaced interior knots; standardized to all 600 recipients",
+  "interior_knots": [
+    50.003817609844084,
+    55.00231984092072,
+    60.000822071997355,
+    64.99932430307399,
+    69.99782653415062
+  ],
+  "n_treated": 600,
+  "n_controls": 1400,
+  "observed_treated_mean": 12.825710771365303,
+  "estimated_untreated_mean_for_treated": 11.626994330525289,
+  "att": 1.1987164408400148,
+  "sandwich_se": 0.21040562260718487,
+  "approximate_normal_95_ci": [
+    0.7863214205299325,
+    1.6111114611500972
+  ],
+  "raw_difference": 3.4488763319610527,
+  "control_residual_sd": 3.562727993842141,
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261004,
+    "standard_error": 0.21375550975281038,
+    "percentile_95_ci": [
+      0.7858972912977362,
+      1.6172808885905754
+    ]
+  },
+  "baseline_overlap": {
+    "treated_min": 57.35599040912017,
+    "treated_max": 74.97566682818609,
+    "control_min": 45.00531537876745,
+    "control_max": 74.99632876522726,
+    "recipients_outside_control_range": 0
+  }
+}
+
+MODEL SENSITIVITY
+        method      att  sandwich_se  ci_lower  ci_upper
+        linear 1.168653     0.206447  0.764018  1.573289
+     quadratic 1.205401     0.208049  0.797625  1.613177
+         cubic 1.192039     0.209353  0.781708  1.602370
+spline_3_knots 1.213314     0.210578  0.800581  1.626047
+spline_5_knots 1.198716     0.210406  0.786321  1.611111
+spline_7_knots 1.226673     0.215597  0.804102  1.649243
+spline_9_knots 1.195118     0.216264  0.771241  1.618995
+
+MATCHING SENSITIVITY
+ controls_per_recipient      att  mean_baseline_difference  max_matched_baseline_distance
+                      1 1.122808                 -0.002779                       0.116378
+                      5 1.086086                  0.000798                       0.238045
+                     10 1.075091                  0.000914                       0.343483
+                     20 1.172539                  0.001182                       0.659513

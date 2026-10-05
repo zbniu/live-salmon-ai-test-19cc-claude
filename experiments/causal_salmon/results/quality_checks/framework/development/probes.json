@@ -1,0 +1,27 @@
+{
+  "blocked": {
+    "private_probe": true,
+    "protocol": true,
+    "README": true,
+    "final_plan": true,
+    "selected_parameters": true,
+    "frozen_configuration": true,
+    "hidden_directory": true,
+    "parent_directory": true,
+    "network": true
+  },
+  "public_files_readable": true,
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "en_US.UTF-8",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "environment_clean": true,
+  "initial_files": [
+    "data.csv",
+    "STUDY_DESCRIPTION.md"
+  ]
+}

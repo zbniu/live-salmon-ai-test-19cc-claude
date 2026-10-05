@@ -1,0 +1,43 @@
+{
+  "estimand": "Average effect of Q on change z for the 600 recipients (ATT)",
+  "primary_method": "Untreated-outcome regression with natural cubic spline of baseline; standardized over all 600 treated baselines",
+  "spline_basis_functions": 7,
+  "spline_knots": [
+    45.007034485333925,
+    50.00443855586352,
+    55.00184262639312,
+    59.99924669692271,
+    64.99665076745231,
+    69.9940548379819,
+    74.9914589085115
+  ],
+  "n_total": 2000,
+  "n_treated": 600,
+  "n_control": 1400,
+  "mean_observed_treated_change": 13.01890975366738,
+  "estimated_mean_untreated_change_for_treated": 11.764217741592837,
+  "att_points": 1.2546920120745408,
+  "bootstrap_95_percentile_interval": [
+    0.8138482106850237,
+    1.6511655668372514
+  ],
+  "bootstrap_standard_error": 0.21602603425373554,
+  "bootstrap_replicates": 3000,
+  "bootstrap_seed": 20261004,
+  "bootstrap_nonpositive_replicates": 0,
+  "ci_interpretation": "Approximate stratified unit-bootstrap interval; model/sampling uncertainty, not an exact randomization interval for the fixed-quota design.",
+  "sensitivity_min": 1.2005672446801448,
+  "sensitivity_max": 1.2546920120745408,
+  "crude_difference_points": 3.6257396604900087,
+  "identification_assumptions": "Use supplied baseline-only assignment and independent selection randomness for conditional exchangeability; use empirical control overlap and smooth conditional outcome estimation. No treatment effect homogeneity imposed."
+}
+                                             method  att_points  mean_predicted_untreated_change_for_treated
+            Natural cubic spline, 4 basis functions    1.246234                                    11.772675
+            Natural cubic spline, 5 basis functions    1.242037                                    11.776873
+            Natural cubic spline, 7 basis functions    1.254692                                    11.764218
+            Natural cubic spline, 9 basis functions    1.253519                                    11.765391
+            Control regression, polynomial degree 1    1.200567                                    11.818343
+            Control regression, polynomial degree 2    1.237512                                    11.781397
+            Control regression, polynomial degree 3    1.244030                                    11.774879
+One-point baseline bins, weighted by treated counts    1.219511                                    11.799399
+Outputs: att_estimate.json, estimator_sensitivity.csv, one_point_strata.csv, bootstrap_att.csv, unit_predictions.csv, adjusted_outcome_curves.png

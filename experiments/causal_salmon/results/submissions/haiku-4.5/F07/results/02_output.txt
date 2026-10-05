@@ -1,0 +1,64 @@
+======================================================================
+REGRESSION ADJUSTMENT ANALYSIS
+======================================================================
+
+4. REGRESSION ADJUSTMENT FOR CONFOUNDING
+----------------------------------------------------------------------
+
+Model 1 (Naive): z = 9.3768 + 3.4489 * x
+Interpretation: Treatment effect = 3.4489
+
+Model 2 (Adjusted for baseline): z = -4.5381 + 1.1113 * x + 0.2432 * y
+Interpretation: Treatment effect (adjusted) = 1.1113
+
+Residual standard error: 3.5738
+Approximate SE for treatment coefficient: 0.1743
+Approximate t-statistic: 6.3746
+Approximate p-value: 0.000000
+R-squared (adjusted model): 0.3099
+
+Model 3 (With interaction): z = -4.1969 + -1.6901 * x + 0.2372 * y + 0.0428 * (x*y)
+Treatment effect at y=0: -1.6901
+Interaction term: 0.0428
+R-squared (interaction model): 0.3106
+
+
+SUMMARY OF TREATMENT EFFECTS
+----------------------------------------------------------------------
+Model 1 (Naive): 3.4489
+  - Does NOT adjust for baseline confounding
+  - BIASED upward because treated units have higher baseline
+
+Model 2 (Linear adjustment): 1.1113
+  - Adjusts for baseline using linear regression
+  - Assumes parallel trends (constant effect across baselines)
+  - This is the main estimate
+
+Model 3 (Interaction): Effect varies with baseline
+  - Base coefficient: -1.6901
+  - Interaction coefficient: 0.0428
+  - Allows treatment effect to vary by baseline level
+
+
+5. STRATIFIED ANALYSIS (ROBUSTNESS CHECK)
+----------------------------------------------------------------------
+
+Treatment effect within baseline quartiles:
+Q1: insufficient data
+Q3 (y=60.1-67.7): effect=1.0877 (n_control=267, n_treated=233)
+Q4 (y=67.7-75.0): effect=1.4434 (n_control=210, n_treated=290)
+Q2 (y=53.0-60.1): effect=1.5105 (n_control=423, n_treated=77)
+
+
+6. COVARIATE BALANCE CHECK
+----------------------------------------------------------------------
+Is treatment assignment independent of baseline within the data?
+(If confounded: baseline should differ strongly between treatment groups)
+Control baseline mean: 57.2250
+Treatment baseline mean: 66.8382
+Difference in baseline: 9.6131
+t-statistic: 26.6059
+p-value: 0.000000
+
+Conclusion: Baseline differs SIGNIFICANTLY between groups (p < 0.001)
+This confirms CONFOUNDING - assignment was not random.

@@ -1,0 +1,16 @@
+1. python submission/code/analyze.py > submission/results/analysis_stdout.txt 2> submission/results/analysis_stderr.txt
+   Shell redirection failed before Python started: submission/results/ did not yet exist. No analysis outputs from this attempt.
+2. python submission/code/analyze.py
+   stdout: submission/results/analysis_stdout.txt
+   stderr: submission/results/analysis_stderr.txt
+   exit status: 1
+   generated: submission/results/summary.json, estimates.csv, baseline_bins.csv, conditional_effects.csv (if execution completed).
+3. python submission/code/analyze.py (revised to use sklearn spline regression)
+   stdout: submission/results/analysis_stdout.txt
+   stderr: submission/results/analysis_stderr.txt
+   exit status: 0
+   generated: submission/results/summary.json, estimates.csv, baseline_bins.csv, conditional_effects.csv (if execution completed).
+
+Review note: conditional_effects.csv includes extrapolated grid rows outside the observed score range; those rows were not used in the ATT or report. The estimate uses attendee scores only, all within control support.
+No input records were missing or dropped.
+Packaging: first zipfile CLI archive flattened entry paths; archive verification failed. Repacked with explicit submission/ paths.

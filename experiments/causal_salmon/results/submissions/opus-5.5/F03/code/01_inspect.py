@@ -1,0 +1,17 @@
+import pandas as pd, numpy as np
+df = pd.read_csv("/mnt/user-data/uploads/data.csv")
+print("shape:", df.shape)
+print("columns:", list(df.columns))
+print(df.dtypes)
+print("missing per column:\n", df.isna().sum())
+print(df.head())
+print(df.describe().T)
+print("x value counts:\n", df.x.value_counts())
+print("y range:", df.y.min(), df.y.max(), " unique y:", df.y.nunique())
+print("z range:", df.z.min(), df.z.max(), " unique z:", df.z.nunique())
+print("end score y+z range:", (df.y+df.z).min(), (df.y+df.z).max())
+print("rows with end score outside [0,100]:", ((df.y+df.z<0)|(df.y+df.z>100)).sum())
+print("duplicated rows:", df.duplicated().sum())
+for g, d in df.groupby("x"):
+    print(f"\n--- x={g} ---")
+    print(d[["y","z"]].describe(percentiles=[.01,.05,.25,.5,.75,.95,.99]).T)

@@ -1,0 +1,54 @@
+Execution record. Analysis uses only upload/data(6).csv and upload/STUDY_DESCRIPTION(6).md.
+Initial tool inspection (before this log existed): pwd; rg --files upload; cat upload/STUDY_DESCRIPTION(6).md. Exit code 0. Full study description was returned in the tool transcript. No analysis ran at that stage.
+Second tool inspection: printenv CODEX_PRIMARY_RUNTIME_PYTHON CODEX_PRIMARY_RUNTIME_ROOT; head -n 6 upload/data(6).csv; wc -l upload/data(6).csv. Exit code 0; CSV had header x,y,z and 2001 lines. The displayed sample was not used as an analysis dataset.
+Skill guidance was read for CSV analysis and deliverable saving; no external data or web sources were accessed.
+Initial tool stdout was not separately captured to a file; the descriptions above are records of those tool actions, not reconstructed stdout. Subsequent script streams are captured directly by run_step.py. Empty stderr files denote no emitted errors.
+
+START 2026-10-04T01:37:14.396899+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/01_inspect.py
+Code SHA256: c9079753a834a1798acbf73dd79bd82818ea6afd879b5e1257df1537e1de92db
+END 2026-10-04T01:37:14.741818+00:00 exit_code=1
+Actual captured streams: submission/results/01_inspect.stdout.txt and 01_inspect.stderr.txt
+
+START 2026-10-04T01:37:37.251499+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/02_inspect.py
+Code SHA256: 17955cf86840c7cb07ae22e19580167765b98be121f463ca05d6912e7c9c4217
+END 2026-10-04T01:37:37.538838+00:00 exit_code=0
+Actual captured streams: submission/results/02_inspect.stdout.txt and 02_inspect.stderr.txt
+
+START 2026-10-04T01:39:08.942503+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/03_analyze.py
+Code SHA256: f2194ebe1314f70f911c2261baf4d4e6b9080cdd556db24c38d1cf2c896c4ff2
+END 2026-10-04T01:39:10.463883+00:00 exit_code=0
+Actual captured streams: submission/results/03_analyze.stdout.txt and 03_analyze.stderr.txt
+
+START 2026-10-04T01:40:35.014280+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/04_write_report.py
+Code SHA256: 09bd448ea769171300c7a4c231bbc530fa2cd7ed6c8fdd59e4fb93680f2fdba3
+
+Artifact linkage (verified from the files produced, not reconstructed execution streams):
+01_inspect.py: failed at statsmodels import; no analysis output tables or JSON were produced. Actual error is in 01_inspect.stderr.txt.
+02_inspect.py: produced 02_group_summary.csv, 02_baseline_bands.csv, 02_integrity.json.
+03_analyze.py: produced 03_baseline_sensitivity.csv, 03_unit_predictions.csv, 03_baseline_subgroups.csv, 03_primary_results.json.
+04_write_report.py: produced final_report.md, results/04_report_summary.json, and byte-for-byte copies of both input files in inputs/. No analyses rerun.
+END 2026-10-04T01:40:35.041191+00:00 exit_code=0
+Actual captured streams: submission/results/04_write_report.stdout.txt and 04_write_report.stderr.txt
+
+START 2026-10-04T01:41:34.322336+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/05_verify.py
+Code SHA256: ca973534731dfe35127c18feb87b95a3c57d0ab0b504e64c78e62db7bfd0707b
+END 2026-10-04T01:41:34.346977+00:00 exit_code=0
+Actual captured streams: submission/results/05_verify.stdout.txt and 05_verify.stderr.txt
+
+START 2026-10-04T01:41:34.713268+00:00 06_package.py
+05_verify.py produced results/05_report_verification.json and captured the full report read-back in results/05_verify.stdout.txt.
+06_package.py creates submission.zip using the submission/ tree; no statistical analysis is rerun.
+Actual first archive inspection: CRC test passed; report matched local report exactly; report, code, results, and run_log all present.
+Produced results/06_archive_verification.json. Repackaged to include that record and this log.
+The final archive inspection result is returned in the session tool transcript; no standalone final stdout/stderr capture was made for packaging.
+END 2026-10-04T01:41:34.743782+00:00 packaging stage
+
+After archive verification, the bundled saving helper was invoked on final_report.md and submission.zip.
+Actual tool exit_code=1; tool output copied verbatim to results/07_save_error.txt. No successful persistent save was reported.
+07_finalize_delivery.py 2026-10-04T01:42:37.638175+00:00: recorded saving error and rebuilt archive to include it.
+No analyses were rerun and earlier execution streams/results were retained. Final archive inspection is in the session tool transcript.

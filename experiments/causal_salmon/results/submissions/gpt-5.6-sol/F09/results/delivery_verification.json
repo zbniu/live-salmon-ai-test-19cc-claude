@@ -1,0 +1,24 @@
+{
+  "report_nonempty_utf8": true,
+  "report_matches_intended_text": true,
+  "archive_crc_and_all_file_bytes_verified": true,
+  "archive_contains_report_code_results_execution_record": true,
+  "inspected_initial_archive_members": [
+    "submission/code/analyze.py",
+    "submission/code/finalize.py",
+    "submission/code/run_analysis.py",
+    "submission/final_report.md",
+    "submission/inputs/STUDY_DESCRIPTION.md",
+    "submission/inputs/data.csv",
+    "submission/results/analysis.json",
+    "submission/results/analysis_stderr.txt",
+    "submission/results/analysis_stdout.txt",
+    "submission/results/baseline_bins.csv",
+    "submission/results/descriptive_models.csv",
+    "submission/results/group_summary.csv",
+    "submission/results/model_coefficients.csv",
+    "submission/results/nonidentification_examples.csv",
+    "submission/run_log.txt"
+  ],
+  "note": "Initial archive inspected, then rebuilt to include this verification record and the updated run log. Final archive is inspected again without rerunning analysis."
+}

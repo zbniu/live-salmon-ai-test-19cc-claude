@@ -1,0 +1,144 @@
+
+======================================================================
+SECTION 1: DESCRIPTIVE STATISTICS
+======================================================================
+
+Sample size: 2000
+Units receiving treatment (x=1): 600
+Units not receiving treatment (x=0): 1400
+
+Baseline (y) - descriptive statistics:
+  Mean: 59.965122
+  SD: 8.581691
+  Min: 45.024148, Max: 74.987632
+
+Outcome (z) - descriptive statistics:
+  Mean: 10.279859
+  SD: 4.552996
+  Min: -0.997900, Max: 23.665431
+
+======================================================================
+SECTION 2: BASELINE BALANCE / CONFOUNDING ASSESSMENT
+======================================================================
+
+Mean baseline (y):
+  Treated units: 66.068191
+  Control units: 57.349521
+  Difference: 8.718670
+  t-test: t=23.522055, p-value=3.349913e-108
+
+Correlation between baseline (y) and outcome (z): 0.539925
+Linear regression of z on y:
+  z = -6.897516 + 0.286456 * y
+  R-squared: 0.291519
+  p-value: 9.918007e-152
+
+======================================================================
+SECTION 3: UNADJUSTED TREATMENT EFFECT
+======================================================================
+
+Mean outcome (z):
+  Treated units: 14.104329
+  Control units: 8.640800
+  Difference (unadjusted effect): 5.463529
+  SE: 0.188471
+  95% CI: [5.094126, 5.832932]
+  t-statistic: 29.439709, p-value: 1.527747e-158
+
+======================================================================
+SECTION 4: ADJUSTED TREATMENT EFFECT (Controlling for Baseline)
+======================================================================
+
+Regression Model: z = -2.384660 + 3.787362*x + 0.192250*y
+R-squared: 0.405374
+
+Treatment Effect (coefficient for x):
+  Estimate: 3.787362
+  SE: 0.178818
+  95% CI: [3.436879, 4.137845]
+  t-statistic: 21.179997, p-value: 0.000000e+00
+
+Baseline Effect (coefficient for y):
+  Estimate: 0.192250
+  SE: 0.001617
+  t-statistic: 118.903404
+
+======================================================================
+SECTION 5: HETEROGENEOUS TREATMENT EFFECTS (Interaction Analysis)
+======================================================================
+
+Regression Model: z = -1.727695 + -1.457544*x + 0.180795*y + 0.080898*x*y
+R-squared: 0.407587
+
+Interaction term (x*y):
+  Coefficient: 0.080898
+  F-test for interaction: F=7.456954, p-value=0.006375
+
+======================================================================
+SECTION 6: TREATMENT EFFECT BY BASELINE LEVEL
+======================================================================
+
+Treatment effect by baseline percentile (using model with interaction):
+  10th percentile (y=48.10): effect = 2.433721
+  25th percentile (y=52.65): effect = 2.801453
+  50th percentile (y=59.86): effect = 3.385322
+  75th percentile (y=67.36): effect = 3.991935
+  90th percentile (y=71.78): effect = 4.349270
+
+======================================================================
+SECTION 7: AVERAGE TREATMENT EFFECT ON THE TREATED (ATT)
+======================================================================
+
+ATT (average effect for units that received treatment): 3.887239
+  Computed as: mean of (effect at each treated unit's baseline)
+
+======================================================================
+SECTION 8: TREATMENT EFFECT BY BASELINE QUARTILE
+======================================================================
+
+Q1 (Low): No treated or control units in this quartile
+
+Q2 [52.65, 59.86]:
+  n_treated: 92, n_control: 408
+  Treated mean z: 11.494942
+  Control mean z: 8.555916
+  Effect: 2.939027
+
+Q3 [59.87, 67.36]:
+  n_treated: 258, n_control: 242
+  Treated mean z: 13.759105
+  Control mean z: 9.703692
+  Effect: 4.055413
+
+Q4 (High) [67.37, 74.99]:
+  n_treated: 250, n_control: 250
+  Treated mean z: 15.420853
+  Control mean z: 11.117940
+  Effect: 4.302913
+
+======================================================================
+SUMMARY OF KEY FINDINGS
+======================================================================
+
+1. Unadjusted treatment effect: 5.4635 points
+   (This is biased because treated units had higher baselines)
+
+2. Adjusted treatment effect (controlling for baseline): 3.7874 points
+   95% CI: [3.4369, 4.1378]
+   p-value: 0.000000e+00 (highly significant)
+
+3. Interaction with baseline (p=0.0064):
+   The treatment effect varies by baseline level
+   - At low baselines: smaller effect (~2.8 points)
+   - At high baselines: larger effect (~4.0 points)
+
+4. For units that received treatment (ATT): 3.8872 points
+
+CONCLUSION:
+YES, arrangement Q increased change z.
+The estimated effect is 3.7874 points (95% CI: [3.4369, 4.1378])
+after controlling for baseline measurement.
+
+======================================================================
+Analysis complete. Results saved to analysis_results.json
+======================================================================

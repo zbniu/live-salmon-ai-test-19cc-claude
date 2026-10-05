@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "code": {
+    "files": {
+      "verification/__init__.py": "fda16c6e216f7bc78dedd5a761a6c231ebce62fbd874175ca5d2a3647c2ca466",
+      "verification/evaluate.py": "d83ba7f42650d1990b0446c2f05a46a13357e898f3a9d775466d57b2c4fda474",
+      "verification/generator.py": "4b2c424e5ae2f0ad396fb1037d099ece95740b83a9633064336b2a3071ae05db",
+      "verification/materials.py": "957125e6af85ad0470aeb3a90e96f8ed897ac40eaec5899ca1f78bd6b945e77f",
+      "verification/persistence.py": "e2de0146a34c9c1dfead238bbedc9ff324f3df2d74577ebcf75d3dea736aeb3f",
+      "verification/reference.py": "f2a91aacabe1505ce52e7c2170c11ee6da69a1a2867737661186585c913a06f8",
+      "verification/reference_exec.py": "93853ac3c2e02f1fff5e6b9c4ba4cda2a52cdf172cb88f11a2fa379db2b8c775",
+      "verification/run.py": "f7df086c3612224b23f642fe8be20e96de3267079520bea3c2b9cb1aed635602",
+      "verification/selftest.py": "e213194a6d3ad8a237506ad725cf9add5f17388ffd1efc7013ebe5d4dc15b2b2",
+      "verification/statistics.py": "759429eba40c2ab1f0fe6ec58f985e6488a209bc970d30b7ec2d332c2b8c52b6",
+      "verification/summary.py": "b06881c08d67e8d6ffb75b7d3b67e4eede8269c40230c975d9308b13ff2810aa"
+    },
+    "aggregate_sha256": "3e1b159a9573c7ffe63f5d07654defafddab0584d6e086cfbd610d9320da4c0a"
+  },
+  "environment": {
+    "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 17:06:14) [Clang 19.1.7 ]",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "executable": "<PYTHON_ENV>/bin/python3.12"
+  },
+  "selftest_result": "verification/selftest_evidence/20261001T022453-c885fcd4/result.json",
+  "selftest_result_sha256": "e82bd34de235f0a838cb7b2c52dc8acc3722617fdff6b64cecbc05c656308c3f",
+  "public_copy_note": "Machine-specific paths were removed from this historical display copy. Placeholders are not runnable paths; numerical results and historical identity hashes are preserved. See manifests/path_redaction.json."
+}

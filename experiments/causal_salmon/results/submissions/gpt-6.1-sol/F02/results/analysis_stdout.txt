@@ -1,0 +1,34 @@
+Analysis used every one of the 2000 supplied rows; no rows dropped.
+      n     y_mean      y_sd      y_min      y_max     z_mean      z_sd     z_min      z_max  followup_mean
+x                                                                                                          
+0  1400  56.887630  8.423963  45.013648  74.988261   8.718962  3.902637 -1.241412  20.012875      65.606591
+1   600  65.707592  5.837892  55.592943  74.955407  14.124059  3.729429  1.641455  22.492898      79.831651
+{
+  "raw_mean_change_difference": 5.405097790854601,
+  "raw_mean_baseline_difference": 8.819962497652995,
+  "treated_mean_followup": 79.83165134880578,
+  "ATT_logical_lower_bound_0_100": -20.168348651194222,
+  "ATT_logical_upper_bound_0_100": 79.83165134880578,
+  "bounds_are_confidence_interval": false,
+  "positive_causal_effect_identified": false,
+  "overlap": {
+    "treated_min_y": 55.59294297736875,
+    "treated_max_y": 74.95540694433481,
+    "control_min_y": 45.013647911746,
+    "control_max_y": 74.98826079709465,
+    "control_count_below_treated_min_y": 758,
+    "control_count_in_treated_y_range": 639
+  },
+  "baseline_adjusted_descriptive_x_coefficient": 3.7131755674932965
+}
+{
+  "formula": "z ~ 1 + x + (y - mean(y))",
+  "n": 2000,
+  "intercept": 9.22653816896958,
+  "x_coefficient": 3.7131755674932965,
+  "y_coefficient": 0.19182873213027074,
+  "x_HC3_se": 0.19368649006378597,
+  "interpretation": "Descriptive conditional association, not an identified causal effect."
+}
+Outputs: input_manifest.json, validation.json, group_summary.csv, baseline_bins.csv,
+descriptive_ols.json, hypothetical_counterfactual_completions.csv, analysis_summary.json.

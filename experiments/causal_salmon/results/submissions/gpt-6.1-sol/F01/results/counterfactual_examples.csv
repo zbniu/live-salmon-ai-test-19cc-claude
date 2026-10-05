@@ -1,0 +1,4 @@
+hypothetical_att,counterfactual_treated_no_tutoring_end_min,counterfactual_treated_no_tutoring_end_max,all_counterfactual_scores_in_0_100,description
+-5.0,63.69312317912097,101.97077194766119,False,Illustrative missing potential-outcome completion; not an estimate.
+0.0,58.69312317912097,96.97077194766119,True,Illustrative missing potential-outcome completion; not an estimate.
+5.0,53.69312317912097,91.97077194766119,True,Illustrative missing potential-outcome completion; not an estimate.

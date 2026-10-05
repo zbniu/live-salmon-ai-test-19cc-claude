@@ -1,0 +1,26 @@
+Complete-data validation: PASSED; 2000 rows, 600 attendees, 1400 nonattendees.
+      n     y_mean      y_sd      y_min      y_max     z_mean      z_sd     z_min      z_max
+x                                                                                           
+0  1400  59.910020  8.730545  45.022076  74.977146   9.911158  4.114024 -1.017535  20.635242
+1   600  59.157726  8.802577  45.058392  74.930876  10.758905  4.501767 -0.122172  23.342384
+
+PRIMARY RANDOMIZED DIFFERENCE IN MEANS
+{
+  "estimate": 0.8477466423197857,
+  "standard_error": 0.21416334949040722,
+  "ci95_low": 0.42750843601912053,
+  "ci95_high": 1.2679848486204508,
+  "welch_df": 1047.09549705591,
+  "t_statistic": 3.95841139175757,
+  "p_two_sided": 8.054211667057528e-05
+}
+
+BASELINE-ADJUSTED ATT SENSITIVITY (HC3; conditional on observed baseline scores)
+ degree  estimate  standard_error  ci95_low  ci95_high  p_two_sided  r_squared
+      1  1.013869        0.185705  0.649894   1.377845 4.773163e-08   0.240483
+      2  1.015028        0.185816  0.650836   1.379220 4.693450e-08   0.241235
+      3  1.015497        0.185959  0.651024   1.379969 4.738224e-08   0.241779
+
+Baseline mean difference: -0.7522936442065884
+End scores outside 0-100: 0
+Outputs: adjusted_sensitivity.csv, analysis.json, analysis_attempt1_console.txt, analysis_console.txt, baseline_deciles.csv, group_summary.csv, ols_degree_1.json, ols_degree_2.json, ols_degree_3.json

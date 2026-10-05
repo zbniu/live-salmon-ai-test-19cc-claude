@@ -1,0 +1,7 @@
+Execution record (in order)
+1. Inspection command (inline python: head, describe, counts, min/max y by x, group means). Output seen in session; not saved to a file (not saved in results/). Findings: n=2000, 600 treated, treated min y 55.593.
+2. python3 code/analysis.py  -> FAILED: ModuleNotFoundError statsmodels (no output file kept; the failed attempt overwrote nothing).
+3. pip install statsmodels --break-system-packages
+4. python3 code/analysis.py -> succeeded; output saved to results/analysis_output.txt (all numbers in final_report.md come from this file, except the step-1 descriptive means).
+Note: bootstrap used 300 resamples, seed 1. data.csv copy in submission/ is the input.
+Note: after execution, input path in code was changed from 'data.csv' to the uploads path and the local data.csv copy removed; logic unchanged, not re-run.

@@ -1,0 +1,11 @@
+# Historical display copy: local paths removed; placeholders are not executable.
+(version 1)
+(deny default)
+(allow process*)
+(allow sysctl-read)
+(allow mach-lookup)
+(allow file-read-metadata)
+(allow file-read* (literal "/") (literal "/dev/null") (literal "/dev/urandom") (literal "<PYTHON_ENV>/bin/python3.12") (literal "<PROJECT_ROOT>/.venv/pyvenv.cfg") (literal "<TEMP_DIR>/causal-salmon-reference-main/bf2b2dcbb78d52773d12c03e467c7eefef6be2bebd18ad6650a99644c64d0ba0/reference.py") (literal "<TEMP_DIR>/salmon-final-framework-e760baz9/public/data.csv") (literal "<TEMP_DIR>/salmon-final-framework-e760baz9/public/STUDY_DESCRIPTION.md") (subpath "/System") (subpath "/usr/lib") (subpath "/usr/share/zoneinfo") (subpath "<PYTHON_ENV>/lib") (subpath "<PROJECT_ROOT>/.venv/lib"))
+(deny network*)
+
+(allow file-read* (literal "<TEMP_DIR>/salmon-final-framework-e760baz9/probe.py"))

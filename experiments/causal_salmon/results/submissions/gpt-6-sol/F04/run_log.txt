@@ -1,0 +1,5 @@
+1. python submission/code/analyze.py > submission/results/analysis_stdout.txt 2> submission/results/analysis_stderr.txt; exit=1; JSON output: submission/results/analysis.json
+Initial attempt failed before Python started: shell could not open submission/results/analysis_stdout.txt because results directory did not exist.
+2. Created submission/results; python submission/code/analyze.py > submission/results/analysis_stdout.txt 2> submission/results/analysis_stderr.txt; exit=1; JSON output: submission/results/analysis.json
+3. Replaced statsmodels dependency with NumPy HC2 implementation; python submission/code/analyze.py > submission/results/analysis_stdout.txt 2> submission/results/analysis_stderr.txt; exit=0; JSON output: submission/results/analysis.json
+Clarification: entry 1 failed at shell redirection and produced no output file or JSON; entry 2 failed importing statsmodels and produced no JSON. Its traceback is submission/results/failed_import_stderr.txt; the attempted stdout is submission/results/failed_import_stdout.txt. Entry 3 produced analysis.json and analysis_stdout.txt; analysis_stderr.txt is empty. No data records were missing.

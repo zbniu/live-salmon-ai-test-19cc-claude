@@ -1,0 +1,13 @@
+      y                                                z                                          
+  count       mean       std        min        max count       mean       std       min        max
+x                                                                                                 
+0  1400  60.275083  8.655306  45.011261  74.983621  1400   9.994118  4.239446 -0.397835  21.927346
+1   600  59.853373  8.543402  45.083423  74.941962   600  11.104341  4.524213 -0.187897  22.873419
+End score range: 46.28646026469277 97.27625340474893
+Unadjusted: {"estimate": 1.1102228476588483, "se": 0.21668400750331995, "df": 1069.7907948104562, "ci95": [0.6850489632372747, 1.5353967320804218], "p_two_sided": 3.5526908581569267e-07}
+ basis_df  ATT_estimate  conditional_model_se  treated_R2  control_R2  treated_residual_sd  control_residual_sd
+        1      1.214368              0.184190    0.290459    0.254211             3.814121             3.662456
+        3      1.213233              0.184224    0.295252    0.255978             3.807591             3.660734
+        5      1.210849              0.184640    0.295397    0.256059             3.810397             3.661846
+        8      1.234707              0.185404    0.297189    0.258046             3.815179             3.660892
+Generated group_summaries.csv, exploratory_adjustments.csv, baseline_bins.csv, initial_results.json

@@ -1,0 +1,10 @@
+import pandas as pd, numpy as np
+d=pd.read_csv('/mnt/user-data/uploads/data.csv')
+print(d.isna().sum().to_dict(), d.shape, d.x.value_counts().to_dict())
+c=d[d.x==1].y.min(); print('min y treated',c)
+print('untreated with y>=c:',((d.x==0)&(d.y>=c)).sum(), 'untreated y<c:',((d.x==0)&(d.y<c)).sum())
+d['bin']=pd.cut(d.y,np.arange(45,76,2.5),include_lowest=True)
+t=d.groupby(['bin','x'],observed=True).z.agg(['count','mean']).unstack()
+print(t.round(2))
+print('naive diff',d[d.x==1].z.mean()-d[d.x==0].z.mean())
+print(d[['y','z']].corr())

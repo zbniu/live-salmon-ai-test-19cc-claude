@@ -1,0 +1,59 @@
+Strata width=1: ATT=1.219510552, approximate SE=0.221015771
+Strata width=2: ATT=1.242010988, approximate SE=0.215407557
+Strata width=4: ATT=1.246227962, approximate SE=0.214357313
+Nearest-control distance: median 0.010554095370373773 maximum 0.08989457482800134
+MAIN RESULT
+{
+  "n": 2000,
+  "n_attended": 600,
+  "n_did_not_attend": 1400,
+  "mean_gain_attended": 13.01890975366738,
+  "mean_gain_did_not_attend": 9.393170093177371,
+  "unadjusted_gain_difference": 3.6257396604900087,
+  "unadjusted_se": 0.18877887124618178,
+  "main_method": "Control restricted cubic spline, 5 nonconstant df; ATT standardization",
+  "spline_knots_starting_score": [
+    46.06613504004327,
+    49.70388203005263,
+    53.57529774576659,
+    57.634224360922595,
+    63.35796542214946,
+    72.11536388295318
+  ],
+  "att": 1.2517549655565219,
+  "estimated_attendee_gain_without_tutoring": 11.767154788110858,
+  "bootstrap_se": 0.21631651245526085,
+  "bootstrap_percentile_95_ci": [
+    0.8314041011527575,
+    1.6660936033538487
+  ],
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261004,
+  "treated_outside_control_y_range": 0,
+  "controls_at_or_above_minimum_attendee_score": 536,
+  "nearest_control_max_distance": 0.08989457482800134,
+  "input_sha256": {
+    "STUDY_DESCRIPTION.md": "aab46f86dab63f012268e4d6f2e3045fd2591e7a0e2ae1a1b22d91958a4615a7",
+    "data.csv": "f1219a585528bafde4983f58c0d4dd6c40d9816e37b579354890f48438788863"
+  },
+  "inference_note": "Within-group row bootstrap; fixed spline knots. Approximate inference assuming a smooth untreated outcome curve, not exact quota randomization inference."
+}
+SENSITIVITY
+                                                           method      att  untreated_counterfactual_mean
+           Control polynomial degree 1, standardized to attendees 1.200567                      11.818343
+           Control polynomial degree 2, standardized to attendees 1.237512                      11.781397
+           Control polynomial degree 3, standardized to attendees 1.244030                      11.774879
+                Control restricted cubic spline, 3 nonconstant df 1.237791                      11.781118
+                Control restricted cubic spline, 4 nonconstant df 1.249362                      11.769548
+                Control restricted cubic spline, 5 nonconstant df 1.251755                      11.767155
+                Control restricted cubic spline, 6 nonconstant df 1.243121                      11.775788
+                Control restricted cubic spline, 7 nonconstant df 1.236226                      11.782684
+                Control restricted cubic spline, 9 nonconstant df 1.249254                      11.769655
+             Control local linear, Gaussian bandwidth 0.75 points 1.238347                      11.780563
+              Control local linear, Gaussian bandwidth 1.5 points 1.238657                      11.780253
+              Control local linear, Gaussian bandwidth 3.0 points 1.228396                      11.790514
+                          Starting-score strata of width 1 points 1.219511                      11.799399
+                          Starting-score strata of width 2 points 1.242011                      11.776899
+                          Starting-score strata of width 4 points 1.246228                      11.772682
+One nearest starting-score control per attendee, with replacement 1.136424                      11.882486
+Outputs: main_estimate.json, sensitivity_estimates.csv, bootstrap_att.csv, stratum_details.csv, attendee_counterfactual_predictions.csv, adjusted_analysis.png

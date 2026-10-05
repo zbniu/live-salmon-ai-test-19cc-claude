@@ -1,0 +1,4 @@
+  File "/workspace/scratch/5f47ce66dbc5/submission/code/analyze.py", line 18
+    inter=sm.OLS(z,sm.add_constant(np.column_stack((x,y,x*(y-y.mean())))).fit(cov_type='HC2')
+                ^
+SyntaxError: '(' was never closed

@@ -1,0 +1,5 @@
+Regression-adjusted ATT (control-arm model imputed for treated): 1.0139
+bootstrap SE 0.1847 95% CI [0.6512 1.3704]
+Lin ATE: 1.0355 [0.671, 1.4001]
+x:y interaction p = 0.0482
+Residual SD z|y,x: 3.707 vs raw SD z: 4.251

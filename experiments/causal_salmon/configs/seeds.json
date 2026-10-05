@@ -1,0 +1,90 @@
+{
+  "study_tag": 20260929,
+  "world_codes": {
+    "A": 1,
+    "B": 2,
+    "C": 3
+  },
+  "variable_codes": {
+    "y": 1,
+    "u": 2,
+    "epsilon": 3,
+    "lottery": 4,
+    "gumbel_uniform": 5,
+    "application_tie": 6,
+    "admission_tie": 7,
+    "bootstrap": 20,
+    "order": 30
+  },
+  "purposes": {
+    "calibration": {
+      "code": 1,
+      "seeds": [
+        703000,
+        703999
+      ]
+    },
+    "reserve": {
+      "code": 1,
+      "seeds": [
+        704000,
+        704999
+      ],
+      "requires_new_candidate_approval": true
+    },
+    "selftest": {
+      "code": 4,
+      "seeds": [
+        709000,
+        709999
+      ],
+      "initial_test_seeds": [
+        709000,
+        709009
+      ]
+    },
+    "development": {
+      "code": 2,
+      "seeds": [
+        730001,
+        730002,
+        730003,
+        730004,
+        730005,
+        730006,
+        730007,
+        730008,
+        730009,
+        730010
+      ]
+    },
+    "formal": {
+      "code": 3,
+      "seeds": [
+        740001,
+        740002,
+        740003,
+        740004,
+        740005,
+        740006,
+        740007,
+        740008,
+        740009,
+        740010
+      ]
+    },
+    "development_order": {
+      "code": 5,
+      "seeds": [
+        710900
+      ]
+    },
+    "formal_order": {
+      "code": 5,
+      "seeds": [
+        720900
+      ]
+    }
+  },
+  "bootstrap_count": 200
+}

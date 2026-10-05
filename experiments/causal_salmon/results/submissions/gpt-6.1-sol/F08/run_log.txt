@@ -1,0 +1,52 @@
+Execution record (UTC; analysis uses only the two attached inputs).
+
+Startup, before the logging runner was created:
+1. Read upload/STUDY_DESCRIPTION(20261004-180753).md with cat.
+   Executed the Python shown in code/initial_inspection.py inline using system python.
+   Exit status 0. Printed CSV header, first five rows, and byte count (79605).
+   Original stdout exists in the session tool record but was not saved as a results file.
+   The saved code is the exact inline code; it has not been rerun to manufacture a record.
+2. Created submission/code and submission/results.
+   Executed the Python shown in code/environment_check.py inline using system python.
+   Exit status 0. Bundled Python path was present; statsmodels and patsy absent;
+   numpy, pandas, scipy, matplotlib, and sklearn present in system Python.
+   Original stdout exists in the session tool record but was not saved as a results file.
+   No statistical analyses occurred in these startup commands.
+
+Subsequent executions are captured below by code/run_recorded.py.
+
+START 2026-10-04T18:09:59.766504+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/explore.py
+Actual stdout -> submission/results/explore_stdout.txt
+Actual stderr -> submission/results/explore_stderr.txt
+END 2026-10-04T18:10:04.145723+00:00 exit_status=0
+
+START 2026-10-04T18:12:29.943058+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/estimate_att.py
+Actual stdout -> submission/results/estimate_att_stdout.txt
+Actual stderr -> submission/results/estimate_att_stderr.txt
+END 2026-10-04T18:12:35.725339+00:00 exit_status=0
+
+START 2026-10-04T18:14:34.535943+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/write_report.py
+Actual stdout -> submission/results/write_report_stdout.txt
+Actual stderr -> submission/results/write_report_stderr.txt
+END 2026-10-04T18:14:34.565856+00:00 exit_status=0
+
+START 2026-10-04T18:15:44.229749+00:00
+Command: bundled Python submission/code/package_submission.py
+Packages the existing files only; does not rerun statistical analyses.
+Outputs: submission.zip; results/archive_validation.json; results/package_submission_stdout.txt.
+END initial package validation 2026-10-04T18:15:44.262125+00:00 exit_status=0
+Packaging stdout through the first inspection is saved in results/package_submission_stdout.txt.
+Final refresh includes completed execution records and initial validation; final inspection stdout is in the session tool record only, not reconstructed in the archived stdout file.
+
+Delivery persistence attempt after initial archive inspection:
+Executed shell command preserved in code/save_deliverables.sh via exec_command.
+Exit status 1. Tool output: library upload failed: could not read Codex auth from /root/.codex/auth.json
+No upload was made. The actual raw delivery-attempt console output is in the session tool record, not a separate results file.
+Local files remain available for the required sandbox download links.
+
+Final archive refresh 2026-10-04T18:16:46.167286+00:00: code/final_archive_refresh.py
+Adds this record and the two delivery scripts without rerunning any analysis or replacing earlier analysis/packaging records.
+Final archive inspection output is retained in the session tool record only.

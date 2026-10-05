@@ -1,0 +1,26 @@
+A. Difference in means: estimate = 0.8477, SE = 0.2142, 95% CI = [0.4280, 1.2675], p = 7.54e-05
+B. ANCOVA z ~ x + y (HC2): estimate = 1.0232, SE = 0.1858, 95% CI = [0.6591, 1.3874], p = 3.65e-08; slope on y = 0.2333 (SE 0.0095)
+C. Interacted (centred at treated mean of y) -> ATT (HC2): estimate = 1.0139, SE = 0.1854, 95% CI = [0.6504, 1.3773], p = 4.57e-08
+   control slope on y = 0.2208 (SE 0.0112); treated-minus-control slope = 0.0411 (SE 0.0208, p = 4.82e-02)
+C'. Interacted (centred at full-sample mean) -> ATE (HC2): estimate = 1.0355, SE = 0.1860, 95% CI = [0.6710, 1.4001], p = 2.58e-08
+D. Imputation ATT, control model poly deg 1 (bootstrap SE, B=2000): estimate = 1.0139, SE = 0.1878, 95% CI = [0.6457, 1.3820], p = 6.76e-08; percentile CI = [0.6437, 1.3750]
+D. Imputation ATT, control model poly deg 3 (bootstrap SE, B=2000): estimate = 1.0155, SE = 0.1876, 95% CI = [0.6478, 1.3832], p = 6.20e-08; percentile CI = [0.6443, 1.3629]
+
+Linearity of E[z|y] within each arm (F test cubic vs linear):
+  control: F(2,1396) = 0.124, p = 0.8832; linear fit: [ 0.22082145 -3.31825913]
+  treated: F(2,596) = 1.455, p = 0.2342; linear fit: [ 0.26193805 -4.73675465]
+
+Effect by quintile of start-of-term score y (within-bin difference in means):
+  Q1 y in [45.0,50.4]: n_t=129, n_c=271, diff = 0.318 (SE 0.400)
+  Q2 y in [50.4,56.5]: n_t=128, n_c=272, diff = 0.982 (SE 0.384)
+  Q3 y in [56.5,62.4]: n_t=117, n_c=283, diff = 1.053 (SE 0.441)
+  Q4 y in [62.4,68.9]: n_t=112, n_c=288, diff = 1.405 (SE 0.450)
+  Q5 y in [68.9,75.0]: n_t=114, n_c=286, diff = 1.309 (SE 0.425)
+Residual SD of z given y, control: 3.6356
+Residual SD of z given y, treated: 3.8697
+Levene test equal residual variance: W = 4.234, p = 0.0397
+
+Fisher randomization test (sharp null, ANCOVA statistic, R=5000): observed = 1.0232, max |permuted| = 0.7072, p = 0.00020
+
+Control-group mean gain: 9.9112; treated-group mean y: 59.1577
+Adopted ATT (estimator C) relative to imputed untreated mean gain of attendees: 1.0139 / 9.7450 = 10.4%

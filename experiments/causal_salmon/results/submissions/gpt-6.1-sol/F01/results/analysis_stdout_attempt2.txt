@@ -1,0 +1,122 @@
+{
+  "rows": 2000,
+  "columns_in_input": [
+    "x",
+    "y",
+    "z"
+  ],
+  "missing_cells": 0,
+  "all_observed_start_and_end_scores_in_0_100": true,
+  "input_sha256": {
+    "data(20261004-180654).csv": "13215497ec4ae090399b28c80794abe593b564b5f36b54511ba5202533b3dbe1",
+    "STUDY_DESCRIPTION(20261004-180655).md": "195c2777e2e1193ab5890bcf9f8c261caaa07fbd383a2562e0cf90f79c50fa77"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  },
+  "unadjusted_gain_difference": 5.405097790854601,
+  "group_summary": [
+    {
+      "x": 0,
+      "n": 1400,
+      "y_mean": 56.88762955833698,
+      "y_sd": 8.423962667330366,
+      "y_min": 45.013647911746,
+      "y_max": 74.98826079709465,
+      "z_mean": 8.718961501961186,
+      "z_sd": 3.9026370609983205,
+      "z_min": -1.241412243514212,
+      "z_max": 20.012874614796388,
+      "end_mean": 65.60659106029817,
+      "end_min": 44.90691758809895,
+      "end_max": 93.68805403284429
+    },
+    {
+      "x": 1,
+      "n": 600,
+      "y_mean": 65.70759205598998,
+      "y_sd": 5.837891582304415,
+      "y_min": 55.59294297736875,
+      "y_max": 74.95540694433481,
+      "z_mean": 14.124059292815788,
+      "z_sd": 3.7294290392504643,
+      "z_min": 1.641455044878322,
+      "z_max": 22.492897896501024,
+      "end_mean": 79.83165134880576,
+      "end_min": 58.69312317912097,
+      "end_max": 96.97077194766119
+    }
+  ],
+  "support_diagnostics": {
+    "lowest_observed_attendee_start_score": 55.59294297736875,
+    "nonattendees_below_lowest_attendee": 758,
+    "nonattendees_at_or_above_lowest_attendee": 642,
+    "attendees_below_lowest_attendee": 0,
+    "unique_start_scores": 2000,
+    "duplicate_complete_rows": 0
+  },
+  "logical_att_bounds": {
+    "att_lower": -20.168348651194222,
+    "att_upper": 79.83165134880578,
+    "assumption": "Counterfactual end scores are in [0,100].",
+    "interpretation": "Logical outcome-support bounds, not causal point estimates or confidence intervals."
+  },
+  "illustrative_counterfactuals": [
+    {
+      "hypothetical_att": -5.0,
+      "counterfactual_treated_no_tutoring_end_min": 63.69312317912097,
+      "counterfactual_treated_no_tutoring_end_max": 101.97077194766119,
+      "all_counterfactual_scores_in_0_100": false,
+      "description": "Illustrative missing potential-outcome completion; not an estimate."
+    },
+    {
+      "hypothetical_att": 0.0,
+      "counterfactual_treated_no_tutoring_end_min": 58.69312317912097,
+      "counterfactual_treated_no_tutoring_end_max": 96.97077194766119,
+      "all_counterfactual_scores_in_0_100": true,
+      "description": "Illustrative missing potential-outcome completion; not an estimate."
+    },
+    {
+      "hypothetical_att": 5.0,
+      "counterfactual_treated_no_tutoring_end_min": 53.69312317912097,
+      "counterfactual_treated_no_tutoring_end_max": 91.97077194766119,
+      "all_counterfactual_scores_in_0_100": true,
+      "description": "Illustrative missing potential-outcome completion; not an estimate."
+    }
+  ],
+  "conclusion": "The supplied assignment mechanism and observed variables do not identify the ATT."
+}
+
+Associational coefficients of x (not causal estimates):
+             model term  coefficient   hc3_se  ci95_lower  ci95_upper    n  r_squared
+        unadjusted    x     5.405098 0.184680    5.043133    5.767063 2000   0.292784
+linear_start_score    x     3.713176 0.193686    3.333557    4.092794 2000   0.397879
+ cubic_start_score    x     3.724803 0.194942    3.342724    4.106883 2000   0.398671
+
+Start-score bins:
+                     n  mean_gain  mean_start_score
+start_score_bin x                                  
+(-0.001, 10.0]  0    0        NaN               NaN
+                1    0        NaN               NaN
+(10.0, 20.0]    0    0        NaN               NaN
+                1    0        NaN               NaN
+(20.0, 30.0]    0    0        NaN               NaN
+                1    0        NaN               NaN
+(30.0, 40.0]    0    0        NaN               NaN
+                1    0        NaN               NaN
+(40.0, 50.0]    0  364   6.683560         47.495482
+                1    0        NaN               NaN
+(50.0, 60.0]    0  558   8.452771         54.310962
+                1  134  12.425650         57.626828
+(60.0, 70.0]    0  335  10.030171         64.721296
+                1  285  14.051780         65.160113
+(70.0, 80.0]    0  143  11.866970         72.497731
+                1  181  15.495254         72.552088
+(80.0, 90.0]    0    0        NaN               NaN
+                1    0        NaN               NaN
+(90.0, 100.0]   0    0        NaN               NaN
+                1    0        NaN               NaN

@@ -1,0 +1,39 @@
+======================================================================
+LOCAL ANALYSIS NEAR THE SELECTION BOUNDARY
+======================================================================
+Suggested bandwidth: 1.9892
+Using bandwidth: 5
+
+Students within 5 points of cutoff: 664
+Treated: 338, Control: 326
+
+Local Linear Regression (within ±5 of cutoff):
+  Treatment effect: 3.9024
+  Baseline score effect: 0.2114
+
+Treatment effect estimate across different bandwidths:
+  Bandwidth ±3: treatment effect = 3.8533 (n=390)
+  Bandwidth ±4: treatment effect = 4.0487 (n=541)
+  Bandwidth ±5: treatment effect = 3.9024 (n=664)
+  Bandwidth ±6: treatment effect = 4.1260 (n=807)
+  Bandwidth ±7: treatment effect = 4.0910 (n=922)
+  Bandwidth ±8: treatment effect = 4.0211 (n=1071)
+
+======================================================================
+SUMMARY OF TREATMENT EFFECT ESTIMATES
+======================================================================
+
+1. Naive comparison (no controls):
+   Effect: 5.4635 points
+   Interpretation: Biased due to selection on baseline score
+
+2. OLS regression controlling for baseline score:
+   Effect: 3.7874 points
+   95% CI: [3.4077, 4.1670]
+   p-value: < 0.000001
+   Interpretation: After adjusting for baseline score differences,
+                   tutoring students gained ~3.79 more points
+
+3. Local linear regression near selection boundary (±5 points):
+   Effect: 3.9024 points
+   Interpretation: Estimate from students near the selection cutoff

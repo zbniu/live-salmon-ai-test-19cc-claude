@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-30",
+  "timezone": "America/Chicago",
+  "confirmation_source": "human_user_message_in_this_chat",
+  "confirmed_candidate": "K1",
+  "confirmed_complete_row": {
+    "n": 2000,
+    "a": 45,
+    "b_multiplier": 3,
+    "gamma": 0.25,
+    "beta": 0.5,
+    "kappa": 1.2,
+    "M": 900,
+    "K": 600,
+    "m_intercept": 10,
+    "effect_fraction": 0.1
+  },
+  "protocol_sha256": "f85fedf447c734d9d5e7a2cb630284fe18c7091c5cf653610adbc43ec8e7144c",
+  "calibration_report_sha256": "5ee62134994b59cf9032dea4a63c7a5451a5d920b751b3599eebc836a6427391",
+  "selected_configuration_sha256": "b6e96c700cd97f65dcc80c3434b15561f017dc52c42bfeecf26e7e4b11a8fe09",
+  "confirmation_scope": "Confirmed complete K1 parameter row",
+  "tested_model_calls": 0,
+  "user_message_english_translation": "Following the original data-generation plan, confirm the generation scheme, produce the final generation plan, and update README. Retain only the final generation text, clearly and directly, without revision or deliberation history.",
+  "user_message_original_sha256": "21c38be0525d860329d48b62a60c7eee9b9e8eba03e86b7924d636b15b0b8a8f",
+  "translation_note": "English rendering of the original Chinese statement; original record is retained in the controlled source project."
+}

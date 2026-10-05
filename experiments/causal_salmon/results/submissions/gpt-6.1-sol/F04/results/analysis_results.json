@@ -1,0 +1,269 @@
+{
+  "primary": {
+    "method": "Unadjusted randomized difference in means",
+    "estimate": 1.1102228476588483,
+    "se": 0.21668400750331995,
+    "ci_low": 0.6850489632372747,
+    "ci_high": 1.5353967320804218,
+    "df": 1069.7907948104562,
+    "t": 5.123695377665737,
+    "p_two_sided": 3.5526908581569267e-07,
+    "p_one_sided_increase": 1.7763454290784633e-07,
+    "treated_mean_change": 11.104341164664351,
+    "control_mean_change": 9.994118317005503,
+    "treated_n": 600,
+    "control_n": 1400
+  },
+  "baseline": {
+    "treated_mean": 59.853372944047294,
+    "control_mean": 60.275083251017264,
+    "mean_difference": -0.42171030696997036,
+    "standardized_difference": -0.049038727559781156,
+    "treated_min": 45.083423156586335,
+    "treated_max": 74.94196240389599,
+    "control_min": 45.01126059310072,
+    "control_max": 74.98362132863984
+  },
+  "baseline_adjusted_models": [
+    {
+      "method": "Separate-arm degree-1 polynomial, recipient standardization",
+      "degree": 1,
+      "estimate": 1.214367740819793,
+      "se": 0.1841900234092271,
+      "ci_low": 0.8533619286261185,
+      "ci_high": 1.5753735530134676,
+      "p_two_sided": 4.309805901127149e-11,
+      "recipient_predicted_mean_without_Q": 9.889973423844555,
+      "residual_sd_control": 3.662455928775864,
+      "residual_sd_treated": 3.8141214479669276,
+      "max_leverage": 0.006873920643920857,
+      "coefficients": [
+        9.889973423844557,
+        3.704375661668191,
+        11.104341164664351,
+        4.2810083780126265
+      ],
+      "hc3_covariance": [
+        [
+          0.009597092745456618,
+          -0.0004441869783707787,
+          0.0,
+          0.0
+        ],
+        [
+          -0.00044418697837077866,
+          0.028595186600854874,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.024328871978035016,
+          0.0014004010675694228
+        ],
+        [
+          0.0,
+          0.0,
+          0.0014004010675694228,
+          0.07693698817480786
+        ]
+      ],
+      "control_slope_per_baseline_point": 0.24695837744454607,
+      "treated_slope_per_baseline_point": 0.2854005585341751,
+      "slope_difference": 0.03844218108962902,
+      "slope_difference_se": 0.02165714403821137,
+      "slope_interaction_p_two_sided": 0.07589216606234472
+    },
+    {
+      "method": "Separate-arm degree-2 polynomial, recipient standardization",
+      "degree": 2,
+      "estimate": 1.214150566795918,
+      "se": 0.18434942682640176,
+      "ci_low": 0.8528323296455684,
+      "ci_high": 1.5754688039462676,
+      "p_two_sided": 4.5141755221688156e-11,
+      "recipient_predicted_mean_without_Q": 9.890190597868436,
+      "residual_sd_control": 3.663758451533589,
+      "residual_sd_treated": 3.8135265458846104,
+      "max_leverage": 0.01582823972711636,
+      "coefficients": [
+        9.898432513611183,
+        3.7053835030381164,
+        -0.025449157822541008,
+        10.915801527011675,
+        4.273618337125214,
+        0.5821674407010344
+      ],
+      "hc3_covariance": [
+        [
+          0.02126381747673416,
+          -0.00014189579828342803,
+          -0.034724249611036054,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.0001418957982834289,
+          0.02856647792114682,
+          -0.0008759323590226702,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.034724249611036054,
+          -0.000875932359022673,
+          0.10346170726799865,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.052561743076472746,
+          -0.001380468816036469,
+          -0.0894008389080933
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          -0.0013804688160364681,
+          0.07690247345509094,
+          0.00781708294299517
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          -0.0894008389080933,
+          0.007817082942995171,
+          0.28322219719385167
+        ]
+      ]
+    },
+    {
+      "method": "Separate-arm degree-3 polynomial, recipient standardization",
+      "degree": 3,
+      "estimate": 1.2132330100882889,
+      "se": 0.1842238339895028,
+      "ci_low": 0.8521609303749775,
+      "ci_high": 1.5743050898016002,
+      "p_two_sided": 4.5291087491398075e-11,
+      "recipient_predicted_mean_without_Q": 9.891108154576058,
+      "residual_sd_control": 3.6607338576371444,
+      "residual_sd_treated": 3.807590692797248,
+      "max_leverage": 0.028947374551073678,
+      "coefficients": [
+        9.879554661366555,
+        4.4055731189576495,
+        0.0503597473106905,
+        -1.1568597878301419,
+        10.908763683053943,
+        3.2538433307616037,
+        0.5818099650602438,
+        1.7400907551002425
+      ],
+      "hc3_covariance": [
+        [
+          0.021238851735969705,
+          -0.002987775295964566,
+          -0.034673186073537116,
+          0.004579882280314407,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.002987775295964564,
+          0.18200934971309854,
+          0.006513542068769113,
+          -0.25053729679475595,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.034673186073537116,
+          0.00651354206876914,
+          0.10312915401686797,
+          -0.011815587651993243,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.004579882280314403,
+          -0.250537296794756,
+          -0.011815587651993203,
+          0.40908049514261846,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05241980278181908,
+          0.0056912612121912745,
+          -0.08937915255240735,
+          -0.012165214975184087
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0056912612121912814,
+          0.45394373321749704,
+          -0.023129329491415124,
+          -0.6421723976879833
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.08937915255240733,
+          -0.023129329491415097,
+          0.283547699189215,
+          0.05357399963839093
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.012165214975184102,
+          -0.6421723976879822,
+          0.053573999638391,
+          1.094243316006156
+        ]
+      ]
+    }
+  ],
+  "stratified_sensitivity": {
+    "method": "Recipient-weighted six baseline bands, conditional-weight SE",
+    "estimate": 1.2173718963483549,
+    "se": 0.18356745675623243,
+    "ci_low": 0.8575862923725354,
+    "ci_high": 1.5771575003241742,
+    "note": "Approximate conditional-weight interval; coarsening can leave within-band baseline differences."
+  },
+  "analysis_choices": {
+    "primary": "Unadjusted randomized comparison; chosen before inferential fits.",
+    "sensitivities": "Recipient-targeted polynomials degrees 1, 2, 3 and six five-point baseline strata. No significance-based model selection.",
+    "uncertainty": "Primary Welch/Neyman approximation. Polynomial sensitivity HC3 normal intervals conditional on baseline design.",
+    "estimand": "Average Q effect for recipients; exact individual and realized recipient counterfactuals are unobserved."
+  }
+}

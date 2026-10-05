@@ -1,0 +1,6 @@
+{
+  "mean_contrast_matches_OLS": true,
+  "HC3_matches_closed_form": true,
+  "HC3_computed_variance": 0.047018087382590584,
+  "HC3_closed_form_variance": 0.04701808738259061
+}

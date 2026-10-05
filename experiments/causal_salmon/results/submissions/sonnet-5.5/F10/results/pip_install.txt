@@ -1,0 +1,2 @@
+Installing collected packages: patsy, narwhals, interface-meta, formulaic, statsmodels
+Successfully installed formulaic-1.2.2 interface-meta-2.0.1 narwhals-2.26.0 patsy-1.0.3 statsmodels-0.15.0

@@ -1,0 +1,6 @@
+Execution record (in order of execution)
+1. code/01_explore.py -> results/01_explore_output.txt. Ran OK. Data: 2000 rows, x/y/z, no missing; treated y min 58.21; 536 untreated at/above that.
+2. code/02_analysis.py (first attempt) -> FAILED: ModuleNotFoundError: statsmodels. The traceback was only printed to the tool output; the file results/02_analysis_output.txt was overwritten by the later successful run, so the failed output is not in results/.
+3. pip install statsmodels --break-system-packages -> results/00_pip_install_log.txt (only the last 2 lines of pip output were kept). Installed statsmodels 0.15.0.
+4. code/02_analysis.py (re-run unchanged after installing the dependency) -> results/02_analysis_output.txt and results/02_att_estimates.csv. Ran OK. Bootstrap uses 1000 resamples with seeded RNG (seed 20240).
+No other analyses were run. All numbers in final_report.md are copied from the outputs above (IPW and OLS rows from 02_analysis_output.txt).

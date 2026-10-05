@@ -1,0 +1,108 @@
+{
+  "input_sha256": "f0f8b9dbd2b7b80890467cf755a72278b3cfa12fb6149ab007a5af5666a911fd",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "rows_used": 2000,
+  "missing_values": 0,
+  "group_summary": [
+    {
+      "x": 0,
+      "n": 1400,
+      "y_mean": 57.34952100168895,
+      "y_sd": 8.410704883950542,
+      "y_min": 45.02414771243346,
+      "y_max": 74.91750843273265,
+      "z_mean": 8.640799896930602,
+      "z_sd": 3.7583948328334382,
+      "z_min": -0.9978999956741319,
+      "z_max": 18.87869157530684,
+      "end_score_mean": 65.99032089861954,
+      "end_score_sd": 10.509249241251245,
+      "end_score_min": 44.74944237462351,
+      "end_score_max": 92.39903831821488
+    },
+    {
+      "x": 1,
+      "n": 600,
+      "y_mean": 66.06819062527764,
+      "y_sd": 5.2206112957082755,
+      "y_min": 56.99464278926244,
+      "y_max": 74.9876323154432,
+      "z_mean": 14.104328625911903,
+      "z_sd": 3.9062759929936717,
+      "z_min": 2.382149360341743,
+      "z_max": 23.665431020804434,
+      "end_score_mean": 80.17251925118954,
+      "end_score_sd": 7.535153126113248,
+      "end_score_min": 61.01858713013108,
+      "end_score_max": 98.14955718192043
+    }
+  ],
+  "unadjusted_gain_difference_attendees_minus_nonattendees": 5.4635287289813,
+  "observed_end_scores_all_in_0_100": true,
+  "empirical_y_range_overlap": [
+    56.99464278926244,
+    74.91750843273265
+  ],
+  "attendees_outside_nonattendee_y_range": 6,
+  "minimum_attendee_y": 56.99464278926244,
+  "nonattendees_below_minimum_attendee_y": 793,
+  "associational_regressions": [
+    {
+      "degree_y": 0,
+      "attendance_coefficient": 5.463528728981297,
+      "HC3_se": 0.1886027252605901,
+      "normal_95_lower": 5.0938673874705405,
+      "normal_95_upper": 5.833190070492053,
+      "r_squared": 0.3025439053141039
+    },
+    {
+      "degree_y": 1,
+      "attendance_coefficient": 3.7873623340753877,
+      "HC3_se": 0.19503549275648738,
+      "normal_95_lower": 3.4050927682726724,
+      "normal_95_upper": 4.169631899878103,
+      "r_squared": 0.40537422298237
+    },
+    {
+      "degree_y": 2,
+      "attendance_coefficient": 3.8076243629468944,
+      "HC3_se": 0.19578467910079608,
+      "normal_95_lower": 3.4238863919093343,
+      "normal_95_upper": 4.191362333984455,
+      "r_squared": 0.4056621788930601
+    },
+    {
+      "degree_y": 3,
+      "attendance_coefficient": 3.820808318740786,
+      "HC3_se": 0.19637941111784413,
+      "normal_95_lower": 3.4359046729498117,
+      "normal_95_upper": 4.20571196453176,
+      "r_squared": 0.4057366977586675
+    }
+  ],
+  "causal_ATT_point_identified": false,
+  "scale_only_ATT_bounds_if_counterfactual_end_scores_in_0_100": [
+    -19.82748074881046,
+    80.17251925118954
+  ],
+  "counterfactual_examples": [
+    {
+      "label": "zero effect",
+      "untreated_end_for_attendees": "observed end score",
+      "ATT": 0.0
+    },
+    {
+      "label": "benefit",
+      "untreated_end_for_attendees": "0 for each attendee",
+      "ATT": 80.17251925118954
+    },
+    {
+      "label": "harm",
+      "untreated_end_for_attendees": "100 for each attendee",
+      "ATT": -19.82748074881046
+    }
+  ]
+}
+
+Output files: group_summary.csv, associational_regressions.csv, score_bins.csv, analysis.json

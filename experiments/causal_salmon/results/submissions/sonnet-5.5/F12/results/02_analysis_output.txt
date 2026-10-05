@@ -1,0 +1,36 @@
+treated y cutoff (min y among treated): 58.212770522843385
+controls below cutoff: 864  controls at/above: 536
+common-support sample: 1136 {1: 600, 0: 536}
+
+Naive full-sample diff: 3.6257396604900087
+Naive support-restricted diff: 1.5265266595449702
+
+Full, linear y: 1.1587302240431732 0.20637243939772065
+Full, quad y: 1.1586060318687434 0.20648893102966187
+Restricted lin: x coef 1.181 se 0.213
+Restricted quad: x coef 1.183 se 0.213
+Restricted cubic: x coef 1.183 se 0.213
+Restricted lin x interaction: x coef -3.255 se 2.845
+control quad term p: 0.4670087189537097  slope-linear: 0.2008013143446234
+treated quad term p: 0.7194189675775798
+interaction x:y p: 0.1187057335200914 0.06690502205794806
+
+imputation_linear: ATT=1.232 se=0.220 95%CI=(0.780,1.653)
+imputation_quad: ATT=1.230 se=0.218 95%CI=(0.817,1.654)
+imputation_cubic: ATT=1.233 se=0.216 95%CI=(0.813,1.653)
+stratification_10: ATT=1.244 se=0.224 95%CI=(0.805,1.677)
+match_k5: ATT=1.102 se=0.241 95%CI=(0.690,1.629)
+
+IPW (logit on y, support sample) ATT: 1.2249846587325308
+propensity logit y coef: {'Intercept': -3.8603082085458, 'y': 0.059890864794418144}
+
+Restricted lin resid corr w/ y: -9.869006635904506e-17
+                 size            mean           
+x                   0    1          0          1
+bin                                             
+(58.212, 60.456]  113   77  10.173637  11.095129
+(60.456, 63.302]   99   90  10.816993  11.460050
+(63.302, 66.379]   91   98  11.660145  12.380457
+(66.379, 69.458]   87  102  11.347035  13.394014
+(69.458, 72.036]   72  117  12.784132  13.845468
+(72.036, 74.991]   74  116  13.117450  14.881227

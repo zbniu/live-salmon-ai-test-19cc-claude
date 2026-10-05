@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/2922af80d311/submission/code/01_describe.py", line 9, in <module>
+    import statsmodels
+ModuleNotFoundError: No module named 'statsmodels'

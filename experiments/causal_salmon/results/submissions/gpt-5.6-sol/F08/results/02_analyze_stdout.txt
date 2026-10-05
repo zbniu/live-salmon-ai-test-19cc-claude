@@ -1,0 +1,44 @@
+PRIMARY RESULT
+{
+  "method": "Primary: untreated cubic B-spline, knots 50/55/60/65/70",
+  "att": 1.1987329474987218,
+  "se": 0.21040524732223073,
+  "ci95_low": 0.786346240588907,
+  "ci95_high": 1.6111196544085367,
+  "n_treated": 600,
+  "n_controls": 1400,
+  "mean_counterfactual_gain": 11.626977823866582,
+  "control_residual_sd": 3.5512568668426763,
+  "two_sided_normal_p": 1.2174972200187897e-08
+}
+
+ADJUSTMENT SENSITIVITY
+                                                   method      att       se  ci95_low  ci95_high  n_treated  n_controls  mean_counterfactual_gain  control_residual_sd  two_sided_normal_p
+                      Unadjusted difference (association) 3.448876 0.190979  3.074564   3.823189        600        1400                       NaN                  NaN                 NaN
+  Primary: untreated cubic B-spline, knots 50/55/60/65/70 1.198733 0.210405  0.786346   1.611120        600        1400                 11.626978             3.551257        1.217497e-08
+              Untreated polynomial degree 1, all controls 1.168653 0.206447  0.764025   1.573281        600        1400                 11.657057             3.571598        1.506687e-08
+              Untreated polynomial degree 2, all controls 1.205401 0.208049  0.797632   1.613169        600        1400                 11.620310             3.568011        6.879925e-09
+              Untreated polynomial degree 3, all controls 1.192039 0.209353  0.781715   1.602362        600        1400                 11.633672             3.567500        1.241474e-08
+              Untreated polynomial degree 4, all controls 1.182343 0.209982  0.770786   1.593900        600        1400                 11.643368             3.563164        1.794854e-08
+Untreated polynomial degree 1, controls in attendee range 1.213392 0.211309  0.799234   1.627550        600         577                 11.612319             3.541869        9.341968e-09
+Untreated polynomial degree 2, controls in attendee range 1.209134 0.211795  0.794023   1.624245        600         577                 11.616577             3.541182        1.136571e-08
+Untreated polynomial degree 3, controls in attendee range 1.204753 0.211894  0.789449   1.620058        600         577                 11.620957             3.538788        1.303253e-08
+                      Attendee-weighted strata, width 0.5 1.143702 0.221830  0.708923   1.578481        600         577                       NaN                  NaN                 NaN
+                        Attendee-weighted strata, width 1 1.132785 0.216195  0.709051   1.556519        600         577                       NaN                  NaN                 NaN
+                        Attendee-weighted strata, width 2 1.144948 0.214049  0.725419   1.564476        600         577                       NaN                  NaN                 NaN
+                      Attendee-weighted strata, width 2.5 1.212312 0.212874  0.795086   1.629538        600         577                       NaN                  NaN                 NaN
+                        Attendee-weighted strata, width 5 1.192370 0.211019  0.778780   1.605960        600         577                       NaN                  NaN                 NaN
+
+MATCHING SENSITIVITY (no matching confidence intervals)
+ k      att  mean_absolute_baseline_distance  max_baseline_distance  unique_matched_controls
+ 1 1.122808                         0.015438               0.116378                      328
+ 5 1.086086                         0.046724               0.238045                      565
+10 1.075091                         0.086577               0.343483                      584
+20 1.172539                         0.166373               0.659513                      592
+
+DESCRIPTIVE BASELINE REGION EFFECTS
+   lower  upper  n_treated  adjusted_gain_difference
+57.35599     60         72                  0.529445
+60.00000     65        151                  0.941791
+65.00000     70        187                  0.956609
+70.00000     75        190                  1.894860

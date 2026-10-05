@@ -1,0 +1,8 @@
+Run log (execution order)
+1. code/01_explore.py -> results/01_explore.txt. Success. Data check, cutoff c=57.356, binned treatment shares and z means.
+2. code/02_att.py, first attempt -> ERROR: ModuleNotFoundError: statsmodels. No output saved.
+   Installed statsmodels via pip.
+3. code/02_att.py, second attempt -> ERROR in bootstrap: patsy bs() spline "data points fall outside the outermost knots" when predicting. No output saved (results/02_att.txt was overwritten by the error traceback, then by step 4).
+   Fix: set bs(..., lower_bound=45, upper_bound=75) (sed edit; the code file in code/ is the fixed version).
+4. code/02_att.py, third attempt -> results/02_att.txt (console output) and results/02_att_estimates.csv. Success.
+   Bootstrap seed 20261004, B=1000.

@@ -1,0 +1,30 @@
+Placebo jumps:
+      sample  placebo_cutoff   jump    se      t
+    all, y<c              49  0.613 0.664  0.924
+    all, y<c              51 -1.487 0.708 -2.100
+    all, y<c              53 -1.604 0.778 -2.063
+   x=0, y>=c              60 -0.402 0.743 -0.541
+   x=1, y>=c              60  0.390 1.075  0.363
+P(x=1), y>=c              60 -0.045 0.091 -0.492
+   x=0, y>=c              63 -1.103 0.853 -1.293
+   x=1, y>=c              63  1.165 1.031  1.131
+P(x=1), y>=c              63 -0.000 0.095 -0.003
+   x=0, y>=c              66  0.927 0.935  0.992
+   x=1, y>=c              66 -1.136 1.031 -1.102
+P(x=1), y>=c              66  0.046 0.105  0.440
+   x=0, y>=c              69  0.952 0.951  1.002
+   x=1, y>=c              69  0.652 1.015  0.642
+P(x=1), y>=c              69 -0.134 0.096 -1.391
+
+Within-y treated-minus-untreated contrast above c, averaged over treated: 3.819 (boot SE 0.199)
+slope of z on y: untreated above c 0.210, treated 0.189
+Selection gap at c (h=8, from 03): 3.068
+Assumption-dependent extrapolated ATT (constant gap & effect): 0.751
+
+Binned contrast above c:
+x                    0       1   diff
+bin                                  
+[55.593, 60.0)   8.647  12.426  3.779
+[60.0, 65.0)     9.659  13.742  4.083
+[65.0, 70.0)    10.510  14.339  3.828
+[70.0, 75.01)   11.867  15.495  3.628

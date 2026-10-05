@@ -1,0 +1,54 @@
+EXECUTION LOG
+=============
+
+Code execution order and outputs:
+
+1. analysis.py - Main statistical analysis
+   Output: analysis_output.txt (lines 1-120)
+   Performs:
+   - Data exploration and summary statistics
+   - Treatment group composition (600 treated, 1400 control)
+   - Distribution analysis of start-of-term scores by group
+   - Distribution analysis of score gains by group
+   - T-test comparing raw score gains
+   - Regression analysis (unadjusted)
+   - Regression analysis (adjusted for start-of-term score)
+   - Key findings summary
+
+2. visualization.py - Visualizations and additional analysis
+   Output: analysis_plots.png (6-panel figure)
+   Output: analysis_output.txt (lines 121-160, appended)
+   Performs:
+   - Distribution histograms for start-of-term scores
+   - Distribution histograms for score gains
+   - Scatter plot with separate regression lines by treatment group
+   - Box plots comparing distributions
+   - Residual diagnostics for unadjusted model
+   - Residual diagnostics for adjusted model
+   - Correlation matrix
+   - Stratified analysis by quartiles
+   - Mann-Whitney U nonparametric test
+
+SUMMARY OF KEY RESULTS
+======================
+
+Raw (Unadjusted) Treatment Effect: 5.4051 points
+- Students attending tutoring gained 5.4051 more points on average
+- p-value: < 0.000001 (highly significant)
+- This estimate is confounded by selection bias
+
+Adjusted Treatment Effect (controlling for start-of-term score): 3.7132 points
+- After accounting for students' incoming ability level
+- p-value: < 0.000001 (highly significant)
+- Relationship with start-of-term score: 0.1918 points per point
+- R-squared: 0.398 (model explains 39.8% of variance in score gain)
+
+Selection Mechanism:
+- Treated (attended): mean start-of-term score = 65.71
+- Control (did not attend): mean start-of-term score = 56.89
+- Difference: 8.82 points (students admitted to tutoring had much higher baseline scores)
+
+Robustness:
+- Stratified analysis by quartiles shows consistent treatment effect of ~3.7-3.9 points
+- Mann-Whitney U test confirms significance of differences (p < 0.000001)
+- All results consistent across multiple analytic approaches

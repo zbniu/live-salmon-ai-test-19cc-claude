@@ -1,0 +1,4 @@
+model,x_coefficient,interpretation
+Unadjusted mean gain difference,5.46352872898,descriptive association; not ATT
+OLS with common degree-1 polynomial in y,3.78736233408,model-dependent adjusted association; not ATT
+OLS with common degree-3 polynomial in y,3.82080831874,model-dependent adjusted association; not ATT

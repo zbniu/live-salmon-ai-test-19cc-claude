@@ -1,0 +1,20 @@
+Execution record for this session
+Initial read-only shell inspection: cat study description; wc -l data.csv (2001 including header); head -n 6 data.csv. Exit 0. This preliminary output is recorded in the session tool transcript; no separate console file was saved. No statistical analysis preceded the saved code execution below.
+Runtime inspection: printed bundled Python and runtime paths; exit 0.
+Setup: created submission/code and submission/results. Checked the locally available upload helper; exit 0.
+Analysis source and runner were written with apply_patch before execution.
+
+[2026-10-04T18:09:21Z] EXECUTE code/analyze.py using bundled Python; stdout/stderr -> results/analysis_console.txt
+[2026-10-04T18:09:22Z] EXIT 1. Outputs: results/group_summary.csv, adjusted_sensitivity.csv, baseline_deciles.csv, ols_degree_{1,2,3}.txt, analysis.json, analysis_console.txt.
+
+First analysis failed before reading data: statsmodels is unavailable in the bundled environment. Only the traceback was produced; the other outputs named by the runner were planned outputs and were not created. Preserved executed source as code/analyze_attempt1.py and traceback as results/analysis_attempt1_console.txt. Replacing the OLS dependency with direct NumPy least squares and HC3 calculations; no packages installed.
+
+[2026-10-04T18:09:59Z] EXECUTE code/analyze.py using bundled Python; stdout/stderr -> results/analysis_console.txt
+[2026-10-04T18:10:01Z] EXIT 0. Console: results/analysis_console.txt. On success, generated group_summary.csv, adjusted_sensitivity.csv, baseline_deciles.csv, ols_degree_{1,2,3}.json, analysis.json.
+[2026-10-04T18:11:59.903596+00:00] EXECUTE code/package_and_verify.py: copy provided inputs; read back final report; verify recorded results; create and inspect submission.zip. No analyses rerun.
+[2026-10-04T18:11:59.904088+00:00] Final report read back as UTF-8: nonempty; intended conclusion and numerical results verified against results/analysis.json. Inputs verified against recorded SHA-256 hashes and copied to inputs/.
+[2026-10-04T18:11:59.905065+00:00] Packaging 18 files; required report/code/results/run_log present. Code and numerical-output files include the failed attempt and successful attempt. No missing statistical execution records; preliminary inspection had no separately saved console file as noted above.
+
+[2026-10-04T18:13:00.274300+00:00] code/package_and_verify.py completed with exit 0: report read-back and ZIP member/integrity inspection PASS. Its console output was returned in the session tool transcript; no separate console file was saved.
+Subsequent persistence helper invocation attempted to save final_report.md and submission.zip. Exit 1 before transfer: authentication unavailable. No persistent uploads succeeded. Local files remain available for supported sandbox download links. This was a delivery operation, not an analysis run.
+EXECUTE code/finalize_archive.py: record packaging and persistence status; write results/delivery_verification.json and rebuild/inspect archive to include these records. No statistical analyses rerun.

@@ -1,0 +1,7 @@
+{
+  "utf8_report_nonempty": true,
+  "primary_estimate": 1.241663846738997,
+  "rounded_answer_present": true,
+  "report_characters": 5111
+}
+Wrote submission/final_report.md and submission/README.md from saved results.

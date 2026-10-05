@@ -1,0 +1,46 @@
+Execution record (chronological; only the two attachments are study sources).
+
+1. Read upload/STUDY_DESCRIPTION(3).md with `cat` via exec_command.
+   Exit code 0. Complete description was returned in the tool transcript.
+   No persistent stdout file was captured for this initial read.
+2. Ran the Python snippet now preserved verbatim in code/initial_inspection.py
+   via a shell heredoc with system `python`. Exit code 0. It printed the CSV
+   byte count (79594), header, and first five records to the tool transcript.
+   No persistent stdout file was captured. It has not been rerun for this log.
+3. Read workflow skills and inspected the primary Python runtime environment.
+   These were infrastructure-only actions; no other study data were accessed.
+   Runtime environment path inspection exited 0. No persistent output captured.
+
+Subsequent executions and actual captured outputs are appended below.
+4. Started 2026-10-04T01:37:53.863907+00:00
+   Command: ['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', '/workspace/scratch/86488352b39e/submission/code/analyze.py']
+   Wrapper failed before launching analyze.py: FileNotFoundError for
+   submission/results/analysis_stdout.txt because results/ did not yet exist.
+   Exit code 1, traceback available in tool transcript only. No analysis outputs
+   were produced by this attempt. Failed wrapper preserved as
+   code/run_analysis_initial.py. Fixed by creating results/ in the wrapper.
+4. Started 2026-10-04T01:38:09.054555+00:00
+   Command: ['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', '/workspace/scratch/86488352b39e/submission/code/analyze.py']
+   Finished 2026-10-04T01:38:09.199618+00:00. Exit code 0.
+   Actual captured stdout: results/analysis_stdout.txt
+   Actual captured stderr: results/analysis_stderr.txt
+   On success the analysis also writes results/analysis.json,
+   results/group_summary.csv, and results/baseline_bins.csv.
+5. 2026-10-04T01:39:55.592499+00:00: executed
+   code/create_report_and_archive.py using the primary Python runtime.
+   Read existing results/analysis.json without rerunning analysis.
+   Wrote final_report.md, code/README.md, and unchanged input copies.
+   Read final_report.md back as UTF-8; nonempty and exact intended text verified.
+   Created submission.zip and inspected its actual members and CRCs.
+   Required report, code, results, and execution record were present.
+   Actual verification output: results/delivery_verification.json.
+   Repacked after recording verification; no statistical analysis repeated.
+6. Attempted persistent upload of final_report.md and submission.zip
+   with the current library_upload.py helper. Exit code 1.
+   Actual tool output: library upload failed: could not read Codex auth
+   from /root/.codex/auth.json. No upload success was reported.
+   This output is preserved from the tool transcript in this log;
+   no separate stdout/stderr files were captured for the upload command.
+7. Executed code/finalize_delivery_record.py to record this failure
+   and verify the local report and final archive. No analyses rerun.
+   Session file delivery uses the real local report and archive.

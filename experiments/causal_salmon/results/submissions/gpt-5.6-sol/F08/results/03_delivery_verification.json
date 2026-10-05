@@ -1,0 +1,17 @@
+{
+  "report_nonempty": true,
+  "report_utf8_readback_matches": true,
+  "report_bytes": 5542,
+  "adopted_att": 1.1987329474987218,
+  "adopted_ci95": [
+    0.786346240588907,
+    1.6111196544085367
+  ],
+  "archive_report_matches": true,
+  "archive_code_present": true,
+  "archive_results_present": true,
+  "archive_crc_check_passed": true,
+  "original_inputs_hash_verified": true,
+  "preserved_failed_python_execution": true,
+  "note": "Archive was inspected before appending this verification and the completed run log; final complete archive is also inspected by this script."
+}

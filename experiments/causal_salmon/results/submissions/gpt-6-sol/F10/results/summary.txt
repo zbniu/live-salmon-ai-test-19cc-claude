@@ -1,0 +1,11 @@
+Rows 2000; treated 600; min treated y 56.994643
+Mean gain treated 14.1043; untreated 8.6408
+Raw gain difference 5.4635 (SE 0.1885)
+ATT bounds based only on final-score range: [-19.8275, 80.1725] points
+Cutoff estimates: bandwidth, counts below/above, treatment jump, gain jump, ratio, ratio SE
+ 3  208/216  0.397  -0.211  -0.531  2.058
+ 5  337/343  0.416  -0.102  -0.246  1.522
+ 8  535/549  0.405  -0.209  -0.516  1.227
+10  670/678  0.416  -0.089  -0.213  1.066
+15  793/1023  0.450  0.317  0.703  0.816
+20  793/1207  0.459  0.493  1.074  0.746

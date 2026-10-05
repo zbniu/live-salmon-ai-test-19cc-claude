@@ -1,0 +1,87 @@
+======================================================================
+ANALYSIS 1: NAIVE COMPARISON (UNADJUSTED)
+======================================================================
+
+Mean change for treated: 13.0189
+Mean change for control: 9.3932
+Naive difference: 3.6257
+T-statistic: 18.6785, p-value: 0.000000
+95% CI: [3.2557, 3.9957]
+
+======================================================================
+ANALYSIS 2: REGRESSION ADJUSTMENT FOR BASELINE Y
+======================================================================
+
+Regression: z ~ x + y
+Variable           Coef      Std Err       t-stat      p-value
+--------------------------------------------------
+Intercept       -4.3480       0.6280      -6.9231     0.000000
+x                1.1587       0.2066       5.6080     0.000000
+y                0.2417       0.0109      22.1355     0.000000
+
+R-squared: 0.3164
+
+Coefficient on x (adjusted for y): 1.1587
+Standard error: 0.2066
+95% CI: [0.7538, 1.5637]
+
+======================================================================
+ANALYSIS 3: REGRESSION WITH INTERACTION (y effect may differ by treatment)
+======================================================================
+
+Regression: z ~ x + y + x:y (with interaction)
+Variable           Coef      Std Err       t-stat      p-value
+--------------------------------------------------
+Intercept       -4.1150       0.6746      -6.0999     0.000000
+x               -0.8219       2.1027      -0.3909     0.695939
+y                0.2376       0.0117      20.2270     0.000000
+x:y              0.0302       0.0319       0.9465     0.344003
+
+R-squared: 0.3167
+
+Coefficient on x (main effect, with interaction): -0.8219
+
+======================================================================
+ANALYSIS 4: COVARIATE BALANCE CHECK
+======================================================================
+
+Difference in baseline y by treatment:
+Mean y treated: 67.0726
+Mean y control: 56.8637
+Difference: 10.2090
+Cohen's d for baseline y: 1.5211
+
+======================================================================
+ANALYSIS 5: CORRELATION BETWEEN Y AND Z
+======================================================================
+
+Correlation between y and z (overall): 0.5528
+Correlation between y and z (treated): 0.3480
+Correlation between y and z (control): 0.4752
+
+======================================================================
+ANALYSIS 6: STRATIFIED ANALYSIS BY BASELINE Y QUINTILES
+======================================================================
+
+Treatment effect by baseline y quintile:
+Quintile       Effect    n_treated    n_control
+--------------------------------------------------
+Q1            -7.0590            0          400
+Q2            -8.8562            0          400
+Q3             0.9624          151          249
+Q4             1.3988          203          197
+Q5             1.4175          246          154
+
+======================================================================
+SUMMARY OF KEY FINDINGS
+======================================================================
+
+Naive difference (biased): 3.6257
+Adjusted for baseline y: 1.1587
+With interaction: -0.8219
+
+Stratified effects (Q3-Q5 where treatment exists):
+  Q3: 0.9624
+  Q4: 1.3988
+  Q5: 1.4175
+  Average of Q3-Q5: 1.2595

@@ -1,0 +1,93 @@
+{
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 17:06:14) [Clang 19.1.7 ]",
+  "numpy": "2.5.3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "virtual_environment": "<PROJECT_ROOT>/.venv",
+  "base_interpreter": "<PYTHON_ENV>/bin/python3.12",
+  "numpy_build": {
+    "Compilers": {
+      "c": {
+        "name": "clang",
+        "linker": "ld64",
+        "version": "15.0.0",
+        "commands": "cc"
+      },
+      "cython": {
+        "name": "cython",
+        "linker": "cython",
+        "version": "3.3.0",
+        "commands": "cython"
+      },
+      "c++": {
+        "name": "clang",
+        "linker": "ld64",
+        "version": "15.0.0",
+        "commands": "c++"
+      }
+    },
+    "Machine Information": {
+      "host": {
+        "cpu": "aarch64",
+        "family": "aarch64",
+        "endian": "little",
+        "system": "darwin"
+      },
+      "build": {
+        "cpu": "aarch64",
+        "family": "aarch64",
+        "endian": "little",
+        "system": "darwin"
+      }
+    },
+    "Build Dependencies": {
+      "blas": {
+        "name": "accelerate",
+        "found": true,
+        "version": "unknown",
+        "detection method": "system",
+        "include directory": "unknown",
+        "lib directory": "unknown",
+        "openblas configuration": "unknown",
+        "pc file directory": "unknown"
+      },
+      "lapack": {
+        "name": "accelerate",
+        "found": true,
+        "version": "unknown",
+        "detection method": "system",
+        "include directory": "unknown",
+        "lib directory": "unknown",
+        "openblas configuration": "unknown",
+        "pc file directory": "unknown"
+      }
+    },
+    "Python Information": {
+      "path": "<TEMP_DIR>/build-env-sd3oh5ko/bin/python",
+      "version": "3.12"
+    },
+    "SIMD Extensions": {
+      "baseline": [
+        "NEON",
+        "NEON_FP16",
+        "NEON_VFPV4",
+        "ASIMD"
+      ],
+      "found": [
+        "ASIMDHP",
+        "ASIMDDP"
+      ],
+      "not found": [
+        "ASIMDFHM"
+      ]
+    }
+  },
+  "thread_settings": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "uv_lock_sha256": "01e13f7ff7e532a4eb267c6827fee0fb431b794560856ec755e5ee6963bae21f",
+  "project_sha256": "48a85705b4704ca7d18695e89d3aaf7703db505cc7b2108c3577ae4be02081b4",
+  "public_copy_note": "Machine-specific paths were removed from this historical display copy. Placeholders are not runnable paths; numerical results and historical identity hashes are preserved. See manifests/path_redaction.json."
+}

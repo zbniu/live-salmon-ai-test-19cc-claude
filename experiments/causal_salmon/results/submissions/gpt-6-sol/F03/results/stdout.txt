@@ -1,0 +1,20 @@
+{
+  "n": 2000,
+  "n_attended": 600,
+  "n_control": 1400,
+  "mean_gain_attended": 11.104341164664351,
+  "mean_gain_control": 9.994118317005505,
+  "difference_in_mean_gain": 1.1102228476588465,
+  "welch_se": 0.21668400750331995,
+  "welch_df": 1069.7907948104562,
+  "welch_95pct_ci": [
+    0.6850489632372729,
+    1.53539673208042
+  ],
+  "welch_two_sided_p": 3.5526908581570686e-07,
+  "baseline_mean_attended": 59.853372944047294,
+  "baseline_mean_control": 60.275083251017264,
+  "baseline_difference": -0.42171030696997036,
+  "gain_sd_attended": 4.524212941115868,
+  "gain_sd_control": 4.239446076097403
+}

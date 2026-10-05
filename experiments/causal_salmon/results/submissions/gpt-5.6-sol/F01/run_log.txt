@@ -1,0 +1,14 @@
+2026-10-04T01:37:31.970128+00:00 Analysis launcher started: code/run_analysis.py. Earlier preparation: read the supplied study description and first five data rows, listed attachments, copied the two complete inputs into submission/inputs, and wrote code with apply_patch. Those previews were tool outputs, not saved statistical results. No earlier analysis runs or analysis failures.
+2026-10-04T01:37:31.970197+00:00 START ['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', '/workspace/scratch/172027e4b7f9/submission/code/analyze.py']
+2026-10-04T01:37:32.066604+00:00 FINISH exit=0; actual stdout -> results/analysis_stdout.txt; actual stderr -> results/analysis_stderr.txt
+2026-10-04T01:37:32.066654+00:00 OUTPUT analysis.json: 3520 bytes
+2026-10-04T01:37:32.066679+00:00 OUTPUT group_summary.csv: 559 bytes
+2026-10-04T01:37:32.066701+00:00 OUTPUT descriptive_regressions.csv: 422 bytes
+2026-10-04T01:37:32.066721+00:00 OUTPUT score_bands.csv: 313 bytes
+2026-10-04T01:39:12.122645+00:00 START code/finalize.py: assemble report from results/analysis.json; no statistical rerun.
+2026-10-04T01:39:12.122924+00:00 REPORT final_report.md read back as UTF-8, nonempty, and exactly equal to intended report; answer and numerical associations verified.
+2026-10-04T01:39:12.131585+00:00 ARCHIVE first assembly inspected: required report, executed code, actual analysis results and run log present; CRC check passed; archived report equals local readback. Inspection -> results/delivery_verification.json.
+2026-10-04T01:39:12.131608+00:00 FINISH code/finalize.py: include actual delivery inspection record and updated log in refreshed archive, then inspect refreshed archive. No analysis errors, reruns, or missing statistical execution records.
+2026-10-04T01:40:09.039296+00:00 Optional persistence helper invoked after local delivery verification: python3 .../library/scripts/library_upload.py with report and archive paths. Tool returned exit=1: library upload failed: could not read Codex auth from /root/.codex/auth.json. This is a note of the observed tool result; its raw terminal record was not separately captured in a file. No upload or analysis retry. Local downloadable files remain available.
+2026-10-04T01:40:09.039307+00:00 START code/record_delivery.py: preserve optional persistence error in log, refresh archive, and verify local report and archive again; no analysis rerun.
+2026-10-04T01:40:09.039391+00:00 Report readback confirmed nonempty and contains intended causal answer. Archive refresh follows, with CRC and member inspection below.

@@ -1,0 +1,53 @@
+{
+  "n": 2000,
+  "treated": 600,
+  "controls": 1400,
+  "treated_y_range": [
+    57.35599040912017,
+    74.97566682818609
+  ],
+  "control_y_range": [
+    45.00531537876745,
+    74.99632876522726
+  ],
+  "mean_z_treated": 12.825710771365303,
+  "mean_z_controls": 9.37683443940425,
+  "unadjusted_difference": 3.4488763319610527,
+  "mean_y_treated": 66.8381657116298,
+  "mean_y_controls": 57.22504431669848,
+  "nearest_control_y_distance": {
+    "median": 0.010035839630880616,
+    "p95": 0.04688013029589972,
+    "max": 0.11637819441103403
+  },
+  "primary_ATT": 1.2097802675279525,
+  "bootstrap_percentile_95_CI": [
+    0.8085802574633243,
+    1.6281534251116758
+  ],
+  "bootstrap_SE": 0.2140507877623016,
+  "bootstrap_draws": 2000
+}
+
+Estimates:
+                                    method      ATT  control_R2  control_RMSE  median_farthest_y_gap  p95_farthest_y_gap
+    control cubic spline, 4 quantile knots 1.209687    0.234400      3.559078                    NaN                 NaN
+    control cubic spline, 6 quantile knots 1.209780    0.235738      3.555967                    NaN                 NaN
+    control cubic spline, 8 quantile knots 1.210477    0.236721      3.553679                    NaN                 NaN
+   control cubic spline, 10 quantile knots 1.201333    0.239001      3.548367                    NaN                 NaN
+   control cubic spline, 12 quantile knots 1.224599    0.239566      3.547050                    NaN                 NaN
+ 1 nearest controls on y, with replacement 1.122808         NaN           NaN               0.010036            0.046880
+ 5 nearest controls on y, with replacement 1.086086         NaN           NaN               0.069908            0.157711
+10 nearest controls on y, with replacement 1.075091         NaN           NaN               0.145352            0.267047
+
+Conditional-effect grid:
+ y  estimated_effect
+55        128.291392
+60          0.295819
+65          1.127759
+70          1.421165
+75          2.348879
+80          4.695129
+85          7.041379
+90          9.387630
+95         11.733880

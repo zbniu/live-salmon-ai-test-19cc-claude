@@ -1,0 +1,4 @@
+completion,mean_counterfactual_followup,mean_effect_for_recipients,counterfactual_within_0_100
+no_effect,79.8316513488,0,True
+maximum_increase,0,79.8316513488,True
+maximum_decrease,100,-20.1683486512,True

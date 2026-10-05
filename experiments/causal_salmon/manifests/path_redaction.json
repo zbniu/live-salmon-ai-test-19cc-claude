@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "scope": "Public historical display copies with machine-specific path strings removed",
+  "files": {
+    "results/quality_checks/framework/formal/sandbox_profile.sb": {
+      "original_sha256": "bb88d2c0c867291ef407bde03160ba72321b652f676222c2e9d4607d1100c3b4",
+      "public_copy_sha256": "38a3ab87212b7c2c7ae32c49dbc6ee34c7791640a826dc52091aa8bdd4abf9ae"
+    },
+    "results/quality_checks/framework/formal/reference.json": {
+      "original_sha256": "c8e2b2e6f4ada0b47a0467e3855b43182e3dfb039cbddd636a2806586b763ce0",
+      "public_copy_sha256": "e5b9d537cf3c87a5e3dbcdd469768c1edf29067c474cdc6ae2f8f6a8566d4e84"
+    },
+    "results/quality_checks/framework/formal/reference_access_audit.json": {
+      "original_sha256": "3071c20f3077d8487bf220a44a0199a89e43706b13d8dbd48605d1b96a626953",
+      "public_copy_sha256": "ecabe946da084906d1ea8dfdc92307f809c92169787b0c706dd333f8d5171ef9"
+    },
+    "results/quality_checks/framework/development/sandbox_profile.sb": {
+      "original_sha256": "e406fdc5859bac18b4ca2a268a31d5593f4114aae7a2b56a9e46bc7010ef4363",
+      "public_copy_sha256": "f7e72e0508b512c3807b765fb06c27b145017e2e7677cdc1095504e9bd6f8bf0"
+    },
+    "results/quality_checks/framework/development/reference.json": {
+      "original_sha256": "d3db01851c528bbf4332bbd611b220f478e984f6562598586ae0d1b54fcd87f1",
+      "public_copy_sha256": "0a7ad44d890b036fd47c9ff6123cd9940708ad6c6eb8503169a746591da1f895"
+    },
+    "results/quality_checks/framework/development/reference_access_audit.json": {
+      "original_sha256": "7ce26f1179d068657f8be906fe0be4e71846b8021aeb8ef74a6705f42807a535",
+      "public_copy_sha256": "0da971e9a8b6e53b9bf53d344dd5274d727d3fe8d03e66fb9a616cf6da2d28f1"
+    },
+    "manifests/generation_independent_initial.json": {
+      "original_sha256": "ea96dce1424398bf5027d595b2705c35928fb2c65d0f933f4dbb7192604733a2",
+      "public_copy_sha256": "7d1ca52a4ca96e0330b82127aee7d22b7b85c4e4d8affb4d30a4aa5500552379"
+    },
+    "manifests/independent_initial.json": {
+      "original_sha256": "cd74fc31229ffdca0d2f5cac4545a2919e5e33581c18d83f40451d55b8c59bc0",
+      "public_copy_sha256": "1efc016b3c15fcb5d30e609aefaaca49c566d53be19108e456490905c762a4a9"
+    },
+    "manifests/offline_framework.json": {
+      "original_sha256": "97f79bff7613c9125e2a27e5f72d6fbe81725d11b3ba1f306c8ec29660cbacf6",
+      "public_copy_sha256": "6b1a2f7b5be7253fd7e2872611d409725d14eb97806b2555f4ae10c5582f44bf"
+    },
+    "manifests/environment.json": {
+      "original_sha256": "23a0a72ffa858dff64fb6cd89c73fa4015ebba18291f7b2169ccd5caca6c960a",
+      "public_copy_sha256": "4b056d5019aef0561f5a6c371e5be117a08422dafbf3e994989010e7e5c91fd8"
+    },
+    "manifests/independent_code.json": {
+      "original_sha256": "5c11d4a0301ce34beabe208294aef82697889df2f8a575b910cf25acbd3d3ac0",
+      "public_copy_sha256": "fde974cd50eb515e8430e1a4e1f5a672badbe6a87a11da8775524328ef8d0bc7"
+    },
+    "results/verification/independent_selftest.txt": {
+      "original_sha256": "917224be71b5fe375b4b49d6df4613a6c76591ad64a7ce5742dbf4c1147530e6",
+      "public_copy_sha256": "2e1ab6392dd545fc0f37b2f9435c1b5684acc55b945bcf52841571e6540038a4"
+    }
+  },
+  "placeholders": {
+    "<PROJECT_ROOT>": "original controlled project root",
+    "<PYTHON_ENV>": "original Python installation root",
+    "<TEMP_DIR>": "original temporary execution directory"
+  },
+  "original_evidence": "Retained unchanged in the controlled project and local packaging backup. Historical hash maps refer to original bytes; submission_manifest.json records current public-copy bytes.",
+  "tested_model_artifacts_changed": false
+}

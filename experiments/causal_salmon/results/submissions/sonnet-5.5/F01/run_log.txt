@@ -1,0 +1,8 @@
+Execution record (in order). Tool: bash in sandbox, python3.
+0. [inline, not saved as a script] First command: head of data.csv, pandas describe(), value counts of x, group stats of y by x, min y among x==1 (=55.5929) and count of x==0 above it (642). Same command then tried `import statsmodels,scipy` -> ModuleNotFoundError (statsmodels missing). The printed describe() output of this inline command was not saved to results/ (only visible in session); its facts are reproduced by code/01_explore.py.
+1. `pip install statsmodels --break-system-packages` -> succeeded (statsmodels 0.15.0). Output not saved.
+2. code/01_explore.py -> results/01_explore_output.txt, results/binned_summary.csv (ran without error).
+3. code/02_fuzzy_rd.py -> results/02_fuzzy_rd_output.txt, results/fuzzy_rd_estimates.csv (ran without error).
+4. `pip install rdrobust --break-system-packages` -> succeeded (output suppressed, not saved).
+5. code/03_rdrobust_and_checks.py -> results/03_rdrobust_and_checks_output.txt (ran without error).
+6. final_report.md written by hand from the printed outputs above; no further analyses run. No outputs were reconstructed.

@@ -1,0 +1,30 @@
+
+START 2026-10-04T18:09:52.374706+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/01_describe.py
+END 2026-10-04T18:09:52.662372+00:00 exit=1
+Actual stdout: submission/results/01_describe_stdout.txt
+Actual stderr: submission/results/01_describe_stderr.txt
+
+START 2026-10-04T18:10:12.222362+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/01_describe.py
+END 2026-10-04T18:10:14.458197+00:00 exit=0
+Actual stdout: submission/results/01_describe_attempt2_stdout.txt
+Actual stderr: submission/results/01_describe_attempt2_stderr.txt
+
+START 2026-10-04T18:12:05.232697+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/02_estimate.py
+END 2026-10-04T18:12:08.598415+00:00 exit=0
+Actual stdout: submission/results/02_estimate_stdout.txt
+Actual stderr: submission/results/02_estimate_stderr.txt
+
+START 2026-10-04T18:14:55.572785+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/03_report.py
+
+Record clarification: the first 01_describe.py attempt failed at import statsmodels before loading or analyzing data. Its actual stderr and empty stdout are retained. The unused import and corresponding unused version field were removed; the runner was updated to preserve attempt-specific output filenames. Exact earlier source versions were restored from the recorded edits in code/history/; these are code snapshots, not reconstructed execution outputs. No analysis outputs are missing. Pre-analysis shell inspection outputs are available only in the session.
+END 2026-10-04T18:14:55.598781+00:00 exit=0
+Actual stdout: submission/results/03_report_stdout.txt
+Actual stderr: submission/results/03_report_stderr.txt
+
+START 2026-10-04T18:14:55.929750+00:00
+Command: Python submission/code/04_package.py
+END 2026-10-04T18:14:55.966324+00:00 exit=0: report read back, intended result verified, actual ZIP inspected with CRC check and required entries. Output: submission/results/archive_validation.json and submission.zip. Archive refreshed next to include completed record; final inspection printed in session.

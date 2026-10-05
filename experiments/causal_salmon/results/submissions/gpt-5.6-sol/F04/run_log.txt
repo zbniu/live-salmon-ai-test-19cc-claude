@@ -1,0 +1,62 @@
+Execution record for the supplied simulated study.
+
+Pre-analysis inspection: the study description was read in full using cat,
+and the input directory listing and first five data rows were viewed using
+ls/head. Those tool outputs were viewed in the session; standalone copies of
+these initial inspection outputs were not saved. No statistical analysis was
+run before code/01_analysis.py. No internet or other substantive data sources
+were used. The original uploaded files were not modified.
+
+The saved code/run_step.py executes each saved script and records the actual
+exit status, stdout, stderr, and files present afterward. Entries below are
+appended at execution time. Empty stderr files mean no stderr was emitted.
+
+Version note: the first attempted analysis imported statsmodels and failed
+before reading the data. Its exact source is preserved as
+code/01_analysis_initial.py; its stderr and failed execution entry are retained.
+The subsequent code/01_analysis.py implements OLS/HC3 directly with NumPy.
+
+2026-10-04T01:37:33.628017+00:00 START 01_analysis
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/1b11cf495572/submission/code/01_analysis.py
+2026-10-04T01:37:35.059382+00:00 END 01_analysis; exit code 1
+Stdout: results/01_analysis_stdout.txt; stderr: results/01_analysis_stderr.txt
+Files present after execution: 01_analysis_stderr.txt, 01_analysis_stdout.txt
+
+2026-10-04T01:38:11.025056+00:00 START 02_analysis_fixed
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/1b11cf495572/submission/code/01_analysis.py
+2026-10-04T01:38:12.581266+00:00 END 02_analysis_fixed; exit code 0
+Stdout: results/02_analysis_fixed_stdout.txt; stderr: results/02_analysis_fixed_stderr.txt
+Files present after execution: 01_analysis_stderr.txt, 01_analysis_stdout.txt, 02_analysis_fixed_stderr.txt, 02_analysis_fixed_stdout.txt, adjusted_estimates.csv, baseline_deciles.csv, data_audit.json, estimates.json, group_summary.csv, regression_degree_1.csv, regression_degree_2.csv, regression_degree_3.csv
+
+2026-10-04T01:39:19.497451+00:00 START 03_att_inference
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/1b11cf495572/submission/code/02_att_inference.py
+2026-10-04T01:39:21.004740+00:00 END 03_att_inference; exit code 0
+Stdout: results/03_att_inference_stdout.txt; stderr: results/03_att_inference_stderr.txt
+Files present after execution: 01_analysis_stderr.txt, 01_analysis_stdout.txt, 02_analysis_fixed_stderr.txt, 02_analysis_fixed_stdout.txt, 03_att_inference_stderr.txt, 03_att_inference_stdout.txt, adjusted_estimates.csv, att_inference.json, baseline_deciles.csv, data_audit.json, estimates.json, group_summary.csv, numerical_checks.json, regression_degree_1.csv, regression_degree_2.csv, regression_degree_3.csv
+
+2026-10-04T01:40:59.620286+00:00 START 04_report
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/1b11cf495572/submission/code/03_report.py
+2026-10-04T01:40:59.876232+00:00 END 04_report; exit code 0
+Stdout: results/04_report_stdout.txt; stderr: results/04_report_stderr.txt
+Files present after execution: 01_analysis_stderr.txt, 01_analysis_stdout.txt, 02_analysis_fixed_stderr.txt, 02_analysis_fixed_stdout.txt, 03_att_inference_stderr.txt, 03_att_inference_stdout.txt, 04_report_stderr.txt, 04_report_stdout.txt, adjusted_estimates.csv, att_inference.json, baseline_deciles.csv, data_audit.json, estimates.json, group_summary.csv, numerical_checks.json, regression_degree_1.csv, regression_degree_2.csv, regression_degree_3.csv
+
+2026-10-04T01:41:39.534929+00:00 START packaging: code/04_package.py
+2026-10-04T01:41:39.548434+00:00 Initial ZIP creation and inspection passed; all files matched.
+Output: results/delivery_verification.json. Report read back and confirmed nonempty with intended answer.
+Final archive will now be rebuilt to include this completed record and verification.
+The final archive verification console output is retained only in the session tool record, not in a separate stdout file.
+
+After initial archive verification, the Library upload helper was invoked with
+the report and ZIP paths. It exited with code 1 before upload preparation:
+"library upload failed: could not read Codex auth from /root/.codex/auth.json".
+This is a record of the observed session tool output; no standalone raw output
+file was captured for that helper call. Persistent saving did not succeed.
+The local report and archive remain available through sandbox download links.
+Packaging is repeated below solely to include this delivery error in the ZIP;
+no statistical analysis is repeated or removed.
+
+2026-10-04T01:42:34.166584+00:00 START packaging: code/04_package.py
+2026-10-04T01:42:34.180073+00:00 Initial ZIP creation and inspection passed; all files matched.
+Output: results/delivery_verification.json. Report read back and confirmed nonempty with intended answer.
+Final archive will now be rebuilt to include this completed record and verification.
+The final archive verification console output is retained only in the session tool record, not in a separate stdout file.

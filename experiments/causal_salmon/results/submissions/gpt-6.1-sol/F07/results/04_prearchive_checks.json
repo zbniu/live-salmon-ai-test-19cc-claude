@@ -1,0 +1,9 @@
+{
+  "report_utf8": true,
+  "report_nonempty": true,
+  "report_characters": 4739,
+  "intended_answer_present": true,
+  "expected_att_present": true,
+  "expected_interval_present": true,
+  "analysis_scripts_not_rerun": true
+}

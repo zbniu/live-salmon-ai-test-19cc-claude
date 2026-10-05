@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "run_id": "data",
+  "status": "frozen",
+  "study_tag": 20260929,
+  "candidate": "K1",
+  "parameters": {
+    "n": 2000,
+    "a": 45,
+    "b_multiplier": 3,
+    "gamma": 0.25,
+    "beta": 0.5,
+    "kappa": 1.2,
+    "M": 900,
+    "K": 600,
+    "m_intercept": 10,
+    "effect_fraction": 0.1
+  },
+  "phases": {
+    "development": {
+      "purpose": 2,
+      "seeds": [
+        730001,
+        730002,
+        730003,
+        730004,
+        730005,
+        730006,
+        730007,
+        730008,
+        730009,
+        730010
+      ],
+      "quota_per_world": 1
+    },
+    "formal": {
+      "purpose": 3,
+      "seeds": [
+        740001,
+        740002,
+        740003,
+        740004,
+        740005,
+        740006,
+        740007,
+        740008,
+        740009,
+        740010
+      ],
+      "quota_per_world": 3
+    }
+  },
+  "worlds": [
+    "A",
+    "B",
+    "C"
+  ],
+  "pool_count": 60,
+  "selected_count": 12,
+  "selection": "first_qualifying_seeds_in_ascending_order_per_phase_world",
+  "pool_extension_allowed": false,
+  "qualify_all_applicable_GEN": true,
+  "model_calls_authorized": false,
+  "materials": {
+    "materials/named/A.md": "1c7a7cf5c54687ef5e5029f013a84efb5bc294a83591e930d609f333d6fec6de",
+    "materials/anonymized/A.md": "b93156c723d7d73f51e0a8ccce04743dc9a997fea1dc6ee5e8f852a96798fbde",
+    "materials/named/B.md": "aab46f86dab63f012268e4d6f2e3045fd2591e7a0e2ae1a1b22d91958a4615a7",
+    "materials/anonymized/B.md": "2988f677ba0ac4f96443727ca7147948d695b829fa856966f399302406df16cc",
+    "materials/named/C.md": "195c2777e2e1193ab5890bcf9f8c261caaa07fbd383a2562e0cf90f79c50fa77",
+    "materials/anonymized/C.md": "76837424e3599eab4db82b7250656cfdefdd3e69061b906e41a7caf2b345cefe",
+    "materials/prompt.txt": "91da46e03dbe5379b3ba0990009120781686ef4365d93df454cb0c99e56170d4",
+    "materials/substitutions.json": "b2493881a66de12e21eaaa4166160969fef2290fffe89f8f3642b74ff0295423"
+  },
+  "generation_protocol": "docs/DATA_GENERATION_PROTOCOL.md",
+  "generation_protocol_sha256": "6b4442aeb3f4561e8254b712b8e17ca77f8605b34c85699b8dfc248ebe916e7b",
+  "numerical_protocol_sha256": "f85fedf447c734d9d5e7a2cb630284fe18c7091c5cf653610adbc43ec8e7144c",
+  "selected_parameters_sha256": "b6e96c700cd97f65dcc80c3434b15561f017dc52c42bfeecf26e7e4b11a8fe09"
+}

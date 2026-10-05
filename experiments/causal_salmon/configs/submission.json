@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "completed_F01_F12_batch",
+  "date": "2026-10-04",
+  "models": {
+    "gpt-5.6-sol": "GPT-5.6 Sol",
+    "gpt-6-sol": "GPT-6 Sol",
+    "gpt-6.1-sol": "GPT-6.1 Sol",
+    "opus-5.5": "Opus 5.5",
+    "sonnet-5.5": "Sonnet 5.5",
+    "haiku-4.5": "Haiku 4.5"
+  },
+  "formal_case_ids": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10",
+    "F11",
+    "F12"
+  ],
+  "answers": 72,
+  "original_planned_cases_per_model": 18,
+  "abandoned_case_ids": [
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18"
+  ],
+  "scope_decision_timing": "after review of F01-F12 results",
+  "scope_decision": "docs/scope_decision.md",
+  "prompt": "materials/app_prompt.txt",
+  "prompt_sha256": "57dc7495594663e453682ca92cb74dc6366dff13aee411e21be7b8e3b53af118",
+  "rubric": "docs/scoring.md",
+  "rubric_sha256": "5bf802b052ea0be25dac28e727ccf0ab1ba6703dbba854c62963e91d895296a4",
+  "grades": {
+    "PASS": 68,
+    "FAIL": 4,
+    "UNKNOWN": 0
+  },
+  "grading_method": "nonblind assistant review of submitted artifacts; no automated scientific grader",
+  "independently_verified_session_identity_and_isolation": false,
+  "documentation_language": "en",
+  "translation_manifest": "manifests/translation.json"
+}

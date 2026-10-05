@@ -1,0 +1,21 @@
+Execution record. Only the two supplied attachments were used as study evidence. No internet access.
+1. Initial shell read: cat upload/STUDY_DESCRIPTION(10).md. Exit 0; complete study description appeared in session tool output. No separate stdout file was captured for this preliminary read.
+2. Preliminary shell inspection: pwd; head -n 6 upload/data(10).csv; wc -l upload/data(10).csv; printenv CODEX_PRIMARY_RUNTIME_PYTHON (joined by && in the actual command). Exit 0; CSV header and first five records, 2001 lines, and runtime path appeared in session tool output. No separate stdout file was captured. No statistical analysis was executed at this step.
+3. Tool reads of spreadsheet and file-saving workflow instructions. These are operational guidance, not additional study evidence. Long displayed tool output was truncated; follow-up instruction reads were made. No analysis results arose from these reads.
+4. Created code/analyze.py and code/run_analysis.py using apply_patch. The following entries capture executions when they happen. No earlier statistical execution, error, or result is omitted.
+
+2026-10-04T01:40:07.488019+00:00 START analysis
+Command: ['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', '/workspace/scratch/9eeab291f99a/submission/code/analyze.py']; cwd=/workspace/scratch/9eeab291f99a
+END analysis exit_code=0; stdout=results/analysis_stdout.txt; stderr=results/analysis_stderr.txt
+Outputs currently present: analysis.json, analysis_stderr.txt, analysis_stdout.txt, baseline_bins.csv, descriptive_models.csv, group_summary.csv, model_coefficients.csv, nonidentification_examples.csv
+
+2026-10-04T01:41:39.112929+00:00 Executed code/finalize.py with the primary Python runtime.
+Read results/analysis.json; created final_report.md from those outputs; copied the two unchanged inputs.
+Actual report readback: nonempty UTF-8; matches intended report; contains the conclusion and reported observed difference. Source-copy hashes matched.
+Archive created and actually inspected: CRC checks passed, report/code/results/run_log present, every archived file matched local bytes.
+Wrote results/delivery_verification.json. Rebuilding archive to include verification and this log; final inspection follows in this same execution. No statistical analysis rerun.
+
+Ancillary persistence attempt after finalization: python3 /root/.codex/plugins/cache/openai-curated-remote/openai-library/0.1.61/skills/library/scripts/library_upload.py, with report and zip as creates on stdin.
+Exit 1; actual error: library upload failed: could not read Codex auth from /root/.codex/auth.json. No upload request was started. Local deliverables remain intact.
+Finalizer stdout (report readback and successful final archive inspection) was displayed in the session tool output, not captured as a separate stdout file; its substantive checks are recorded in results/delivery_verification.json. Finalizer exit code was 0.
+Executed code/finish_delivery.py to record this error and refresh/inspect the archive; no statistical analysis rerun.

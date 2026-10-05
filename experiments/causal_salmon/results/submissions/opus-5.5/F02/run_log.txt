@@ -1,0 +1,14 @@
+Execution record (in order), Python 3, data = /mnt/user-data/uploads/data.csv (2000 rows, used in full)
+1. Environment check: `python3 -c "import pandas, numpy, statsmodels, scipy"` -> ERROR ModuleNotFoundError: statsmodels.
+   Fixed with `pip install statsmodels --break-system-packages` (0.15.0). Later `pip install rdrobust rddensity` (rdrobust 2.1.0, rddensity 3.0).
+   (Inline shell: `head`/`wc -l` on data.csv: header x,y,z; 2001 lines.)
+2. code/01_explore.py -> results/01_explore.txt (descriptives, cutoff c = 55.5929 = min y among treated, bins).
+3. code/02_rd.py -> results/02_rd.txt, results/02_rd_manual_grid.csv, results/02_rd_plot.png
+   (manual weighted 2SLS fuzzy RD over bandwidth grid; rdrobust fuzzy RD p=1,2; first stage and reduced form).
+   Note: plot bins are right-closed, so the bin (-1,0] contains the single treated unit at r=0 (share 0.01); this is a binning artifact.
+4. code/03_diagnostics.py -> results/03_diagnostics.txt, results/03_placebo.csv
+   (gap decomposition at c, RD among untreated only, placebo cutoffs, density test, confounded OLS for comparison).
+   Note: the rddensity call returned without error but printing the object showed only the header (no test statistic);
+   the density test result is therefore not recorded. Not essential: y was measured before assignment.
+   Output was piped through `grep -v "^$"` (blank lines removed) before saving.
+No analysis was re-run to replace earlier outputs.

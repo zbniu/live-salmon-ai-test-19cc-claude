@@ -1,0 +1,109 @@
+================================================================================
+ANALYSIS EXECUTION LOG - Treatment Effect Analysis
+================================================================================
+
+Date: 2026-10-04
+Task: Answer whether arrangement Q increased change z, and if so, by how much.
+
+================================================================================
+SCRIPT EXECUTION ORDER
+================================================================================
+
+1. SCRIPT: code/01_exploratory_analysis.py
+   STATUS: ✓ Completed successfully
+   OUTPUT: results/01_output.txt
+   ARTIFACTS: 
+     - results/01_assignment_and_outcome.png
+     - results/02_baseline_outcome_relationship.png
+   
+   KEY RESULTS:
+     - Control baseline mean (y): 57.225
+     - Treatment baseline mean (y): 66.838
+     - Naive treatment effect: 3.4489 points
+     - Correlation(baseline, outcome): 0.5474
+     - Finding: Treatment assignment was confounded by baseline
+
+2. SCRIPT: code/02_regression_adjustment.py
+   STATUS: ✓ Completed successfully
+   OUTPUT: results/02_output.txt
+   
+   MODELS FITTED:
+     Model 1 (Naive): z = 9.3768 + 3.4489*x
+     Model 2 (Adjusted): z = -4.5381 + 1.1113*x + 0.2432*y
+     Model 3 (Interaction): z = -4.1969 + (-1.6901)*x + 0.2372*y + 0.0428*(x*y)
+   
+   KEY RESULTS:
+     - Regression-adjusted treatment effect: 1.1113 points
+     - Standard error: 0.1743
+     - t-statistic: 6.3746
+     - p-value: < 0.000001
+     - Model R²: 0.3099
+     - Stratified effects: 1.09–1.51 points by baseline quartile
+     - Covariate imbalance confirmed (p < 0.001)
+
+3. SCRIPT: code/03_heterogeneous_effects.py
+   STATUS: ✓ Completed successfully
+   OUTPUT: results/03_output.txt
+   
+   ANALYSES COMPLETED:
+     - Heterogeneous treatment effects by baseline level
+     - Common support region analysis
+     - Interaction model interpretation
+   
+   KEY RESULTS:
+     - Effect at mean treated baseline (66.84): 1.1687 points
+     - Effect varies from 0.45 (baseline=50) to 1.52 (baseline=75)
+     - Common support region: y ∈ [57.36, 75.00], 1177/2000 units
+     - Adjusted effect in overlap: 1.1582 points
+     - 95% CI: [0.77, 1.45]
+
+================================================================================
+SUMMARY OF RESULTS
+================================================================================
+
+RESEARCH QUESTION: Did arrangement Q increase change z?
+
+ANSWER: YES
+
+ESTIMATED TREATMENT EFFECT: 1.11 points (95% CI: [0.77, 1.45])
+STATISTICAL SIGNIFICANCE: p < 0.001 (highly significant)
+
+PRIMARY ESTIMATE METHOD: Regression adjustment for baseline confounding
+  - Formula: z = -4.54 + 1.11*x + 0.24*y
+  - SE: 0.17, t-stat: 6.37
+
+ROBUSTNESS CHECKS:
+  ✓ Stratified analysis: 1.09–1.51 points
+  ✓ Common support analysis: 1.16 points
+  ✓ Interaction model: consistent positive effect
+
+CONFOUNDING ADDRESSED:
+  - Treatment assignment was based on baseline measurement
+  - Baseline mean differed significantly: 66.84 vs 57.23 (Δ=9.61, p<0.001)
+  - Naive estimate (3.45) was upward biased
+  - Adjusted estimate (1.11) is causal
+
+================================================================================
+FILES GENERATED
+================================================================================
+
+Code Files:
+  - code/01_exploratory_analysis.py
+  - code/02_regression_adjustment.py
+  - code/03_heterogeneous_effects.py
+
+Output Files:
+  - results/01_output.txt
+  - results/02_output.txt
+  - results/03_output.txt
+  - results/01_assignment_and_outcome.png
+  - results/02_baseline_outcome_relationship.png
+
+Report Files:
+  - final_report.md
+  - run_log.txt (this file)
+
+================================================================================
+NO ERRORS ENCOUNTERED
+================================================================================
+All analyses completed successfully with no missing records or errors.

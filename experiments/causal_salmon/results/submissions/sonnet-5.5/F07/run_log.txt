@@ -1,0 +1,7 @@
+Execution record (in order)
+1. Inline: head/describe of data.csv (no file saved; output viewed in terminal only). Finding: 2000 rows, 600 treated, min y of treated = 57.36.
+2. code/explore.py -> results/explore_output.txt (overlap and binned means). Ran OK.
+3. code/analysis.py, first attempt: FAILED (ModuleNotFoundError: statsmodels). The error text was written to results/analysis_output.txt and then overwritten by attempt 4; no other output from attempt 3.
+4. pip install statsmodels; code/analysis.py rerun unchanged -> results/analysis_output.txt (actual output). OK.
+5. final_report.md written by hand from the output of steps 2 and 4. Values in the report were copied from analysis_output.txt (rounded).
+Note: bootstrap resampling uses a seeded generator (seed 1) inside analysis.py.

@@ -1,0 +1,9 @@
+Execution record (in order). All commands run in this session; outputs below are actual.
+0. `head data.csv; python3 -c "import pandas, scipy, statsmodels"` -> statsmodels missing (ModuleNotFoundError, recorded error).
+   `pip install statsmodels --break-system-packages` -> installed successfully. (No saved output file for these setup commands.)
+1. code/analysis.py -> results/analysis_output.txt (stdout), results/diagnostics.png. Ran without errors.
+   (Random seeds: numpy default_rng(1) for permutation/bootstrap.)
+2. code/att_adjusted.py -> results/att_adjusted_output.txt. Ran without errors. (seed 7)
+3. final_report.md written by hand from outputs 1-2; numbers in the report are copied from those outputs.
+Notes: the permutation p-value printed as 0.0 means 0 of 10000 permutations exceeded the observed difference (p < 1e-4).
+No analyses were rerun or replaced.

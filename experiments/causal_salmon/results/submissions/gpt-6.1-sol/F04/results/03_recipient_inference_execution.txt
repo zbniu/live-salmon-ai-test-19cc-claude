@@ -1,0 +1,15 @@
+{
+  "estimand": "Realized-recipient average causal effect: mean_T[z(1)-z(0)]",
+  "adopted_estimate": 1.1102228476588483,
+  "randomization_error_se": 0.20686378674624142,
+  "approximate_95_ci_low": 0.7047772759306409,
+  "approximate_95_ci_high": 1.5156684193870555,
+  "control_sample_variance": 17.972903032137665,
+  "variance_formula": "(1/n_treated + 1/n_control) * sample_variance(z_control)",
+  "error_identity": "estimated_effect - recipient_effect = mean_T[z(0)] - mean_C[z(0)]",
+  "interpretation": "Design-unbiased estimation error over complete random assignments. Confidence coverage is approximate over assignments, not exact conditional on the observed selected set.",
+  "qualification": "Actual recipient counterfactuals and individual causal effects are unobserved; randomization supports statistical inference rather than an exact known effect."
+}
+
+The earlier Welch interval in analysis_results.json is retained as the conventional all-unit ATE comparison; this recipient-specific interval is adopted for the stated question.
+Output: recipient_inference.json

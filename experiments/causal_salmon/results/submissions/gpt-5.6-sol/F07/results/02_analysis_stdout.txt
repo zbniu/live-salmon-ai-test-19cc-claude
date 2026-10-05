@@ -1,0 +1,55 @@
+{
+  "estimand": "Average treatment effect on the treated: mean(z(1)-z(0) | x=1)",
+  "primary_method": "Control-outcome cubic B-spline standardization; 7 basis functions; boundaries 45,75; interior knots 52.5,60,67.5; all 2000 rows used.",
+  "primary_att": 1.2133055416193868,
+  "observed_mean_z_treated": 12.825710771365303,
+  "estimated_mean_z_without_Q_for_treated": 11.612405229745919,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 872091,
+  "bootstrap_se": 0.21443761800267916,
+  "bootstrap_percentile_ci95": [
+    0.7832428240745241,
+    1.6254668526481908
+  ],
+  "approximate_hc3_ci95": [
+    0.8005720669999783,
+    1.6260390162387952
+  ],
+  "approximate_hc3_se": 0.21057830337724925,
+  "raw_difference": 3.4488763319610527,
+  "model_sensitivity_estimate_range": [
+    1.1686533997494715,
+    1.2133055416193868
+  ],
+  "local_matching_estimate_range": [
+    1.037736532363214,
+    1.1867756056403542
+  ],
+  "stratification_estimate_range": [
+    1.066953120094128,
+    1.178302859500001
+  ],
+  "inference_limit": "Intervals assume usual independent-unit sampling and smooth control outcome regression; they are not exact intervals under the fixed-slot assignment mechanism."
+}
+
+Outcome models
+                method  estimate  approximate_se  ci95_low  ci95_high  control_cv_rmse  n_control  n_treated
+                linear  1.168653        0.206447  0.764018   1.573289         3.579814       1400        600
+             quadratic  1.205401        0.208049  0.797625   1.613177         3.579745       1400        600
+                 cubic  1.192039        0.209353  0.781708   1.602370         3.581023       1400        600
+        spline_5_basis  1.180093        0.210022  0.768450   1.591737         3.578440       1400        600
+spline_7_basis_primary  1.213306        0.210578  0.800572   1.626039         3.577157       1400        600
+        spline_9_basis  1.198733        0.210405  0.786339   1.611127         3.578755       1400        600
+
+Local matching
+                          method  estimate  max_neighbor_distance  median_neighbor_distance
+ local_linear_5_nearest_controls  1.037737               0.238045                  0.069908
+local_linear_10_nearest_controls  1.105760               0.343483                  0.145352
+local_linear_20_nearest_controls  1.152150               0.659513                  0.306857
+local_linear_40_nearest_controls  1.186776               1.678250                  0.619120
+
+Stratification
+                   method  estimate  approximate_se                                                                                                             caveat
+baseline_strata_width_0.5  1.066953        0.219950 Continuous-baseline imbalance remains within strata; variance omits singleton-treated stratum contribution if any.
+  baseline_strata_width_1  1.159962        0.216381 Continuous-baseline imbalance remains within strata; variance omits singleton-treated stratum contribution if any.
+  baseline_strata_width_2  1.178303        0.212683 Continuous-baseline imbalance remains within strata; variance omits singleton-treated stratum contribution if any.

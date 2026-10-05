@@ -1,0 +1,9 @@
+Initial inspection: shell cat of the supplied study description, wc -l and head -n 6 of the supplied CSV succeeded (2001 lines including header).
+That preliminary stdout exists in the session tool transcript only; no separate results file was retained. It was not a statistical analysis. No earlier statistical runs exist.
+2026-10-04T18:09:15.332366+00:00 START code/run_analysis.py invokes code/analyze.py with /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3
+2026-10-04T18:09:15.626273+00:00 END code/analyze.py exit=0; actual stdout -> results/analysis_stdout.txt; actual stderr -> results/analysis_stderr.txt.
+Analysis outputs, in creation order: inputs/data.csv and inputs/STUDY_DESCRIPTION.md (exact copies); results/input_manifest.json; results/validation.json; results/group_summary.csv; results/baseline_bins.csv; results/descriptive_ols.json; results/hypothetical_counterfactual_completions.csv; results/analysis_summary.json.
+2026-10-04T18:10:51.927359+00:00 START code/build_delivery.py; reads actual results/analysis_summary.json, group_summary.csv and validation.json. No analyses rerun.
+2026-10-04T18:10:51.930740+00:00 Report created -> final_report.md; actually read back as UTF-8 and checked for nonempty intended conclusion and numerical results. Staging checks -> results/delivery_checks.json. All passed.
+2026-10-04T18:10:51.930757+00:00 Analysis stderr is empty. No statistical execution errors and no missing analysis output records. Initial inspection stdout was not saved separately, as noted above.
+2026-10-04T18:10:51.930767+00:00 Final step in code/build_delivery.py: create ../submission.zip, reopen it, check CRCs, membership and report byte equality. Actual outcome is printed to the session tool transcript after archive creation; this closed archive cannot contain its own subsequent inspection record.

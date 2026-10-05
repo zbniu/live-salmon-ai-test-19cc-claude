@@ -1,0 +1,32 @@
+{
+  "estimand": "sample average treatment effect on the 600 recipients (ATT)",
+  "main_method": "control-only cubic regression spline, knots y=55,60,65,70",
+  "main_att_points": 1.2462701210322897,
+  "mean_observed_change_treated": 13.01890975366738,
+  "mean_predicted_untreated_change_for_treated": 11.77263963263509,
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 20261004,
+  "bootstrap_percentile_95_interval": [
+    0.8089859418858718,
+    1.641790280819429
+  ],
+  "bootstrap_standard_error": 0.21637417818445376,
+  "sensitivity": {
+    "cubic_polynomial_control_regression_att": 1.244030431843545,
+    "spline_knots_60_70_att": 1.2465014284621065,
+    "spline_knots_55_60_65_70_72_5_att": 1.2625262950058804,
+    "local_controls_within_0_5_y": {
+      "estimate": 1.2429590244539548,
+      "matched_treated": 600,
+      "minimum_control_neighbors": 15,
+      "median_control_neighbors": 29.5
+    },
+    "local_controls_within_1_y": {
+      "estimate": 1.2421181243228254,
+      "matched_treated": 600,
+      "minimum_control_neighbors": 26,
+      "median_control_neighbors": 58.0
+    },
+    "linear_control_regression_att": 1.2005672446801474
+  }
+}

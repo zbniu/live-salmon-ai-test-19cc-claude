@@ -1,0 +1,27 @@
+{
+  "rows": 2000,
+  "treated": 600,
+  "untreated": 1400,
+  "treated_mean_baseline": 66.06819062527764,
+  "untreated_mean_baseline": 57.34952100168895,
+  "treated_mean_change": 14.104328625911903,
+  "untreated_mean_change": 8.640799896930602,
+  "observed_mean_change_difference": 5.4635287289813,
+  "observed_difference_welch_standard_error": 0.18847100325948724,
+  "observed_difference_welch_approx_95pct_interval": [
+    5.094125562592706,
+    5.832931895369895
+  ],
+  "treated_minimum_baseline": 56.99464278926244,
+  "untreated_above_treated_minimum_baseline": 607,
+  "treated_mean_observed_followup": 80.17251925118954,
+  "ATT_logical_lower_bound": -19.827480748810455,
+  "ATT_logical_upper_bound": 80.17251925118954,
+  "treated_counterfactual_examples_feasible": {
+    "-3": false,
+    "0": true,
+    "3": true,
+    "5": true
+  },
+  "missing_records": 0
+}

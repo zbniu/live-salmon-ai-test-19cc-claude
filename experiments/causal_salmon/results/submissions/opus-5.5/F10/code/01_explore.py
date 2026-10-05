@@ -1,0 +1,16 @@
+import pandas as pd, numpy as np
+d = pd.read_csv('/mnt/user-data/uploads/data.csv')
+print(d.shape); print(d.describe()); print(d.isna().sum())
+print(d.x.value_counts())
+c = d.loc[d.x==1,'y'].min()
+print('cutoff c = min y among treated:', c)
+print('treated with y<c:', ((d.x==1)&(d.y<c)).sum())
+print('n with y>=c:', (d.y>=c).sum(), ' treated:', d.x.sum(), ' untreated with y>=c:', ((d.x==0)&(d.y>=c)).sum())
+print('distinct y:', d.y.nunique(), ' ties at c:', (d.y==c).sum())
+bins = np.arange(0,101,5)
+d['bin']=pd.cut(d.y,bins)
+t = d.groupby('bin',observed=True).agg(n=('x','size'),px=('x','mean'),mz=('z','mean'))
+print(t)
+# within-bin treated vs untreated above cutoff
+a=d[d.y>=c].copy(); a['bin']=pd.cut(a.y,np.arange(np.floor(c),101,5))
+print(a.groupby(['bin','x'],observed=True).z.agg(['size','mean']).unstack())

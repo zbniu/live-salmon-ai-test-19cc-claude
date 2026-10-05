@@ -1,0 +1,9 @@
+Naive difference in mean z (treated - untreated): 5.464
+OLS z~x+y (all):  x=3.787 se 0.195
+OLS z~x+y (y>=c): x=4.006 se 0.201
+OLS z~x*r (y>=c): x at c=3.626 se 0.402, x:r=0.043 se 0.039
+
+Slope of z on y: below c (all untreated) 0.251; above c treated 0.262; above c untreated 0.219
+
+Jump at c in E[z] comparing all units below c with NON-candidates (x=0) above c: -1.465, robust CI [-3.172, 0.349], h=3.83
+Jump at c comparing all below c with TREATED above c: 1.623, robust CI [-0.434, 3.652]

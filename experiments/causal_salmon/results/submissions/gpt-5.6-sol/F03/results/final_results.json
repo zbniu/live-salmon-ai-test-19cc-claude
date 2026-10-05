@@ -1,0 +1,38 @@
+{
+  "primary_attendee_effect": {
+    "estimate": 1.1102228476588483,
+    "estimated_randomization_se": 0.20686378674624142,
+    "normal_approx_ci95": [
+      0.7047772759306409,
+      1.5156684193870555
+    ],
+    "variance_formula": "s_control(z)^2 * (1/n_treated + 1/n_control)",
+    "target": "average causal effect for the 600 realized attendees (SATT)",
+    "coverage": "large-sample randomization coverage over the original random draw; not exact"
+  },
+  "secondary_baseline_adjustment": {
+    "ATT_estimate": 1.2143677408198004,
+    "HC3_se": 0.1841900234092271,
+    "conditional_mean_ci95": [
+      0.8533619286261258,
+      1.575373553013475
+    ],
+    "interaction_per_10_baseline_points": 0.3844218108962903,
+    "interaction_HC3_se": 0.21657144038211376,
+    "interaction_p_two_sided": 0.07589216606234472,
+    "max_leverage": 0.006873920643920858,
+    "interpretation": "secondary linear conditional-mean model standardized to attendees baseline scores"
+  },
+  "baseline_diagnostics": {
+    "treated_minus_control_mean": -0.42171030696997036,
+    "standardized_mean_difference": -0.049038727559781156,
+    "treated_range": [
+      45.083423156586335,
+      74.94196240389599
+    ],
+    "control_range": [
+      45.01126059310072,
+      74.98362132863984
+    ]
+  }
+}

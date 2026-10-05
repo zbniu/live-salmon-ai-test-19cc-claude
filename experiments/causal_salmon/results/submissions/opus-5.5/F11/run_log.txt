@@ -1,0 +1,7 @@
+[step 0] First attempt used bash brace expansion 'mkdir -p {code,results}' under /bin/sh; directories were not created, so code/01_explore.py could not be written and python failed (No such file). Nothing was analysed. Re-run with explicit mkdir.
+[step 1] code/01_explore.py -> results/01_explore.txt (ran OK). Found: 600 treated, all with y>=58.21; 536 controls with y>=58.21; P(x=1|y)=0 below 58.21, ~0.4-0.65 above.
+[step 2a] code/02_att.py first run FAILED: ModuleNotFoundError: statsmodels (output in results/02_att.txt was this traceback, overwritten by step 2b). Installing statsmodels+patsy via pip.
+[step 2b] pip install statsmodels patsy; code/02_att.py rerun OK -> results/02_att.txt, results/02_att_estimates.csv.
+[step 3] code/03_sensitivity.py ran OK -> results/03_sensitivity.txt. Linear control model has lowest 10-fold CV MSE; adopted estimate = linear-regression / AIPW ATT ~1.23 from step 2b.
+[step 4] Wrote final_report.md; zipped submission/ into submission.zip.
+[step 5] Note on step 0: the brace-expansion mkdir actually created an empty literal directory '{code,results}'; it was empty and was removed before re-zipping. Re-created submission.zip.

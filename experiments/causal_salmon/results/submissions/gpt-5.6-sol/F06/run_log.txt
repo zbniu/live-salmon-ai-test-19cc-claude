@@ -1,0 +1,43 @@
+Task execution record. Inputs: upload/data(7).csv and upload/STUDY_DESCRIPTION(7).md.
+Initial read-only shell inspection read the study description, the CSV header and first five records, and the CSV line count (2001 including header). No statistical computations preceded the recorded scripts below. All analysis uses the complete CSV. Tool/skill instructions are workflow guidance, not research evidence. No internet sources were accessed.
+
+01 START 2026-10-04T01:37:37.454081+00:00
+Command: ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3", "/workspace/scratch/7350817ac6e2/submission/code/01_describe.py", "upload/data(7).csv"]
+01 END 2026-10-04T01:37:38.919546+00:00; exit=1
+Captured output: results/01_stdout.txt; results/01_stderr.txt
+Files present after execution: 01_stderr.txt, 01_stdout.txt
+
+02a START 2026-10-04T01:37:57.027511+00:00
+Command: ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3", "/workspace/scratch/7350817ac6e2/submission/code/02_prepare_describe.py"]
+02a END 2026-10-04T01:37:57.046950+00:00; exit=0
+Captured output: results/02a_stdout.txt; results/02a_stderr.txt
+Files present after execution: 01_stderr.txt, 01_stdout.txt, 02a_stderr.txt, 02a_stdout.txt
+
+02b START 2026-10-04T01:37:57.072492+00:00
+Command: ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3", "/workspace/scratch/7350817ac6e2/submission/code/02_describe.py", "upload/data(7).csv"]
+02b END 2026-10-04T01:37:58.471390+00:00; exit=0
+Captured output: results/02b_stdout.txt; results/02b_stderr.txt
+Files present after execution: 01_stderr.txt, 01_stdout.txt, 02_baseline_bins.csv, 02_descriptive.json, 02_group_summary.csv, 02a_stderr.txt, 02a_stdout.txt, 02b_stderr.txt, 02b_stdout.txt
+
+03 START 2026-10-04T01:38:50.230564+00:00
+Command: ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3", "/workspace/scratch/7350817ac6e2/submission/code/03_adjusted.py", "upload/data(7).csv"]
+03 END 2026-10-04T01:38:51.626146+00:00; exit=0
+Captured output: results/03_stdout.txt; results/03_stderr.txt
+Files present after execution: 01_stderr.txt, 01_stdout.txt, 02_baseline_bins.csv, 02_descriptive.json, 02_group_summary.csv, 02a_stderr.txt, 02a_stdout.txt, 02b_stderr.txt, 02b_stdout.txt, 03_adjusted.json, 03_adjusted_summary.csv, 03_stderr.txt, 03_stdout.txt
+
+04 START 2026-10-04T01:40:21.117806+00:00
+Command: ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3", "/workspace/scratch/7350817ac6e2/submission/code/04_att_inference.py", "upload/data(7).csv"]
+04 END 2026-10-04T01:40:24.421981+00:00; exit=0
+Captured output: results/04_stdout.txt; results/04_stderr.txt
+Files present after execution: 01_stderr.txt, 01_stdout.txt, 02_baseline_bins.csv, 02_descriptive.json, 02_group_summary.csv, 02a_stderr.txt, 02a_stdout.txt, 02b_stderr.txt, 02b_stdout.txt, 03_adjusted.json, 03_adjusted_summary.csv, 03_stderr.txt, 03_stdout.txt, 04_att_inference.json, 04_randomization_draws.npy, 04_stderr.txt, 04_stdout.txt
+
+05 START 2026-10-04T01:42:39.046683+00:00
+Command: ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3", "/workspace/scratch/7350817ac6e2/submission/code/05_report.py"]
+05 END 2026-10-04T01:42:39.073510+00:00; exit=0
+Captured output: results/05_stdout.txt; results/05_stderr.txt
+Files present after execution: 01_stderr.txt, 01_stdout.txt, 02_baseline_bins.csv, 02_descriptive.json, 02_group_summary.csv, 02a_stderr.txt, 02a_stdout.txt, 02b_stderr.txt, 02b_stdout.txt, 03_adjusted.json, 03_adjusted_summary.csv, 03_stderr.txt, 03_stdout.txt, 04_att_inference.json, 04_randomization_draws.npy, 04_stderr.txt, 04_stdout.txt, 05_input_hashes.json, 05_stderr.txt, 05_stdout.txt
+
+06 START 2026-10-04T01:42:39.101249+00:00
+Command: Python code/06_package.py (archive creation and read-back verification; no statistical rerun)
+06 validation completed 2026-10-04T01:42:39.161896+00:00; no errors
+Outputs: ../submission.zip; results/06_delivery_validation.json; results/06_stdout.txt; results/06_stderr.txt. Final archive refreshed to include these records and this log.

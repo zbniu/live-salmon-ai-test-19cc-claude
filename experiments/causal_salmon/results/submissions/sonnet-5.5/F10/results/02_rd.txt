@@ -1,0 +1,29 @@
+cutoff (lowest treated y) = 56.99464278926244  max untreated below: 56.99329803559552
+Untreated above cutoff: 607 treated above: 600
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/indexes/base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 583, in pandas._libs.index.StringObjectEngine._check_type
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/claude/submission/code/02_rd.py", line 41, in <module>
+    rows.append(fuzzy(h,k,order))
+                ^^^^^^^^^^^^^^^^
+  File "/home/claude/submission/code/02_rd.py", line 22, in fuzzy
+    beta=sec.params[0]
+         ~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/series.py", line 959, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/series.py", line 1046, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 0

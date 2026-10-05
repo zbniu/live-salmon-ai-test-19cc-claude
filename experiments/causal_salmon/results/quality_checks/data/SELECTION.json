@@ -1,0 +1,82 @@
+{
+  "scope": "GEN_screened_synthetic_benchmark",
+  "selection_rule": "first_qualifying_seeds_in_ascending_order_per_phase_world",
+  "pool_count": 60,
+  "selected_count": 12,
+  "qualifying_counts": {
+    "development/A": 8,
+    "development/B": 9,
+    "development/C": 10,
+    "formal/A": 9,
+    "formal/B": 10,
+    "formal/C": 10
+  },
+  "selected_cases": [
+    {
+      "phase": "development",
+      "world": "A",
+      "seed": 730001
+    },
+    {
+      "phase": "development",
+      "world": "B",
+      "seed": 730001
+    },
+    {
+      "phase": "development",
+      "world": "C",
+      "seed": 730001
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740001
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740002
+    },
+    {
+      "phase": "formal",
+      "world": "A",
+      "seed": 740004
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740001
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740002
+    },
+    {
+      "phase": "formal",
+      "world": "B",
+      "seed": 740003
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740001
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740002
+    },
+    {
+      "phase": "formal",
+      "world": "C",
+      "seed": 740003
+    }
+  ],
+  "independent_selection_agrees": true,
+  "ACC-10": true,
+  "qualification_population": "conditional on unchanged GEN qualification",
+  "parameters_changed": false,
+  "pool_extended": false,
+  "tested_model_calls": 0
+}

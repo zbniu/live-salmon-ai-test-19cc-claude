@@ -1,0 +1,22 @@
+Run log (in execution order). Environment: Python 3, pandas 3.0.2, numpy 2.4.4, scipy 1.17.1.
+Input: /mnt/user-data/uploads/data.csv (read-only), STUDY_DESCRIPTION.md.
+
+0. Environment check: `python -c "import pandas, numpy, statsmodels, scipy"`
+   -> ERROR: ModuleNotFoundError: No module named 'statsmodels'.
+   Not installed (no internet use requested); OLS with HC2 robust SEs implemented in numpy instead.
+   Re-check without statsmodels succeeded (versions above; matplotlib 3.10.8 present, unused).
+
+1. code/01_inspect.py
+   Command: python code/01_inspect.py | tee results/01_inspect_stdout.txt   (exit 0)
+   Outputs: results/01_inspect.txt (written by script), results/01_inspect_stdout.txt (console copy).
+
+2. code/02_estimate.py
+   Command: python code/02_estimate.py 2>&1 | tee results/02_estimate_stdout.txt; echo "exit=${PIPESTATUS[0]}"
+   The Python script completed and wrote all outputs. The shell printed
+   "/bin/sh: 1: Bad substitution" (returncode 2) because /bin/sh does not support ${PIPESTATUS};
+   this came from the trailing echo in my wrapper command, not from the analysis.
+   Outputs: results/02_estimate.txt (written by script), results/02_estimates_table.csv,
+            results/02_estimate_stdout.txt (console copy).
+   Random seed 20261004 (bootstrap B=2000 per estimator, randomization test R=5000).
+
+3. final_report.md written by hand from the outputs of steps 1-2. No analyses were re-run.

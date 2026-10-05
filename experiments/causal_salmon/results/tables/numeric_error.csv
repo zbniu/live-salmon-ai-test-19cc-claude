@@ -1,0 +1,19 @@
+model_label,world,answer_count,original_effect_error_count,mean_EEE,min_EEE,max_EEE,units,interpretation
+GPT-5.6 Sol,A,4,4,0.12003323752841527,0.11251361027224416,0.12755286478458638,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+GPT-5.6 Sol,B,4,4,0.05120987847055625,0.029361737840998714,0.07555801910011373,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+GPT-5.6 Sol,C,4,0,,,,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+GPT-6 Sol,A,4,4,0.09714530513612216,0.0387001352154136,0.12529986478458643,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+GPT-6 Sol,B,4,4,0.04987237847055631,0.009361737840998696,0.08120801910011388,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+GPT-6 Sol,C,4,0,,,,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+GPT-6.1 Sol,A,4,4,0.12004498752841528,0.11251361027224416,0.1275998647845864,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+GPT-6.1 Sol,B,4,4,0.05488487847055634,0.028361737840998824,0.07825801910011387,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+GPT-6.1 Sol,C,4,0,,,,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+Opus 5.5,A,4,4,0.12549537274382888,0.0347001352154136,0.21629061027224417,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+Opus 5.5,B,4,4,0.047709878470556355,0.03936173784099872,0.05555801910011393,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+Opus 5.5,C,4,0,,,,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+Sonnet 5.5,A,4,4,0.13174537274382891,0.0387001352154136,0.22229061027224417,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+Sonnet 5.5,B,4,4,0.046459878470556326,0.03936173784099872,0.05355801910011393,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+Sonnet 5.5,C,4,0,,,,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+Haiku 4.5,A,4,4,0.11929523752841537,0.1122906102722443,0.12729986478458644,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+Haiku 4.5,B,4,4,0.03854012152944364,0.016441980899886133,0.060638262159001144,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.
+Haiku 4.5,C,4,4,2.477170238576997,2.440798277195418,2.513242199958576,score points,Descriptive original adopted-value error; not a pass threshold or rank; paired answers share data.

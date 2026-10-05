@@ -1,0 +1,65 @@
+{
+  "primary": {
+    "estimate": 0.8477466423197857,
+    "standard_error": 0.21416334949040722,
+    "ci95_low": 0.42750843601912053,
+    "ci95_high": 1.2679848486204508,
+    "welch_df": 1047.09549705591,
+    "t_statistic": 3.95841139175757,
+    "p_two_sided": 8.054211667057528e-05
+  },
+  "adjusted_sensitivity": [
+    {
+      "degree": 1,
+      "estimate": 1.0138692123784179,
+      "standard_error": 0.18570530044289482,
+      "ci95_low": 0.6498935117721538,
+      "ci95_high": 1.377844912984682,
+      "p_two_sided": 4.773162691014602e-08,
+      "r_squared": 0.24048294200375964
+    },
+    {
+      "degree": 2,
+      "estimate": 1.015027783552231,
+      "standard_error": 0.18581576463938013,
+      "ci95_low": 0.6508355770992746,
+      "ci95_high": 1.3792199900051874,
+      "p_two_sided": 4.693450084587996e-08,
+      "r_squared": 0.24123453981340437
+    },
+    {
+      "degree": 3,
+      "estimate": 1.015496620022379,
+      "standard_error": 0.18595895908236648,
+      "ci95_low": 0.651023757618383,
+      "ci95_high": 1.3799694824263748,
+      "p_two_sided": 4.738224270673325e-08,
+      "r_squared": 0.24177876365060946
+    }
+  ],
+  "validation": {
+    "rows": 2000,
+    "columns": [
+      "x",
+      "y",
+      "z"
+    ],
+    "missing_values": 0,
+    "attendees": 600,
+    "nonattendees": 1400,
+    "end_score_outside_0_100": 0
+  },
+  "baseline_mean_difference": -0.7522936442065884,
+  "baseline_welch_p": 0.07940053528187024,
+  "input_sha256": {
+    "data(20261004-180737).csv": "d45479ba2c2d5eab15d418d1f5c0497a997fb1c84555e6d1ca26002bf3783179",
+    "STUDY_DESCRIPTION(20261004-180737).md": "1c7a7cf5c54687ef5e5029f013a84efb5bc294a83591e930d609f333d6fec6de"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  }
+}

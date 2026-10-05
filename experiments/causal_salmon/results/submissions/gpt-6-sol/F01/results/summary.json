@@ -1,0 +1,29 @@
+{
+  "n_total": 2000,
+  "n_treated": 600,
+  "n_untreated": 1400,
+  "minimum_treated_start_score": 55.59294297736875,
+  "mean_gain_treated": 14.124059292815788,
+  "mean_gain_untreated": 8.718961501961187,
+  "unadjusted_mean_difference": 5.405097790854601,
+  "mean_start_score_treated": 65.70759205598998,
+  "mean_start_score_untreated": 56.88762955833698,
+  "mean_observed_end_score_treated": 79.83165134880578,
+  "observed_end_score_range_treated": [
+    58.69312317912097,
+    96.97077194766119
+  ],
+  "logical_att_lower_bound": -20.168348651194222,
+  "logical_att_upper_bound": 79.83165134880578,
+  "bound_interpretation": "For each treated student, unobserved no-tutoring end score could be any value in [0,100]. These bounds use only the score scale and are not confidence intervals.",
+  "illustrative_local_rd_bootstrap": {
+    "bandwidth_points": 4.0,
+    "replicates_attempted": 2000,
+    "replicates_retained": 2000,
+    "percentile_interval_95_conditional": [
+      -3.321324496909214,
+      2.514064161141661
+    ],
+    "caveat": "Illustrative row bootstrap fixes a cutoff chosen from the same sample and does not establish identification of the full attendee average."
+  }
+}

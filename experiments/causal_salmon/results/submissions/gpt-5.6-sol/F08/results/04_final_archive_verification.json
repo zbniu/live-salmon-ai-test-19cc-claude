@@ -1,0 +1,8 @@
+{
+  "nonempty_report_readback_verified": true,
+  "archive_report_matches": true,
+  "code_present": true,
+  "results_present": true,
+  "crc_check_passed": true,
+  "note": "Verified archive before adding this result and the updated log; complete archive inspected again below."
+}

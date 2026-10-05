@@ -1,0 +1,7 @@
+Run log (execution order; all runs in this session, Python 3, working dir /home/claude/submission)
+1. code/01_explore.py -> results/01_explore.txt. Exit 0. Data 2000x3, no missing; cutoff c=56.9946 (min y among x=1); no treated below c.
+2. pip install rdrobust (needed for step 3). Succeeded; no output file. (A `pip list | grep` check printed nothing.)
+3. code/02_rd_analysis.py -> results/02_rd_analysis.txt, results/02_bandwidth_sensitivity.csv. Exit 0. Adopted fuzzy RD estimate -0.531, robust 95% CI [-4.711, 3.697].
+4. code/03_descriptive_and_selection.py -> results/03_descriptive_and_selection.txt. Exit 0.
+5. Wrote final_report.md and this log; created submission.zip.
+No errors occurred. No analyses were re-run or replaced.

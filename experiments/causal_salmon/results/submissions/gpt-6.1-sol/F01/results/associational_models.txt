@@ -1,0 +1,18 @@
+unadjusted
+     model  term  coefficient  hc3_se  ci95_lower  ci95_upper    n  r_squared
+unadjusted const     8.718962 0.10434    8.514460    8.923463 2000   0.292784
+unadjusted     x     5.405098 0.18468    5.043133    5.767063 2000   0.292784
+
+linear_start_score
+             model              term  coefficient   hc3_se  ci95_lower  ci95_upper    n  r_squared
+linear_start_score             const     9.226538 0.096957    9.036506    9.416571 2000   0.397879
+linear_start_score                 x     3.713176 0.193686    3.333557    4.092794 2000   0.397879
+linear_start_score y_centered_per_10     1.918287 0.102496    1.717398    2.119177 2000   0.397879
+
+cubic_start_score
+            model              term  coefficient   hc3_se  ci95_lower  ci95_upper    n  r_squared
+cubic_start_score             const     9.283758 0.133822    9.021472    9.546044 2000   0.398671
+cubic_start_score                 x     3.724803 0.194942    3.342724    4.106883 2000   0.398671
+cubic_start_score y_centered_per_10     1.608035 0.237426    1.142688    2.073382 2000   0.398671
+cubic_start_score         y_squared    -0.097598 0.119350   -0.331519    0.136324 2000   0.398671
+cubic_start_score           y_cubed     0.229851 0.155393   -0.074714    0.534415 2000   0.398671

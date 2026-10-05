@@ -1,0 +1,37 @@
+{
+  "estimand": "mean[z_i(1)-z_i(0)] over the 600 actual recipients (sample ATT)",
+  "n_total": 2000,
+  "n_treated": 600,
+  "n_control": 1400,
+  "mean_z_treated": 10.758904720531536,
+  "mean_z_control": 9.91115807821175,
+  "primary_difference_points": 0.8477466423197857,
+  "recipient_target_randomization_se": 0.20074382088099274,
+  "recipient_target_approx_95_interval": [
+    0.4542959832740803,
+    1.2411973013654911
+  ],
+  "conventional_welch_se": 0.21416334949040722,
+  "conventional_welch_df": 1047.09549705591,
+  "conventional_welch_95_interval": [
+    0.42750843601912053,
+    1.2679848486204508
+  ],
+  "conventional_welch_two_sided_p": 8.054211667057548e-05,
+  "mean_baseline_treated": 59.15772626306395,
+  "mean_baseline_control": 59.910019907270524,
+  "baseline_difference": -0.7522936442065742,
+  "baseline_welch_p": 0.07940053528187024,
+  "counterfactual_bounds_from_0_100_followup": [
+    -30.08336901640453,
+    69.91663098359548
+  ],
+  "notes": [
+    "Randomization interval is approximate repeated-assignment coverage for D minus the varying recipient-specific target.",
+    "No individual counterfactual is observed; a positive average does not establish benefit for every recipient.",
+    "Welch interval and p value are conventional group-comparison inference, distinct from the primary recipient-target interval.",
+    "Baseline adjustment is secondary and model-assisted; its standard errors are not used for the primary result."
+  ],
+  "control_linear_slope_z_per_baseline_point": 0.2208214456388718,
+  "secondary_linear_adjusted_recipient_effect": 1.0138692123784114
+}

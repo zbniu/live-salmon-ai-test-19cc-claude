@@ -1,0 +1,4 @@
+method,estimate,approximate_se,caveat
+baseline_strata_width_0.5,1.066953120094128,0.21994963492993272,Continuous-baseline imbalance remains within strata; variance omits singleton-treated stratum contribution if any.
+baseline_strata_width_1,1.1599619945639927,0.21638125935850452,Continuous-baseline imbalance remains within strata; variance omits singleton-treated stratum contribution if any.
+baseline_strata_width_2,1.178302859500001,0.21268332250593502,Continuous-baseline imbalance remains within strata; variance omits singleton-treated stratum contribution if any.

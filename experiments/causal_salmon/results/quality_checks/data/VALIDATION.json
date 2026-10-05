@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "selected_datasets": 12,
+  "student_rows": 24000,
+  "public_csvs_bitwise_verified": 12,
+  "hidden_selected_files_bitwise_verified": 24,
+  "candidate_count": 60,
+  "qualified_candidates": 56,
+  "retained_candidate_failures": 4,
+  "selected_applicable_GEN_checks_passed": 60,
+  "selected_not_applicable_GEN_checks": 24,
+  "paired_selftest_cases_checked": 30,
+  "paired_candidate_cases_checked": 60,
+  "candidate_bootstrap_pairs_checked": 4000,
+  "main_tests_passed": 94,
+  "independent_fixtures_passed": 14,
+  "selftest_and_candidate_public_projections_bitwise_verified": 90,
+  "numerical_algorithm_statements_verified": true,
+  "calibration_numeric_tables_bitwise_verified": true,
+  "recovery": {
+    "main": {
+      "exit_code": 0,
+      "files_checked": 1142,
+      "sealed_files_unchanged": true,
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "scripts.generate_data",
+        "--resume",
+        "--workers",
+        "2"
+      ]
+    },
+    "independent": {
+      "exit_code": 0,
+      "files_checked": 1142,
+      "sealed_files_unchanged": true,
+      "command": [
+        ".venv/bin/python",
+        "scripts/generate_independent.py",
+        "--resume"
+      ]
+    }
+  },
+  "local_document_links_checked": 40,
+  "tested_model_calls": 0
+}

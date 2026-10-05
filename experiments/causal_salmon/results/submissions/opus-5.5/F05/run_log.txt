@@ -1,0 +1,6 @@
+Run log (execution order)
+1. code/01_inspect.py -> results/01_inspect.txt  : succeeded (data shape, types, missingness, descriptives by group, range/ceiling checks).
+2. code/02_analysis.py -> first attempt FAILED with ModuleNotFoundError: No module named 'statsmodels' (no output file written for that attempt).
+3. pip install statsmodels --break-system-packages -> results/pip_install.txt (pip output tail; may be empty if pip printed nothing).
+4. code/02_analysis.py (unchanged) re-run -> results/02_analysis.txt : succeeded (balance, difference in means, ANCOVA, Lin interacted ATT/ATE, imputation ATT + bootstrap, permutation test, heterogeneity, distribution checks). Random seed 20261004.
+5. final_report.md written from results/02_analysis.txt.

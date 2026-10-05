@@ -1,0 +1,8 @@
+Execution record (in order). Inputs: /mnt/user-data/uploads/data.csv. Outputs in results/.
+1. code/01_explore.py -> results/01_explore.txt. OK. Cutoff 56.9946, no treated below, naive diff 5.46, bin table.
+2. code/02_rd.py -> results/02_rd.txt. FAILED: ModuleNotFoundError statsmodels. (Output file first captured only stdout; later overwritten by step 3.)
+3. pip install statsmodels (results/pip_install.txt), then re-ran code/02_rd.py -> results/02_rd.txt. Cutoff info printed, then FAILED with KeyError: 0 (bug in redundant 2SLS step).
+4. code/02b_rd.py (fixed rewrite of 02_rd.py) -> results/02b_rd.txt, results/02b_fuzzy_rd_grid.csv. OK. 36 fuzzy RD specs.
+5. pip install rdrobust (results/pip_install_rdrobust.txt); code/03_rdrobust.py -> results/03_rdrobust.txt. Density window counts printed; rdrobust part FAILED: ImportError (rddensity not importable). Formal density test NOT obtained.
+6. code/03b_rdrobust.py -> results/03b_rdrobust.txt. OK. Fuzzy RD: -0.531 (CI -4.022, 2.959), robust CI -4.711, 3.697.
+Note: the traceback text from steps 2-3 is in the tool output of the session; results/02_rd.txt holds the final (step 3) output including the traceback.

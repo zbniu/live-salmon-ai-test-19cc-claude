@@ -1,0 +1,8 @@
+Execution record (working directory: /workspace/scratch/ef25654deaf4)
+Inputs: upload/STUDY_DESCRIPTION(20261004-071423).md and upload/data(20261004-071423).csv. The description was read; wc showed 2001 lines including the CSV header.
+
+1. Wrote submission/code/01_explore.py. Initial command to redirect its output to submission/results/exploration_stdout.txt failed before Python ran because submission/results/ did not yet exist (shell exit 1: No such file or directory). No result file was created by that attempt.
+2. Created submission/code/ and submission/results/. Ran `python submission/code/01_explore.py > submission/results/exploration_stdout.txt 2>&1` (exit 0). The script read all 2000 CSV records and wrote submission/results/exploration.json; stdout was captured in submission/results/exploration_stdout.txt. No missing data records were reported by the study description; the script parsed all 2000 rows.
+3. Checked availability of analysis dependencies. Both default and bundled Python lacked statsmodels (ModuleNotFoundError); default Python had NumPy, SciPy and scikit-learn. These probes produced no persistent analysis output; the estimate script uses NumPy only.
+4. Wrote submission/code/02_estimate.py and removed an unused placeholder expression before its first execution. Ran `python submission/code/02_estimate.py > submission/results/estimates_stdout.txt 2>&1` (exit 0). The script read all 2000 CSV records, computed the baseline-adjusted ATT and 2000 bootstrap estimates, and wrote submission/results/estimates.json; stdout was captured in submission/results/estimates_stdout.txt.
+5. Wrote submission/final_report.md from the executed results. Packaged and verified submission.zip after these files were present.

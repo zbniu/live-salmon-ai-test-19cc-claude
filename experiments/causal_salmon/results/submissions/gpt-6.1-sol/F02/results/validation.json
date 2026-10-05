@@ -1,0 +1,15 @@
+{
+  "rows": 2000,
+  "missing_values": 0,
+  "received_Q": 600,
+  "did_not_receive_Q": 1400,
+  "baseline_min": 45.013647911746,
+  "baseline_max": 74.98826079709465,
+  "followup_min": 44.90691758809895,
+  "followup_max": 96.97077194766119,
+  "followup_within_0_100": true,
+  "rows_excluded": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3"
+}

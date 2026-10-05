@@ -1,0 +1,12 @@
+{
+  "method": "Primary: untreated cubic B-spline, knots 50/55/60/65/70",
+  "att": 1.1987329474987218,
+  "se": 0.21040524732223073,
+  "ci95_low": 0.786346240588907,
+  "ci95_high": 1.6111196544085367,
+  "n_treated": 600,
+  "n_controls": 1400,
+  "mean_counterfactual_gain": 11.626977823866582,
+  "control_residual_sd": 3.5512568668426763,
+  "two_sided_normal_p": 1.2174972200187897e-08
+}

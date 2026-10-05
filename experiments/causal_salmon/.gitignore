@@ -1,0 +1,15 @@
+# Local environments and temporary verification artifacts
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.packaging/
+verification/selftest_evidence/
+verification/selftest_runs/
+verification/selftest_quality/
+# Full hidden controller records are not part of this submission.
+datasets/ground_truth/
+results/quality_checks/data/main/
+results/quality_checks/data/independent/
+results/quality_checks/data/candidate_storage/main/ground_truth/

@@ -1,0 +1,33 @@
+{
+  "estimand": "Average treatment effect on the treated: mean(z(1)-z(0) | x=1)",
+  "primary_method": "Control-outcome cubic B-spline standardization; 7 basis functions; boundaries 45,75; interior knots 52.5,60,67.5; all 2000 rows used.",
+  "primary_att": 1.2133055416193868,
+  "observed_mean_z_treated": 12.825710771365303,
+  "estimated_mean_z_without_Q_for_treated": 11.612405229745919,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 872091,
+  "bootstrap_se": 0.21443761800267916,
+  "bootstrap_percentile_ci95": [
+    0.7832428240745241,
+    1.6254668526481908
+  ],
+  "approximate_hc3_ci95": [
+    0.8005720669999783,
+    1.6260390162387952
+  ],
+  "approximate_hc3_se": 0.21057830337724925,
+  "raw_difference": 3.4488763319610527,
+  "model_sensitivity_estimate_range": [
+    1.1686533997494715,
+    1.2133055416193868
+  ],
+  "local_matching_estimate_range": [
+    1.037736532363214,
+    1.1867756056403542
+  ],
+  "stratification_estimate_range": [
+    1.066953120094128,
+    1.178302859500001
+  ],
+  "inference_limit": "Intervals assume usual independent-unit sampling and smooth control outcome regression; they are not exact intervals under the fixed-slot assignment mechanism."
+}

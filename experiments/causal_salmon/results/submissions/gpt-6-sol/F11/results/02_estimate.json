@@ -1,0 +1,59 @@
+{
+  "estimand": "average effect of attendance on score gain for the 600 attendees (ATT), points",
+  "sample": {
+    "total": 2000,
+    "attendees": 600,
+    "nonattendees": 1400,
+    "nonattendees_in_attendee_score_range": 535,
+    "attendee_score_range": [
+      58.212770522843385,
+      74.9715557039445
+    ],
+    "controls_in_range_score_range": [
+      58.24180380666549,
+      74.96912622136206
+    ]
+  },
+  "unadjusted_difference": 3.6257396604900087,
+  "observed_mean_gain_attendees": 13.01890975366738,
+  "models": {
+    "linear": {
+      "att": 1.2457369840587722,
+      "mean_counterfactual_z0": 11.773172769608607
+    },
+    "quadratic": {
+      "att": 1.2433995905158037,
+      "mean_counterfactual_z0": 11.775510163151575
+    },
+    "spline4": {
+      "att": 1.2532289354590154,
+      "mean_counterfactual_z0": 11.765680818208367
+    },
+    "spline5": {
+      "att": 1.2576495808662818,
+      "mean_counterfactual_z0": 11.7612601728011
+    },
+    "spline6": {
+      "att": 1.2606099799689425,
+      "mean_counterfactual_z0": 11.758299773698438
+    }
+  },
+  "primary": {
+    "model": "spline5",
+    "att": 1.2576495808662818,
+    "mean_counterfactual_gain_without_tutoring": 11.7612601728011,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20261004,
+    "bootstrap_standard_error": 0.2162785445963676,
+    "percentile_95_interval": [
+      0.8503280250779747,
+      1.6848868033570366
+    ],
+    "bootstrap_two_sided_p_approx": 0.0
+  },
+  "nearest_score_match": {
+    "att": 1.125875010065726,
+    "median_absolute_score_gap": 0.010649403038542005,
+    "max_absolute_score_gap": 0.08989457482800134
+  }
+}

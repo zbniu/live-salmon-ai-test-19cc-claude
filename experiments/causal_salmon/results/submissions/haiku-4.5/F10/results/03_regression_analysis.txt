@@ -1,0 +1,26 @@
+======================================================================
+REGRESSION ANALYSIS CONTROLLING FOR BASELINE SCORE
+======================================================================
+
+Model 1: z ~ x (naive, no controls)
+  Treatment effect (x coefficient): 5.4635
+  Intercept: 8.6408
+  R-squared: 0.3025
+
+Model 2: z ~ x + y (controlling for baseline score)
+  Treatment effect (x coefficient): 3.7874
+  Baseline score effect (y coefficient): 0.1923
+  Intercept: -2.3847
+  R-squared: 0.4054
+
+Inference for treatment effect in Model 2:
+  Standard error: 0.1937
+  t-statistic: 19.5543
+  p-value: 0.000000
+  95% CI: [3.4077, 4.1670]
+
+Model 3: z ~ x + y + x*y (with interaction)
+  Treatment effect (x coefficient): -1.4575
+  Baseline score effect (y): 0.1808
+  Interaction (x*y): 0.0809
+  R-squared: 0.4076

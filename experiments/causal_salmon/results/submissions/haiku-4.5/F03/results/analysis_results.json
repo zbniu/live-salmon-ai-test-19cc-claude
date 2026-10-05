@@ -1,0 +1,13 @@
+{
+  "total_students": 2000,
+  "treated_count": 600,
+  "control_count": 1400,
+  "treated_mean": 11.104341164664351,
+  "control_mean": 9.994118317005503,
+  "treatment_effect": 1.1102228476588483,
+  "ci_lower": 0.6850489632372747,
+  "ci_upper": 1.5353967320804218,
+  "p_value": 1.6068516100623955e-07,
+  "cohens_d": 0.2565929220458572,
+  "t_statistic": 5.258590078195216
+}

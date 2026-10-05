@@ -1,0 +1,26 @@
+Execution record (UTC).
+Before recorded Python executions, the attached study description was read and the CSV header and line count were inspected through the execution tool. The CSV had 2001 lines including its header. That preliminary tool output is visible in the conversation but was not captured as an output file; no statistical analysis was run then.
+The two input files were copied byte-for-byte into inputs/ for reproducibility.
+Each numbered analysis script is executed through code/run.py, which saves actual combined stdout/stderr and records exit status here. Scripts are not rerun to conceal or replace records.
+
+START 2026-10-04T01:39:27.839269+00:00: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 code/01_explore.py
+END exit=1; combined stdout/stderr: results/01_explore_console.txt
+
+START 2026-10-04T01:40:04.711579+00:00: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 code/02_explore.py
+END exit=0; combined stdout/stderr: results/02_explore_console.txt
+
+START 2026-10-04T01:42:19.742273+00:00: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 code/03_estimate.py
+END exit=0; combined stdout/stderr: results/03_estimate_console.txt
+
+START 2026-10-04T01:43:58.820839+00:00: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 code/04_report.py
+END exit=0; combined stdout/stderr: results/04_report_console.txt
+
+START 2026-10-04T01:43:58.871220+00:00: code/05_package.py (direct execution; no statistical analysis)
+Report was read back as UTF-8 and verified nonempty with intended ATT and confidence interval. Output: results/report_validation.json.
+Packaging this directory into ../submission.zip with Python zipfile. Archive inspection output is retained alongside the archive as submission_archive_check.txt because a completed self-inspection cannot be embedded before packaging.
+PRE-PACKAGE 2026-10-04T01:43:58.871463+00:00: all analyses and report generation complete; no analysis rerun.
+END code/05_package.py: exit=0; captured stdout: results/05_package_console.txt. Actual archive inspection: results/archive_initial_inspection.txt.
+
+START 2026-10-04T01:44:48.116858+00:00: code/06_finalize.py. Copies actual packaging records into results/ and repackages; no analysis rerun.
+Archive created and inspected successfully. Actual inspection output: results/final_archive_inspection.txt.
+END code/06_finalize.py substantive work: succeeded. Final packaging below adds this completed record and its inspection output; final integrity verification follows.

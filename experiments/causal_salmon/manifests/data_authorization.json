@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-30",
+  "recorded_utc": "2026-09-30T23:05:28.758097+00:00",
+  "authorization_source": "human_user_message_in_this_chat",
+  "config_sha256": "f22e156981099489e260e0d178996c48b56f010085592ebb06b897b193f2657f",
+  "model_calls_authorized": false,
+  "models_budget_and_scoring_deferred": true,
+  "authorization_scope": "Confirmed K1 row, fixed finite pool, uniform GEN qualification and complete screening disclosure",
+  "generation_protocol_sha256": "6b4442aeb3f4561e8254b712b8e17ca77f8605b34c85699b8dfc248ebe916e7b"
+}

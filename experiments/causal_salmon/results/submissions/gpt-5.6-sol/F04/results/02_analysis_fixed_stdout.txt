@@ -1,0 +1,78 @@
+Data audit: {
+  "rows": 2000,
+  "columns": [
+    "x",
+    "y",
+    "z"
+  ],
+  "missing": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "treatment_counts": {
+    "0": 1400,
+    "1": 600
+  },
+  "data_sha256": "33a7f0e7329c87840bd42c709d5a4346bacdc210e2f077daae6030d1f78edb37",
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  },
+  "followup_min": 46.28646026469277,
+  "followup_max": 97.27625340474893
+}
+
+Group summaries:
+       n  baseline_mean  baseline_sd  baseline_min  baseline_max  change_mean  change_sd  change_min  change_max
+x                                                                                                              
+0  1400      60.275083     8.655306     45.011261     74.983621     9.994118   4.239446   -0.397835   21.927346
+1   600      59.853373     8.543402     45.083423     74.941962    11.104341   4.524213   -0.187897   22.873419
+
+Randomized unadjusted mean contrast: {
+  "estimate": 1.1102228476588483,
+  "se": 0.21668400750331995,
+  "df": 1069.7907948104562,
+  "ci95_lower": 0.6850489632372747,
+  "ci95_upper": 1.5353967320804218,
+  "p_two_sided": 3.5526908581569267e-07,
+  "p_one_sided_increase": 1.7763454290784633e-07
+}
+
+Baseline-adjusted sensitivity estimates:
+                         method  estimate   se_HC3  ci95_lower  ci95_upper  p_two_sided  R_squared
+interacted_polynomial_degree_1  1.214368 0.184190    0.853362    1.575374 4.309806e-11   0.276111
+interacted_polynomial_degree_2  1.214151 0.184349    0.852832    1.575469 4.514176e-11   0.276569
+interacted_polynomial_degree_3  1.213233 0.184224    0.852161    1.574305 4.529109e-11   0.278832
+
+Baseline deciles:
+                      n     y_mean     z_mean      z_sd
+baseline_decile x                                     
+1               0  135  46.527067   6.848186  3.378827
+                1   65  46.648557   7.417808  3.470650
+2               0  144  49.729100   7.215869  3.692010
+                1   56  49.799079   7.987814  4.123482
+3               0  144  52.715331   8.146699  3.967490
+                1   56  52.667776   9.756178  4.046885
+4               0  118  55.775620   8.594028  3.544130
+                1   82  55.825051   9.940314  3.734820
+5               0  141  58.704642   9.522859  3.640525
+                1   59  58.538395  10.868630  3.578036
+6               0  155  61.587444  10.049611  3.585100
+                1   45  61.872727  11.156960  3.784167
+7               0  139  64.701042  11.892623  3.880487
+                1   61  64.720508  11.932125  4.009098
+8               0  136  67.540394  11.951040  3.443032
+                1   64  67.606204  13.024254  3.468406
+9               0  140  70.455379  12.177244  3.719005
+                1   60  70.502818  14.114266  4.100319
+10              0  148  73.677983  13.225083  3.754875
+                1   52  73.482966  15.771109  4.057840
+
+Within-arm Pearson correlations of baseline and change:
+0 PearsonRResult(statistic=np.float64(0.5041933009860182), pvalue=np.float64(3.839005450505898e-91))
+1 PearsonRResult(statistic=np.float64(0.5389427471866948), pvalue=np.float64(1.668529112105974e-46))
+
+Wrote audit, summaries, mean contrast, and all sensitivity model results.

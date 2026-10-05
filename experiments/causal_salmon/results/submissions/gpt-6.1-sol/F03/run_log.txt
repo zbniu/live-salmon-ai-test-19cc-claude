@@ -1,0 +1,38 @@
+Execution record (UTC; append-only for substantive analysis)
+1. Preliminary attachment inspection: cat of the complete study description;
+   inline Python inspected CSV byte count and header plus first seven records.
+   Exit status 0. This was not a full-data analysis. Tool output was visible in
+   the session but no separate stdout file was retained (missing local record).
+   Exact executed shell/Python code is preserved in code/preflight.sh.
+2. Runtime path check: printenv CODEX_PRIMARY_RUNTIME_PYTHON CODEX_PRIMARY_RUNTIME_ROOT.
+   Exit status 0; used installed primary Python runtime; output not separately retained.
+
+2026-10-04T18:09:00.073017+00:00 BEGIN /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/analyze.py
+2026-10-04T18:09:01.731431+00:00 END analysis, exit=1; stdout=results/analysis_stdout.txt; stderr=results/analysis_stderr.txt
+  Output: results/analysis_stderr.txt (208 bytes)
+  Output: results/analysis_stdout.txt (0 bytes)
+
+Dependency check: installed primary Python has numpy/pandas/scipy but lacks statsmodels. Exit 0; dependency-check stdout not separately saved.
+Attempt 1 failed at import before reading/analyzing data. Original code retained as code/analyze_attempt1.py and code/run_analysis_attempt1.py; original error remains results/analysis_stderr.txt.
+Corrective change: implement ordinary least squares and HC2 sandwich covariance directly with numpy; no packages installed. Attempt 2 uses new stdout/stderr paths and retains attempt 1 records.
+
+2026-10-04T18:09:34.145810+00:00 BEGIN /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/analyze.py
+2026-10-04T18:09:35.618382+00:00 END analysis, exit=0; stdout=results/analysis_attempt2_stdout.txt; stderr=results/analysis_attempt2_stderr.txt
+  Output: results/adjusted_degree1_model.json (792 bytes)
+  Output: results/adjusted_degree2_model.json (1477 bytes)
+  Output: results/analysis.json (2213 bytes)
+  Output: results/analysis_attempt2_stderr.txt (0 bytes)
+  Output: results/analysis_attempt2_stdout.txt (2609 bytes)
+  Output: results/analysis_stderr.txt (208 bytes)
+  Output: results/analysis_stdout.txt (0 bytes)
+  Output: results/baseline_quintiles.csv (669 bytes)
+  Output: results/group_summary.csv (273 bytes)
+
+2026-10-04T18:10:28.407496+00:00 BEGIN code/att_uncertainty.py; supplemental target-specific calculation (does not replace earlier outputs).
+2026-10-04T18:10:28.413198+00:00 END code/att_uncertainty.py, exit=0; outputs results/att_result.json and results/att_stdout.txt.
+
+2026-10-04T18:11:51.682027+00:00 code/write_report.py: read recorded results; generated final_report.md (UTF-8), no analyses repeated; exit=0.
+
+2026-10-04T18:11:51.751294+00:00 BEGIN code/package_submission.py: read back full report; verified nonempty intended answer.
+2026-10-04T18:11:51.755449+00:00 Inspected actual provisional ZIP: CRC passed, report matches, code/results/log present; output results/archive_inspection.json.
+Repackaging to include this actual inspection record and updated log; no analysis rerun.

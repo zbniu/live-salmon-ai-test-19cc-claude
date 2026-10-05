@@ -1,0 +1,13 @@
+Execution record (in order). All scripts run with python3 on /mnt/user-data/uploads/data.csv (2000 rows).
+0. Initial check: `head`, `wc -l`, import test. statsmodels was missing (ModuleNotFoundError on first
+   attempt); installed with pip, then import succeeded. No output file saved for this step.
+1. code/01_explore.py -> results/01_explore.txt  (structure, missingness, arm summaries, baseline balance, correlations)
+   No errors. (pandas truncated some printed summary columns; the full values needed are in the other outputs.)
+2. code/02_estimate.py -> results/02_estimate.txt (difference in means, Welch t, Mann-Whitney, permutation test,
+   OLS/ANCOVA with HC3 SEs, interaction/cubic models, subgroup-by-baseline-quartile, quantile regression)
+   No errors. Notes: the permutation test (20000 draws) had no draw as extreme as observed, printed as 0.0, i.e. p < 1/20000.
+   The classical compare_f_test output printed as (2.16, nan, -5.0) - degrees-of-freedom/p-value are not usable
+   (nested comparison was mis-specified for that helper); it was not relied on. The HC3 coefficient tables are what was used.
+No analyses were re-run or replaced.
+3. Inline check (no saved script/output file): groupby('x').z.mean() printed 9.994118 (x=0) and 11.104341 (x=1);
+   used only to correct the group means quoted in final_report.md. The report was edited once (str_replace) for that line.

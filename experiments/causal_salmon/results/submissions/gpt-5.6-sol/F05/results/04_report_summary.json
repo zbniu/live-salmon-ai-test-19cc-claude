@@ -1,0 +1,9 @@
+{
+  "primary_estimate_points": 0.8477466423197857,
+  "primary_approximate_95_interval": [
+    0.4542959832740803,
+    1.2411973013654911
+  ],
+  "report": "submission/final_report.md",
+  "analysis_source": "submission/results/03_primary_results.json"
+}

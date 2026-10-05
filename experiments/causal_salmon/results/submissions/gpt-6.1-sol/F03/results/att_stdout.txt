@@ -1,0 +1,14 @@
+{
+  "target": "SATT: mean of z_i(1)-z_i(0) over the 600 realized attendees",
+  "adopted_estimate_points": 1.1102228476588483,
+  "standard_error_points": 0.20686378674624142,
+  "approximate_95_percent_randomization_interval": [
+    0.7047772759306409,
+    1.5156684193870555
+  ],
+  "control_sample_variance": 17.972903032137665,
+  "variance_formula": "s0^2 * (1/n_attendees + 1/n_nonattendees)",
+  "coverage": "Approximate over repeated complete random draws of 600 attendees; target varies with the draw.",
+  "identity": "difference_in_means - SATT = mean(z(0) among attendees) - mean(z(0) among nonattendees)",
+  "assumptions": "Supplied complete random assignment, consistency, no interference; large-sample normal approximation. No constant-treatment-effect assumption."
+}

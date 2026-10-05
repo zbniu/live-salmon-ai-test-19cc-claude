@@ -1,0 +1,25 @@
+cutoff c=58.2128; region n=1136, treated=600, controls=536
+           estimator   ATT  boot_SE  CI95_lo  CI95_hi
+          REG_linear 1.232    0.221    0.808    1.663
+       REG_quadratic 1.230    0.221    0.802    1.656
+           REG_cubic 1.233    0.221    0.807    1.661
+REG_cubic_spline_df5 1.464    0.225    1.020    1.902
+  IPW_ATT_logit_quad 1.230    0.221    0.800    1.655
+       AIPW_ATT_quad 1.230    0.221    0.801    1.654
+          NN_match_5 1.102    0.236    0.697    1.625
+
+OLS z ~ x + y in region (HC1): [-3.992  1.181  0.236] [1.405 0.212 0.021]
+full-sample REG_lin (uses all 1400 controls): 1.201
+full-sample REG_quad (uses all 1400 controls): 1.238
+full-sample REG_cub (uses all 1400 controls): 1.244
+naive difference in means (full sample): 3.626
+
+ps range treated: 0.399 0.643  controls: 0.4 0.644
+mean y treated: 67.073  controls unweighted: 65.607  controls ATT-weighted: 67.073
+
+individual-level (y-adjusted) effect by y tercile among treated:
+                   size   mean    sem
+tercile                             
+(58.212, 64.483]   200  1.001  0.252
+(64.483, 70.189]   200  1.656  0.251
+(70.189, 74.972]   200  1.734  0.254

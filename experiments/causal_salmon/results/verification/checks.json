@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-04",
+  "checks_scope": "packaging and offline implementation checks only",
+  "pytest": {
+    "passed": true,
+    "tests": 101,
+    "original_tests": 94,
+    "canonical_reader_tests": 6,
+    "public_display_identity_tests": 1
+  },
+  "independent_selftest": {
+    "passed": true,
+    "fixtures": 14,
+    "bootstrap_attempts": 200,
+    "bootstrap_successes": 200,
+    "purpose": 4,
+    "seed": 709000
+  },
+  "original_source_files_checked": 1175,
+  "original_source_unchanged": false,
+  "report_prose_preserved": false,
+  "raw_model_artifacts_not_executed": true,
+  "tested_model_calls": 0,
+  "formal_dataset_regenerations": 0,
+  "publication_performed": false,
+  "English_translation": {
+    "all_public_text_English": true,
+    "scores_and_numerical_fields_preserved": true,
+    "original_report_unchanged": false,
+    "original_model_artifacts_unchanged": 915,
+    "original_canonical_protocol_preserved": true
+  },
+  "public_package_check": {
+    "public_package_verified": true,
+    "public_files": 1285,
+    "original_artifacts": 915,
+    "answers": 72,
+    "grades": {
+      "PASS": 68,
+      "FAIL": 4,
+      "UNKNOWN": 0
+    },
+    "semantic_pairs": 36,
+    "unique_used_numeric_datasets": 6,
+    "selected_datasets": 12,
+    "pool_candidates": 60,
+    "rejected_candidates": 4,
+    "local_links_checked": 1258,
+    "public_text_is_English": true,
+    "tested_models_or_submitted_code_executed": false
+  },
+  "report_content_synchronized": true,
+  "original_ZIP_artifacts_individually_compared": 915,
+  "INDEX_tables_fixed": 72,
+  "historical_display_path_records_cleaned": 11,
+  "exact_selftest_log_path_cleaned": true,
+  "historical_frozen_generation_gates_unchanged": true,
+  "changes_note": "Final report presentation, concise scope/evidence disclosure, local path cleanup, navigation and report synchronization only; numerical inputs, grades and original model artifacts unchanged.",
+  "public_research_document": "README.md",
+  "research_report_body_retained_in_README": true,
+  "documentation_review_followup": {
+    "single_README_retained": true,
+    "license_added": false,
+    "scope_and_regrading_disclosed": true,
+    "development_matrix_not_completed_disclosed": true,
+    "numeric_error_dataset_rows": 36,
+    "original_score_tables_unchanged": true,
+    "original_model_artifacts_unchanged": 915,
+    "new_model_calls": 0
+  }
+}

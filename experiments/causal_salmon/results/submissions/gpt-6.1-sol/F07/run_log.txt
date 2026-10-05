@@ -1,0 +1,31 @@
+Execution record
+Only the two user-provided attachments were used as study evidence. No internet access.
+Before file-based analysis: a shell command printed the study description, CSV byte size and first five data rows. Another command created submission/code and submission/results, printed the primary Python path, and checked system-Python module availability. Both exited 0. Their stdout is in the session tool record, not retained as raw files here; no numerical research analysis was performed in those commands. Skill instructions were read for CSV handling; they were not evidence about this study.
+Subsequent executions are captured below by code/run_step.py. Empty stderr files mean no stderr was emitted.
+
+START 2026-10-04T18:09:08.764418+00:00
+COMMAND /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/01_diagnostics.py
+EXIT 0; STDOUT submission/results/01_diagnostics.stdout.txt; STDERR submission/results/01_diagnostics.stderr.txt
+END 2026-10-04T18:09:09.050442+00:00
+
+START 2026-10-04T18:10:31.770052+00:00
+COMMAND /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/02_effect_analysis.py
+EXIT 0; STDOUT submission/results/02_effect_analysis.stdout.txt; STDERR submission/results/02_effect_analysis.stderr.txt
+END 2026-10-04T18:10:35.149836+00:00
+
+START 2026-10-04T18:12:59.522475+00:00
+COMMAND /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/03_write_report.py
+
+Substantive output linkage (recorded after successful steps, not reconstructed analysis):
+01_diagnostics.py -> results/01_diagnostics.json, results/01_baseline_bins.csv, plus captured stdout/stderr.
+02_effect_analysis.py -> results/02_effect_summary.json, results/02_model_sensitivity.csv, results/02_matching_sensitivity.csv, results/02_bootstrap_draws.csv, results/02_recipient_predictions.csv, results/02_diagnostics.png, plus captured stdout/stderr.
+03_write_report.py -> final_report.md, README.md, inputs/ (unchanged copies), plus captured stdout/stderr.
+The diagnostic PNG was viewed during this session. No analysis execution errors occurred, and neither analysis was rerun. Preliminary shell output was not saved as a raw file, as noted above.
+EXIT 0; STDOUT submission/results/03_write_report.stdout.txt; STDERR submission/results/03_write_report.stderr.txt
+END 2026-10-04T18:12:59.548795+00:00
+
+START 2026-10-04T18:13:06.496758+00:00 code/04_verify_delivery.py
+Read back final_report.md as UTF-8; nonempty report and intended answer, estimate, and interval verified.
+04_verify_delivery.py -> results/04_prearchive_checks.json, submission.zip (outside submission directory).
+Archive created and inspected: report matches read-back file; code, results, and execution record present; CRC checks passed.
+EXIT 0; END 2026-10-04T18:13:06.522983+00:00

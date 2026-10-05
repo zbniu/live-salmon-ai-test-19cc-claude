@@ -1,0 +1,96 @@
+{
+  "replacements": [
+    [
+      "start-of-term test score",
+      "baseline measurement"
+    ],
+    [
+      "end-of-term test scores",
+      "follow-up measurements"
+    ],
+    [
+      "end-of-term test score",
+      "follow-up measurement"
+    ],
+    [
+      "an application score",
+      "a selection value"
+    ],
+    [
+      "application scores",
+      "selection values"
+    ],
+    [
+      "application score",
+      "selection value"
+    ],
+    [
+      "an applicant",
+      "a candidate"
+    ],
+    [
+      "applicants",
+      "candidates"
+    ],
+    [
+      "Applicants",
+      "Candidates"
+    ],
+    [
+      "The tutoring class",
+      "Arrangement Q"
+    ],
+    [
+      "the tutoring class",
+      "arrangement Q"
+    ],
+    [
+      "students who",
+      "units that"
+    ],
+    [
+      "student who",
+      "unit that"
+    ],
+    [
+      "score gains",
+      "changes"
+    ],
+    [
+      "score gain",
+      "change"
+    ],
+    [
+      "student's",
+      "unit's"
+    ],
+    [
+      "students",
+      "units"
+    ],
+    [
+      "student",
+      "unit"
+    ],
+    [
+      "attended",
+      "received"
+    ],
+    [
+      "attending",
+      "receiving"
+    ],
+    [
+      "attend",
+      "receive"
+    ],
+    [
+      "admitted",
+      "accepted"
+    ],
+    [
+      "places",
+      "slots"
+    ]
+  ]
+}

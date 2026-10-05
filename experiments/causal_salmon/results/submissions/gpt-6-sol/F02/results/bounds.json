@@ -1,0 +1,16 @@
+{
+  "treated_n": 600,
+  "treated_observed_followup_range": [
+    58.69312317912097,
+    96.97077194766119
+  ],
+  "treated_mean_followup": 79.83165134880578,
+  "att_lower_bound_points": -20.168348651194233,
+  "att_upper_bound_points": 79.83165134880578,
+  "constructive_examples": {
+    "zero_effect": "Set untreated potential change equal to observed z for every treated unit.",
+    "positive_three_points": "Set untreated potential follow-up equal to observed follow-up minus 3 for every treated unit.",
+    "negative_three_points": "Set untreated potential follow-up equal to observed follow-up plus 3 for every treated unit.",
+    "all_examples_feasible": true
+  }
+}

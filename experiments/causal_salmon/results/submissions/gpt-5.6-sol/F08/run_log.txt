@@ -1,0 +1,31 @@
+Execution record (UTC; only the supplied CSV and study description used as research inputs)
+
+Pre-analysis input inspection: executed cat on upload/STUDY_DESCRIPTION(9).md,
+wc -l and head -n 6 on upload/data(9).csv. Completed successfully; CSV has
+2001 lines including header. This initial tool output was displayed in the
+session and was not separately saved as an output file. Runtime path and
+input file sizes were also inspected successfully. No statistical analysis
+preceded the numbered scripts.
+
+The following entries are appended at actual execution time. Each numbered
+script's stdout/stderr and produced data files are retained. Failed runs, if
+any, are not deleted or replaced.
+2026-10-04T01:38:47Z BEGIN code/01_inspect.py
+EXIT 1; outputs: results/01_inspect_stdout.txt, group_summary.csv, five_point_bins.csv, inspection.json
+First launch failed before Python started: results directory did not yet exist, so shell redirection failed; no stdout file was created and no analysis ran. The previous EXIT entry lists intended outputs, not produced outputs.
+2026-10-04T01:38:57Z BEGIN code/01_inspect.py (first actual Python execution)
+EXIT 1; actual outputs: results/01_inspect_stdout.txt, results/group_summary.csv, results/five_point_bins.csv, results/inspection.json
+Correction: this attempt exited with Python error ModuleNotFoundError: statsmodels. Only results/01_inspect_stdout.txt was produced; the CSV/JSON outputs in the prior entry were not produced. Executed source preserved as code/01_inspect_failed.py. No data analysis ran past imports.
+2026-10-04T01:39:14Z BEGIN code/01_inspect.py (unused statsmodels dependency removed)
+EXIT 0; inspect stdout for status; outputs upon success: results/01_inspect_stdout.txt, results/group_summary.csv, results/five_point_bins.csv, results/inspection.json
+2026-10-04T01:41:05Z BEGIN code/02_analyze.py
+EXIT 0; console: results/02_analyze_stdout.txt; if successful outputs: primary_result.json, effect_estimates.csv, primary_spline_coefficients.csv, primary_spline_hc3_covariance.csv, student_predictions.csv, stratification_details.csv, matching_sensitivity.csv, baseline_region_effects.csv
+The failed-import console file was retained under results/01_inspect_failed_stdout.txt. The corrected successful 01_inspect.py and 02_analyze.py each executed once and exited 0.
+2026-10-04T01:43:29.709497+00:00 BEGIN code/03_deliver.py; reads existing analysis outputs; no statistical analyses rerun.
+2026-10-04T01:43:29.715519+00:00 WROTE and READ BACK final_report.md; nonempty UTF-8 and intended adopted effect and interval verified.
+2026-10-04T01:43:29.715913+00:00 Copied supplied inputs into inputs/; SHA-256 verified against initial inspection.
+2026-10-04T01:43:29.737079+00:00 Archive inspected: report bytes match; code/results and failed-run records present; CRC check passed. WROTE results/03_delivery_verification.json.
+2026-10-04T01:43:29.737099+00:00 Code/03_deliver.py completed report generation and initial archive validation successfully. Appending this verification file and run_log.txt as final archive members; final inspection is emitted to the session, without a separate stdout file.
+2026-10-04T01:44:51.929662+00:00 BEGIN code/04_finalize_archive.py.
+Delivery record: after successful 03_deliver.py, the supplied persistence helper failed before any upload began because its local authentication was unavailable (exit 1). Its console error was displayed in the session and was not saved as a separate file. No research data was accessed or analysis repeated. The available host file-upload action then saved the report successfully; local file metadata was applied successfully.
+04_finalize_archive.py: final_report.md read back; archive report/code/results verified with CRC check; results/04_final_archive_verification.json produced. Updated log and verification appended; final complete archive inspection output displayed in the session. No separate stdout file. No statistical analyses rerun.

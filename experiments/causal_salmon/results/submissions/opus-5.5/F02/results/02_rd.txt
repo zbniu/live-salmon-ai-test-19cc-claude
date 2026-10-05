@@ -1,0 +1,149 @@
+cutoff c = 55.59294297736875
+       h  p kernel     n  n_right  first_stage  reduced_form    tau     se   ci_lo  ci_hi
+0    2.0  1    tri   293      148        0.448        -0.563 -1.256  2.207  -5.582  3.070
+1    3.0  1    tri   424      212        0.456        -0.335 -0.733  1.687  -4.041  2.574
+2    4.0  1    tri   574      271        0.459        -0.010 -0.021  1.417  -2.798  2.757
+3    5.0  1    tri   698      341        0.471         0.087  0.184  1.245  -2.256  2.624
+4    6.0  1    tri   832      409        0.472         0.262  0.556  1.136  -1.671  2.782
+5    7.5  1    tri  1050      510        0.468         0.389  0.832  1.028  -1.182  2.847
+6    9.0  1    tri  1236      597        0.462         0.358  0.776  0.961  -1.107  2.659
+7   10.5  1    tri  1430      680        0.459         0.439  0.957  0.899  -0.805  2.718
+8    2.0  2    tri   293      148        0.434        -1.309 -3.018  3.732 -10.332  4.297
+9    3.0  2    tri   424      212        0.450        -0.822 -1.826  2.714  -7.144  3.493
+10   4.0  2    tri   574      271        0.446        -0.705 -1.581  2.329  -6.146  2.985
+11   5.0  2    tri   698      341        0.441        -0.396 -0.898  2.009  -4.835  3.039
+12   6.0  2    tri   832      409        0.458        -0.356 -0.777  1.750  -4.208  2.654
+13   7.5  2    tri  1050      510        0.471        -0.063 -0.134  1.487  -3.049  2.781
+14   9.0  2    tri  1236      597        0.475         0.200  0.421  1.335  -2.196  3.037
+15  10.5  2    tri  1430      680        0.473         0.160  0.339  1.258  -2.126  2.804
+16   3.0  1    uni   424      212        0.435        -0.065 -0.151  1.604  -3.295  2.994
+17   5.0  1    uni   698      341        0.479         0.201  0.420  1.128  -1.791  2.631
+18   7.5  1    uni  1050      510        0.457         0.400  0.875  0.968  -1.022  2.772
+
+=== rdrobust (MSE-optimal bw, triangular, p=1, robust bias-corrected CI) ===
+--- p=1
+Call: rdrobust
+
+Fuzzy RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  1
+Polynomial Order Bias (q):                  2
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           758       1242
+Number of Unique Obs.            758       1242
+Number of Effective Obs.         206        204
+Bandwidth Estimation           2.846      2.846
+Bandwidth Bias                 4.624      4.624
+rho (h/b)                      0.616      0.616
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional      -0.834    1.836   -0.454   6.497e-01    [-4.432, 2.764]
+Robust                 -        -   -0.611   5.410e-01    [-5.646, 2.961]
+
+First-Stage Estimates.
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional       0.457    0.077    5.917   3.284e-09     [0.305, 0.608]
+Robust                 -        -    4.802   1.574e-06     [0.264, 0.629]
+coef: [-0.83381664 -1.34239148 -1.34239148] 
+se: [1.83562212 1.83562212 2.19589874] 
+ci:
+                 CI Lower  CI Upper
+Conventional   -4.431570  2.763937
+Bias-Corrected -4.940145  2.255362
+Robust         -5.646274  2.961491
+--- p=2
+Call: rdrobust
+
+Fuzzy RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  2
+Polynomial Order Bias (q):                  3
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           758       1242
+Number of Unique Obs.            758       1242
+Number of Effective Obs.         303        272
+Bandwidth Estimation           4.009      4.009
+Bandwidth Bias                 5.506      5.506
+rho (h/b)                      0.728      0.728
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional      -1.569    2.481   -0.632   5.271e-01    [-6.432, 3.294]
+Robust                 -        -   -0.677   4.986e-01    [-7.465, 3.633]
+
+First-Stage Estimates.
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional       0.446      0.1    4.467   7.934e-06      [0.25, 0.641]
+Robust                 -        -    3.889   1.007e-04      [0.22, 0.667]
+coef: [-1.56902197 -1.91572786 -1.91572786] 
+se: [2.48112709 2.48112709 2.83108668] 
+ci:
+                 CI Lower  CI Upper
+Conventional   -6.431942  3.293898
+Bias-Corrected -6.778648  2.947192
+Robust         -7.464556  3.633100
+
+=== rdrobust sharp RD on x (first stage) and z (reduced form), p=1 ===
+Call: rdrobust
+
+Sharp RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  1
+Polynomial Order Bias (q):                  2
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           758       1242
+Number of Unique Obs.            758       1242
+Number of Effective Obs.         506        468
+Bandwidth Estimation           6.979      6.979
+Bandwidth Bias                10.869     10.869
+rho (h/b)                      0.642      0.642
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional       0.469    0.048     9.69   3.327e-22     [0.374, 0.564]
+Robust                 -        -    8.275   1.285e-16     [0.362, 0.587]
+Call: rdrobust
+
+Sharp RD estimates using local polynomial regression.
+
+Number of Observations:                  2000
+Polynomial Order Est. (p):                  1
+Polynomial Order Bias (q):                  2
+Kernel:                            Triangular
+Bandwidth Selection:                    mserd
+Var-Cov Estimator:                         NN
+
+                                Left      Right
+------------------------------------------------
+Number of Observations           758       1242
+Number of Unique Obs.            758       1242
+Number of Effective Obs.         206        204
+Bandwidth Estimation           2.846      2.846
+Bandwidth Bias                 4.624      4.624
+rho (h/b)                      0.616      0.616
+
+Method             Coef.     S.E.   z-stat    P>|z|       95% CI      
+-------------------------------------------------------------------------
+Conventional      -0.381    0.809    -0.47   6.380e-01    [-1.967, 1.205]
+Robust                 -        -   -0.625   5.317e-01     [-2.499, 1.29]

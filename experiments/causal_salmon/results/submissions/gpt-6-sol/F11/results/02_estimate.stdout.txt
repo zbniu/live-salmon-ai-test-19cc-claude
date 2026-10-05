@@ -1,0 +1,1 @@
+Wrote submission/results/02_estimate.json; ATT=1.257650; 95% bootstrap interval=[0.8503280250779747, 1.6848868033570366]

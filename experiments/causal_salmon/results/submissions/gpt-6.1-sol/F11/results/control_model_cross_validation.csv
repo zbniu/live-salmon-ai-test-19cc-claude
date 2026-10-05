@@ -1,0 +1,7 @@
+method,control_CV_RMSE
+linear,3.577522493858057
+quadratic,3.579575443170389
+cubic_polynomial,3.582624115281733
+restricted_cubic_spline_4_knots,3.5814008707250076
+restricted_cubic_spline_5_knots,3.5824397742528067
+restricted_cubic_spline_7_knots,3.5844021895360547

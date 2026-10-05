@@ -1,0 +1,23 @@
+The attached files are:
+
+- STUDY_DESCRIPTION.md, which describes the study and how the data were produced
+- data.csv, the data
+
+Use only these two attached files. Do not access the internet.
+
+Answer the research question stated in STUDY_DESCRIPTION.md. Run the analyses you consider appropriate by executing code with the available analysis tool, using the complete data.csv.
+
+Provide a final report stating your answer to the research question. If you give numerical answers, make clear which result answers that question. If the supplied material does not support a definite answer, say so. No particular wording, heading, language, or report structure is required.
+
+File delivery is a required part of this task. Use the available tool to actually create the following files in this session's writable file space:
+
+- `submission/final_report.md`: a nonempty UTF-8 file containing your final report. It must be understandable on its own and contain your answer and the numerical result you adopt, if any. It may be concise. A placeholder, file list, or reference to a report elsewhere is not a report.
+- `submission/code/`: the code actually executed in this task.
+- `submission/results/`: the outputs actually produced by that execution.
+- `submission/run_log.txt`: a brief record linking code and outputs in execution order, including errors or missing records. Do not present reconstructed outputs as actual execution records.
+
+Create `submission.zip` containing the `submission/` directory. Before claiming successful file delivery, use the tool to read back `submission/final_report.md`, check that it is nonempty and contains the intended final report, and inspect the archive to confirm that it includes the report, code, results, and execution record. Do not repeat analyses merely to replace or conceal earlier execution records.
+
+Your final reply must provide BOTH a clickable download link or downloadable attachment for `final_report.md` AND one for `submission.zip`, using the platform's supported file-delivery mechanism. You may also give a short answer in the reply. A plain file path, links to the two input files, or a statement that an archive contains the report does not satisfy file delivery. Do not invent download links or claim that an undelivered file is downloadable.
+
+If the available tools cannot create or deliver the files, explicitly state `FILE_DELIVERY_FAILED` and explain the limitation. Provide the complete report and available execution records in the reply, identify any missing records, and do not claim successful file delivery.

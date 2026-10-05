@@ -1,0 +1,18 @@
+TUTORING STUDY ANALYSIS
+======================================================================
+
+Total students: 2000
+Treated (attended tutoring): 600
+Control (no tutoring): 1400
+
+DESCRIPTIVE STATISTICS
+----------------------------------------------------------------------
+Treated group mean score gain: 10.7589
+Control group mean score gain: 9.9112
+Difference in means: 0.8477
+
+STATISTICAL TEST
+----------------------------------------------------------------------
+t-statistic: 4.1034
+p-value: 0.000042
+95% CI for difference: [0.4426, 1.2529]

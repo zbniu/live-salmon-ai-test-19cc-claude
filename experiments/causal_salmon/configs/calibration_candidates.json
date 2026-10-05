@@ -1,0 +1,11 @@
+{
+  "protocol_sha256": "f85fedf447c734d9d5e7a2cb630284fe18c7091c5cf653610adbc43ec8e7144c",
+  "n": 2000,
+  "candidates": [
+    {"id":"K1","a":45,"b_multiplier":3,"gamma":0.25,"beta":0.5,"kappa":1.2,"M":900,"K":600},
+    {"id":"K2","a":45,"b_multiplier":3,"gamma":0.25,"beta":0.3,"kappa":1.2,"M":900,"K":600},
+    {"id":"K3","a":45,"b_multiplier":3,"gamma":0.25,"beta":0.5,"kappa":1.2,"M":800,"K":600},
+    {"id":"K4","a":45,"b_multiplier":2,"gamma":0.25,"beta":0.5,"kappa":1.2,"M":900,"K":600},
+    {"id":"K5","a":45,"b_multiplier":3,"gamma":0.25,"beta":0.5,"kappa":1.6,"M":900,"K":600}
+  ]
+}

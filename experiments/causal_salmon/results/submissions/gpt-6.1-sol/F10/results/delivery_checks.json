@@ -1,0 +1,24 @@
+{
+  "report_utf8_nonempty": true,
+  "report_bytes": 5068,
+  "report_sha256": "43ea6d4996e31efbff5867f426f2491e5ca64c061dbf4d94a4d2f636370a3fe4",
+  "intended_answer_present": true,
+  "actual_analysis_returncode": 0,
+  "analysis_executions_in_this_pipeline_invocation": 1,
+  "expected_archive_members": [
+    "submission/code/analyze.py",
+    "submission/code/run_pipeline.py",
+    "submission/final_report.md",
+    "submission/inputs/STUDY_DESCRIPTION.md",
+    "submission/inputs/data.csv",
+    "submission/results/analysis_stderr.txt",
+    "submission/results/analysis_stdout.txt",
+    "submission/results/analysis_summary.json",
+    "submission/results/associations.csv",
+    "submission/results/counterfactual_completions.csv",
+    "submission/results/group_summary.csv",
+    "submission/results/score_bin_summary.csv",
+    "submission/run_log.txt",
+    "submission/results/delivery_checks.json"
+  ]
+}

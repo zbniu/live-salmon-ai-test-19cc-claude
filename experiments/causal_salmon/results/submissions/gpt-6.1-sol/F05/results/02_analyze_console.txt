@@ -1,0 +1,61 @@
+PRIMARY: randomized mean comparison targeting actual recipients
+{
+  "estimator": "unadjusted randomized difference in means",
+  "estimand": "mean z(1)-z(0) among the 600 actual recipients (SATT)",
+  "effect_points": 0.8477466423197857,
+  "se_points": 0.20074382088099274,
+  "approx_95ci_low": 0.4542959832740803,
+  "approx_95ci_high": 1.2411973013654911,
+  "treated_mean_change": 10.758904720531536,
+  "control_mean_change": 9.91115807821175,
+  "treated_mean_baseline": 59.15772626306395,
+  "control_mean_baseline": 59.910019907270524,
+  "variance_formula": "control sample variance of z * (1/600 + 1/1400)",
+  "interval_method": "normal approximation under complete randomization; finite treated-group target"
+}
+
+Analysis comparison (all 2,000 rows used):
+                                           method   effect       se   ci_low  ci_high
+                             Unadjusted (primary) 0.847747 0.200744 0.454296 1.241197
+   Control-only polynomial degree 1 (sensitivity) 1.013869 0.177401 0.666170 1.361569
+   Control-only polynomial degree 2 (sensitivity) 1.015028 0.177452 0.667228 1.362828
+   Control-only polynomial degree 3 (sensitivity) 1.015497 0.177512 0.667579 1.363414
+Recipient-weighted baseline deciles (sensitivity) 1.004875 0.178272 0.655468 1.354283
+
+Adjustment fits:
+{
+  "1": {
+    "basis": "powers of (y-60)/10, including intercept",
+    "coefficients": [
+      9.931027612367,
+      2.2082144563887187
+    ],
+    "predicted_untreated_mean_for_recipients": 9.745035508153125,
+    "control_residual_sd": 3.635639796822853,
+    "control_r_squared": 0.2195995848770239
+  },
+  "2": {
+    "basis": "powers of (y-60)/10, including intercept",
+    "coefficients": [
+      9.979118463422191,
+      2.2077565008369033,
+      -0.0631365945770584
+    ],
+    "predicted_untreated_mean_for_recipients": 9.743876936979301,
+    "control_residual_sd": 3.636687706572275,
+    "control_r_squared": 0.21970819460954394
+  },
+  "3": {
+    "basis": "powers of (y-60)/10, including intercept",
+    "coefficients": [
+      9.9790788104691,
+      2.147043631562469,
+      -0.06307980799945606,
+      0.044421616796963874
+    ],
+    "predicted_untreated_mean_for_recipients": 9.743408100509166,
+    "control_residual_sd": 3.637919415206239,
+    "control_r_squared": 0.21973847811311742
+  }
+}
+Outputs: effect_estimates.csv, stratum_effects.csv, analysis.json

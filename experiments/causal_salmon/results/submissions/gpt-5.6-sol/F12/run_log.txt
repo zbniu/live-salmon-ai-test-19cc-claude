@@ -1,0 +1,34 @@
+
+START 2026-10-04T01:39:27.462896+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/8080004b85ec/submission/code/01_inspect.py
+END 2026-10-04T01:39:27.737153+00:00 exit=0
+stdout: results/01_inspect_stdout.txt
+stderr: results/01_inspect_stderr.txt
+
+START 2026-10-04T01:40:48.958416+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/8080004b85ec/submission/code/02_estimate.py
+END 2026-10-04T01:40:49.240013+00:00 exit=1
+stdout: results/02_estimate_stdout.txt
+stderr: results/02_estimate_stderr.txt
+
+START 2026-10-04T01:41:55.550082+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/8080004b85ec/submission/code/03_estimate.py
+END 2026-10-04T01:41:57.164151+00:00 exit=0
+stdout: results/03_estimate_stdout.txt
+stderr: results/03_estimate_stderr.txt
+
+START 2026-10-04T01:42:40.449539+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/8080004b85ec/submission/code/04_estimate_corrected.py
+END 2026-10-04T01:42:41.951557+00:00 exit=0
+stdout: results/04_estimate_corrected_stdout.txt
+stderr: results/04_estimate_corrected_stderr.txt
+
+START 2026-10-04T01:44:48.707989+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/8080004b85ec/submission/code/05_write_report.py
+Notes: Initial source-description read and file listing occurred via the execution tool before the saved runner; their terminal outputs were not saved as result files. No earlier statistical execution is omitted.
+02 failed before analysis at import; no 02 model outputs exist. 03 exploratory outputs are retained but its treated-model covariance is superseded by 04 because of a rank-deficient inverse. 04 is the adopted estimation run, with its mean-reproduction checks passing.
+END 2026-10-04T01:44:48.982336+00:00 exit=0
+stdout: results/05_write_report_stdout.txt
+stderr: results/05_write_report_stderr.txt
+
+2026-10-04T01:44:49.311919+00:00 code/06_package.py invoked directly. Read back final_report.md and confirmed the adopted answer; wrote results/06_prepackage_checks.json. Next creates submission.zip and inspects its report and required components. Final archive verification output is retained in the execution-tool transcript only, not as an archived result file.

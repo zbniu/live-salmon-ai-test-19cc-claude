@@ -1,0 +1,147 @@
+======================================================================
+DATA SUMMARY
+======================================================================
+
+Dataset shape: (2000, 3)
+
+First few rows:
+   x          y          z
+0  1  71.623133  15.523683
+1  0  51.862378   7.848327
+2  0  49.702189   6.006734
+3  0  46.993934   4.170940
+4  0  46.038685  12.399614
+
+Data types:
+x      int64
+y    float64
+z    float64
+dtype: object
+
+Basic statistics:
+                 x            y            z
+count  2000.000000  2000.000000  2000.000000
+mean      0.300000    59.533618    10.340491
+std       0.458372     8.730427     4.578764
+min       0.000000    45.013648    -1.241412
+25%       0.000000    52.061270     7.121083
+50%       0.000000    59.081305    10.246019
+75%       1.000000    67.260954    13.539958
+max       1.000000    74.988261    22.492898
+
+Missing values: 0
+
+Treatment assignment (x):
+x
+0    1400
+1     600
+Name: count, dtype: int64
+Proportion receiving Q: 0.3000
+
+======================================================================
+ANALYSIS 1: NAIVE COMPARISON (BIASED)
+======================================================================
+
+Arrangement Q group (x=1): n=600
+  Mean z: 14.1241
+  Std z: 3.7294
+  Mean y (baseline): 65.7076
+
+No arrangement Q group (x=0): n=1400
+  Mean z: 8.7190
+  Std z: 3.9026
+  Mean y (baseline): 56.8876
+
+Naive difference in z (Q vs No Q): 5.4051
+T-test: t=28.7604, p-value=0.000000
+
+======================================================================
+ANALYSIS 2: REGRESSION ADJUSTMENT FOR BASELINE
+======================================================================
+
+Model 1: z ~ x
+  Intercept: 8.7190
+  Coefficient for x: 5.4051
+  R-squared: 0.292784
+
+Model 2: z ~ x + y (baseline-adjusted)
+  Intercept: -2.1937
+  Coefficient for x: 3.7132
+  Coefficient for y: 0.1918
+  R-squared: 0.397879
+
+Model 3: z ~ x + y + x*y (with interaction)
+  Intercept: -2.2210
+  Coefficient for x: 3.8935
+  Coefficient for y: 0.1923
+  Coefficient for x*y: -0.0028
+  R-squared: 0.397882
+
+Standard errors for Model 2:
+  SE for x coefficient: 0.195701
+  t-statistic for x: 18.9738
+  p-value for x: 0.000000
+  95% CI for x: [3.3294, 4.0970]
+
+======================================================================
+ANALYSIS 3: STRATIFIED ANALYSIS BY BASELINE
+======================================================================
+
+Mean z by treatment group within each baseline quartile:
+
+Q1: y [45.01, 52.06]
+  Q group (x=1): mean z = nan (n=0)
+  No Q group (x=0): mean z = 6.9140 (n=500)
+  Difference: nan
+
+Q2: y [52.06, 59.07]
+  Q group (x=1): mean z = 12.3776 (n=111)
+  No Q group (x=0): mean z = 8.6673 (n=389)
+  Difference: 3.7103
+
+Q3: y [59.09, 67.26]
+  Q group (x=1): mean z = 13.7500 (n=219)
+  No Q group (x=0): mean z = 9.8460 (n=281)
+  Difference: 3.9040
+
+Q4: y [67.26, 74.99]
+  Q group (x=1): mean z = 15.1454 (n=270)
+  No Q group (x=0): mean z = 11.3533 (n=230)
+  Difference: 3.7922
+
+======================================================================
+ANALYSIS 4: INVERSE PROBABILITY WEIGHTING
+======================================================================
+
+Propensity score statistics:
+  Mean: 0.3000
+  Min: 0.0429
+  Max: 0.7339
+
+Weighted comparison:
+  Weighted mean z (Q group): 13.5902
+  Weighted mean z (No Q group): 9.3158
+  Weighted difference: 4.2745
+
+======================================================================
+SUMMARY OF ESTIMATES
+======================================================================
+
+Different estimates of the effect of arrangement Q on z:
+  1. Naive difference (unadjusted): 5.4051
+  2. Regression adjustment (Model 2): 3.7132 (95% CI: [3.3294, 4.0970])
+  3. Inverse probability weighting: 4.2745
+  4. Regression with interaction: 3.8935
+
+======================================================================
+RELATIONSHIP BETWEEN BASELINE AND OUTCOME
+======================================================================
+
+Correlation between baseline (y) and change (z): 0.5379
+
+Effect of baseline on change (from Model 2):
+  For each unit increase in baseline, change increases by 0.1918
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

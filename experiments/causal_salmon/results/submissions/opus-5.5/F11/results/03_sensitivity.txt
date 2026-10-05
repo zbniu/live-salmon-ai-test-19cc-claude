@@ -1,0 +1,16 @@
+control_model    ATT  cv_MSE
+        poly1 1.2323 12.1048
+        poly2 1.2302 12.1104
+        poly3 1.2327 12.1560
+        poly4 1.2389 12.1583
+      spline4 1.3950 12.1877
+      spline5 1.4638 12.1519
+      spline6 1.4863 12.1986
+      spline8 1.4947 12.2846
+     spline10 1.5263 12.3482
+NN matching M=1: ATT=1.126
+NN matching M=5: ATT=1.102
+NN matching M=10: ATT=1.262
+NN matching M=20: ATT=1.214
+NN matching M=40: ATT=1.262
+z ~ x + (y-65) + x*(y-65): coef [11.37   1.094  0.201  0.067]  HC0 SE [0.15  0.218 0.03  0.043]

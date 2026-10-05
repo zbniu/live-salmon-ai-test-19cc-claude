@@ -1,0 +1,7 @@
+# Tutoring class and score gain
+
+**Answer:** The randomized comparison provides evidence that attending the tutoring class increased score gain for the students selected to attend. The direct estimate of their **average causal increase is 0.85 score points**: attendees gained 10.76 points on average, compared with 9.91 points among the 1,400 students who did not attend. A two-sided Welch 95% confidence interval for the difference is **0.43 to 1.27 points** (p = 0.000081). This is an estimate of the average effect, not a measured effect for each attendee or an exact known effect for the 600 attendees: their gains without tutoring cannot be observed.
+
+All 2,000 students were analyzed, including 600 randomly assigned attendees. Assignment was followed exactly, and the study description reports no missing outcomes or spillovers. Thus the difference in mean gains is a causal estimate under the randomized design, subject to chance variation in the draw. Attendees' start-of-term scores averaged 59.16 versus 59.91 among nonattendees. A linear regression adjustment for that preassignment score estimates an increase of **1.02 points** (HC2 robust approximate 95% interval 0.66 to 1.39). This supports the same conclusion; the unadjusted randomized difference of **0.85 points** is the primary numerical answer.
+
+The data and study description alone cannot establish the exact counterfactual average gain of the specific attendees, nor whether every attendee benefited. The conclusion concerns their estimated average effect.

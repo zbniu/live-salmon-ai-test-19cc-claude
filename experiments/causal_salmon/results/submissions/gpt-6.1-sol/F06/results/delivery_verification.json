@@ -1,0 +1,8 @@
+{
+  "report_readback": "PASS",
+  "report_utf8_bytes": 4531,
+  "initial_archive_inspection": "PASS",
+  "persistent_upload": "FAILED before transfer: authentication unavailable",
+  "local_delivery": "final_report.md and submission.zip created; supported sandbox links available",
+  "analysis_rerun_for_delivery": false
+}

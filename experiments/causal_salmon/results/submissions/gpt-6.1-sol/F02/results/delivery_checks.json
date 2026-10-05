@@ -1,0 +1,20 @@
+{
+  "report_readback_matches_intended": true,
+  "report_utf8_bytes": 5359,
+  "report_sha256": "17d4cf1de5e9e8d8ecf990e9622b1c80b16d63773f393d5c7f4bb43707278d55",
+  "required_files_present": [
+    "final_report.md",
+    "run_log.txt",
+    "code/analyze.py",
+    "code/run_analysis.py",
+    "code/build_delivery.py",
+    "results/analysis_summary.json",
+    "results/analysis_stdout.txt",
+    "results/analysis_stderr.txt",
+    "inputs/data.csv",
+    "inputs/STUDY_DESCRIPTION.md"
+  ],
+  "analysis_exit_code": 0,
+  "analysis_stderr_bytes": 0,
+  "note": "Prearchive checks. Final archive read-back and integrity inspection printed in actual session tool output."
+}

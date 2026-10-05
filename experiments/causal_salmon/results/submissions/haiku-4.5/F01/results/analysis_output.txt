@@ -1,0 +1,183 @@
+============================================================
+DATA EXPLORATION
+============================================================
+
+Dataset shape: (2000, 3)
+
+First few rows:
+   x          y          z
+0  1  71.623133  15.523683
+1  0  51.862378   7.848327
+2  0  49.702189   6.006734
+3  0  46.993934   4.170940
+4  0  46.038685  12.399614
+
+Data types:
+x      int64
+y    float64
+z    float64
+dtype: object
+
+Basic statistics:
+                 x            y            z
+count  2000.000000  2000.000000  2000.000000
+mean      0.300000    59.533618    10.340491
+std       0.458372     8.730427     4.578764
+min       0.000000    45.013648    -1.241412
+25%       0.000000    52.061270     7.121083
+50%       0.000000    59.081305    10.246019
+75%       1.000000    67.260954    13.539958
+max       1.000000    74.988261    22.492898
+
+Missing values:
+x    0
+y    0
+z    0
+dtype: int64
+
+
+TREATMENT GROUP COMPOSITION
+============================================================
+Students who attended tutoring (x=1): 600
+Students who did not attend (x=0): 1400
+Total: 2000
+
+
+DISTRIBUTION OF START-OF-TERM SCORES (y) BY GROUP
+============================================================
+
+Treated group (attended tutoring):
+  Count: 600
+  Mean: 65.7076
+  Std Dev: 5.8379
+  Min: 55.5929
+  Max: 74.9554
+  Median: 66.1522
+
+Control group (did not attend):
+  Count: 1400
+  Mean: 56.8876
+  Std Dev: 8.4240
+  Min: 45.0136
+  Max: 74.9883
+  Median: 54.8521
+
+Difference in mean y: 8.8200
+
+
+CHECKING FOR ADMISSION CUTOFF
+============================================================
+Maximum y in control group: 74.9883
+Minimum y in treated group: 55.5929
+The treated group has higher y scores on average, suggesting selection.
+
+
+SCORE GAINS (z) BY GROUP - RAW COMPARISON
+============================================================
+
+Treated group (attended tutoring):
+  Mean score gain (z): 14.1241
+  Std Dev: 3.7294
+  Median: 14.3291
+  Min: 1.6415
+  Max: 22.4929
+
+Control group (did not attend):
+  Mean score gain (z): 8.7190
+  Std Dev: 3.9026
+  Median: 8.8616
+  Min: -1.2414
+  Max: 20.0129
+
+Raw difference (Treated - Control): 5.4051
+T-test: t=28.7604, p-value=0.000000
+
+
+REGRESSION: Score Gain (z) ~ Tutoring (x) - Unadjusted
+============================================================
+
+Intercept (mean gain for control): 8.7190
+  SE: 0.1029, t=84.7024, p=0.000000
+
+Effect of tutoring (x=1 vs x=0): 5.4051
+  SE: 0.1879, t=28.7604, p=0.000000
+R-squared: 0.292784
+
+
+REGRESSION: Score Gain (z) ~ Tutoring (x) + Start Score (y) - Adjusted
+============================================================
+
+Intercept: -2.1937
+  SE: 0.5922, t=-3.7045, p=0.000218
+
+Effect of tutoring (x=1 vs x=0): 3.7132
+  SE: 0.1957, t=18.9738, p=0.000000
+
+Effect of start-of-term score (y): 0.1918
+  SE: 0.0103, t=18.6698, p=0.000000
+R-squared: 0.397879
+
+
+KEY FINDINGS
+============================================================
+
+1. Raw (unadjusted) treatment effect: 5.4051 points
+   (Tutoring attendees gained 5.4051 more points on average)
+   Statistical significance: p = 0.000000
+
+2. Adjusted treatment effect (controlling for start-of-term score): 3.7132 points
+   Statistical significance: p = 0.000000
+
+3. Relationship between start-of-term score and score gain: 0.1918
+   (Each additional point on start-of-term score is associated with
+    0.1918 points of additional score gain)
+
+4. Selection bias: Students admitted to tutoring had higher start-of-term
+   scores on average (65.71 vs 56.89).
+   This creates confounding in the unadjusted estimate.
+
+5. Interpretation: The adjusted estimate suggests the tutoring effect
+   after accounting for students' incoming ability level.
+/home/claude/submission/code/visualization.py:68: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  bp = ax4.boxplot(data_to_plot, labels=['Control (x=0)', 'Treated (x=1)'], patch_artist=True)
+Visualization saved to analysis_plots.png
+
+ADDITIONAL ANALYSIS
+============================================================
+
+Correlation Matrix:
+          x         y         z
+x  1.000000  0.463073  0.541095
+y  0.463073  1.000000  0.537897
+z  0.541095  0.537897  1.000000
+
+
+STRATIFIED ANALYSIS BY START-OF-TERM SCORE QUARTILES
+============================================================
+
+Q2:
+  Y range: 52.06 - 59.07
+  Treated n=111, mean z=12.3776
+  Control n=389, mean z=8.6673
+  Difference: 3.7103
+
+Q3:
+  Y range: 59.09 - 67.26
+  Treated n=219, mean z=13.7500
+  Control n=281, mean z=9.8460
+  Difference: 3.9040
+
+Q4 (High):
+  Y range: 67.26 - 74.99
+  Treated n=270, mean z=15.1454
+  Control n=230, mean z=11.3533
+  Difference: 3.7922
+
+
+ROBUSTNESS CHECK: NONPARAMETRIC TEST
+============================================================
+
+Mann-Whitney U test (unadjusted):
+  U statistic: 703699.00
+  p-value: 0.0000000000
+  Conclusion: Median score gains differ significantly between groups

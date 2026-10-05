@@ -1,0 +1,20 @@
+2026-10-04T18:08:56.950052+00:00 Preparation: read the supplied study description and CSV header using shell tools.
+Those initial inspection tool outputs were not saved to files; no numerical analysis was performed in them.
+2026-10-04T18:08:56.950065+00:00 START 1: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/analyze.py
+2026-10-04T18:08:57.297080+00:00 END 1: exit code 1.
+Captured output: results/analysis_stdout.txt and results/analysis_stderr.txt.
+Files actually present after execution: analysis_stderr.txt, analysis_stdout.txt
+ERROR: analysis failed; preserve this attempt and its captured streams.
+Recovery: attempt 1 stopped at import because statsmodels was unavailable. Original source retained as code/analyze_attempt1.py.
+Replaced that unavailable dependency with NumPy least squares and an explicit HC3 sandwich covariance; no package installation.
+2026-10-04T18:09:46.787601+00:00 START 2: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/analyze.py
+2026-10-04T18:09:48.255006+00:00 END 2: exit code 0.
+Captured output: results/analysis_stdout_attempt2.txt and results/analysis_stderr_attempt2.txt.
+Files actually present after execution: analysis_stderr.txt, analysis_stderr_attempt2.txt, analysis_stdout.txt, analysis_stdout_attempt2.txt, analysis_summary.json, associational_models.csv, associational_models.txt, counterfactual_examples.csv, group_summary.csv, start_score_bins.csv
+No execution error in this attempt. Earlier failed execution records retained; this run corrects the missing dependency.
+2026-10-04T18:11:50.812043+00:00 START 3: code/package_submission.py; no numerical reanalysis.
+Copied the two supplied inputs into inputs/ for reproducibility.
+Read back final_report.md as UTF-8; nonempty and intended conclusion/numerical results verified.
+Initial shell-inspection output was not saved; analysis stdout/stderr for both attempts are retained.
+2026-10-04T18:11:50.823539+00:00 END 3: initial archive integrity, required members, and exact report bytes verified.
+Output: results/delivery_verification.json; submission.zip. Repackaged to include this verification output and completed log.

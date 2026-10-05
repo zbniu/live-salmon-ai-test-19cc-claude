@@ -1,0 +1,41 @@
+Initial execution records before saved analysis scripts (all succeeded):
+1. Shell read the study description and listed the two upload files; inline Python read the CSV size (79,624 bytes), header, and first seven data rows. This was inspection only, not a statistical analysis. Its full stdout remains in the session tool record; no separate console file was captured.
+2. Shell created submission/code and submission/results. Inline Python checked installed modules: numpy, pandas, scipy, sklearn, and matplotlib available in system Python; statsmodels unavailable there. No statistical analysis or result files produced.
+3. Inline Python printed runtime paths: CODEX_PRIMARY_RUNTIME_PYTHON=/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3; CODEX_PRIMARY_RUNTIME_ROOT=/opt/codex/runtimes/codex-primary-runtime. No statistical analysis or result files produced.
+Saved analysis scripts and their actual captured stdout/stderr follow in execution order. There have been no failed executions at this point. No internet or external study data were accessed.
+
+START 2026-10-04T18:09:49.426761+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/01_inspect.py
+Captured stdout/stderr: submission/results/01_inspect_console.txt
+END 2026-10-04T18:09:51.654959+00:00 exit=0
+Files now present in results/: 01_inspect_console.txt, data_diagnostics.png, group_summary.csv, score_bins.csv, validation.json
+
+START 2026-10-04T18:12:37.137600+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/02_estimate.py
+Captured stdout/stderr: submission/results/02_estimate_console.txt
+END 2026-10-04T18:12:40.968783+00:00 exit=0
+Files now present in results/: 01_inspect_console.txt, 02_estimate_console.txt, adjusted_outcome_curves.png, attendee_standardization.csv, bootstrap_draws.csv, control_model_cross_validation.csv, data_diagnostics.png, group_summary.csv, input_sha256.json, primary_control_model_coefficients.csv, primary_results.json, score_bins.csv, sensitivity_estimates.csv, validation.json
+Preliminary-record supplement: Between steps 01 and 02, an inline runtime-Python module check succeeded: statsmodels=False, patsy=False, sklearn=True, scipy=True. This stdout was displayed in the session tool record; no separate console file was captured. Its exact command is retained in code/preliminary_commands.sh. Step 01 diagnostic PNG was visually inspected in the session.
+
+START 2026-10-04T18:15:20.925837+00:00
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 submission/code/03_report.py
+Captured stdout/stderr: submission/results/03_report_console.txt
+END 2026-10-04T18:15:21.190999+00:00 exit=0
+Files now present in results/: 01_inspect_console.txt, 02_estimate_console.txt, 03_report_console.txt, adjusted_outcome_curves.png, attendee_standardization.csv, bootstrap_draws.csv, control_model_cross_validation.csv, data_diagnostics.png, group_summary.csv, input_sha256.json, primary_control_model_coefficients.csv, primary_results.json, report_checks.json, score_bins.csv, sensitivity_estimates.csv, validation.json
+
+START 2026-10-04T18:15:21.219043+00:00
+Command: Python submission/code/04_package.py
+Operation: read back final_report.md, package files, inspect archive; no analysis rerun.
+END 2026-10-04T18:15:21.251615+00:00 exit=0; first archive passed integrity, report read-back/match, and required-entry checks.
+Output: submission.zip; actual inspection record: submission/results/archive_verification.json.
+Final packaging pass includes this completed log and first-pass verification record. Final integrity and required-entry inspection is also performed; its stdout is retained in the session tool record, not a separate console file.
+
+After the first successful package verification, executed the exact save command retained in code/save_files.sh. Exit=1. Actual stderr, copied from the session tool output, is retained in results/save_attempt_stderr.txt: library upload failed: could not read Codex auth from /root/.codex/auth.json. No upload was made. This does not affect creation of the local downloadable files.
+The archive is repackaged to include this failure record and saving command. The earlier archive verification output is retained unchanged as results/archive_verification_before_save_attempt.json. No statistical analysis is repeated.
+
+START 2026-10-04T18:16:17.421857+00:00
+Command: Python submission/code/04_package.py
+Operation: read back final_report.md, package files, inspect archive; no analysis rerun.
+END 2026-10-04T18:16:17.455381+00:00 exit=0; first archive passed integrity, report read-back/match, and required-entry checks.
+Output: submission.zip; actual inspection record: submission/results/archive_verification.json.
+Final packaging pass includes this completed log and first-pass verification record. Final integrity and required-entry inspection is also performed; its stdout is retained in the session tool record, not a separate console file.

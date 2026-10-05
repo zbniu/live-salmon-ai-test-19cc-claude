@@ -1,0 +1,7 @@
+Execution record (in order)
+1. Inspected data with head/describe via inline python (printed to tool output only; not saved as file).
+2. code/analysis.py first run: FAILED - ModuleNotFoundError: statsmodels. (stdout of this failed run was overwritten in results/stdout.txt by step 4.)
+3. pip install statsmodels scipy (--break-system-packages), succeeded.
+4. code/analysis.py second run: succeeded. Outputs: results/stdout.txt (tee of stdout) and results/output.txt (same printed lines).
+5. final_report.md written by hand from those outputs; numbers copied from results/output.txt.
+Missing records: output of step 1 and of failed step 2 not saved as files.

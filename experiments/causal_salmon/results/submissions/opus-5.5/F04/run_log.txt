@@ -1,0 +1,6 @@
+Run log (execution order)
+1. code/01_inspect.py -> results/01_inspect.txt   (success; data shape, descriptives, ranges)
+2. code/02_analysis.py -> FAILED on first run: ModuleNotFoundError: No module named 'statsmodels' (no output file written for that attempt)
+3. pip install statsmodels --break-system-packages -q -> results/02a_pip_install.txt (tail of pip output; may be empty)
+4. code/02_analysis.py (unchanged) -> results/02_analysis.txt   (success; balance, difference in means, ANCOVA, interacted/ATT model, tercile check, permutation tests with seed 20261004, quantile differences)
+5. final_report.md written by hand from results/02_analysis.txt; adopted estimate = ATT-centred interacted model (x coefficient 1.2144, 95% CI 0.854-1.575).

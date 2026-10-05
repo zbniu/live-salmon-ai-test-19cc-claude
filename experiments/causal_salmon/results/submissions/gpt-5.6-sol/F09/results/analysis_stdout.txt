@@ -1,0 +1,92 @@
+      n  baseline_mean  baseline_sd  baseline_min  baseline_max  change_mean  change_sd  change_min  change_max  followup_mean  followup_min  followup_max
+x                                                                                                                                                         
+0  1400      57.349521     8.410705     45.024148     74.917508     8.640800   3.758395   -0.997900   18.878692      65.990321     44.749442     92.399038
+1   600      66.068191     5.220611     56.994643     74.987632    14.104329   3.906276    2.382149   23.665431      80.172519     61.018587     98.149557
+
+Descriptive models:
+ baseline_polynomial_degree    n  x_coefficient  design_rank  residual_rmse                               interpretation
+                          0 2000       5.463529            2       3.801431 descriptive association, not a causal effect
+                          1 2000       3.787362            3       3.510028 descriptive association, not a causal effect
+                          3 2000       3.820808            5       3.508958 descriptive association, not a causal effect
+
+Analysis details:
+{
+  "n_rows": 2000,
+  "n_treated": 600,
+  "n_control": 1400,
+  "missing_values": 0,
+  "duplicate_full_rows": 0,
+  "naive_difference_in_mean_change": 5.4635287289813,
+  "baseline_mean_difference": 8.718669623588688,
+  "overlap": {
+    "range_intersection_min": 56.99464278926244,
+    "range_intersection_max": 74.91750843273265,
+    "treated_in_control_baseline_range": 594,
+    "control_below_minimum_treated_baseline": 793,
+    "control_at_or_above_minimum_treated_baseline": 607,
+    "treated_above_maximum_control_baseline": 6,
+    "baseline_ties": 0
+  },
+  "descriptive_models": [
+    {
+      "baseline_polynomial_degree": 0,
+      "n": 2000,
+      "x_coefficient": 5.463528728981297,
+      "design_rank": 2,
+      "residual_rmse": 3.8014309913154434,
+      "interpretation": "descriptive association, not a causal effect"
+    },
+    {
+      "baseline_polynomial_degree": 1,
+      "n": 2000,
+      "x_coefficient": 3.787362334075386,
+      "design_rank": 3,
+      "residual_rmse": 3.510027670348855,
+      "interpretation": "descriptive association, not a causal effect"
+    },
+    {
+      "baseline_polynomial_degree": 3,
+      "n": 2000,
+      "x_coefficient": 3.820808318740778,
+      "design_rank": 5,
+      "residual_rmse": 3.50895767767781,
+      "interpretation": "descriptive association, not a causal effect"
+    }
+  ],
+  "hypothetical_examples": [
+    {
+      "hypothetical_ATT": -1.0,
+      "hypothetical_mean_z0_among_treated": 15.104328625911903,
+      "counterfactual_followup_min": 62.01858713013108,
+      "counterfactual_followup_max": 99.14955718192041,
+      "all_counterfactual_followups_within_0_100": true,
+      "status": "hypothetical completion, not an estimate"
+    },
+    {
+      "hypothetical_ATT": 0.0,
+      "hypothetical_mean_z0_among_treated": 14.104328625911903,
+      "counterfactual_followup_min": 61.01858713013108,
+      "counterfactual_followup_max": 98.14955718192041,
+      "all_counterfactual_followups_within_0_100": true,
+      "status": "hypothetical completion, not an estimate"
+    },
+    {
+      "hypothetical_ATT": 1.0,
+      "hypothetical_mean_z0_among_treated": 13.104328625911903,
+      "counterfactual_followup_min": 60.01858713013108,
+      "counterfactual_followup_max": 97.14955718192041,
+      "all_counterfactual_followups_within_0_100": true,
+      "status": "hypothetical completion, not an estimate"
+    }
+  ],
+  "causal_conclusion": "ATT sign and magnitude are not identified by the supplied material",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "source_sha256": {
+    "data.csv": "f0f8b9dbd2b7b80890467cf755a72278b3cfa12fb6149ab007a5af5666a911fd",
+    "STUDY_DESCRIPTION.md": "76837424e3599eab4db82b7250656cfdefdd3e69061b906e41a7caf2b345cefe"
+  }
+}

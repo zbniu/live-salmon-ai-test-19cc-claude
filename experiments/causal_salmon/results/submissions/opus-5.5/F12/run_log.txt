@@ -1,0 +1,7 @@
+Execution log (in order; working dir submission/)
+1. code/01_explore.py -> results/01_explore.txt : data shape, summaries, overlap by y. OK.
+2. code/02_att.py (first attempt) -> FAILED: ModuleNotFoundError: No module named 'statsmodels'. No output produced.
+   Fix: pip install statsmodels --break-system-packages (no code change).
+3. code/02_att.py (rerun, unchanged) -> results/02_att.txt, results/02_att_estimates.csv : ATT estimates + bootstrap CIs (seed 20261004). OK.
+4. code/03_checks.py -> results/03_checks.txt : continuity check among controls at cutoff; ATT by y-tercile. OK.
+5. final_report.md written from outputs of steps 1, 3, 4.

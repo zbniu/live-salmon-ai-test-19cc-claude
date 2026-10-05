@@ -1,0 +1,69 @@
+== Balance on baseline y ==
+mean y treated 59.853, control 60.275, diff -0.422
+Welch t-test y: TtestResult(statistic=np.float64(-1.0076206062565523), pvalue=np.float64(0.3138491739391531), df=np.float64(1146.8554108334145))
+KS test y: KstestResult(statistic=np.float64(0.0569047619047619), pvalue=np.float64(0.12706880056410963), statistic_location=np.float64(58.709269928719515), statistic_sign=np.int8(1))
+SMD y: -0.049
+
+== (A) Unadjusted difference in mean z ==
+diff 1.1102, Neyman/Welch SE 0.2167, 95% CI [0.6855, 1.5349]
+Welch t-test z: TtestResult(statistic=np.float64(5.123695377665737), pvalue=np.float64(3.5526908581569267e-07), df=np.float64(1069.7907948104562))
+
+== (B) ANCOVA: z ~ x + y (HC2) ==
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -5.5734      0.588     -9.475      0.000      -6.726      -4.420
+x              1.2191      0.184      6.619      0.000       0.858       1.580
+y              0.2583      0.010     26.758      0.000       0.239       0.277
+==============================================================================
+
+== (C) Lin (2013) interacted, y centered at TREATED mean -> ATT-targeted (HC2) ==
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      9.8900      0.098    101.026      0.000       9.698      10.082
+x              1.2144      0.184      6.602      0.000       0.854       1.575
+yc_t           0.2470      0.011     21.928      0.000       0.225       0.269
+x:yc_t         0.0384      0.022      1.779      0.075      -0.004       0.081
+==============================================================================
+
+   same, y centered at full-sample mean (ATE-targeted)
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      9.9629      0.098    101.805      0.000       9.771      10.155
+x              1.2257      0.184      6.656      0.000       0.865       1.587
+yc             0.2470      0.011     21.928      0.000       0.225       0.269
+x:yc           0.0384      0.022      1.779      0.075      -0.004       0.081
+==============================================================================
+
+== Within-arm relation of z with y ==
+x=0: slope 0.2470 (SE 0.0113), R2 0.2542, resid SD 3.662
+     quadratic term p=0.937
+x=1: slope 0.2854 (SE 0.0184), R2 0.2905, resid SD 3.814
+     quadratic term p=0.272
+
+== Effect by baseline-y quintile (diff in mean z) ==
+q0 y[45.0,51.3] nT=121 nC=279 diff 0.644 SE 0.404
+q1 y[51.3,57.4] nT=138 nC=262 diff 1.517 SE 0.403
+q2 y[57.4,63.2] nT=104 nC=296 diff 1.195 SE 0.415
+q3 y[63.3,69.1] nT=125 nC=275 diff 0.570 SE 0.403
+q4 y[69.1,75.0] nT=112 nC=288 diff 2.168 SE 0.450
+
+== Distributional checks ==
+SD z treated/control: 4.524 4.239  Levene: LeveneResult(statistic=np.float64(2.7861241838774484), pvalue=np.float64(0.09524061176984969))
+Median diff: 1.0903
+  quantile 10: T 5.510  C 4.428  diff 1.082
+  quantile 25: T 7.856  C 6.931  diff 0.925
+  quantile 50: T 11.076  C 9.986  diff 1.090
+  quantile 75: T 14.198  C 13.079  diff 1.120
+  quantile 90: T 17.135  C 15.534  diff 1.600
+KS test z: KstestResult(statistic=np.float64(0.10119047619047619), pvalue=np.float64(0.00034140836065222203), statistic_location=np.float64(10.910241508138409), statistic_sign=np.int8(-1))
+Mann-Whitney z: MannwhitneyuResult(statistic=np.float64(476752.0), pvalue=np.float64(1.6253002177510054e-06))
+
+== Randomization (permutation) inference, 10000 draws of 600 of 2000 ==
+diff-in-means obs 1.1102, perm two-sided p 0.00010, perm SD 0.2110
+ANCOVA obs 1.2191, perm two-sided p 0.00010, perm SD 0.1812
+
+== Bootstrap (5000, stratified by arm) for Lin ATT estimate ==
+Lin ATT point 1.2144; bootstrap SE 0.1819; percentile 95% CI [0.8619, 1.5784]

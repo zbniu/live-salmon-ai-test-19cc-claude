@@ -1,0 +1,79 @@
+EXECUTION LOG FOR TUTORING STUDY ANALYSIS
+==========================================
+
+Data File: /mnt/user-data/uploads/data.csv (2000 rows, 3 columns)
+
+EXECUTION 1: Initial Exploration and Descriptive Analysis
+----------------------------------------------------------
+Code: submission/code/01_exploration_and_analysis.py
+Output: submission/results/01_exploration_output.txt
+JSON Results: submission/results/analysis_results.json
+
+This script performs:
+- Data shape and structure verification (2000 rows, x/y/z columns)
+- Descriptive statistics (means, std devs, ranges)
+- Missing data check (none)
+- Treatment assignment counts (600 treatment, 1400 control)
+- Naive group comparison (unadjusted difference: 3.4489 points, t=17.66, p<0.001)
+- Confounding analysis: treatment group baseline scores higher by 9.61 points
+- Correlation analysis: y and z correlated at 0.5474
+- Stratification by y quintiles (shows effects by baseline score group)
+- Simple linear regression of z on x (coefficient: 3.4489)
+- Adjusted linear regression of z on x and y (coefficient on x: 1.1113)
+- R-squared comparison: 0.135 (unadjusted) vs 0.310 (adjusted)
+- Examination of treatment assignment threshold around y≈57.4
+
+Key Output Values:
+  - Control mean score gain: 9.3768
+  - Treatment mean score gain: 12.8257
+  - Naive effect estimate: 3.4489
+  - Adjusted effect estimate (from regression): 1.1113
+
+EXECUTION 2: Detailed Stratification and Regression Analysis
+-------------------------------------------------------------
+Code: submission/code/02_stratification_and_regression.py
+Output: submission/results/02_stratification_output.txt
+
+This script performs:
+- Quintile-based stratification with stratification-specific effects:
+  * Q1 (y: 45.01-57.00): 400 control, 0 treatment - no comparison possible
+  * Q2 (y: 57.00-63.03): 400 control, 0 treatment - no comparison possible
+  * Q3 (y: 57.00-63.03): 238 control, 162 treatment, effect=0.6186 (p=0.088)
+  * Q4 (y: 63.03-69.00): 187 control, 213 treatment, effect=1.2365 (p=0.001)
+  * Q5 (y: 69.00-75.00): 175 control, 225 treatment, effect=1.7788 (p<0.001)
+- Stratified estimates:
+  * Simple unweighted average: 1.2113
+  * Weighted average (by stratum size): 0.7268
+- Linear regression model: z = -4.5381 + 1.1113*x + 0.2432*y
+- Model fit: R-squared = 0.3099
+- Effect confidence interval: [0.7133, 1.5094]
+- Treatment assignment threshold analysis: sharp cutoff at y≈57.36
+- Treatment rate below threshold: 0%
+- Treatment rate above threshold: 50%
+
+SUMMARY OF KEY ESTIMATES
+========================
+
+Causal Effect of Tutoring on Score Gain:
+1. Naive (biased) estimate: 3.45 points
+2. Stratified estimate (Q3-Q5): 0.73-1.21 points depending on weighting
+3. Regression-adjusted estimate: 1.11 points (95% CI: [0.71, 1.51])
+
+RECOMMENDED ESTIMATE: 1.11 points
+- Uses all data efficiently
+- Accounts for selection bias on baseline scores
+- Consistent with stratified estimates
+- Statistically significant and practically meaningful
+
+FILES INCLUDED IN SUBMISSION
+============================
+submission/
+  final_report.md              - Main results and interpretation
+  run_log.txt                  - This file
+  code/
+    01_exploration_and_analysis.py          - Initial analysis script
+    02_stratification_and_regression.py     - Detailed methods script
+  results/
+    01_exploration_output.txt               - Console output from script 1
+    02_stratification_output.txt            - Console output from script 2
+    analysis_results.json                   - Summary statistics (JSON)

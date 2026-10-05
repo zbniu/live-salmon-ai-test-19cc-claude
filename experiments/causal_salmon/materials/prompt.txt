@@ -1,0 +1,12 @@
+Your working directory contains two files:
+
+- STUDY_DESCRIPTION.md, which describes the study and how the data were produced
+- data.csv, the data
+
+Answer the research question stated in STUDY_DESCRIPTION.md. Run the analyses you consider appropriate on the data.
+
+End your final answer with a short report. Write the heading
+
+## Final report
+
+exactly once, on a line of its own and outside any code block, and put the report after it. In the report, state your conclusion, the analyses you ran and the estimates they gave, how uncertain those estimates are, whom the conclusion applies to, and its main limitations.
